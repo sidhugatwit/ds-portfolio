@@ -2,6 +2,10 @@
 
 A Python weather application that retrieves city weather data, caches current temperature values in SQLite, and visualizes a 24-hour forecast with Matplotlib.
 
+## Preview
+
+![Weather Forecast Plot](preview.png)
+
 ## Overview
 
 This project demonstrates a simple end-to-end data workflow:
