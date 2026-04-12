@@ -1,0 +1,16 @@
+question,rank,company,section,distance_score,text_preview
+Which company had the highest revenue in 2025?,1,NVIDIA,Revenue,0.9106,"NVIDIA reported record revenue of 130.5 billion dollars for fiscal 2025, an increase of 114 percent "
+Which company had the highest revenue in 2025?,2,Amazon,Revenue,0.9618,"Amazon reported net sales of 637.9 billion dollars for 2024, an increase of 11 percent. AWS revenue "
+Which company had the highest revenue in 2025?,3,Tesla,Revenue,1.008,"Tesla reported total revenues of 113.4 billion dollars for 2024, an increase of 17 percent. Automoti"
+What AI chips is NVIDIA selling and how do they perform?,1,NVIDIA,Risk,0.8347,"NVIDIA faces risks from US export controls restricting sales of advanced AI chips to China, which re"
+What AI chips is NVIDIA selling and how do they perform?,2,NVIDIA,AI,0.8419,NVIDIA Blackwell architecture GPUs became the industry standard for large language model training an
+What AI chips is NVIDIA selling and how do they perform?,3,NVIDIA,Revenue,0.8949,"NVIDIA reported record revenue of 130.5 billion dollars for fiscal 2025, an increase of 114 percent "
+How is JPMorgan using AI in banking operations?,1,JPMorgan,AI,0.5733,JPMorgan deployed over 400 AI use cases in production in 2025 including LLM-powered document analysi
+How is JPMorgan using AI in banking operations?,2,JPMorgan,Revenue,0.8623,"JPMorgan Chase reported net revenue of 175.4 billion dollars for 2024, an increase of 11 percent. Ne"
+How is JPMorgan using AI in banking operations?,3,NVIDIA,Risk,1.4925,"NVIDIA faces risks from US export controls restricting sales of advanced AI chips to China, which re"
+Compare AWS and Microsoft Azure AI investments,1,Microsoft,Revenue,0.8615,"Microsoft reported revenue of 261.8 billion dollars for fiscal 2025, an increase of 13 percent. Inte"
+Compare AWS and Microsoft Azure AI investments,2,Microsoft,Risk,0.9025,Microsoft faces regulatory scrutiny of its OpenAI investment in the EU and UK. Cybersecurity inciden
+Compare AWS and Microsoft Azure AI investments,3,Amazon,AI,0.9162,Amazon Web Services launched Amazon Nova foundation models in 2025 competing directly with OpenAI an
+What are the biggest risks facing NVIDIA right now?,1,NVIDIA,Risk,0.6681,"NVIDIA faces risks from US export controls restricting sales of advanced AI chips to China, which re"
+What are the biggest risks facing NVIDIA right now?,2,NVIDIA,Cash,1.0181,NVIDIA generated operating cash flow of 64.1 billion dollars in fiscal 2025. The company returned 33
+What are the biggest risks facing NVIDIA right now?,3,NVIDIA,Revenue,1.0797,"NVIDIA reported record revenue of 130.5 billion dollars for fiscal 2025, an increase of 114 percent "
