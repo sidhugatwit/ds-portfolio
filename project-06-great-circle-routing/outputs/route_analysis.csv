@@ -1,0 +1,6 @@
+route,distance_km,initial_bearing_deg,time_headwind_h,time_tailwind_h,fuel_headwind_kg,fuel_tailwind_kg,fuel_saving_kg
+BOS-LHR,5240.4,53.3,6.15,5.34,41828.5,36304.0,5524.5
+JFK-NRT,10830.3,332.6,12.71,11.03,86447.3,75029.8,11417.5
+LAX-SYD,12060.9,241.0,14.16,12.29,96269.9,83555.0,12714.9
+SEA-DXB,11927.5,2.2,14.0,12.15,95204.8,82630.5,12574.3
+ORD-CDG,6664.7,49.3,7.82,6.79,53197.7,46171.6,7026.1
