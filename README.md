@@ -23,6 +23,7 @@ This portfolio is intentionally iterative; projects are continuously upgraded wi
 - Stronger evaluation metrics
 - Improved architectures
 - More realistic constraints
+
 ---
 
 ## 🚀 Featured Projects (Start Here)
@@ -30,6 +31,7 @@ This portfolio is intentionally iterative; projects are continuously upgraded wi
 ### 🤖 Agentic AI & LLM Systems
 
 #### Project 12 — RLHF Pipeline
+
 Reinforcement learning from human feedback simulation using a DistilBERT reward model and PPO with KL regularization.
 
 - Reward modeling for preference learning  
@@ -39,6 +41,7 @@ Reinforcement learning from human feedback simulation using a DistilBERT reward 
 ---
 
 #### Project 11 — Mechanistic Interpretability
+
 Explored GPT-2 internals and attention behavior across layers.
 
 - Attention head analysis  
@@ -48,6 +51,7 @@ Explored GPT-2 internals and attention behavior across layers.
 ---
 
 #### Project 10 — Agentic SQL Analyst
+
 Natural language → SQL system using DuckDB and structured reasoning.
 
 - NL-to-SQL pipeline  
@@ -57,6 +61,7 @@ Natural language → SQL system using DuckDB and structured reasoning.
 ---
 
 #### Project 09 — LLM Evaluation Benchmark
+
 Benchmark comparing GPT-4o-mini vs Mistral-7B.
 
 - ROUGE + BERTScore evaluation  
@@ -66,6 +71,7 @@ Benchmark comparing GPT-4o-mini vs Mistral-7B.
 ---
 
 #### Project 13 — Agentic ML Pipeline
+
 Agent-based ML workflow combining LangGraph-style reasoning with XGBoost.
 
 - End-to-end decision pipeline  
@@ -75,6 +81,7 @@ Agent-based ML workflow combining LangGraph-style reasoning with XGBoost.
 ---
 
 #### Project 14 — RAG System (Local LLM + FAISS)
+
 Retrieval-augmented generation using local models and embeddings.
 
 - FAISS vector search  
@@ -85,7 +92,8 @@ Retrieval-augmented generation using local models and embeddings.
 
 ## 📊 Applied Machine Learning & Data Systems
 
-#### Project 08 — Recommender System
+### Project 08 — Recommender System
+
 ALS-based recommendation system with implicit feedback.
 
 - NDCG@10 evaluation  
@@ -94,7 +102,8 @@ ALS-based recommendation system with implicit feedback.
 
 ---
 
-#### Project 05 — Flight Delay Causal ML
+### Project 05 — Flight Delay Causal ML
+
 Causal inference using DoWhy and DAG-based modeling.
 
 - Causal graph design  
@@ -103,7 +112,8 @@ Causal inference using DoWhy and DAG-based modeling.
 
 ---
 
-#### Project 02 — Fraud Detection System
+### Project 02 — Fraud Detection System
+
 Fraud detection using SMOTE + Isolation Forest.
 
 - Class imbalance handling  
@@ -112,7 +122,8 @@ Fraud detection using SMOTE + Isolation Forest.
 
 ---
 
-#### Project 01 — Credit Risk Engine
+### Project 01 — Credit Risk Engine
+
 XGBoost-based risk scoring system with SHAP explainability.
 
 - Risk prediction  
@@ -121,7 +132,8 @@ XGBoost-based risk scoring system with SHAP explainability.
 
 ---
 
-#### Project 15 — Personalized AI Workout Planner
+### Project 15 — Personalized AI Workout Planner
+
 Structured system for generating personalized plans.
 
 - User-driven inputs  
@@ -130,9 +142,25 @@ Structured system for generating personalized plans.
 
 ---
 
+## 🌐 Data Apps & Pipelines
+
+### Project 19 — Weather Data Pipeline
+
+Modular Python data pipeline integrating Open-Meteo APIs, SQLite caching, and Matplotlib visualization for efficient real-time weather retrieval and 24-hour forecast analysis.
+
+- Reduced redundant API calls using local SQLite caching layer  
+- Designed modular architecture (service, database, visualization layers)  
+- Built CLI-driven workflow for real-time and cached data retrieval  
+- Generated 24-hour forecast visualizations using time-series plotting  
+
+[View Project](./project-19-weather-app)
+
+---
+
 ## 📈 Quantitative Finance & Simulation
 
-#### Project 16 — Geometric Brownian Motion
+### Project 16 — Geometric Brownian Motion
+
 Monte Carlo simulation of stock price behavior.
 
 - Stochastic modeling  
@@ -141,7 +169,8 @@ Monte Carlo simulation of stock price behavior.
 
 ---
 
-#### Project 03 — Portfolio Optimizer
+### Project 03 — Portfolio Optimizer
+
 Efficient frontier + Black-Scholes modeling.
 
 - Risk-return optimization  
@@ -152,7 +181,8 @@ Efficient frontier + Black-Scholes modeling.
 
 ## ✈️ Optimization & Systems Modeling
 
-#### Project 06 — Great Circle Routing
+### Project 06 — Great Circle Routing
+
 Aircraft routing with operational constraints.
 
 - Flight path optimization  
@@ -161,7 +191,8 @@ Aircraft routing with operational constraints.
 
 ---
 
-#### Project 04 — ILS Glide Path Simulation
+### Project 04 — ILS Glide Path Simulation
+
 Landing system simulation using ICAO geometry.
 
 - Glide slope modeling  
@@ -172,7 +203,8 @@ Landing system simulation using ICAO geometry.
 
 ## 💻 Core Systems & Foundations
 
-#### Project 17 — Grocery Bagger Optimization
+### Project 17 — Grocery Bagger Optimization
+
 Constraint-based packing system.
 
 - Heuristic optimization  
@@ -180,7 +212,8 @@ Constraint-based packing system.
 
 ---
 
-#### Project 18 — Blackjack Engine
+### Project 18 — Blackjack Engine
+
 Object-oriented game simulation.
 
 - System design  
@@ -206,8 +239,10 @@ Object-oriented game simulation.
 - project-02-fraud-detection  
 - ...  
 - project-18-blackjack  
+- project-19-weather-app
 
 Each project includes:
+
 - implementation  
 - methodology  
 - evaluation  
@@ -228,13 +263,13 @@ Each project includes:
 ## 📬 Contact
 
 Open to:
+
 - Data Science Internships  
 - ML Engineering Roles  
 - AI Engineering Roles  
 
-
-🔗 LinkedIn: https://linkedin.com/in/sidhu-gurveer/
-🌐 Portfolio: https://  
-📧 Email: sidhugurveer5@gmail.com
+🔗 LinkedIn: <https://linkedin.com/in/sidhu-gurveer/>
+🌐 Portfolio: (in progress — syncing with this repository)
+📧 Email: <sidhugurveer5@gmail.com>
 
 Let’s connect.
