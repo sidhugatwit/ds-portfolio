@@ -1,0 +1,5 @@
+cause,causal_effect
+nas_congestion,0.0968
+weather_severity,0.0811
+carrier_issues,0.0592
+late_aircraft,0.0175
