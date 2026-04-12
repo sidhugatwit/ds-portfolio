@@ -1,0 +1,15 @@
+[
+  {
+    "id": "03",
+    "title": "Portfolio Optimizer with Monte Carlo & Black-Scholes",
+    "domain": "Finance",
+    "status": "in-progress",
+    "description": "Multi-asset portfolio optimizer using Markowitz efficient frontier, GBM Monte Carlo simulation, and Black-Scholes options pricing.",
+    "skills": ["Python", "NumPy", "SciPy", "Plotly", "yfinance"],
+    "targets": ["Fidelity", "Capital One", "Chase"],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-03-portfolio-optimizer",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  }
+]
