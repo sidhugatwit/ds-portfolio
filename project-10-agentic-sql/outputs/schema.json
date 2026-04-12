@@ -1,0 +1,32 @@
+{
+  "flights": {
+    "rows": 4502,
+    "columns": [
+      "flight_id",
+      "airline",
+      "origin",
+      "destination",
+      "scheduled_dep",
+      "delay_minutes",
+      "cancelled",
+      "passengers",
+      "fuel_cost_usd",
+      "distance_km"
+    ],
+    "description": "Flight operations data \u2014 delays, fuel, passengers"
+  },
+  "transactions": {
+    "rows": 10000,
+    "columns": [
+      "tx_id",
+      "customer_id",
+      "amount_usd",
+      "category",
+      "merchant",
+      "tx_date",
+      "is_fraud",
+      "country"
+    ],
+    "description": "Financial transactions \u2014 fraud, spending, merchants"
+  }
+}

@@ -1,0 +1,7 @@
+category,total_tx,fraud_count,fraud_rate_pct,avg_amount
+dining,1702,35.0,2.056,85.73
+entertainment,1671,33.0,1.975,84.56
+travel,1671,32.0,1.915,85.91
+retail,1612,30.0,1.861,82.24
+healthcare,1635,30.0,1.835,85.5
+utilities,1709,29.0,1.697,81.89
