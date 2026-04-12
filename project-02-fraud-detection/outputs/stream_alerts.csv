@@ -1,0 +1,5 @@
+timestamp,tx_index,risk_score,actual_fraud,amount,alert_type
+09:03:00,1,1.0,True,119.51,TRUE POSITIVE
+10:51:00,37,1.0,True,38.9,TRUE POSITIVE
+11:48:00,56,1.0,True,58.5,TRUE POSITIVE
+13:51:00,97,1.0,True,155.44,TRUE POSITIVE

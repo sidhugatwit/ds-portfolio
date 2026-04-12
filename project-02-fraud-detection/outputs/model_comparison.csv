@@ -1,0 +1,4 @@
+model,roc_auc,avg_precision
+Isolation Forest,1.0,1.0
+Random Forest,1.0,1.0
+Logistic Regression,1.0,1.0
