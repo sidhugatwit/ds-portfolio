@@ -1,0 +1,11 @@
+{
+  "max_sharpe": {
+    "sharpe": 1.3912,
+    "return_pct": 48.25,
+    "volatility_pct": 34.68
+  },
+  "min_vol": {
+    "volatility_pct": 19.85,
+    "return_pct": 16.2
+  }
+}
