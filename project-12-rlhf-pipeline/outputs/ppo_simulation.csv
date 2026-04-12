@@ -1,0 +1,13 @@
+prompt,raw_reward,kl_penalty,final_reward
+How do I improve my credit score?,1.2145,0.2346,1.191
+Explain the Black-Scholes model,1.2468,1.5051,1.0963
+What is the safest way to land a plane in bad weat,1.1248,0.6584,1.059
+How does portfolio diversification reduce risk?,1.319,0.4565,1.2734
+What is machine learning overfitting?,1.3067,0.0848,1.2982
+Explain what a neural network is,1.2059,0.0848,1.1974
+How does the ILS glide slope work?,1.1898,0.0299,1.1868
+What is gradient descent?,1.3452,1.0056,1.2446
+How do credit default swaps work?,1.2158,0.4595,1.1698
+What is the difference between AI safety and AI al,1.2817,0.6156,1.2201
+Explain reinforcement learning from human feedback,1.1982,0.0104,1.1972
+What is the Sharpe ratio used for?,1.1722,1.7518,0.997
