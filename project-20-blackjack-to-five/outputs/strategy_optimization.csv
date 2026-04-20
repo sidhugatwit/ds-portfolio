@@ -1,0 +1,10 @@
+threshold,win_rate,strategy
+12,0.415,Hit below 12
+13,0.4262,Hit below 13
+14,0.4164,Hit below 14
+15,0.4214,Hit below 15
+16,0.4106,Hit below 16
+17,0.404,Hit below 17
+18,0.3812,Hit below 18
+19,0.3546,Hit below 19
+20,0.2968,Hit below 20

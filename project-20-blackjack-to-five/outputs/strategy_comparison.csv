@@ -1,0 +1,5 @@
+strategy,win_rate
+Conservative (hit<17),0.41
+Basic (hit<18),0.399
+Aggressive (hit<19),0.357
+Optimal (DP),0.4014
