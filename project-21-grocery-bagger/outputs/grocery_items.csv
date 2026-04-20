@@ -1,0 +1,21 @@
+name,weight,fragile
+Milk,1.89,False
+Bread,0.68,True
+Eggs,0.73,True
+Chicken,1.36,False
+Rice,2.27,False
+Pasta,0.91,False
+Tomatoes,0.45,True
+Cheese,0.57,False
+Butter,0.45,False
+Juice,1.93,False
+Chips,0.34,True
+Detergent,1.81,False
+Apples,0.91,False
+Yogurt,0.68,False
+Coffee,0.57,False
+Cereal,0.45,True
+Soap,0.23,False
+Water,3.63,False
+Frozen Pizza,0.91,False
+Ice Cream,0.57,False

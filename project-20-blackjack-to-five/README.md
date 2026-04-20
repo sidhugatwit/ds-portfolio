@@ -2,16 +2,16 @@
 
 ## Overview
 
-An extension of a Java card game built in COMP 2000 
-(Data Structures). The original BlackJack-to-Five game — first player 
-to 5 round victories wins — is translated to Python and analyzed with 
-10,000 Monte Carlo simulations, bust probability tables, and dynamic 
+An extension of a Java card game built in COMP 2000
+(Data Structures). The original BlackJack-to-Five game — first player
+to 5 round victories wins — is translated to Python and analyzed with
+10,000 Monte Carlo simulations, bust probability tables, and dynamic
 programming to find the optimal hit/stand strategy.
 
 ## Original Java Project
 
-Built in Eclipse as a group project for COMP 2000 with Will Weeks 
-and Troy Gayle. Features rotating dealer, CPU-controlled players, 
+Built in Eclipse as a group project for COMP 2000 with Will Weeks
+and Troy Gayle. Features rotating dealer, CPU-controlled players,
 automatic ace handling (hard→soft), and house-advantage tie rules.
 
 ## Data Science Layer

@@ -1,0 +1,4 @@
+algorithm,bags_used,efficiency,avg_bag_weight,min_bag_weight,max_bag_weight
+First Fit,3,0.7113,7.11,1.48,9.98
+First Fit Decreasing,3,0.7113,7.11,1.69,9.95
+Fragile First,3,0.7113,7.11,1.59,9.91
