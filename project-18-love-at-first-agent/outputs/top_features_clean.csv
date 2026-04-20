@@ -1,0 +1,11 @@
+feature,rank
+int_corr,1
+pf_o_att,2
+attr_o,3
+like_o,4
+prob_o,5
+attr1_1,6
+attr2_1,7
+attr,8
+like,9
+prob,10
