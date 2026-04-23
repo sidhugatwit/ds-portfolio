@@ -1,18 +1,369 @@
 [
-  {"id":"03","title":"Portfolio Optimizer with Monte Carlo & Black-Scholes","domain":"Finance","status":"complete","description":"Markowitz efficient frontier, 10,000 Monte Carlo simulations, and Black-Scholes options pricing across 10 assets.","skills":["Python","NumPy","SciPy","Plotly","yfinance"],"targets":["Fidelity","Capital One","Chase"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-03-portfolio-optimizer","notebook":"","demo":"","thumbnail":""},
-  {"id":"01","title":"Credit Risk Engine with XGBoost & SHAP","domain":"Finance","status":"complete","description":"End-to-end credit default predictor with SHAP explainability and three-tier risk scoring on real lending data.","skills":["Python","XGBoost","SHAP","Scikit-learn","SQL"],"targets":["Capital One","Chase","Fidelity"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-01-credit-risk","notebook":"","demo":"","thumbnail":""},
-  {"id":"04","title":"ILS Glide Path & ICAO Geometry","domain":"Aviation","status":"complete","description":"ILS approach simulation from ICAO Annex 10 standards with CDI deviation display and CAT I decision height assessment.","skills":["Python","NumPy","SciPy","Plotly 3D"],"targets":["Delta","United Airlines"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-04-ils-glide-path","notebook":"","demo":"","thumbnail":""},
-  {"id":"06","title":"Great Circle Routing & Fuel Optimization","domain":"Aviation","status":"complete","description":"Haversine and Vincenty routing with wind-corrected fuel burn and ETOPS compliance checking for major international routes.","skills":["Python","NumPy","Plotly","Folium"],"targets":["Delta","United Airlines"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-06-great-circle-routing","notebook":"","demo":"","thumbnail":""},
-  {"id":"07","title":"RAG Financial Document Analyst","domain":"AI / RAG","status":"complete","description":"FAISS vector search RAG system on 2025 NVIDIA, Microsoft, JPMorgan, and Amazon earnings data with source citations.","skills":["Python","FAISS","Sentence-Transformers","Pandas"],"targets":["Perplexity","Meta","Amazon","Fidelity"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-07-rag-financial-analyst","notebook":"","demo":"","thumbnail":""},
-  {"id":"10","title":"Agentic SQL Analyst with Natural Language Interface","domain":"Multi-Domain","status":"complete","description":"AI agent translating plain English to verified SQL over a DuckDB database with 15,000+ rows across flights and transactions.","skills":["Python","DuckDB","Plotly","JSON"],"targets":["Fidelity","Capital One","Delta","Amazon"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-10-agentic-sql","notebook":"","demo":"","thumbnail":""},
-  {"id":"02","title":"Real-Time Fraud Detection Pipeline","domain":"Finance","status":"complete","description":"SMOTE resampling, Isolation Forest, and Random Forest with streaming simulation and configurable alert thresholds.","skills":["Python","Scikit-learn","Imbalanced-learn","River","Plotly"],"targets":["Capital One","Chase","Amazon"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-02-fraud-detection","notebook":"","demo":"","thumbnail":""},
-  {"id":"05","title":"Flight Delay Prediction with Causal ML","domain":"Aviation","status":"complete","description":"DoWhy causal DAG isolating true effect of weather, NAS congestion, and carrier issues on flight delay probability.","skills":["Python","DoWhy","LightGBM","Plotly"],"targets":["Delta","United Airlines","Amazon"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-05-flight-delay","notebook":"","demo":"","thumbnail":""},
-  {"id":"08","title":"Recommendation Engine with Implicit Feedback","domain":"AI / ML","status":"complete","description":"ALS matrix factorization recommender with implicit feedback, NDCG@10 evaluation, and popularity bias analysis.","skills":["Python","Implicit","SciPy","Plotly"],"targets":["Netflix","Amazon","Meta"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-08-recommender","notebook":"","demo":"","thumbnail":""},
-  {"id":"09","title":"LLM Evaluation & Hallucination Benchmark","domain":"AI Safety","status":"complete","description":"Real GPT-4o-mini vs Mistral-7B on 20 expert-verified finance and aviation QA pairs scored with ROUGE and BERTScore.","skills":["Python","OpenAI API","LM Studio","ROUGE","BERTScore"],"targets":["Perplexity","Meta","Anthropic","OpenAI"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-09-llm-eval-benchmark","notebook":"","demo":"","thumbnail":""},
-  {"id":"11","title":"Mechanistic Interpretability of GPT-2 Medium","domain":"AI Safety","status":"complete","description":"Activation patching on the IOI circuit of GPT-2 Medium. Layers 0-2 show 100% recovery. Paris predicted correctly at logit 20.47.","skills":["Python","TransformerLens","PyTorch","Einops"],"targets":["Anthropic","OpenAI","DeepMind","Redwood Research"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-11-mechanistic-interp","notebook":"","demo":"","thumbnail":""},
-  {"id":"12","title":"RLHF Pipeline from Scratch","domain":"AI Safety","status":"complete","description":"DistilBERT reward model trained on 12 human preference pairs with PPO KL-penalized reward shaping — the training loop behind ChatGPT and Claude.","skills":["Python","PyTorch","HuggingFace","DistilBERT"],"targets":["Anthropic","OpenAI","DeepMind","Meta AI"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-12-rlhf-pipeline","notebook":"","demo":"","thumbnail":""},
-  {"id":"13","title":"Multi-Agent Conversations with GPT-4o-mini","domain":"AI / Agents","status":"complete","description":"Two and three-agent simulations with role-based system prompts, shared conversation history, and fallback model handling.","skills":["Python","OpenAI API","python-dotenv"],"targets":["Meta","Amazon","Perplexity","Anthropic"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-13-multi-agent-conversations","notebook":"","demo":"","thumbnail":""},
-  {"id":"14","title":"GBM Simulation — SanDisk vs ASML","domain":"Finance","status":"complete","description":"Full GBM derivation from Itô's Lemma with 500 Monte Carlo paths, Black-Scholes options pricing, and Greeks for SNDK and ASML.","skills":["Python","NumPy","SciPy","Matplotlib","yfinance"],"targets":["Fidelity","Capital One","Chase","Anthropic"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-14-gbm-sandisk-asml","notebook":"","demo":"","thumbnail":""},
-  {"id":"15","title":"RAG with Chunking + Local Ollama LLM","domain":"AI / RAG","status":"complete","description":"LangChain + ChromaDB RAG pipeline with RecursiveCharacterTextSplitter and local Ollama inference — cloud and offline approaches.","skills":["Python","LangChain","ChromaDB","Ollama","PyPDF"],"targets":["Perplexity","Meta","Amazon","Anthropic"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-15-rag-implementation","notebook":"","demo":"","thumbnail":""},
-  {"id":"16","title":"LangGraph Email Triage Agent","domain":"AI / Agents","status":"complete","description":"Stateful LangGraph agent with triage router, ReAct response agent, and tool calling for email, calendar, and meeting scheduling.","skills":["Python","LangGraph","LangChain","GPT-4o-mini","Pydantic"],"targets":["Anthropic","Meta","Amazon","Perplexity"],"github":"https://github.com/sidhugatwit/ds-portfolio/tree/main/project-16-langgraph-memory","notebook":"","demo":"","thumbnail":""}
+  {
+    "id": "03",
+    "title": "Portfolio Optimizer with Monte Carlo & Black-Scholes",
+    "domain": "Finance",
+    "status": "complete",
+    "description": "Markowitz efficient frontier, 10,000 Monte Carlo simulations, and Black-Scholes options pricing across 10 assets.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Plotly",
+      "yfinance"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-03-portfolio-optimizer",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "01",
+    "title": "Credit Risk Engine with XGBoost & SHAP",
+    "domain": "Finance",
+    "status": "complete",
+    "description": "End-to-end credit default predictor with SHAP explainability and three-tier risk scoring on real lending data.",
+    "skills": [
+      "Python",
+      "XGBoost",
+      "SHAP",
+      "Scikit-learn",
+      "SQL"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-01-credit-risk",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "04",
+    "title": "ILS Glide Path & ICAO Geometry",
+    "domain": "Aviation",
+    "status": "complete",
+    "description": "ILS approach simulation from ICAO Annex 10 standards with CDI deviation display and CAT I decision height assessment.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Plotly 3D"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-04-ils-glide-path",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "06",
+    "title": "Great Circle Routing & Fuel Optimization",
+    "domain": "Aviation",
+    "status": "complete",
+    "description": "Haversine and Vincenty routing with wind-corrected fuel burn and ETOPS compliance checking for major international routes.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Plotly",
+      "Folium"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-06-great-circle-routing",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "07",
+    "title": "RAG Financial Document Analyst",
+    "domain": "AI / RAG",
+    "status": "complete",
+    "description": "FAISS vector search RAG system on 2025 earnings data with source citations and semantic retrieval.",
+    "skills": [
+      "Python",
+      "FAISS",
+      "Sentence-Transformers",
+      "Pandas"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-07-rag-financial-analyst",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "10",
+    "title": "Agentic SQL Analyst with Natural Language Interface",
+    "domain": "Multi-Domain",
+    "status": "complete",
+    "description": "AI agent translating plain English to verified SQL over a DuckDB database with 15,000+ rows across flights and transactions.",
+    "skills": [
+      "Python",
+      "DuckDB",
+      "Plotly",
+      "JSON"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-10-agentic-sql",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "02",
+    "title": "Real-Time Fraud Detection Pipeline",
+    "domain": "Finance",
+    "status": "complete",
+    "description": "SMOTE resampling, Isolation Forest, and Random Forest with streaming simulation and configurable alert thresholds.",
+    "skills": [
+      "Python",
+      "Scikit-learn",
+      "Imbalanced-learn",
+      "River",
+      "Plotly"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-02-fraud-detection",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "05",
+    "title": "Flight Delay Prediction with Causal ML",
+    "domain": "Aviation",
+    "status": "complete",
+    "description": "DoWhy causal DAG isolating true effect of weather, NAS congestion, and carrier issues on flight delay probability.",
+    "skills": [
+      "Python",
+      "DoWhy",
+      "LightGBM",
+      "Plotly"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-05-flight-delay",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "08",
+    "title": "Recommendation Engine with Implicit Feedback",
+    "domain": "AI / ML",
+    "status": "complete",
+    "description": "ALS matrix factorization recommender with implicit feedback, NDCG@10 evaluation, and popularity bias analysis.",
+    "skills": [
+      "Python",
+      "Implicit",
+      "SciPy",
+      "Plotly"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-08-recommender",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "09",
+    "title": "LLM Evaluation & Hallucination Benchmark",
+    "domain": "AI Safety",
+    "status": "complete",
+    "description": "Real LLM comparison on 20 expert-verified finance and aviation QA pairs scored with ROUGE and BERTScore.",
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "LM Studio",
+      "ROUGE",
+      "BERTScore"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-09-llm-eval-benchmark",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "11",
+    "title": "Mechanistic Interpretability of GPT-2 Medium",
+    "domain": "AI Safety",
+    "status": "complete",
+    "description": "Activation patching on the IOI circuit of GPT-2 Medium. Layers 0-2 show 100% recovery. Paris predicted correctly at logit 20.47.",
+    "skills": [
+      "Python",
+      "TransformerLens",
+      "PyTorch",
+      "Einops"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-11-mechanistic-interp",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "12",
+    "title": "RLHF Pipeline from Scratch",
+    "domain": "AI Safety",
+    "status": "complete",
+    "description": "DistilBERT reward model trained on 12 human preference pairs with PPO KL-penalized reward shaping.",
+    "skills": [
+      "Python",
+      "PyTorch",
+      "HuggingFace",
+      "DistilBERT"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-12-rlhf-pipeline",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "13",
+    "title": "Multi-Agent Conversations with GPT-4o-mini",
+    "domain": "AI / Agents",
+    "status": "complete",
+    "description": "Two and three-agent simulations with role-based system prompts, shared conversation history, and fallback model handling.",
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "python-dotenv"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-13-multi-agent-conversations",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "14",
+    "title": "GBM Simulation — SanDisk vs ASML",
+    "domain": "Finance",
+    "status": "complete",
+    "description": "Full GBM derivation from Itô's Lemma with 500 Monte Carlo paths, Black-Scholes options pricing, and Greeks.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Matplotlib",
+      "yfinance"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-14-gbm-sandisk-asml",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "15",
+    "title": "RAG with Chunking + Local Ollama LLM",
+    "domain": "AI / RAG",
+    "status": "complete",
+    "description": "LangChain + ChromaDB RAG pipeline with RecursiveCharacterTextSplitter and local Ollama inference — cloud and offline approaches.",
+    "skills": [
+      "Python",
+      "LangChain",
+      "ChromaDB",
+      "Ollama",
+      "PyPDF"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-15-rag-implementation",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "16",
+    "title": "LangGraph Email Triage Agent",
+    "domain": "AI / Agents",
+    "status": "complete",
+    "description": "Stateful LangGraph agent with triage router, ReAct response agent, and tool calling for email, calendar, and meeting scheduling.",
+    "skills": [
+      "Python",
+      "LangGraph",
+      "LangChain",
+      "GPT-4o-mini",
+      "Pydantic"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-16-langgraph-memory",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "17",
+    "title": "AI Health & Fitness Assistant",
+    "domain": "AI / Agents",
+    "status": "complete",
+    "description": "Multi-provider AI assistant combining Watsonx Llama vision for gym equipment detection and workout planning with an agentic food analyzer via Gradio.",
+    "skills": [
+      "Python",
+      "IBM Watsonx",
+      "Gradio",
+      "Pandas",
+      "OpenAI API"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-17-health-fitness-assistant",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "18",
+    "title": "Love at First Agent — LangGraph + XGBoost",
+    "domain": "AI / Agents",
+    "status": "complete",
+    "description": "LangGraph ReAct agent that autonomously profiles speed dating data, guards against leakage, selects features via RFE, and predicts match probability. ROC AUC 0.8553.",
+    "skills": [
+      "Python",
+      "LangGraph",
+      "XGBoost",
+      "Scikit-learn",
+      "GPT-4o-mini"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-18-love-at-first-agent",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "19",
+    "title": "Weather Data API App",
+    "domain": "AI / App",
+    "status": "complete",
+    "description": "Weather data application using live API integration for real-time forecasts, historical analysis, and interactive visualization.",
+    "skills": [
+      "Python",
+      "API",
+      "Plotly",
+      "Pandas"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-19-weather-app",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "20",
+    "title": "BlackJack to Five — Probability & Optimal Strategy",
+    "domain": "Algorithms",
+    "status": "complete",
+    "description": "Monte Carlo simulation of 10,000 BlackJack-to-Five games with bust probability analysis and dynamic programming optimal strategy.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Plotly",
+      "Java"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-20-blackjack-to-five",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "21",
+    "title": "Grocery Bagger — Bin Packing Optimization",
+    "domain": "Algorithms",
+    "status": "complete",
+    "description": "Bin packing optimization comparing First Fit, First Fit Decreasing, and Fragile-First algorithms. Python data science layer on top of a Java group project.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Plotly",
+      "Java"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-21-grocery-bagger",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  }
 ]
