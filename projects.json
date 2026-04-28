@@ -384,5 +384,24 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "23",
+    "title": "Type 2 Diabetes Risk Predictor",
+    "domain": "Healthcare",
+    "status": "complete",
+    "description": "XGBoost diabetes risk prediction with clinical feature engineering, zero-value imputation, and Low/Moderate/High risk tiering with lifestyle intervention recommendations. ROC-AUC 0.8220.",
+    "skills": [
+      "Python",
+      "XGBoost",
+      "Scikit-learn",
+      "Plotly",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-23-diabetes-risk-predictor",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]
