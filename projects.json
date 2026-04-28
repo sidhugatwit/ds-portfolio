@@ -365,5 +365,24 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "22",
+    "title": "DS & AI Interview Prep Agent",
+    "domain": "AI / App",
+    "status": "complete",
+    "description": "AI-powered interview prep system that analyzes job descriptions against your resume, identifies skill gaps, and scores answers in real time using GPT-4o-mini across 49 questions in 9 domains.",
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "Gradio",
+      "Streamlit",
+      "SQLite",
+      "Pandas"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-22-interview-prep-agent",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]
