@@ -403,5 +403,23 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "24",
+    "title": "Parkinson's Tremor Detector — Voice Analysis",
+    "domain": "Healthcare",
+    "status": "complete",
+    "description": "Detects Parkinson's disease from voice recordings using MDVP jitter, shimmer, HNR, RPDE, and DFA biomarkers. XGBoost and SVM achieve ROC-AUC 0.9828 with 96.6% clinical sensitivity.",
+    "skills": [
+      "Python",
+      "XGBoost",
+      "SVM",
+      "Scikit-learn",
+      "Plotly"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-24-parkinsons-tremor-detector",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]

@@ -1,0 +1,31 @@
+day,text,predicted,confidence,true_state,week
+1,Woke up with that familiar dread again. Heart raci...,anxiety,0.701,anxiety,1
+2,Another panic attack at work. Had to hide in the b...,anxiety,0.674,anxiety,1
+3,The worry is exhausting. I just want one day where...,anxiety,0.632,anxiety,1
+4,Called in sick. Couldn't face going in today. Just...,isolation,0.672,depression,1
+5,Haven't eaten much today. Everything feels pointle...,isolation,0.556,depression,1
+6,Turned down plans with friends again. I don't have...,isolation,0.91,isolation,1
+7,One week of feeling awful. I don't know how much l...,isolation,0.362,depression,1
+8,My phone hasn't rung in days. I think people have ...,isolation,0.889,isolation,2
+9,Sat alone at lunch again. Watched everyone else an...,isolation,0.943,isolation,2
+10,I can't concentrate on anything. Simple tasks are ...,neutral,0.404,depression,2
+11,Haven't left the apartment since Monday. The walls...,isolation,0.919,isolation,2
+12,Cried for no reason again this morning. Or maybe f...,isolation,0.494,depression,2
+13,Feeling a tiny bit better today. Made myself showe...,neutral,0.414,neutral,2
+14,Two weeks of this. I made an appointment with a th...,isolation,0.509,neutral,2
+15,First therapy session today. It was hard but I fee...,isolation,0.716,neutral,3
+16,Still anxious but trying the breathing exercises m...,anxiety,0.962,anxiety,3
+17,Went for a short walk today. First time outside in...,isolation,0.704,neutral,3
+18,Texted an old friend. We're meeting for coffee nex...,isolation,0.486,neutral,3
+19,Bad day. The dark thoughts came back hard. Struggl...,depression,0.322,depression,3
+20,Called my therapist between sessions. She helped m...,isolation,0.43,neutral,3
+21,Three weeks in. Recovery isn't linear but I'm stil...,neutral,0.395,neutral,3
+22,Had coffee with my friend. First real social inter...,isolation,0.543,neutral,4
+23,Anxiety still there but quieter today. Managed to ...,anxiety,0.978,neutral,4
+24,Cooked dinner for the first time in weeks. Such a ...,isolation,0.53,neutral,4
+25,Had a setback today. Old isolation feelings crept ...,isolation,0.93,isolation,4
+26,Better today. The setbacks are getting shorter. Pr...,neutral,0.501,neutral,4
+27,Went to a group fitness class. Terrifying but I di...,anxiety,0.564,neutral,4
+28,Starting to feel like myself again. Still work to ...,neutral,0.501,neutral,4
+29,Grateful for the small moments of peace. They're c...,neutral,0.622,neutral,5
+30,One month tracked. Looking back I can see the prog...,neutral,0.368,neutral,5

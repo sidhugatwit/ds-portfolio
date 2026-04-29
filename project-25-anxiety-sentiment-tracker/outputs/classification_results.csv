@@ -1,0 +1,49 @@
+text,actual,predicted,confidence,correct
+I can't stop worrying about everything. My heart races and I...,anxiety,anxiety,0.783,True
+I've been having panic attacks at work. I can't breathe and ...,anxiety,anxiety,0.6591,True
+The constant fear of judgment from others is paralyzing me. ...,anxiety,isolation,0.7125,False
+I keep replaying conversations in my head wondering if I sai...,anxiety,anxiety,0.6669,True
+My anxiety is so bad I can't sleep. I just lie awake catastr...,anxiety,anxiety,0.9819,True
+"I feel trapped in my own mind. The worry never stops, it jus...",anxiety,isolation,0.9099,False
+I canceled plans again because I was too anxious. I hate tha...,anxiety,anxiety,0.9532,True
+Every morning I wake up with a pit in my stomach. Dread foll...,anxiety,anxiety,0.5476,True
+I'm terrified of making mistakes. The fear of failure is so ...,anxiety,anxiety,0.4451,True
+Social anxiety has taken over. I rehearse conversations hour...,anxiety,anxiety,0.9671,True
+I feel on edge all the time. The slightest sound makes me ju...,anxiety,anxiety,0.6565,True
+Overthinking is destroying me. I can't make simple decisions...,anxiety,anxiety,0.4169,True
+I haven't left my apartment in three days. I don't see the p...,isolation,isolation,0.9533,True
+Nobody checks on me. I could disappear and no one would noti...,isolation,isolation,0.9104,True
+I sit alone every lunch break. I watch everyone else laugh a...,isolation,isolation,0.9648,True
+My phone never rings. I've stopped expecting it to. The sile...,isolation,isolation,0.9174,True
+I moved to a new city for work and haven't made a single fri...,isolation,isolation,0.9456,True
+I used to have friends. Now I eat dinner alone every night a...,isolation,isolation,0.945,True
+Even in a crowded room I feel completely alone. Like there's...,isolation,isolation,0.9493,True
+I turned down the invitation again. It's easier to stay home...,isolation,isolation,0.8409,True
+The loneliness is physical. It sits in my chest like a weigh...,isolation,isolation,0.9612,True
+I haven't had a real conversation in weeks. Just surface lev...,isolation,isolation,0.8294,True
+My family stopped calling. I think they gave up on me and ho...,isolation,isolation,0.8847,True
+I spend weekends completely alone. Sunday evenings are the h...,isolation,isolation,0.9534,True
+I can't get out of bed. Everything feels heavy and pointless...,depression,isolation,0.3442,False
+"I've lost interest in everything I used to love. Music, cook...",depression,neutral,0.389,False
+"I feel empty inside. Not sad exactly, just completely hollow...",depression,neutral,0.4241,False
+I'm exhausted even after sleeping 12 hours. My body feels li...,depression,isolation,0.3885,False
+I can't remember the last time I felt genuinely happy. It's ...,depression,isolation,0.4335,False
+I've been crying for no reason again. Or maybe for every rea...,depression,isolation,0.6449,False
+Getting through a single day feels like climbing a mountain....,depression,depression,0.3148,True
+"I stopped caring about my appearance, my work, my future. No...",depression,isolation,0.8197,False
+The darkness comes in waves. Sometimes I float above it but ...,depression,depression,0.404,True
+I feel like a burden to everyone around me. They'd be better...,depression,anxiety,0.539,False
+I can't concentrate on anything. Simple tasks take hours and...,depression,neutral,0.393,False
+I've been isolating because I don't want people to see how l...,depression,isolation,0.9848,False
+Had a great workout this morning. Feeling energized and read...,neutral,isolation,0.4399,False
+Finally finished that project at work. My team did a fantast...,neutral,neutral,0.5049,True
+Went hiking with friends this weekend. The fresh air and goo...,neutral,neutral,0.6905,True
+Started meditating daily. It's been two weeks and I already ...,neutral,neutral,0.4285,True
+Cooked a new recipe tonight and it turned out amazing. Small...,neutral,neutral,0.4418,True
+Had a long talk with an old friend. It reminded me how impor...,neutral,neutral,0.5356,True
+"Feeling grateful today. Good coffee, sunshine, and a managea...",neutral,neutral,0.6208,True
+My therapy session was really productive today. Making real ...,neutral,neutral,0.4329,True
+Got promoted at work. All the hard work finally paid off. I'...,neutral,isolation,0.4775,False
+Spent the evening reading a good book. Sometimes the quiet i...,neutral,isolation,0.717,False
+Family dinner tonight. Everyone was laughing and catching up...,neutral,neutral,0.6345,True
+Feeling hopeful about the future. Taking things one day at a...,neutral,neutral,0.4545,True

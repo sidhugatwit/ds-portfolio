@@ -2,9 +2,9 @@
 
 ## Overview
 
-Detects Parkinson's disease from voice recordings using biomedical 
-voice measurements. Trains four classifiers on 22 voice features 
-including MDVP jitter, shimmer, HNR, RPDE, and DFA — achieving 
+Detects Parkinson's disease from voice recordings using biomedical
+voice measurements. Trains four classifiers on 22 voice features
+including MDVP jitter, shimmer, HNR, RPDE, and DFA — achieving
 clinical-grade sensitivity for non-invasive screening.
 
 ## Key Results
