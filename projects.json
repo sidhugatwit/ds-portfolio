@@ -457,5 +457,43 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "27",
+    "title": "Recipe Maker with Gemma 4 Vision + DALL-E 3",
+    "domain": "AI / App",
+    "status": "complete",
+    "description": "Multi-model AI pipeline: Gemma 4 (local) detects food ingredients from photos, GPT-4o-mini generates complete recipes with nutrition, and DALL-E 3 produces professional restaurant-quality food photos for each dish. Full end-to-end system with error handling and user-friendly interface.",
+    "skills": [
+      "Python",
+      "Gemma 4",
+      "Ollama",
+      "OpenAI API",
+      "DALL-E 3",
+      "Pillow"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-27-recipe-maker",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "28",
+    "title": "PilotGPT v3 — VFR & IFR Flight Assistant",
+    "domain": "Aviation / AI",
+    "status": "in-progress",
+    "description": "Expanded PilotGPT with VFR capabilities including sectional chart parsing, VFR weather briefing, airspace classification, and TFR lookup. ReAct agent with 7 tools for comprehensive VFR and IFR flight assistance.",
+    "skills": [
+      "Python",
+      "LangGraph",
+      "GPT-4o-mini",
+      "SerpAPI",
+      "Folium",
+      "NumPy"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-28-pilotgpt-v3",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]
