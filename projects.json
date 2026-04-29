@@ -439,5 +439,23 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "26",
+    "title": "PilotGPT v2 — IFR Full Suite",
+    "domain": "Aviation / AI",
+    "status": "complete",
+    "description": "Complete IFR flight planning system built by an IFR-rated pilot. LangGraph ReAct agent with 5 tools covering holding pattern entries, E6B wind correction, density altitude, and full IFR flight plan generation — all math from FAA standards.",
+    "skills": [
+      "Python",
+      "LangGraph",
+      "GPT-4o-mini",
+      "NumPy",
+      "Pandas"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-26-pilotgpt-v2",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]

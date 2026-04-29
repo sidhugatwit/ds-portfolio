@@ -1,0 +1,110 @@
+{
+  "recipe_name": "Mediterranean Chickpea Salad with Roasted Sweet Potato",
+  "cuisine": "Mediterranean",
+  "prep_time_min": 15,
+  "cook_time_min": 20,
+  "servings": 2,
+  "difficulty": "Easy",
+  "ingredients": [
+    {
+      "item": "lettuce",
+      "amount": "2",
+      "unit": "cups"
+    },
+    {
+      "item": "avocado",
+      "amount": "1",
+      "unit": "medium"
+    },
+    {
+      "item": "cherry tomatoes",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "yellow bell pepper",
+      "amount": "1",
+      "unit": "medium"
+    },
+    {
+      "item": "beetroot",
+      "amount": "1",
+      "unit": "medium"
+    },
+    {
+      "item": "purple cabbage",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "chickpeas",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "sweet potato",
+      "amount": "1",
+      "unit": "medium"
+    },
+    {
+      "item": "microgreens",
+      "amount": "1",
+      "unit": "cup"
+    },
+    {
+      "item": "dressing",
+      "amount": "3",
+      "unit": "tablespoons"
+    }
+  ],
+  "instructions": [
+    {
+      "step": 1,
+      "instruction": "Preheat the oven to 400\u00b0F (200\u00b0C)."
+    },
+    {
+      "step": 2,
+      "instruction": "Peel and cube the sweet potato and beetroot. Toss them in a little olive oil, salt, and pepper."
+    },
+    {
+      "step": 3,
+      "instruction": "Spread the cubed sweet potato and beetroot on a baking sheet and roast in the oven for about 20 minutes until tender."
+    },
+    {
+      "step": 4,
+      "instruction": "While the vegetables are roasting, rinse and drain the chickpeas. Cut the yellow bell pepper into small pieces and halve the cherry tomatoes."
+    },
+    {
+      "step": 5,
+      "instruction": "In a large bowl, combine the lettuce, purple cabbage, chickpeas, yellow bell pepper, and cherry tomatoes."
+    },
+    {
+      "step": 6,
+      "instruction": "Once the sweet potato and beetroot are roasted, add them to the salad bowl."
+    },
+    {
+      "step": 7,
+      "instruction": "Slice the avocado and gently fold it into the salad."
+    },
+    {
+      "step": 8,
+      "instruction": "Drizzle the dressing over the salad and toss gently to combine."
+    },
+    {
+      "step": 9,
+      "instruction": "Serve the salad topped with microgreens for garnish."
+    }
+  ],
+  "nutrition_per_serving": {
+    "calories": 450,
+    "protein_g": 15,
+    "carbs_g": 45,
+    "fat_g": 20,
+    "fiber_g": 8
+  },
+  "chef_tips": [
+    "Use fresh, seasonal vegetables for the best flavor.",
+    "Feel free to add more spices or herbs to the dressing for an extra kick."
+  ],
+  "wine_pairing": "Sauvignon Blanc"
+}
