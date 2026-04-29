@@ -1,0 +1,3 @@
+departure,destination,cruise_altitude,distance,true_course,magnetic_heading,wind,wind_correction,tas,ground_speed,est_time,fuel_enroute,fuel_reserve,fuel_total,density_altitude,route
+KBOS — Boston Logan,KJFK — JFK International,"8,000 ft MSL",161.9 NM,231.2°,224.7°,270° @ 25 kts,+7.5°,125.6 kts,99.5 kts,1h 37m,13.8 gal,6.4 gal (45 min IFR),20.2 gal,"-2,947.0 ft",KBOS_KJFK
+KBOS — Boston Logan,KORD — Chicago O'Hare,"10,000 ft MSL",751.1 NM,273.9°,267.7°,310° @ 30 kts,+7.8°,137.3 kts,104.5 kts,7h 11m,64.7 gal,6.8 gal (45 min IFR),71.5 gal,"-3,541.0 ft",KBOS_KORD

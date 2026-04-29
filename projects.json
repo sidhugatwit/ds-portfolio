@@ -421,5 +421,23 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "25",
+    "title": "Anxiety & Isolation Sentiment Tracker",
+    "domain": "Healthcare / AI",
+    "status": "complete",
+    "description": "Zero-shot NLP classifier detecting anxiety, isolation, depression, and neutral mental states using BART-large-MNLI. Simulates a 30-day longitudinal mental health tracking journey with weekly state rollup.",
+    "skills": [
+      "Python",
+      "HuggingFace",
+      "BART",
+      "Plotly",
+      "Pandas"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-25-anxiety-sentiment-tracker",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]

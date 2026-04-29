@@ -1,0 +1,5 @@
+scenario,inbound_course,aircraft_heading,entry_type,procedure
+Approaching from NE,180,45,Parallel,"Cross the fix, turn LEFT to parallel the outbound course (0°) for 1 minute, then turn RIGHT to intercept inbound course 180°."
+Approaching from S,180,200,Direct,"Fly direct to the fix, turn RIGHT to the outbound heading (0°), complete the pattern."
+Approaching from NW,180,300,Teardrop,"Cross the fix, fly outbound on a heading of 330° for 1 minute, then turn RIGHT to intercept the inbound course 180°."
+Approaching from SE,90,135,Direct,"Fly direct to the fix, turn RIGHT to the outbound heading (270°), complete the pattern."
