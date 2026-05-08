@@ -481,7 +481,7 @@
     "id": "28",
     "title": "PilotGPT v3 — VFR & IFR Flight Assistant",
     "domain": "Aviation / AI",
-    "status": "in-progress",
+    "status": "complete",
     "description": "Expanded PilotGPT with VFR capabilities including sectional chart parsing, VFR weather briefing, airspace classification, and TFR lookup. ReAct agent with 7 tools for comprehensive VFR and IFR flight assistance.",
     "skills": [
       "Python",
