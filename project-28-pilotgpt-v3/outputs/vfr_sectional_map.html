@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_78f911a3f6fd487c12a508e73a529514 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_78f911a3f6fd487c12a508e73a529514" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_78f911a3f6fd487c12a508e73a529514 = L.map(
+                "map_78f911a3f6fd487c12a508e73a529514",
+                {
+                    center: [42.3656, -71.0096],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 8,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_009a96fee91bea7c9c4e3e7c42c18ebb = L.tileLayer(
+                "https://vfrmap.com/20250101/tiles/vfrc/{z}/{y}/{x}.jpg",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "FAA VFR Sectional Chart",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_009a96fee91bea7c9c4e3e7c42c18ebb.addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var tile_layer_87b6ee2904173b8dcfb9a52b9caa4ede = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_87b6ee2904173b8dcfb9a52b9caa4ede.addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var marker_b7e24459b392536ed7b30e8d2bfe8531 = L.marker(
+                [42.3656, -71.0096],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_ffe8a420041de7d3cdd5749d78aed9f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_154037568d3e31fa481db5b7b92339cc = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_86aef7b8e827babd2c6b4f86c97a4239 = $(`<div id="html_86aef7b8e827babd2c6b4f86c97a4239" style="width: 100.0%; height: 100.0%;"><b>KBOS</b><br>Boston Logan<br>Class B<br>Elev: 19ft</div>`)[0];
+                popup_154037568d3e31fa481db5b7b92339cc.setContent(html_86aef7b8e827babd2c6b4f86c97a4239);
+            
+        
+
+        marker_b7e24459b392536ed7b30e8d2bfe8531.bindPopup(popup_154037568d3e31fa481db5b7b92339cc)
+        ;
+
+        
+    
+    
+            marker_b7e24459b392536ed7b30e8d2bfe8531.bindTooltip(
+                `<div>
+                     KBOS — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b7e24459b392536ed7b30e8d2bfe8531.setIcon(icon_ffe8a420041de7d3cdd5749d78aed9f5);
+            
+    
+            var marker_349996ffe4a278afe541b4d09b42b2ea = L.marker(
+                [40.6413, -73.7781],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_cd739559c4617f333f96c74c02380001 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_702eceac4e47a61c19544fc79336e804 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_bc7054513460d2569c35e8f2af6e2719 = $(`<div id="html_bc7054513460d2569c35e8f2af6e2719" style="width: 100.0%; height: 100.0%;"><b>KJFK</b><br>JFK International<br>Class B<br>Elev: 13ft</div>`)[0];
+                popup_702eceac4e47a61c19544fc79336e804.setContent(html_bc7054513460d2569c35e8f2af6e2719);
+            
+        
+
+        marker_349996ffe4a278afe541b4d09b42b2ea.bindPopup(popup_702eceac4e47a61c19544fc79336e804)
+        ;
+
+        
+    
+    
+            marker_349996ffe4a278afe541b4d09b42b2ea.bindTooltip(
+                `<div>
+                     KJFK — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_349996ffe4a278afe541b4d09b42b2ea.setIcon(icon_cd739559c4617f333f96c74c02380001);
+            
+    
+            var marker_eb3793044e0b07c47e7a38771f7a345c = L.marker(
+                [42.2673, -71.8757],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_7526fa7544b5c45ef2b64ffdd785a18c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_acb79c80e843c995f72e22dcff2efd13 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a2e6fa0e87a8a672a4eb8ee5365afb59 = $(`<div id="html_a2e6fa0e87a8a672a4eb8ee5365afb59" style="width: 100.0%; height: 100.0%;"><b>KORH</b><br>Worcester Regional<br>Class D<br>Elev: 1009ft</div>`)[0];
+                popup_acb79c80e843c995f72e22dcff2efd13.setContent(html_a2e6fa0e87a8a672a4eb8ee5365afb59);
+            
+        
+
+        marker_eb3793044e0b07c47e7a38771f7a345c.bindPopup(popup_acb79c80e843c995f72e22dcff2efd13)
+        ;
+
+        
+    
+    
+            marker_eb3793044e0b07c47e7a38771f7a345c.bindTooltip(
+                `<div>
+                     KORH — Class D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_eb3793044e0b07c47e7a38771f7a345c.setIcon(icon_7526fa7544b5c45ef2b64ffdd785a18c);
+            
+    
+            var marker_e9af00d47c2a590a84a69a70e5001ff3 = L.marker(
+                [41.9389, -72.6832],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_e7d2d85292d5ed4575aa0d7625c7589e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d38e81c72e075c94d3eb94d8c9af4ed9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9660a3f2abe4400bbc5b789162b89022 = $(`<div id="html_9660a3f2abe4400bbc5b789162b89022" style="width: 100.0%; height: 100.0%;"><b>KBDL</b><br>Bradley Intl<br>Class C<br>Elev: 173ft</div>`)[0];
+                popup_d38e81c72e075c94d3eb94d8c9af4ed9.setContent(html_9660a3f2abe4400bbc5b789162b89022);
+            
+        
+
+        marker_e9af00d47c2a590a84a69a70e5001ff3.bindPopup(popup_d38e81c72e075c94d3eb94d8c9af4ed9)
+        ;
+
+        
+    
+    
+            marker_e9af00d47c2a590a84a69a70e5001ff3.bindTooltip(
+                `<div>
+                     KBDL — Class C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e9af00d47c2a590a84a69a70e5001ff3.setIcon(icon_e7d2d85292d5ed4575aa0d7625c7589e);
+            
+    
+            var marker_d916d71b0c341e5773dd78a121b62685 = L.marker(
+                [42.9326, -71.4357],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_8f92d5ebfc22fbb05884e0123151fbae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29407c7a64eee4b7705cc2ddc8494a49 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8f5a1d05f0de8a4dc14b06ae3371a594 = $(`<div id="html_8f5a1d05f0de8a4dc14b06ae3371a594" style="width: 100.0%; height: 100.0%;"><b>KMHT</b><br>Manchester-Boston<br>Class C<br>Elev: 235ft</div>`)[0];
+                popup_29407c7a64eee4b7705cc2ddc8494a49.setContent(html_8f5a1d05f0de8a4dc14b06ae3371a594);
+            
+        
+
+        marker_d916d71b0c341e5773dd78a121b62685.bindPopup(popup_29407c7a64eee4b7705cc2ddc8494a49)
+        ;
+
+        
+    
+    
+            marker_d916d71b0c341e5773dd78a121b62685.bindTooltip(
+                `<div>
+                     KMHT — Class C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d916d71b0c341e5773dd78a121b62685.setIcon(icon_8f92d5ebfc22fbb05884e0123151fbae);
+            
+    
+            var marker_df834bed55b1b713052f5d84c56268e4 = L.marker(
+                [41.7272, -71.4284],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_fc99a98abfe96593e3270a21713d771a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f510e1a69dff3230db5203919117f15 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_83e8889ff211f29c668fd4c47f961dd3 = $(`<div id="html_83e8889ff211f29c668fd4c47f961dd3" style="width: 100.0%; height: 100.0%;"><b>KPVD</b><br>Providence TF Green<br>Class C<br>Elev: 55ft</div>`)[0];
+                popup_2f510e1a69dff3230db5203919117f15.setContent(html_83e8889ff211f29c668fd4c47f961dd3);
+            
+        
+
+        marker_df834bed55b1b713052f5d84c56268e4.bindPopup(popup_2f510e1a69dff3230db5203919117f15)
+        ;
+
+        
+    
+    
+            marker_df834bed55b1b713052f5d84c56268e4.bindTooltip(
+                `<div>
+                     KPVD — Class C
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_df834bed55b1b713052f5d84c56268e4.setIcon(icon_fc99a98abfe96593e3270a21713d771a);
+            
+    
+            var marker_7b55a64b8d10e8b60f18087d8906fba3 = L.marker(
+                [40.7772, -73.8726],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_c246aefb1b4ddd5a92ef2e70737f58be = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_312d8b9b4917fc64ac75998b1b2aa7a4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1c67374fa728568d420e96c4f6282178 = $(`<div id="html_1c67374fa728568d420e96c4f6282178" style="width: 100.0%; height: 100.0%;"><b>KLGA</b><br>LaGuardia<br>Class B<br>Elev: 21ft</div>`)[0];
+                popup_312d8b9b4917fc64ac75998b1b2aa7a4.setContent(html_1c67374fa728568d420e96c4f6282178);
+            
+        
+
+        marker_7b55a64b8d10e8b60f18087d8906fba3.bindPopup(popup_312d8b9b4917fc64ac75998b1b2aa7a4)
+        ;
+
+        
+    
+    
+            marker_7b55a64b8d10e8b60f18087d8906fba3.bindTooltip(
+                `<div>
+                     KLGA — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7b55a64b8d10e8b60f18087d8906fba3.setIcon(icon_c246aefb1b4ddd5a92ef2e70737f58be);
+            
+    
+            var marker_cf386af2ff88b5ff9afedb0ed87fccd0 = L.marker(
+                [41.9742, -87.9073],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_d66284a673ce3fa5c231e94bafd0ac59 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4ec91450870281395c6067d1932d0bf = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_003bf357fcb0a5f98a55b2abf35a7048 = $(`<div id="html_003bf357fcb0a5f98a55b2abf35a7048" style="width: 100.0%; height: 100.0%;"><b>KORD</b><br>Chicago O'Hare<br>Class B<br>Elev: 672ft</div>`)[0];
+                popup_a4ec91450870281395c6067d1932d0bf.setContent(html_003bf357fcb0a5f98a55b2abf35a7048);
+            
+        
+
+        marker_cf386af2ff88b5ff9afedb0ed87fccd0.bindPopup(popup_a4ec91450870281395c6067d1932d0bf)
+        ;
+
+        
+    
+    
+            marker_cf386af2ff88b5ff9afedb0ed87fccd0.bindTooltip(
+                `<div>
+                     KORD — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf386af2ff88b5ff9afedb0ed87fccd0.setIcon(icon_d66284a673ce3fa5c231e94bafd0ac59);
+            
+    
+            var marker_65d2a1cd82fa0d9c93cdc32a4af7cabc = L.marker(
+                [33.6407, -84.4277],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_ce0a7203d359d6eed941848b4a65fede = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dbe484203f1dd8986c1c55c5297bd17 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a5363c27021eb78bdd36456d47aa38d4 = $(`<div id="html_a5363c27021eb78bdd36456d47aa38d4" style="width: 100.0%; height: 100.0%;"><b>KATL</b><br>Atlanta Hartsfield<br>Class B<br>Elev: 1026ft</div>`)[0];
+                popup_4dbe484203f1dd8986c1c55c5297bd17.setContent(html_a5363c27021eb78bdd36456d47aa38d4);
+            
+        
+
+        marker_65d2a1cd82fa0d9c93cdc32a4af7cabc.bindPopup(popup_4dbe484203f1dd8986c1c55c5297bd17)
+        ;
+
+        
+    
+    
+            marker_65d2a1cd82fa0d9c93cdc32a4af7cabc.bindTooltip(
+                `<div>
+                     KATL — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65d2a1cd82fa0d9c93cdc32a4af7cabc.setIcon(icon_ce0a7203d359d6eed941848b4a65fede);
+            
+    
+            var marker_b1b096300fc04a35e6e460ab2e9b1d7b = L.marker(
+                [25.7959, -80.287],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_38d2330c0d975047755d825c532bb459 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f60c896c44e0aa8eeb5073db7c9363a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_77a6ab3fcdfcbac54072a9db74fffb28 = $(`<div id="html_77a6ab3fcdfcbac54072a9db74fffb28" style="width: 100.0%; height: 100.0%;"><b>KMIA</b><br>Miami Intl<br>Class B<br>Elev: 8ft</div>`)[0];
+                popup_0f60c896c44e0aa8eeb5073db7c9363a.setContent(html_77a6ab3fcdfcbac54072a9db74fffb28);
+            
+        
+
+        marker_b1b096300fc04a35e6e460ab2e9b1d7b.bindPopup(popup_0f60c896c44e0aa8eeb5073db7c9363a)
+        ;
+
+        
+    
+    
+            marker_b1b096300fc04a35e6e460ab2e9b1d7b.bindTooltip(
+                `<div>
+                     KMIA — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b1b096300fc04a35e6e460ab2e9b1d7b.setIcon(icon_38d2330c0d975047755d825c532bb459);
+            
+    
+            var marker_525a2189f30db3c83e747a714861f47d = L.marker(
+                [47.53, -122.3019],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_e24c6caca07e1fe056f774cd44d4b411 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "darkblue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0b1bf82f1e1f11498419b74a49c12ac = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_dbfb3d0f52ed0cd82950bf29671208f6 = $(`<div id="html_dbfb3d0f52ed0cd82950bf29671208f6" style="width: 100.0%; height: 100.0%;"><b>KBFI</b><br>Boeing Field<br>Class D<br>Elev: 21ft</div>`)[0];
+                popup_e0b1bf82f1e1f11498419b74a49c12ac.setContent(html_dbfb3d0f52ed0cd82950bf29671208f6);
+            
+        
+
+        marker_525a2189f30db3c83e747a714861f47d.bindPopup(popup_e0b1bf82f1e1f11498419b74a49c12ac)
+        ;
+
+        
+    
+    
+            marker_525a2189f30db3c83e747a714861f47d.bindTooltip(
+                `<div>
+                     KBFI — Class D
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_525a2189f30db3c83e747a714861f47d.setIcon(icon_e24c6caca07e1fe056f774cd44d4b411);
+            
+    
+            var marker_d1fff55e1c3317765901c42e093c80d1 = L.marker(
+                [47.4502, -122.3088],
+                {
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            var icon_6771d89b01b6345c2a8a430043ddbda8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_806e843238b08875694ac8da3795c837 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_038a49cdfb9f2f85985716f9fb7e2f86 = $(`<div id="html_038a49cdfb9f2f85985716f9fb7e2f86" style="width: 100.0%; height: 100.0%;"><b>KSEA</b><br>Seattle-Tacoma<br>Class B<br>Elev: 433ft</div>`)[0];
+                popup_806e843238b08875694ac8da3795c837.setContent(html_038a49cdfb9f2f85985716f9fb7e2f86);
+            
+        
+
+        marker_d1fff55e1c3317765901c42e093c80d1.bindPopup(popup_806e843238b08875694ac8da3795c837)
+        ;
+
+        
+    
+    
+            marker_d1fff55e1c3317765901c42e093c80d1.bindTooltip(
+                `<div>
+                     KSEA — Class B
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1fff55e1c3317765901c42e093c80d1.setIcon(icon_6771d89b01b6345c2a8a430043ddbda8);
+            
+    
+            var poly_line_63413b5bf9cf5449f9b93e2d3ee4142e = L.polyline(
+                [[42.3656, -71.0096], [40.7772, -73.8726], [40.6413, -73.7781]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+        
+    
+            poly_line_63413b5bf9cf5449f9b93e2d3ee4142e.bindTooltip(
+                `<div>
+                     KBOS → KLGA → KJFK
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_e5f9638eab78f8215733b340303edd0e_layers = {
+                base_layers : {
+                    "VFR Sectional" : tile_layer_009a96fee91bea7c9c4e3e7c42c18ebb,
+                    "Street Map" : tile_layer_87b6ee2904173b8dcfb9a52b9caa4ede,
+                },
+                overlays :  {
+                },
+            };
+            let layer_control_e5f9638eab78f8215733b340303edd0e = L.control.layers(
+                layer_control_e5f9638eab78f8215733b340303edd0e_layers.base_layers,
+                layer_control_e5f9638eab78f8215733b340303edd0e_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_78f911a3f6fd487c12a508e73a529514);
+
+        
+</script>
+</html>

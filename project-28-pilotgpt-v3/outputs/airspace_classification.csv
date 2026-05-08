@@ -1,0 +1,13 @@
+airport,name,airspace_class,clearance,visibility_sm,cloud_clearance,altitude_limit,transponder,notes
+KBOS,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
+KJFK,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
+KORH,Class D,D,Two-way radio contact required,3,"500 below, 1000 above, 2000 horizontal","2,500 ft AGL",Not required (recommended),Smaller airports with control tower
+KBDL,Class C,C,Two-way radio contact required,3,"500 below, 1000 above, 2000 horizontal","4,000 ft AGL",Mode C required,Medium hub airports — 5/10 NM rings
+KMHT,Class C,C,Two-way radio contact required,3,"500 below, 1000 above, 2000 horizontal","4,000 ft AGL",Mode C required,Medium hub airports — 5/10 NM rings
+KPVD,Class C,C,Two-way radio contact required,3,"500 below, 1000 above, 2000 horizontal","4,000 ft AGL",Mode C required,Medium hub airports — 5/10 NM rings
+KLGA,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
+KORD,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
+KATL,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
+KMIA,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
+KBFI,Class D,D,Two-way radio contact required,3,"500 below, 1000 above, 2000 horizontal","2,500 ft AGL",Not required (recommended),Smaller airports with control tower
+KSEA,Class B,B,ATC clearance required,3,Clear of clouds,"10,000 ft MSL",Mode C required,Most complex airspace — major airports
