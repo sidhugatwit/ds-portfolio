@@ -44,10 +44,6 @@ of the exponential function.
 
 Python · NumPy · SciPy · Matplotlib · yfinance
 
-## Target Companies
-
-Fidelity · Capital One · Chase · Anthropic
-
 ## Relation to Portfolio
 
 This project is the mathematical foundation for Project 03
