@@ -35,10 +35,6 @@ orchestration with fallback model handling.
 
 Python · OpenAI API (GPT-4o-mini) · python-dotenv
 
-## Target Companies
-
-Meta · Amazon · Perplexity · Anthropic
-
 ## Files
 
 - `notebooks/father-son-agents.ipynb` — 2-agent parking dispute
