@@ -21,9 +21,6 @@ full SHAP explainability and a three-tier risk scoring system.
 ## Stack
 Python · XGBoost · Scikit-learn · SHAP · Plotly
 
-## Target Companies
-Capital One · Chase · Fidelity
-
 ## Files
 - `notebooks/credit_risk.ipynb` — full analysis
 - `outputs/shap_summary.png` — SHAP feature importance plot
