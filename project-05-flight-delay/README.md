@@ -24,9 +24,6 @@ going beyond correlation to answer *why* flights are delayed.
 ## Stack
 Python · DoWhy · Scikit-learn · Plotly · Pandas
 
-## Target Companies
-Delta Airlines · United Airlines · Amazon
-
 ## Files
 - `notebooks/flight_delay_causal.ipynb` — full causal analysis
 - `outputs/causal_effects.csv` — ATE per delay cause
