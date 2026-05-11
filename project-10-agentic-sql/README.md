@@ -24,9 +24,6 @@ and financial transactions domains.
 ## Stack
 Python · DuckDB · Pandas · Plotly · JSON
 
-## Target Companies
-Fidelity · Capital One · Delta · United · Amazon
-
 ## Files
 - `notebooks/agentic_sql_analyst.ipynb` — full agent pipeline
 - `outputs/schema.json` — database schema summary
