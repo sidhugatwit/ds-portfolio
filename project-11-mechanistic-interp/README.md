@@ -57,10 +57,6 @@ importance of model scale for factual knowledge.
 
 Python · TransformerLens · PyTorch · Einops · Plotly · Pandas
 
-## Target Companies
-
-Anthropic · OpenAI · DeepMind · Redwood Research · METR
-
 ## Files
 
 - `notebooks/mechanistic_interp.ipynb` — full interpretability analysis
