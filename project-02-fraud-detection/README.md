@@ -21,9 +21,6 @@ Includes a real-time streaming simulation with configurable alert thresholds.
 ## Stack
 Python · Scikit-learn · Imbalanced-learn · River · Plotly · Pandas
 
-## Target Companies
-Capital One · Chase · Amazon
-
 ## Files
 - `notebooks/fraud_detection.ipynb` — full pipeline
 - `outputs/stream_alerts.csv` — timestamped real-time alerts
