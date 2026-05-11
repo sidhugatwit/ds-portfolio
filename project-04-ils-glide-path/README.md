@@ -16,9 +16,6 @@ display, culminating in a CAT I decision height assessment.
 ## Stack
 Python · NumPy · SciPy · Plotly 3D
 
-## Target Companies
-Delta Airlines · United Airlines
-
 ## Files
 - `notebooks/ils_glide_path.ipynb` — full simulation
 - `outputs/approach_data.csv` — full approach deviation dataset
