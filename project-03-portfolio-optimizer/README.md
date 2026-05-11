@@ -20,9 +20,6 @@ across 10 assets spanning tech, finance, and market benchmarks.
 ## Stack
 Python · NumPy · SciPy · Plotly · yfinance
 
-## Target Companies
-Fidelity · Capital One · Chase
-
 ## Files
 - `notebooks/portfolio_optimizer.ipynb` — full analysis
 - `outputs/asset_statistics.csv` — annualized return, vol, Sharpe per asset
