@@ -22,9 +22,6 @@ relevant context and answer analyst-style questions with source citations.
 ## Stack
 Python · FAISS · Sentence-Transformers · NumPy · Pandas
 
-## Target Companies
-Perplexity · Meta · Amazon · Fidelity
-
 ## Files
 - `notebooks/rag_financial_analyst.ipynb` — full RAG pipeline
 - `outputs/retrieval_eval.csv` — retrieval quality scores per query
