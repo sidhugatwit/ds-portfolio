@@ -41,10 +41,6 @@ local LLM via Ollama — no API costs, fully offline inference.
 Python · LangChain · ChromaDB · OpenAI API · Ollama · PyPDF ·
 RecursiveCharacterTextSplitter
 
-## Target Companies
-
-Perplexity · Meta · Amazon · Anthropic
-
 ## Relation to Portfolio
 
 Complements Project 07 (RAG Financial Analyst) by showing the
