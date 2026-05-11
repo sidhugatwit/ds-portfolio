@@ -21,9 +21,6 @@ with genre-aware evaluation and popularity bias analysis.
 ## Stack
 Python · Implicit · SciPy Sparse · Scikit-learn · Plotly · Pandas
 
-## Target Companies
-Netflix · Amazon · Meta
-
 ## Files
 - `notebooks/recommender.ipynb` — full ALS pipeline
 - `outputs/eval_metrics.csv` — NDCG@10 and genre match rate
