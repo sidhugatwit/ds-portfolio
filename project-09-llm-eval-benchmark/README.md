@@ -28,9 +28,6 @@ used by Perplexity and Meta AI research teams.
 ## Stack
 Python · OpenAI API · LM Studio · ROUGE · BERTScore · Plotly · Pandas
 
-## Target Companies
-Perplexity · Meta · Amazon · Anthropic · OpenAI
-
 ## Files
 - `notebooks/llm_eval_benchmark.ipynb` — full evaluation pipeline
 - `outputs/benchmark_qa.csv` — 20 verified QA pairs
