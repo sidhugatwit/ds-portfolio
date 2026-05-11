@@ -20,9 +20,6 @@ regulatory compliance for twin-engine overwater operations.
 ## Stack
 Python · NumPy · Plotly · Pandas
 
-## Target Companies
-Delta Airlines · United Airlines
-
 ## Files
 - `notebooks/great_circle_routing.ipynb` — full analysis
 - `outputs/route_analysis.csv` — distance, time, fuel per route
