@@ -45,10 +45,6 @@ from the reference model.
 
 Python · PyTorch · HuggingFace Transformers · DistilBERT · Plotly · Pandas
 
-## Target Companies
-
-Anthropic · OpenAI · DeepMind · Meta AI
-
 ## Files
 
 - `notebooks/rlhf_pipeline.ipynb` — full RLHF implementation
