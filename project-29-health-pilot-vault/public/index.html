@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PilotVault — Health & Credentials Dashboard</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, sans-serif;
+        }
+
+        body {
+            background: #0f1117;
+            color: #e5e5e5;
+            min-height: 100vh;
+        }
+
+        /* Auth Screen */
+        .auth-screen {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .auth-card {
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 16px;
+            padding: 2rem;
+            width: 380px;
+        }
+
+        .auth-card h1 {
+            font-size: 24px;
+            margin-bottom: 4px;
+            color: #60a5fa;
+        }
+
+        .auth-card p {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            font-size: 12px;
+            color: #aaa;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 12px;
+            background: #0f1117;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e5e5e5;
+            font-size: 14px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .btn-primary {
+            background: #60a5fa;
+            color: #000;
+            font-weight: 600;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #60a5fa;
+            border: 1px solid #60a5fa;
+        }
+
+        .toggle-auth {
+            text-align: center;
+            margin-top: 1rem;
+            font-size: 13px;
+            color: #888;
+            cursor: pointer;
+        }
+
+        .toggle-auth span {
+            color: #60a5fa;
+        }
+
+        /* Main App */
+        .app {
+            display: none;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 220px;
+            height: 100vh;
+            background: #1a1a2e;
+            border-right: 1px solid #2a2a4a;
+            padding: 1.5rem 1rem;
+        }
+
+        .sidebar .logo {
+            font-size: 18px;
+            font-weight: 700;
+            color: #60a5fa;
+            margin-bottom: 2rem;
+        }
+
+        .sidebar .logo span {
+            font-size: 11px;
+            color: #888;
+            display: block;
+            font-weight: 400;
+        }
+
+        .nav-item {
+            padding: 10px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #aaa;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            background: #2a2a4a;
+            color: #fff;
+        }
+
+        .nav-item .icon {
+            font-size: 16px;
+        }
+
+        .logout-btn {
+            position: absolute;
+            bottom: 1.5rem;
+            left: 1rem;
+            right: 1rem;
+            padding: 10px;
+            background: #2a1a1a;
+            border: 1px solid #4a2a2a;
+            border-radius: 8px;
+            color: #f87171;
+            font-size: 14px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        /* Main Content */
+        .main {
+            margin-left: 220px;
+            padding: 2rem;
+        }
+
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        .page-title {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Cards */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 12px;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 1.25rem;
+        }
+
+        .stat-card .value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #60a5fa;
+        }
+
+        .stat-card .label {
+            font-size: 12px;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        /* Forms */
+        .form-card {
+            background: #1a1a2e;
+            border: 1px solid #2a2a4a;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-card h3 {
+            font-size: 16px;
+            margin-bottom: 1rem;
+            color: #60a5fa;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .form-card input,
+        .form-card select,
+        .form-card textarea {
+            width: 100%;
+            padding: 8px 12px;
+            background: #0f1117;
+            border: 1px solid #333;
+            border-radius: 8px;
+            color: #e5e5e5;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .btn-sm {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 8px;
+            font-size: 13px;
+            cursor: pointer;
+            background: #60a5fa;
+            color: #000;
+            font-weight: 600;
+        }
+
+        /* Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .data-table th {
+            text-align: left;
+            padding: 10px 12px;
+            font-size: 12px;
+            color: #888;
+            border-bottom: 1px solid #2a2a4a;
+        }
+
+        .data-table td {
+            padding: 10px 12px;
+            font-size: 13px;
+            border-bottom: 1px solid #1a1a2e;
+        }
+
+        .data-table tr:hover td {
+            background: #1a1a2e;
+        }
+
+        .badge {
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .badge-blue {
+            background: #1e3a5f;
+            color: #60a5fa;
+        }
+
+        .badge-green {
+            background: #1a3a2a;
+            color: #4ade80;
+        }
+
+        .badge-orange {
+            background: #3a2a1a;
+            color: #fb923c;
+        }
+
+        .badge-red {
+            background: #3a1a1a;
+            color: #f87171;
+        }
+
+        .msg {
+            padding: 10px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .msg-success {
+            background: #1a3a2a;
+            color: #4ade80;
+            border: 1px solid #4ade80;
+        }
+
+        .msg-error {
+            background: #3a1a1a;
+            color: #f87171;
+            border: 1px solid #f87171;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Auth Screen -->
+    <div class="auth-screen" id="authScreen">
+        <div class="auth-card">
+            <h1>✈ PilotVault</h1>
+            <p>Health & Credentials Dashboard</p>
+            <div id="authMsg"></div>
+
+            <div id="loginForm">
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="loginUser" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="loginPass" placeholder="Enter password">
+                </div>
+                <button class="btn btn-primary" onclick="login()">Sign In</button>
+                <div class="toggle-auth" onclick="toggleAuth()">
+                    Don't have an account? <span>Register</span>
+                </div>
+            </div>
+
+            <div id="registerForm" style="display:none">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" id="regName" placeholder="Gurveer Sidhu">
+                </div>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input type="text" id="regUser" placeholder="Choose username">
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" id="regEmail" placeholder="email@example.com">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" id="regPass" placeholder="Choose password">
+                </div>
+                <button class="btn btn-primary" onclick="register()">Create Account</button>
+                <div class="toggle-auth" onclick="toggleAuth()">
+                    Already have an account? <span>Sign In</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main App -->
+    <div class="app" id="mainApp">
+        <div class="sidebar">
+            <div class="logo">✈ PilotVault <span id="userGreeting"></span></div>
+            <div class="nav-item active" onclick="showPage('dashboard')"><span class="icon">📊</span> Dashboard</div>
+            <div class="nav-item" onclick="showPage('credentials')"><span class="icon">🪪</span> FAA Credentials</div>
+            <div class="nav-item" onclick="showPage('logbook')"><span class="icon">📋</span> Pilot Logbook</div>
+            <div class="nav-item" onclick="showPage('health')"><span class="icon">❤️</span> Health Records</div>
+            <div class="logout-btn" onclick="logout()">Sign Out</div>
+        </div>
+
+        <div class="main">
+            <!-- Dashboard -->
+            <div class="page active" id="page-dashboard">
+                <div class="page-title">Dashboard</div>
+                <div class="stats-grid" id="dashStats">
+                    <div class="stat-card">
+                        <div class="value" id="statFlights">—</div>
+                        <div class="label">Total Flights</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="statHours">—</div>
+                        <div class="label">Flight Hours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="statIFR">—</div>
+                        <div class="label">IFR Hours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="value" id="statCreds">—</div>
+                        <div class="label">Credentials</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Credentials -->
+            <div class="page" id="page-credentials">
+                <div class="page-title">FAA Credentials</div>
+                <div class="form-card">
+                    <h3>Add Credential</h3>
+                    <div class="form-row">
+                        <select id="credType">
+                            <option value="PPL">Private Pilot License (PPL)</option>
+                            <option value="IFR">Instrument Rating (IFR)</option>
+                            <option value="CPL">Commercial Pilot License</option>
+                            <option value="Medical">FAA Medical Certificate</option>
+                            <option value="BFR">Biennial Flight Review</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <input type="text" id="credCertNo" placeholder="Certificate Number">
+                    </div>
+                    <div class="form-row">
+                        <input type="date" id="credIssued" placeholder="Issue Date">
+                        <input type="date" id="credExpiry" placeholder="Expiry Date">
+                    </div>
+                    <input type="text" id="credNotes" placeholder="Notes">
+                    <button class="btn-sm" onclick="addCredential()">Save Credential</button>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Certificate #</th>
+                            <th>Issued</th>
+                            <th>Expires</th>
+                            <th>Notes</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="credTable"></tbody>
+                </table>
+            </div>
+
+            <!-- Logbook -->
+            <div class="page" id="page-logbook">
+                <div class="page-title">Pilot Logbook</div>
+                <div class="form-card">
+                    <h3>Log a Flight</h3>
+                    <div class="form-row">
+                        <input type="date" id="logDate">
+                        <input type="text" id="logAircraftType" placeholder="Aircraft Type (e.g. C172)">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="logReg" placeholder="Registration (e.g. N12345)">
+                        <input type="text" id="logDep" placeholder="Departure (ICAO)">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="logDest" placeholder="Destination (ICAO)">
+                        <input type="number" id="logTotal" placeholder="Total Time (hrs)" step="0.1">
+                    </div>
+                    <div class="form-row">
+                        <input type="number" id="logPIC" placeholder="PIC Time" step="0.1">
+                        <input type="number" id="logIFR" placeholder="IFR Time" step="0.1">
+                    </div>
+                    <div class="form-row">
+                        <input type="number" id="logNight" placeholder="Night Time" step="0.1">
+                        <input type="number" id="logLandDay" placeholder="Day Landings">
+                    </div>
+                    <div class="form-row">
+                        <input type="number" id="logLandNight" placeholder="Night Landings">
+                        <input type="text" id="logRemarks" placeholder="Remarks">
+                    </div>
+                    <button class="btn-sm" onclick="addLogEntry()">Log Flight</button>
+                </div>
+                <div id="logTotals" style="margin-bottom:1rem"></div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Aircraft</th>
+                            <th>Route</th>
+                            <th>Total</th>
+                            <th>IFR</th>
+                            <th>Night</th>
+                            <th>Remarks</th>
+                        </tr>
+                    </thead>
+                    <tbody id="logTable"></tbody>
+                </table>
+            </div>
+
+            <!-- Health -->
+            <div class="page" id="page-health">
+                <div class="page-title">Health Records</div>
+                <div class="form-card">
+                    <h3>Add Health Record</h3>
+                    <div class="form-row">
+                        <select id="healthType">
+                            <option value="Blood Pressure">Blood Pressure</option>
+                            <option value="Heart Rate">Heart Rate</option>
+                            <option value="Weight">Weight</option>
+                            <option value="Blood Glucose">Blood Glucose</option>
+                            <option value="Sleep Hours">Sleep Hours</option>
+                            <option value="FAA Medical">FAA Medical Check</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <input type="text" id="healthValue" placeholder="Value (e.g. 120/80)">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="healthUnit" placeholder="Unit (e.g. mmHg, bpm)">
+                        <input type="text" id="healthNotes" placeholder="Notes">
+                    </div>
+                    <button class="btn-sm" onclick="addHealthRecord()">Save Record</button>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Value</th>
+                            <th>Unit</th>
+                            <th>Date</th>
+                            <th>Notes</th>
+                        </tr>
+                    </thead>
+                    <tbody id="healthTable"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API = 'http://localhost:3000/api';
+        let TOKEN = localStorage.getItem('pilotvault_token');
+        let USERNAME = localStorage.getItem('pilotvault_user');
+
+        // Init
+        if (TOKEN) showApp();
+
+        function showMsg(id, msg, type = 'success') {
+            document.getElementById(id).innerHTML =
+                `<div class="msg msg-${type}">${msg}</div>`;
+            setTimeout(() => document.getElementById(id).innerHTML = '', 3000);
+        }
+
+        function toggleAuth() {
+            const l = document.getElementById('loginForm');
+            const r = document.getElementById('registerForm');
+            l.style.display = l.style.display === 'none' ? 'block' : 'none';
+            r.style.display = r.style.display === 'none' ? 'block' : 'none';
+        }
+
+        async function login() {
+            const r = await fetch(`${API}/auth/login`, {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    username: document.getElementById('loginUser').value,
+                    password: document.getElementById('loginPass').value
+                })
+            });
+            const d = await r.json();
+            if (d.token) {
+                TOKEN = d.token; USERNAME = d.username;
+                localStorage.setItem('pilotvault_token', TOKEN);
+                localStorage.setItem('pilotvault_user', USERNAME);
+                showApp();
+            } else showMsg('authMsg', d.error || 'Login failed', 'error');
+        }
+
+        async function register() {
+            const r = await fetch(`${API}/auth/register`, {
+                method: 'POST', headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    username: document.getElementById('regUser').value,
+                    email: document.getElementById('regEmail').value,
+                    password: document.getElementById('regPass').value,
+                    full_name: document.getElementById('regName').value
+                })
+            });
+            const d = await r.json();
+            if (d.token) {
+                TOKEN = d.token; USERNAME = d.username;
+                localStorage.setItem('pilotvault_token', TOKEN);
+                localStorage.setItem('pilotvault_user', USERNAME);
+                showApp();
+            } else showMsg('authMsg', d.error || 'Registration failed', 'error');
+        }
+
+        function logout() {
+            localStorage.removeItem('pilotvault_token');
+            localStorage.removeItem('pilotvault_user');
+            location.reload();
+        }
+
+        function showApp() {
+            document.getElementById('authScreen').style.display = 'none';
+            document.getElementById('mainApp').style.display = 'block';
+            document.getElementById('userGreeting').textContent = USERNAME || '';
+            loadDashboard();
+        }
+
+        function showPage(page) {
+            document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            document.getElementById(`page-${page}`).classList.add('active');
+            event.currentTarget.classList.add('active');
+            if (page === 'credentials') loadCredentials();
+            if (page === 'logbook') loadLogbook();
+            if (page === 'health') loadHealth();
+        }
+
+        async function authFetch(url, opts = {}) {
+            return fetch(url, {
+                ...opts,
+                headers: {
+                    'Authorization': `Bearer ${TOKEN}`,
+                    'Content-Type': 'application/json', ...opts.headers
+                }
+            });
+        }
+
+        // Dashboard
+        async function loadDashboard() {
+            const [totals, creds] = await Promise.all([
+                authFetch(`${API}/logbook/totals`).then(r => r.json()),
+                authFetch(`${API}/credentials`).then(r => r.json())
+            ]);
+            document.getElementById('statFlights').textContent = totals.total_flights || 0;
+            document.getElementById('statHours').textContent = totals.total_hours || 0;
+            document.getElementById('statIFR').textContent = totals.ifr_hours || 0;
+            document.getElementById('statCreds').textContent = Array.isArray(creds) ? creds.length : 0;
+        }
+
+        // Credentials
+        async function loadCredentials() {
+            const data = await authFetch(`${API}/credentials`).then(r => r.json());
+            const colors = { PPL: 'blue', IFR: 'orange', CPL: 'green', Medical: 'red' };
+            document.getElementById('credTable').innerHTML = data.map(c => `
+    <tr>
+      <td><span class="badge badge-${colors[c.type] || 'blue'}">${c.type}</span></td>
+      <td>${c.certificate_no || '—'}</td>
+      <td>${c.issued_date || '—'}</td>
+      <td>${c.expiry_date || '—'}</td>
+      <td>${c.notes || '—'}</td>
+      <td><button class="btn-sm" style="background:#f87171" 
+          onclick="deleteCred(${c.id})">Delete</button></td>
+    </tr>`).join('');
+        }
+
+        async function addCredential() {
+            await authFetch(`${API}/credentials`, {
+                method: 'POST',
+                body: JSON.stringify({
+                    type: document.getElementById('credType').value,
+                    certificate_no: document.getElementById('credCertNo').value,
+                    issued_date: document.getElementById('credIssued').value,
+                    expiry_date: document.getElementById('credExpiry').value,
+                    notes: document.getElementById('credNotes').value
+                })
+            });
+            loadCredentials();
+        }
+
+        async function deleteCred(id) {
+            await authFetch(`${API}/credentials/${id}`, { method: 'DELETE' });
+            loadCredentials();
+        }
+
+        // Logbook
+        async function loadLogbook() {
+            const [entries, totals] = await Promise.all([
+                authFetch(`${API}/logbook`).then(r => r.json()),
+                authFetch(`${API}/logbook/totals`).then(r => r.json())
+            ]);
+            document.getElementById('logTotals').innerHTML = `
+    <div class="stats-grid">
+      <div class="stat-card"><div class="value">${totals.total_hours || 0}</div><div class="label">Total Hours</div></div>
+      <div class="stat-card"><div class="value">${totals.ifr_hours || 0}</div><div class="label">IFR Hours</div></div>
+      <div class="stat-card"><div class="value">${totals.night_hours || 0}</div><div class="label">Night Hours</div></div>
+      <div class="stat-card"><div class="value">${totals.total_landings || 0}</div><div class="label">Landings</div></div>
+    </div>`;
+            document.getElementById('logTable').innerHTML = entries.map(e => `
+    <tr>
+      <td>${e.date}</td>
+      <td>${e.aircraft_type || ''} ${e.aircraft_reg || ''}</td>
+      <td>${e.departure || ''}→${e.destination || ''}</td>
+      <td>${e.total_time || 0}h</td>
+      <td>${e.ifr_time || 0}h</td>
+      <td>${e.night_time || 0}h</td>
+      <td>${e.remarks || '—'}</td>
+    </tr>`).join('');
+        }
+
+        async function addLogEntry() {
+            await authFetch(`${API}/logbook`, {
+                method: 'POST',
+                body: JSON.stringify({
+                    date: document.getElementById('logDate').value,
+                    aircraft_type: document.getElementById('logAircraftType').value,
+                    aircraft_reg: document.getElementById('logReg').value,
+                    departure: document.getElementById('logDep').value,
+                    destination: document.getElementById('logDest').value,
+                    total_time: parseFloat(document.getElementById('logTotal').value) || 0,
+                    pic_time: parseFloat(document.getElementById('logPIC').value) || 0,
+                    ifr_time: parseFloat(document.getElementById('logIFR').value) || 0,
+                    night_time: parseFloat(document.getElementById('logNight').value) || 0,
+                    landings_day: parseInt(document.getElementById('logLandDay').value) || 0,
+                    landings_night: parseInt(document.getElementById('logLandNight').value) || 0,
+                    remarks: document.getElementById('logRemarks').value
+                })
+            });
+            loadLogbook();
+        }
+
+        // Health
+        async function loadHealth() {
+            const data = await authFetch(`${API}/health`).then(r => r.json());
+            document.getElementById('healthTable').innerHTML = data.map(h => `
+    <tr>
+      <td><span class="badge badge-blue">${h.record_type}</span></td>
+      <td>${h.value || '—'}</td>
+      <td>${h.unit || '—'}</td>
+      <td>${h.recorded_at?.split('T')[0] || '—'}</td>
+      <td>${h.notes || '—'}</td>
+    </tr>`).join('');
+        }
+
+        async function addHealthRecord() {
+            await authFetch(`${API}/health`, {
+                method: 'POST',
+                body: JSON.stringify({
+                    record_type: document.getElementById('healthType').value,
+                    value: document.getElementById('healthValue').value,
+                    unit: document.getElementById('healthUnit').value,
+                    notes: document.getElementById('healthNotes').value
+                })
+            });
+            loadHealth();
+        }
+    </script>
+</body>
+
+</html>
