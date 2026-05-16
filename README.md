@@ -1,11 +1,5 @@
 # Gurveer Sidhu — AI & Data Systems Engineer
 
-[
-[
-[
-[
-[
-[
 
 Building practical AI systems, agentic workflows, and applied ML products across **aviation, healthcare, and intelligent automation**.
 
