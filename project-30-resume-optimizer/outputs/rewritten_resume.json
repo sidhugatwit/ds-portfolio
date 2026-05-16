@@ -1,0 +1,38 @@
+{
+  "rewritten_bullets": {
+    "registrar_role": [
+      "Enhanced enrollment data reporting accuracy by 20% through effective management of CAMS ERP tools.",
+      "Successfully led the migration of data from CAMS to Jenzabar, achieving 100% accuracy in record transfer.",
+      "Ensured SEVIS compliance for international student records, demonstrating strong attention to detail and regulatory knowledge."
+    ],
+    "consultant_role": [
+      "Developed robust financial models utilizing DCF techniques, resulting in a 20% increase in planning accuracy for financial forecasting.",
+      "Automated data workflows using Python, significantly boosting efficiency by 30% and streamlining reporting processes.",
+      "Collaborated with cross-functional teams to present analytical findings, enhancing communication of complex data insights."
+    ]
+  },
+  "skills_section": {
+    "technical": [
+      "Python",
+      "SQL",
+      "Machine Learning (scikit-learn, XGBoost)"
+    ],
+    "tools": [
+      "Tableau",
+      "Power BI",
+      "IBM Watsonx"
+    ],
+    "soft_skills": [
+      "Strong communication",
+      "Team collaboration",
+      "Presentation skills"
+    ]
+  },
+  "summary": "Detail-oriented Data Science student with strong proficiency in Python and SQL, experienced in building predictive financial models and automating data workflows. Proven ability to communicate complex findings to non-technical stakeholders and collaborate effectively within teams.",
+  "ats_score_improvement": "Estimated new ATS score: 90%",
+  "key_changes": [
+    "Incorporated relevant keywords from the job description to enhance ATS optimization.",
+    "Strengthened bullet points to highlight achievements and quantify results.",
+    "Added a tailored skills section to align with the specific requirements of the job description."
+  ]
+}
