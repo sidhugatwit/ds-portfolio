@@ -3,7 +3,7 @@
 
 Building practical AI systems, agentic workflows, and applied ML products across **aviation, healthcare, and intelligent automation**.
 
-This repository is a recruiter-facing showcase of projects focused on real system design: LLM applications, retrieval pipelines, evaluation workflows, structured reasoning, and end-to-end AI product development.
+This repository is a showcase of projects focused on real system design: LLM applications, retrieval pipelines, evaluation workflows, structured reasoning, and end-to-end AI product development.
 
 ## Featured Systems
 
