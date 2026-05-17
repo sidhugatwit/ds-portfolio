@@ -21,8 +21,8 @@ DataProfilerAgent → LeakageGuardAgent → ModelTrainerAgent → EvaluatorAgent
 
 ## Leakage Detection
 
-The agent correctly identified `dec` and `dec_o` as data leakage 
-columns — decisions made during the date that would give the model 
+The agent correctly identified `dec` and `dec_o` as data leakage
+columns — decisions made during the date that would give the model
 unfair information unavailable at prediction time.
 
 ## LangGraph Tools

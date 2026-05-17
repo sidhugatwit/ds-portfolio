@@ -1,0 +1,14 @@
+{
+  "summary": "The analysis utilized XGBoost with SHAP for explainability on the Pima Indians dataset, achieving a ROC-AUC of 0.8220. Key features identified include Glucose, BMI, and Age, indicating the model's effectiveness in predicting diabetes risk.",
+  "key_points": [
+    "Method: XGBoost with SHAP",
+    "ROC-AUC: 0.8220",
+    "Top features: Glucose, BMI, Age"
+  ],
+  "document_type": "data science report",
+  "word_count": 42,
+  "topics": [
+    "data science",
+    "machine learning"
+  ]
+}

@@ -1,34 +1,18 @@
 [
   {
-    "id": "03",
-    "title": "Portfolio Optimizer with Monte Carlo & Black-Scholes",
-    "domain": "Finance",
-    "status": "complete",
-    "description": "Markowitz efficient frontier, 10,000 Monte Carlo simulations, and Black-Scholes options pricing across 10 assets.",
-    "skills": [
-      "Python",
-      "NumPy",
-      "SciPy",
-      "Plotly",
-      "yfinance"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-03-portfolio-optimizer",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
     "id": "01",
     "title": "Credit Risk Engine with XGBoost & SHAP",
-    "domain": "Finance",
+    "domain": "Finance / Machine Learning",
     "status": "complete",
-    "description": "End-to-end credit default predictor with SHAP explainability and three-tier risk scoring on real lending data.",
+    "description": "Built an end-to-end credit default prediction system using real-world lending data with XGBoost classification and SHAP explainability. Engineered financial risk features, developed three-tier borrower risk scoring, and implemented interpretable model outputs to support transparent lending decisions and credit risk analysis.",
     "skills": [
       "Python",
       "XGBoost",
       "SHAP",
       "Scikit-learn",
-      "SQL"
+      "SQL",
+      "Pandas",
+      "Machine Learning"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-01-credit-risk",
     "notebook": "",
@@ -36,16 +20,57 @@
     "thumbnail": ""
   },
   {
-    "id": "04",
-    "title": "ILS Glide Path & ICAO Geometry",
-    "domain": "Aviation",
+    "id": "02",
+    "title": "Real-Time Fraud Detection Pipeline",
+    "domain": "Finance / Machine Learning",
     "status": "complete",
-    "description": "ILS approach simulation from ICAO Annex 10 standards with CDI deviation display and CAT I decision height assessment.",
+    "description": "Developed a real-time fraud detection pipeline using Random Forest, Isolation Forest, and SMOTE resampling techniques to detect anomalous financial transactions. Simulated streaming transaction data with configurable alert thresholds and evaluated model performance on highly imbalanced datasets.",
+    "skills": [
+      "Python",
+      "Scikit-learn",
+      "Imbalanced-learn",
+      "River",
+      "Plotly",
+      "Fraud Detection",
+      "Machine Learning"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-02-fraud-detection",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "03",
+    "title": "Portfolio Optimizer with Monte Carlo & Black-Scholes",
+    "domain": "Quantitative Finance",
+    "status": "complete",
+    "description": "Designed a quantitative portfolio optimization system using Markowitz Modern Portfolio Theory, Monte Carlo simulations, and Black-Scholes options pricing. Simulated over 10,000 portfolio scenarios across multiple assets to identify efficient frontier allocations, evaluate portfolio volatility, and analyze derivatives pricing and Greeks.",
     "skills": [
       "Python",
       "NumPy",
       "SciPy",
-      "Plotly 3D"
+      "Plotly",
+      "yfinance",
+      "Monte Carlo Simulation",
+      "Black-Scholes"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-03-portfolio-optimizer",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "04",
+    "title": "ILS Glide Path & ICAO Geometry",
+    "domain": "Aviation / Simulation",
+    "status": "complete",
+    "description": "Built an Instrument Landing System (ILS) approach simulator based on ICAO Annex 10 standards. Modeled glide slope geometry, CDI deviation behavior, and CAT I decision height assessments to simulate precision approach procedures and runway alignment calculations.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Plotly 3D",
+      "Aviation Analytics"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-04-ils-glide-path",
     "notebook": "",
@@ -53,16 +78,37 @@
     "thumbnail": ""
   },
   {
+    "id": "05",
+    "title": "Flight Delay Prediction with Causal ML",
+    "domain": "Aviation / Machine Learning",
+    "status": "complete",
+    "description": "Developed a causal machine learning framework to identify the true impact of weather, NAS congestion, and carrier operations on flight delay probability. Used DoWhy causal DAGs and LightGBM models to separate correlation from causation in aviation operations data.",
+    "skills": [
+      "Python",
+      "DoWhy",
+      "LightGBM",
+      "Plotly",
+      "Causal Inference",
+      "Machine Learning"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-05-flight-delay",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
     "id": "06",
     "title": "Great Circle Routing & Fuel Optimization",
-    "domain": "Aviation",
+    "domain": "Aviation / Optimization",
     "status": "complete",
-    "description": "Haversine and Vincenty routing with wind-corrected fuel burn and ETOPS compliance checking for major international routes.",
+    "description": "Created an aviation route optimization engine using Haversine and Vincenty geodesic calculations to model global flight paths. Integrated wind-corrected fuel burn estimates and ETOPS compliance analysis for long-haul international routing scenarios.",
     "skills": [
       "Python",
       "NumPy",
       "Plotly",
-      "Folium"
+      "Folium",
+      "Optimization",
+      "Geospatial Analysis"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-06-great-circle-routing",
     "notebook": "",
@@ -72,14 +118,16 @@
   {
     "id": "07",
     "title": "RAG Financial Document Analyst",
-    "domain": "AI / RAG",
+    "domain": "AI / Retrieval-Augmented Generation",
     "status": "complete",
-    "description": "FAISS vector search RAG system on 2025 earnings data with source citations and semantic retrieval.",
+    "description": "Built a retrieval-augmented generation (RAG) system for financial earnings analysis using FAISS vector search and semantic embeddings. Implemented source-aware retrieval pipelines capable of answering finance-related queries with contextual citations from earnings reports and market data.",
     "skills": [
       "Python",
       "FAISS",
       "Sentence-Transformers",
-      "Pandas"
+      "Pandas",
+      "RAG",
+      "Vector Databases"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-07-rag-financial-analyst",
     "notebook": "",
@@ -87,68 +135,18 @@
     "thumbnail": ""
   },
   {
-    "id": "10",
-    "title": "Agentic SQL Analyst with Natural Language Interface",
-    "domain": "Multi-Domain",
-    "status": "complete",
-    "description": "AI agent translating plain English to verified SQL over a DuckDB database with 15,000+ rows across flights and transactions.",
-    "skills": [
-      "Python",
-      "DuckDB",
-      "Plotly",
-      "JSON"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-10-agentic-sql",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "02",
-    "title": "Real-Time Fraud Detection Pipeline",
-    "domain": "Finance",
-    "status": "complete",
-    "description": "SMOTE resampling, Isolation Forest, and Random Forest with streaming simulation and configurable alert thresholds.",
-    "skills": [
-      "Python",
-      "Scikit-learn",
-      "Imbalanced-learn",
-      "River",
-      "Plotly"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-02-fraud-detection",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "05",
-    "title": "Flight Delay Prediction with Causal ML",
-    "domain": "Aviation",
-    "status": "complete",
-    "description": "DoWhy causal DAG isolating true effect of weather, NAS congestion, and carrier issues on flight delay probability.",
-    "skills": [
-      "Python",
-      "DoWhy",
-      "LightGBM",
-      "Plotly"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-05-flight-delay",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
     "id": "08",
     "title": "Recommendation Engine with Implicit Feedback",
-    "domain": "AI / ML",
+    "domain": "AI / Recommendation Systems",
     "status": "complete",
-    "description": "ALS matrix factorization recommender with implicit feedback, NDCG@10 evaluation, and popularity bias analysis.",
+    "description": "Developed a recommendation engine using Alternating Least Squares (ALS) matrix factorization and implicit feedback modeling. Evaluated ranking performance using NDCG@10 metrics and analyzed popularity bias in collaborative filtering systems.",
     "skills": [
       "Python",
       "Implicit",
       "SciPy",
-      "Plotly"
+      "Plotly",
+      "Recommendation Systems",
+      "Machine Learning"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-08-recommender",
     "notebook": "",
@@ -160,13 +158,14 @@
     "title": "LLM Evaluation & Hallucination Benchmark",
     "domain": "AI Safety",
     "status": "complete",
-    "description": "Real LLM comparison on 20 expert-verified finance and aviation QA pairs scored with ROUGE and BERTScore.",
+    "description": "Designed an LLM benchmarking framework to evaluate hallucination behavior across finance and aviation question-answer datasets. Compared model outputs using ROUGE and BERTScore metrics on expert-verified evaluation prompts.",
     "skills": [
       "Python",
       "OpenAI API",
       "LM Studio",
       "ROUGE",
-      "BERTScore"
+      "BERTScore",
+      "LLM Evaluation"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-09-llm-eval-benchmark",
     "notebook": "",
@@ -174,16 +173,37 @@
     "thumbnail": ""
   },
   {
+    "id": "10",
+    "title": "Agentic SQL Analyst with Natural Language Interface",
+    "domain": "AI / Data Analytics",
+    "status": "complete",
+    "description": "Built an AI-powered SQL analytics agent capable of translating natural language questions into validated SQL queries over a DuckDB database containing 15,000+ records. Implemented query verification, analytics workflows, and interactive visualizations for operational datasets.",
+    "skills": [
+      "Python",
+      "DuckDB",
+      "Plotly",
+      "JSON",
+      "SQL",
+      "AI Agents"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-10-agentic-sql",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
     "id": "11",
     "title": "Mechanistic Interpretability of GPT-2 Medium",
-    "domain": "AI Safety",
+    "domain": "AI Safety / Interpretability",
     "status": "complete",
-    "description": "Activation patching on the IOI circuit of GPT-2 Medium. Layers 0-2 show 100% recovery. Paris predicted correctly at logit 20.47.",
+    "description": "Conducted mechanistic interpretability research on GPT-2 Medium using activation patching and circuit analysis techniques. Investigated the Indirect Object Identification (IOI) circuit to analyze token prediction behavior across transformer layers and measured activation recovery patterns during inference.",
     "skills": [
       "Python",
       "TransformerLens",
       "PyTorch",
-      "Einops"
+      "Einops",
+      "Mechanistic Interpretability",
+      "Transformer Models"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-11-mechanistic-interp",
     "notebook": "",
@@ -193,14 +213,16 @@
   {
     "id": "12",
     "title": "RLHF Pipeline from Scratch",
-    "domain": "AI Safety",
+    "domain": "AI Safety / Reinforcement Learning",
     "status": "complete",
-    "description": "DistilBERT reward model trained on 12 human preference pairs with PPO KL-penalized reward shaping.",
+    "description": "Built a Reinforcement Learning from Human Feedback (RLHF) pipeline from scratch using DistilBERT reward modeling and PPO optimization. Trained reward functions on human preference pairs and implemented KL-penalized policy optimization workflows for alignment-focused fine-tuning experiments.",
     "skills": [
       "Python",
       "PyTorch",
       "HuggingFace",
-      "DistilBERT"
+      "DistilBERT",
+      "PPO",
+      "RLHF"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-12-rlhf-pipeline",
     "notebook": "",
@@ -210,13 +232,16 @@
   {
     "id": "13",
     "title": "Multi-Agent Conversations with GPT-4o-mini",
-    "domain": "AI / Agents",
+    "domain": "AI / Multi-Agent Systems",
     "status": "complete",
-    "description": "Two and three-agent simulations with role-based system prompts, shared conversation history, and fallback model handling.",
+    "description": "Developed a multi-agent conversational framework using GPT-4o-mini with role-based coordination, shared memory, and dynamic conversation routing. Simulated collaborative agent interactions with fallback handling and context-aware response management.",
     "skills": [
       "Python",
       "OpenAI API",
-      "python-dotenv"
+      "GPT-4o-mini",
+      "python-dotenv",
+      "AI Agents",
+      "LLMs"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-13-multi-agent-conversations",
     "notebook": "",
@@ -226,15 +251,17 @@
   {
     "id": "14",
     "title": "GBM Simulation — SanDisk vs ASML",
-    "domain": "Finance",
+    "domain": "Quantitative Finance",
     "status": "complete",
-    "description": "Full GBM derivation from Itô's Lemma with 500 Monte Carlo paths, Black-Scholes options pricing, and Greeks.",
+    "description": "Implemented Geometric Brownian Motion (GBM) simulations for equity price forecasting and derivatives pricing using Monte Carlo methods. Applied Itô's Lemma, Black-Scholes modeling, and Greeks analysis to evaluate volatility and option sensitivity across semiconductor market assets.",
     "skills": [
       "Python",
       "NumPy",
       "SciPy",
       "Matplotlib",
-      "yfinance"
+      "yfinance",
+      "Monte Carlo Simulation",
+      "Black-Scholes"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-14-gbm-sandisk-asml",
     "notebook": "",
@@ -244,15 +271,17 @@
   {
     "id": "15",
     "title": "RAG with Chunking + Local Ollama LLM",
-    "domain": "AI / RAG",
+    "domain": "AI / Retrieval-Augmented Generation",
     "status": "complete",
-    "description": "LangChain + ChromaDB RAG pipeline with RecursiveCharacterTextSplitter and local Ollama inference — cloud and offline approaches.",
+    "description": "Built a local-first retrieval-augmented generation (RAG) pipeline using LangChain, ChromaDB, and Ollama-based LLM inference. Implemented recursive chunking, semantic embeddings, and vector retrieval workflows to support contextual document question answering in both cloud and offline environments.",
     "skills": [
       "Python",
       "LangChain",
       "ChromaDB",
       "Ollama",
-      "PyPDF"
+      "PyPDF",
+      "RAG",
+      "Vector Databases"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-15-rag-implementation",
     "notebook": "",
@@ -262,15 +291,17 @@
   {
     "id": "16",
     "title": "LangGraph Email Triage Agent",
-    "domain": "AI / Agents",
+    "domain": "AI / Agentic Systems",
     "status": "complete",
-    "description": "Stateful LangGraph agent with triage router, ReAct response agent, and tool calling for email, calendar, and meeting scheduling.",
+    "description": "Developed a stateful LangGraph-based email triage assistant with ReAct-style reasoning, memory persistence, and tool calling capabilities. Built routing workflows for email classification, meeting scheduling, and automated response generation using structured agent orchestration.",
     "skills": [
       "Python",
       "LangGraph",
       "LangChain",
       "GPT-4o-mini",
-      "Pydantic"
+      "Pydantic",
+      "AI Agents",
+      "ReAct Framework"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-16-langgraph-memory",
     "notebook": "",
@@ -280,15 +311,17 @@
   {
     "id": "17",
     "title": "AI Health & Fitness Assistant",
-    "domain": "AI / Agents",
+    "domain": "AI / Healthcare",
     "status": "complete",
-    "description": "Multi-provider AI assistant combining Watsonx Llama vision for gym equipment detection and workout planning with an agentic food analyzer via Gradio.",
+    "description": "Built a multimodal AI health and fitness assistant integrating IBM Watsonx vision models, GPT-based planning systems, and nutrition analysis workflows. Implemented gym equipment recognition, AI-generated workout planning, and food analysis pipelines within a Gradio-powered user interface.",
     "skills": [
       "Python",
       "IBM Watsonx",
       "Gradio",
       "Pandas",
-      "OpenAI API"
+      "OpenAI API",
+      "Computer Vision",
+      "Healthcare AI"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-17-health-fitness-assistant",
     "notebook": "",
@@ -298,15 +331,17 @@
   {
     "id": "18",
     "title": "Love at First Agent — LangGraph + XGBoost",
-    "domain": "AI / Agents",
+    "domain": "AI / Agentic Machine Learning",
     "status": "complete",
-    "description": "LangGraph ReAct agent that autonomously profiles speed dating data, guards against leakage, selects features via RFE, and predicts match probability. ROC AUC 0.8553.",
+    "description": "Designed an autonomous machine learning agent using LangGraph and XGBoost to analyze speed dating datasets and predict match probability outcomes. Implemented automated profiling, leakage prevention, recursive feature elimination (RFE), and model evaluation workflows achieving ROC-AUC performance of 0.8553.",
     "skills": [
       "Python",
       "LangGraph",
       "XGBoost",
       "Scikit-learn",
-      "GPT-4o-mini"
+      "GPT-4o-mini",
+      "Feature Engineering",
+      "Machine Learning"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-18-love-at-first-agent",
     "notebook": "",
@@ -316,14 +351,16 @@
   {
     "id": "19",
     "title": "Weather Data API App",
-    "domain": "AI / App",
+    "domain": "Data Engineering / APIs",
     "status": "complete",
-    "description": "Weather data application using live API integration for real-time forecasts, historical analysis, and interactive visualization.",
+    "description": "Developed a weather analytics application integrating live weather APIs for real-time forecasting, historical trend analysis, and interactive environmental data visualization. Built dynamic dashboards for monitoring temperature, precipitation, and atmospheric conditions.",
     "skills": [
       "Python",
-      "API",
+      "API Integration",
       "Plotly",
-      "Pandas"
+      "Pandas",
+      "Data Visualization",
+      "REST APIs"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-19-weather-app",
     "notebook": "",
@@ -333,15 +370,17 @@
   {
     "id": "20",
     "title": "BlackJack to Five — Probability & Optimal Strategy",
-    "domain": "Algorithms",
+    "domain": "Algorithms / Probability",
     "status": "complete",
-    "description": "Monte Carlo simulation of 10,000 BlackJack-to-Five games with bust probability analysis and dynamic programming optimal strategy.",
+    "description": "Built a probability and strategy optimization simulator for a custom BlackJack-style game using Monte Carlo methods and dynamic programming. Simulated over 10,000 gameplay iterations to analyze bust probability, expected value outcomes, and optimal decision-making strategies.",
     "skills": [
       "Python",
       "NumPy",
       "Pandas",
       "Plotly",
-      "Java"
+      "Java",
+      "Monte Carlo Simulation",
+      "Dynamic Programming"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-20-blackjack-to-five",
     "notebook": "",
@@ -351,15 +390,17 @@
   {
     "id": "21",
     "title": "Grocery Bagger — Bin Packing Optimization",
-    "domain": "Algorithms",
+    "domain": "Algorithms / Optimization",
     "status": "complete",
-    "description": "Bin packing optimization comparing First Fit, First Fit Decreasing, and Fragile-First algorithms. Python data science layer on top of a Java group project.",
+    "description": "Developed a bin packing optimization system comparing First Fit, First Fit Decreasing, and Fragile-First algorithms for grocery bag allocation efficiency. Built a Python-based analytics layer on top of a Java implementation to evaluate packing performance, space utilization, and fragile item handling strategies.",
     "skills": [
       "Python",
+      "Java",
       "NumPy",
       "Pandas",
       "Plotly",
-      "Java"
+      "Algorithms",
+      "Optimization"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-21-grocery-bagger",
     "notebook": "",
@@ -369,16 +410,18 @@
   {
     "id": "22",
     "title": "DS & AI Interview Prep Agent",
-    "domain": "AI / App",
+    "domain": "AI / Career Technology",
     "status": "complete",
-    "description": "AI-powered interview prep system that analyzes job descriptions against your resume, identifies skill gaps, and scores answers in real time using GPT-4o-mini across 49 questions in 9 domains.",
+    "description": "Built an AI-powered interview preparation platform that analyzes resumes against job descriptions, identifies technical skill gaps, and evaluates interview responses in real time. Integrated GPT-4o-mini scoring workflows across 49 interview questions spanning data science, machine learning, SQL, and behavioral domains.",
     "skills": [
       "Python",
       "OpenAI API",
       "Gradio",
       "Streamlit",
       "SQLite",
-      "Pandas"
+      "Pandas",
+      "LLMs",
+      "AI Agents"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-22-interview-prep-agent",
     "notebook": "",
@@ -388,16 +431,18 @@
   {
     "id": "23",
     "title": "Type 2 Diabetes Risk Predictor",
-    "domain": "Healthcare",
+    "domain": "Healthcare / Machine Learning",
     "status": "complete",
-    "description": "XGBoost diabetes risk prediction with clinical feature engineering, zero-value imputation, and Low/Moderate/High risk tiering with lifestyle intervention recommendations. ROC-AUC 0.8220.",
+    "description": "Developed a Type 2 diabetes risk prediction model using XGBoost and clinical feature engineering techniques. Built preprocessing pipelines for zero-value imputation, risk stratification, and lifestyle intervention recommendations, achieving ROC-AUC performance of 0.8220 on healthcare datasets.",
     "skills": [
       "Python",
       "XGBoost",
       "Scikit-learn",
       "Plotly",
       "Pandas",
-      "Matplotlib"
+      "Matplotlib",
+      "Healthcare Analytics",
+      "Machine Learning"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-23-diabetes-risk-predictor",
     "notebook": "",
@@ -407,15 +452,18 @@
   {
     "id": "24",
     "title": "Parkinson's Tremor Detector — Voice Analysis",
-    "domain": "Healthcare",
+    "domain": "Healthcare / AI",
     "status": "complete",
-    "description": "Detects Parkinson's disease from voice recordings using MDVP jitter, shimmer, HNR, RPDE, and DFA biomarkers. XGBoost and SVM achieve ROC-AUC 0.9828 with 96.6% clinical sensitivity.",
+    "description": "Built a Parkinson’s disease detection system using voice biomarker analysis and machine learning classification models. Processed MDVP jitter, shimmer, HNR, RPDE, and DFA speech features with XGBoost and SVM models, achieving ROC-AUC performance of 0.9828 and 96.6% clinical sensitivity.",
     "skills": [
       "Python",
       "XGBoost",
       "SVM",
       "Scikit-learn",
-      "Plotly"
+      "Plotly",
+      "Healthcare AI",
+      "Signal Processing",
+      "Machine Learning"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-24-parkinsons-tremor-detector",
     "notebook": "",
@@ -425,15 +473,17 @@
   {
     "id": "25",
     "title": "Anxiety & Isolation Sentiment Tracker",
-    "domain": "Healthcare / AI",
+    "domain": "Healthcare / NLP",
     "status": "complete",
-    "description": "Zero-shot NLP classifier detecting anxiety, isolation, depression, and neutral mental states using BART-large-MNLI. Simulates a 30-day longitudinal mental health tracking journey with weekly state rollup.",
+    "description": "Developed a longitudinal mental health sentiment tracking system using zero-shot NLP classification with BART-large-MNLI. Built pipelines to classify anxiety, isolation, depression, and neutral emotional states while simulating 30-day behavioral tracking and weekly psychological trend analysis.",
     "skills": [
       "Python",
       "HuggingFace",
       "BART",
       "Plotly",
-      "Pandas"
+      "Pandas",
+      "Natural Language Processing",
+      "Healthcare AI"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-25-anxiety-sentiment-tracker",
     "notebook": "",
@@ -443,15 +493,17 @@
   {
     "id": "26",
     "title": "PilotGPT v2 — IFR Full Suite",
-    "domain": "Aviation / AI",
+    "domain": "Aviation / AI Agents",
     "status": "complete",
-    "description": "Complete IFR flight planning system built by an IFR-rated pilot. LangGraph ReAct agent with 5 tools covering holding pattern entries, E6B wind correction, density altitude, and full IFR flight plan generation — all math from FAA standards.",
+    "description": "Built an AI-powered IFR flight planning assistant designed around FAA flight operations standards. Developed a LangGraph ReAct agent with aviation-specific tools covering holding pattern entries, E6B wind correction calculations, density altitude estimation, and automated IFR flight plan generation.",
     "skills": [
       "Python",
       "LangGraph",
       "GPT-4o-mini",
       "NumPy",
-      "Pandas"
+      "Pandas",
+      "AI Agents",
+      "Aviation Analytics"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-26-pilotgpt-v2",
     "notebook": "",
@@ -461,16 +513,18 @@
   {
     "id": "27",
     "title": "Recipe Maker with Gemma 4 Vision + DALL-E 3",
-    "domain": "AI / App",
+    "domain": "AI / Multimodal Systems",
     "status": "complete",
-    "description": "Multi-model AI pipeline: Gemma 4 (local) detects food ingredients from photos, GPT-4o-mini generates complete recipes with nutrition, and DALL-E 3 produces professional restaurant-quality food photos for each dish. Full end-to-end system with error handling and user-friendly interface.",
+    "description": "Developed a multimodal AI recipe generation pipeline combining computer vision, LLM reasoning, and image generation workflows. Integrated Gemma 4 vision models for ingredient detection, GPT-4o-mini for recipe and nutrition generation, and DALL-E 3 for restaurant-quality food image synthesis.",
     "skills": [
       "Python",
       "Gemma 4",
       "Ollama",
       "OpenAI API",
       "DALL-E 3",
-      "Pillow"
+      "Pillow",
+      "Computer Vision",
+      "Multimodal AI"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-27-recipe-maker",
     "notebook": "",
@@ -480,18 +534,67 @@
   {
     "id": "28",
     "title": "PilotGPT v3 — VFR & IFR Flight Assistant",
-    "domain": "Aviation / AI",
+    "domain": "Aviation / AI Agents",
     "status": "complete",
-    "description": "Expanded PilotGPT with VFR capabilities including sectional chart parsing, VFR weather briefing, airspace classification, and TFR lookup. ReAct agent with 7 tools for comprehensive VFR and IFR flight assistance.",
+    "description": "Expanded PilotGPT into a comprehensive VFR and IFR aviation assistant with sectional chart interpretation, VFR weather briefing generation, TFR lookup, and airspace classification analysis. Built a LangGraph ReAct system with aviation-specific tools for real-time pilot assistance workflows.",
     "skills": [
       "Python",
       "LangGraph",
       "GPT-4o-mini",
       "SerpAPI",
       "Folium",
-      "NumPy"
+      "NumPy",
+      "AI Agents",
+      "Aviation Systems"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-28-pilotgpt-v3",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "29",
+    "title": "Pilot Credentials Vault",
+    "domain": "Full-Stack / Aviation Healthcare",
+    "status": "complete",
+    "description": "Developed a full-stack aviation health management platform for pilots to securely manage FAA credentials, digital logbooks, and medical records. Built secure authentication using JWT and bcryptjs with SQLite-backed storage and a responsive dashboard interface. Integrated a local Ollama LLM with LangGraph agents to summarize medical records, analyze health risks, and perform FAA medical compliance checks.",
+    "skills": [
+      "Python",
+      "Node.js",
+      "Express",
+      "SQLite",
+      "JWT",
+      "bcryptjs",
+      "HTML/CSS/JavaScript",
+      "LangGraph",
+      "Ollama",
+      "Gradio",
+      "Pandas",
+      "Full-Stack Development",
+      "Healthcare AI"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-29-pilot-credentials-vault",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "30",
+    "title": "AI Resume & Cover Letter Optimizer",
+    "domain": "AI / Career Technology",
+    "status": "complete",
+    "description": "Built an AI-powered resume and cover letter optimization platform designed to improve ATS compatibility and streamline job application workflows. Developed NLP-based keyword analysis using NLTK to evaluate resume alignment against job descriptions and integrated GPT-4o-mini to rewrite resume bullet points and generate tailored cover letters. Implemented automated ATS scoring, keyword matching, and DOCX export functionality, improving resume match scores from 22% to 90% during testing.",
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "GPT-4o-mini",
+      "NLTK",
+      "python-docx",
+      "Pandas",
+      "Natural Language Processing",
+      "ATS Optimization"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-30-resume-optimizer",
     "notebook": "",
     "demo": "",
     "thumbnail": ""
