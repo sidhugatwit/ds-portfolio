@@ -47,11 +47,13 @@ Applied AI product for resume improvement, optimization workflows, and user-cent
 
 ## Technical Stack
 
-**Languages:** Python, SQL, Java  
-**AI/ML:** PyTorch, Scikit-learn, XGBoost, Transformers  
-**LLM Systems:** LangChain, LangGraph, FAISS, RAG, prompt workflows, evaluation pipelines  
-**Data Tools:** Pandas, NumPy, DuckDB, SQLite  
-**Specialties:** Aviation AI, Healthcare AI, Applied ML, Intelligent Automation
+Programming Languages: Python, SQL, Java, R, C++
+• Databases: PostgreSQL, SQL Server, DuckDB, MongoDB, CAMS ERP, Jenzabar, Planisware
+• Data & BI: Power BI, Tableau, Excel (Advanced), Visio
+• Platforms: AWS, Azure, SharePoint, Salesforce
+• Tools: Git/GitHub, PowerShell, DevOps, Agile/Scrum, Python-dotenv
+• Certifications: Google Data Analytics, Google IT, ISC2 Cybersecurity, AWS Cloud Foundations
+• Languages: English, Hindi, Urdu, Punjabi, French
 
 ## Additional Work
 
