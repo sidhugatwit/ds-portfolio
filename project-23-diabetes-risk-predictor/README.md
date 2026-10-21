@@ -10,15 +10,16 @@ tiers with personalized lifestyle intervention recommendations.
 
 ## Key Results
 
-| Model | ROC-AUC |
-|-------|---------|
-| XGBoost | 0.8220 |
-| Random Forest | see outputs/ |
+| Model | Holdout ROC-AUC | 5-fold CV ROC-AUC |
+|-------|-----------------|-------------------|
+| XGBoost | 0.822 | 0.829 ± 0.026 |
+| Random Forest | 0.810 | 0.840 ± 0.020 |
 
 ## Methods
 
-- **Data Cleaning** — Zero imputation for glucose, BMI, insulin, blood
-  pressure using median substitution (biologically impossible zeros)
+- **Data Cleaning** — Biologically impossible zeros (glucose, BMI, insulin,
+  blood pressure, skin thickness) treated as missing; medians learned on the
+  training split only (and per fold in CV) so no test statistics leak
 - **Feature Engineering** — BMI×Age interaction, Glucose×Insulin,
   High_Glucose flag, Obese flag, High_Risk_Age flag
 - **XGBoost** — Gradient boosted classifier with 200 estimators

@@ -3,7 +3,7 @@
 ## Overview
 
 A complete IFR flight planning and training system powered by a LangGraph
-ReAct agent with GPT-4o-mini. Built by an IFR-rated pilot from first
+ReAct agent with GPT-4o-mini. Built by an FAA private pilot (300+ hours) from first
 principles — all aviation mathematics derived from FAA standards with no
 external aviation libraries. Covers holding pattern entries, E6B wind
 correction, density altitude, and full IFR flight plan generation.

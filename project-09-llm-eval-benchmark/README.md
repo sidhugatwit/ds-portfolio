@@ -2,10 +2,12 @@
 
 ## Overview
 A domain-specific evaluation benchmark testing real LLMs on 20 
-expert-verified QA pairs across finance and aviation. Compares 
+hand-curated QA pairs across finance and aviation. Compares 
 GPT-4o-mini (OpenAI API) vs Mistral-7B (local via LM Studio) 
-using ROUGE and BERTScore metrics — the same evaluation stack 
-used by Perplexity and Meta AI research teams.
+using ROUGE and BERTScore metrics.
+
+> Scope note: 20 QA pairs is a small benchmark — useful for spotting
+> failure modes per domain, not for statistically significant model rankings.
 
 ## What Makes This Unique
 - Real API calls to GPT-4o-mini and Mistral-7B — not simulated

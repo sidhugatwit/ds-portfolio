@@ -3,7 +3,7 @@
 ## Overview
 
 Expanded PilotGPT with full VFR capabilities alongside the IFR suite from v2.
-Built by an IFR-rated pilot — all aviation mathematics derived from FAA standards.
+Built by an FAA private pilot (300+ hours) — all aviation mathematics derived from FAA standards.
 LangGraph ReAct agent with 7 tools providing comprehensive flight assistance for both VFR and IFR operations.
 
 ## New in v3 vs v2
