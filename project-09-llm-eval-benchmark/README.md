@@ -30,8 +30,22 @@ using ROUGE and BERTScore metrics.
 ## Stack
 Python · OpenAI API · LM Studio · ROUGE · BERTScore · Plotly · Pandas
 
+## Reproducing v1
+
+The original v1 notebook is no longer available, but every model response was saved.
+`src/rescore.py` recomputes the scores from `outputs/llm_responses.csv`:
+ROUGE reproduces the published scores exactly on all 40 rows.
+
+```bash
+pip install -r requirements.txt
+python src/rescore.py            # ROUGE + BERTScore (downloads roberta-large once)
+python src/rescore.py --skip-bert
+```
+
+A larger v2 benchmark is in progress.
+
 ## Files
-- `notebooks/llm_eval_benchmark.ipynb` — full evaluation pipeline
+- `src/rescore.py` — recomputes v1 scores from saved responses
 - `outputs/benchmark_qa.csv` — 20 verified QA pairs
 - `outputs/llm_responses.csv` — raw model responses
 - `outputs/eval_scores.csv` — ROUGE and BERTScore per question
