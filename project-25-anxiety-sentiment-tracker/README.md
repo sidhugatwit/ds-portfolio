@@ -1,5 +1,7 @@
 # Project 25 — Anxiety & Isolation Sentiment Tracker
 
+> **Not medical advice or a medical device.** This is an educational data-science project. Its outputs are not a diagnosis and are not validated for clinical use.
+
 ## Overview
 
 A zero-shot NLP classifier that detects anxiety, isolation, depression,

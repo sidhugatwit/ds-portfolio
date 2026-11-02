@@ -20,21 +20,17 @@ def extract_resume_text(pdf_path):
 
 
 def scrape_job_description_dynamically(url):
-    """Dynamically parses web layouts by mimicking browser signatures."""
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
-        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8",
-        "Accept-Language": "en-US,en;q=0.5",
-        "Referer": "https://www.google.com/",
-        "DNT": "1",
-    }
+    """Fetch a public job posting page and return its readable text, or None if blocked."""
+    # Identify honestly. Many job boards forbid scraping; if a site blocks this,
+    # use --job-file with the pasted posting instead of working around it.
+    headers = {"User-Agent": "resume-assistant/1.0 (personal portfolio project)"}
 
     try:
         # Strict timeout constraint to prevent terminal hanging
         response = requests.get(url, headers=headers, timeout=8)
         response.raise_for_status()
     except requests.RequestException as e:
-        print(f"\n[!] Automated web scraping blocked by remote firewall: {e}")
+        print(f"\n[!] Could not fetch the posting: {e}")
         print("[-] Falling back to manual cache validation sequence...")
         return None
 
@@ -65,16 +61,25 @@ def scrape_job_description_dynamically(url):
 def main():
     parser = argparse.ArgumentParser(description="Dynamic Resume Assistant Client")
     parser.add_argument("--resume", type=str, required=True, help="Path to resume PDF")
-    parser.add_argument("--url", type=str, required=True, help="Target job posting URL")
+    source = parser.add_mutually_exclusive_group(required=True)
+    source.add_argument("--job-file", type=str, help="Text file with the pasted job posting (recommended)")
+    source.add_argument("--url", type=str, help="Public job posting URL")
     args = parser.parse_args()
 
-    webhook_url = "http://localhost:5678/webhook/resume-assistant-pipeline"
+    webhook_url = os.getenv(
+        "RESUME_WEBHOOK_URL", "http://localhost:5678/webhook/resume-assistant-pipeline"
+    )
 
     print("[1/3] Extracting text from your resume PDF...")
     resume_text = extract_resume_text(args.resume)
 
-    print("[2/3] Attempting dynamic web extraction from URL...")
-    job_text = scrape_job_description_dynamically(args.url)
+    if args.job_file:
+        print("[2/3] Reading the job posting from file...")
+        with open(args.job_file, "r", encoding="utf-8") as f:
+            job_text = f.read().strip()
+    else:
+        print("[2/3] Fetching the job posting from URL...")
+        job_text = scrape_job_description_dynamically(args.url)
 
     # Fail-safe check: If blocked, prompt user to use the cached local file override
     if not job_text:

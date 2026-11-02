@@ -598,5 +598,46 @@
     "notebook": "",
     "demo": "",
     "thumbnail": ""
+  },
+  {
+    "id": "31",
+    "title": "Universal Document Converter & Summarizer",
+    "domain": "AI / Document Intelligence",
+    "status": "complete",
+    "description": "Built an AI document-processing tool that reads PDF, DOCX, PPTX, XLSX, CSV, TXT and Markdown files, produces summaries in four styles (executive, bullet, detailed, technical), answers questions about a document's content, and exports results to multiple formats. Uses GPT-4o-mini for summarization and Q&A, with format auto-detection by file extension.",
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "GPT-4o-mini",
+      "python-docx",
+      "python-pptx",
+      "openpyxl",
+      "PyPDF2",
+      "Pandas"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-31-document-converter",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
+  },
+  {
+    "id": "32",
+    "title": "Resume Assistant — Streamlit Console + n8n Pipeline",
+    "domain": "AI / Career Technology",
+    "status": "in development",
+    "description": "Building a resume-tailoring workspace: a CLI client sends a resume PDF and a pasted job posting to an n8n webhook pipeline, and a Streamlit console streams multi-agent feedback, charts ATS-alignment scores returned by the backend, and tracks applications locally. The FastAPI backend is in progress.",
+    "skills": [
+      "Python",
+      "Streamlit",
+      "n8n",
+      "Plotly",
+      "httpx",
+      "ChromaDB",
+      "pypdf"
+    ],
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-32-resume-assistant",
+    "notebook": "",
+    "demo": "",
+    "thumbnail": ""
   }
 ]

@@ -18,4 +18,12 @@ __pycache__/
 
 # OS
 .DS_Store
-Thumbs.dbnode_modules/ 
+Thumbs.db
+
+# Node
+node_modules/
+dist/
+
+
+# Personal job-application board (keeps real company names out of the repo)
+project-32-resume-assistant/data/

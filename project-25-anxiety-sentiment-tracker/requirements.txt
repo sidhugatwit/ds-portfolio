@@ -1,0 +1,10 @@
+# Install: pip install -r requirements.txt
+# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
+jupyter
+numpy
+pandas
+plotly
+python-dotenv
+scikit-learn
+torch
+transformers

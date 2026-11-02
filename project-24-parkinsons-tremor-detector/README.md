@@ -1,5 +1,7 @@
 # Project 24 — Parkinson's Tremor Detector (Voice Analysis)
 
+> **Not medical advice or a medical device.** This is an educational data-science project. Its outputs are not a diagnosis and are not validated for clinical use.
+
 ## Overview
 
 Detects Parkinson's disease from voice recordings using biomedical

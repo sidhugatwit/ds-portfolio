@@ -1,7 +1,7 @@
 {
   "name": "project-29-pilot-medical-vault",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pilot credentials, logbook and health-record vault (Express + SQLite + JWT)",
   "main": "index.js",
   "scripts": {
     "start": "node src/server.js",
@@ -13,5 +13,14 @@
   "type": "commonjs",
   "devDependencies": {
     "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "sqlite3": "^6.0.1"
   }
 }

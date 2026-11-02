@@ -1,0 +1,14 @@
+# Install: pip install -r requirements.txt
+# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
+gradio
+ibm-watsonx-ai
+ipython
+jupyter
+langchain-openai
+numpy
+pandas
+pillow
+python-dotenv
+requests
+torch
+transformers

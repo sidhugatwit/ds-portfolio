@@ -1,0 +1,9 @@
+# Install: pip install -r requirements.txt
+# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
+jupyter
+langchain-community
+langchain-core
+langchain-openai
+langchain-text-splitters
+llama-index
+python-dotenv

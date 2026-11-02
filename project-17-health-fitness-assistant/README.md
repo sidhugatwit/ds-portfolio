@@ -1,5 +1,7 @@
 # Project 17 — AI Health & Fitness Assistant
 
+> **Not medical advice or a medical device.** This is an educational data-science project. Its outputs are not a diagnosis and are not validated for clinical use.
+
 ## Overview
 
 A multi-provider AI health assistant combining two specialized pipelines
