@@ -1,5 +1,7 @@
 # Project 23 — Type 2 Diabetes Risk Predictor
 
+> **Not medical advice or a medical device.** This is an educational data-science project. Its outputs are not a diagnosis and are not validated for clinical use.
+
 ## Overview
 
 End-to-end diabetes risk prediction system trained on the Pima Indians

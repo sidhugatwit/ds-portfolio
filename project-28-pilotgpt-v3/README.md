@@ -1,5 +1,7 @@
 # Project 28 — PilotGPT v3: VFR & IFR Flight Assistant
 
+> **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
+
 ## Overview
 
 Expanded PilotGPT with full VFR capabilities alongside the IFR suite from v2.

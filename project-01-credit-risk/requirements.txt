@@ -1,0 +1,10 @@
+# Install: pip install -r requirements.txt
+# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
+jupyter
+matplotlib
+numpy
+pandas
+plotly
+scikit-learn
+shap
+xgboost

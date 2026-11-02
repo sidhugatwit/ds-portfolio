@@ -1,0 +1,11 @@
+# Install: pip install -r requirements.txt
+# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
+PyPDF2
+jupyter
+markdown
+openai
+openpyxl
+pandas
+python-docx
+python-dotenv
+python-pptx

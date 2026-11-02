@@ -1,5 +1,7 @@
 # Project 06 — Great Circle Routing & Fuel Optimization
 
+> **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
+
 ## Overview
 Implements Haversine and Vincenty great circle formulas to compute 
 optimal flight routes between major international airports. Models 

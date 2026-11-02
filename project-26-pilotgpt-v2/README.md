@@ -1,5 +1,7 @@
 # Project 26 — PilotGPT v2: IFR Full Suite
 
+> **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
+
 ## Overview
 
 A complete IFR flight planning and training system powered by a LangGraph

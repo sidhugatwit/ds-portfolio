@@ -1,6 +1,6 @@
 // auth.js — JWT middleware
 const jwt = require('jsonwebtoken');
-const JWT_SECRET = process.env.JWT_SECRET || 'pilotvault-secret-2025';
+const { JWT_SECRET } = require('../config');
 
 module.exports = (req, res, next) => {
     const token = req.headers['authorization']?.split(' ')[1];

@@ -2,6 +2,8 @@ import streamlit as st
 import httpx
 import json
 import uuid
+import os
+from pathlib import Path
 import plotly.graph_objects as go
 
 # Enforce clean, high-density IDE page configurations matching your naming scheme
@@ -65,9 +67,26 @@ if "thread_id" not in st.session_state:
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 if "ats_trend" not in st.session_state:
-    st.session_state.ats_trend = [72, 75, 78, 83]
+    # Real scores only: filled from the backend's "ats_score" field, never invented
+    st.session_state.ats_trend = []
 
-BACKEND_API_URL = "http://127.0.0.1:8000/api/v1"
+BACKEND_API_URL = os.getenv("RESUME_BACKEND_URL", "http://127.0.0.1:8000/api/v1")
+
+# Your application board lives in a local, git-ignored file so real company
+# names never reach the public repo. Without it, clearly labeled sample data shows.
+APPLICATIONS_FILE = Path(__file__).resolve().parent.parent / "data" / "applications.json"
+SAMPLE_APPLICATIONS = {
+    "saved": ["Sample: ML Intern, fintech", "Sample: Data Analyst, airline"],
+    "active": ["Sample: AI Engineer co-op"],
+    "offers": [],
+}
+
+
+def load_applications():
+    try:
+        return json.loads(APPLICATIONS_FILE.read_text(encoding="utf-8")), False
+    except (OSError, ValueError):
+        return SAMPLE_APPLICATIONS, True
 
 # --- SIDEBAR: COMPACT DOCUMENT INGESTION ---
 with st.sidebar:
@@ -114,6 +133,8 @@ col_left, col_right = st.columns([1, 1], gap="medium")
 with col_left:
     st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
     st.markdown("#### 📊 ATS Alignment Progress Index")
+    if not st.session_state.ats_trend:
+        st.caption("No scores yet. A point appears each time the backend scores your resume against a job.")
     fig = go.Figure()
     fig.add_trace(
         go.Scatter(
@@ -133,28 +154,29 @@ with col_left:
         xaxis=dict(showgrid=False),
         yaxis=dict(showgrid=True, gridcolor="#1f2937"),
     )
-    st.plotly_chart(fig, use_container_width=True, config={"displayModeBar": False})
+    st.plotly_chart(fig, width="stretch", config={"displayModeBar": False})
     st.markdown("</div>", unsafe_allow_html=True)
 
 with col_right:
     st.markdown("<div class='metric-card'>", unsafe_allow_html=True)
     st.markdown("#### 📋 Targeted Application Pipeline")
-    kb_col1, kb_col2, kb_col3 = st.columns(3)
-    with kb_col1:
-        st.markdown(
-            "<div style='background:#1e1b4b; padding:10px; border-radius:6px; min-height:115px;'><b style='color:#c084fc;'>📌 SAVED</b><br><span style='font-size:11px; color:#cbd5e1;'>• Salt AI Intern<br>• Level Quant ML</span></div>",
-            unsafe_allow_html=True,
-        )
-    with kb_col2:
-        st.markdown(
-            "<div style='background:#1c1917; padding:10px; border-radius:6px; min-height:115px;'><b style='color:#fb923c;'>⏳ ACTIVE</b><br><span style='font-size:11px; color:#cbd5e1;'>• SharkNinja AI<br>• WIT ISSE Admin</span></div>",
-            unsafe_allow_html=True,
-        )
-    with kb_col3:
-        st.markdown(
-            "<div style='background:#064e3b; padding:10px; border-radius:6px; min-height:115px;'><b style='color:#4ade80;'>🎉 OFFERS</b><br><span style='font-size:11px; color:#cbd5e1;'>• Open Avenues</span></div>",
-            unsafe_allow_html=True,
-        )
+    applications, is_sample = load_applications()
+    if is_sample:
+        st.caption("Sample data. Add data/applications.json (git-ignored) to track your own.")
+    columns = [
+        ("saved", "📌 SAVED", "#1e1b4b", "#c084fc"),
+        ("active", "⏳ ACTIVE", "#1c1917", "#fb923c"),
+        ("offers", "🎉 OFFERS", "#064e3b", "#4ade80"),
+    ]
+    for col, (key, label, bg, fg) in zip(st.columns(3), columns):
+        items = "<br>".join(f"• {item}" for item in applications.get(key, [])) or "—"
+        with col:
+            st.markdown(
+                f"<div style='background:{bg}; padding:10px; border-radius:6px; min-height:115px;'>"
+                f"<b style='color:{fg};'>{label}</b><br>"
+                f"<span style='font-size:11px; color:#cbd5e1;'>{items}</span></div>",
+                unsafe_allow_html=True,
+            )
     st.markdown("</div>", unsafe_allow_html=True)
 
 st.markdown("---")
@@ -192,6 +214,10 @@ if user_input := st.chat_input(
                             st.error(data_chunk["error"])
                             break
 
+                        # Record a real score only when the backend sends one
+                        if isinstance(data_chunk.get("ats_score"), (int, float)):
+                            st.session_state.ats_trend.append(data_chunk["ats_score"])
+
                         chunk_agent = data_chunk.get("agent", "system").upper()
                         chunk_content = data_chunk.get("content", "")
 
@@ -210,12 +236,6 @@ if user_input := st.chat_input(
                 ("AI System Operator", full_response_content)
             )
 
-            # Dynamically append a success point to our chart tracking array to visualize performance optimization
-            st.session_state.ats_trend.append(
-                st.session_state.ats_trend[-1] + 3
-                if st.session_state.ats_trend[-1] < 95
-                else 98
-            )
             st.rerun()
 
         except Exception as e:

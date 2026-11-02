@@ -1,5 +1,7 @@
 # Project 29 — Health & Pilot Credentials Vault
 
+> **Not for official record keeping.** This is an educational project. Your official logbook, FAA certificates and medical records remain the legal source of truth.
+
 ## Overview
 
 A full-stack web application for pilots to securely store FAA credentials,

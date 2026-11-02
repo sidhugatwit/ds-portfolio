@@ -1,5 +1,7 @@
 # Project 04 — ILS Glide Path & Localizer Deviation Model
 
+> **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
+
 ## Overview
 Mathematical model of an Instrument Landing System (ILS) approach 
 derived from ICAO Annex 10 standards. Simulates aircraft deviation 
