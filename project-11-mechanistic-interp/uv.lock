@@ -237,6 +237,15 @@ wheels = [
 ]
 
 [[package]]
+name = "better-abc"
+version = "0.0.3"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/8b/72/3d630f781659015357cc08cad32aa636b252e007df0bae31184a3d872427/better-abc-0.0.3.tar.gz", hash = "sha256:a880fd6bc9675da2ec991e8712a555bffa0f12722efed78c739f78343cf989f6", size = 2852, upload-time = "2020-11-10T22:47:31.303Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d9/e8/7d00a23039ab74c5741736ce05d7700eb6237e83747aac4df07a5bf2d074/better_abc-0.0.3-py3-none-any.whl", hash = "sha256:3ae73b473fbeb536a548f542984976e80b821676ae6e18f14e24d8e180647187", size = 3475, upload-time = "2020-11-10T22:47:30.354Z" },
+]
+
+[[package]]
 name = "bleach"
 version = "6.4.0"
 source = { registry = "https://pypi.org/simple" }
@@ -1755,7 +1764,7 @@ requires-dist = [
     { name = "pandas" },
     { name = "plotly" },
     { name = "torch" },
-    { name = "transformer-lens" },
+    { name = "transformer-lens", specifier = ">=2.15,<4" },
 ]
 
 [[package]]
@@ -2427,11 +2436,12 @@ wheels = [
 
 [[package]]
 name = "transformer-lens"
-version = "4.3.0"
+version = "3.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "accelerate" },
     { name = "beartype" },
+    { name = "better-abc" },
     { name = "datasets" },
     { name = "einops" },
     { name = "fancy-einsum" },
@@ -2451,9 +2461,9 @@ dependencies = [
     { name = "typing-extensions" },
     { name = "wandb" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/e0/16/416f8235718abb4635e8151a32cc65c23d070383381e06a79ef7404d9da2/transformer_lens-4.3.0.tar.gz", hash = "sha256:a2adcad2daf3dcc000ab5ca3acc6883a1f602410fe47e794a853c754705783db", size = 11082825, upload-time = "2026-10-23T22:13:42.48Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/8c/07/20f7ca2499ebd99090775a42e2c40c859a2ea61f4150a901dba2d1bed806/transformer_lens-3.9.0.tar.gz", hash = "sha256:671f01075af1107e804591424887432e27065b65f09825b5dc4dfc58deb338c3", size = 11374999, upload-time = "2026-09-12T03:29:30.578Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c5/96/ea80544ca88d1e2bf21000a8a63778af5346770cdaf814bc1998f606067e/transformer_lens-4.3.0-py3-none-any.whl", hash = "sha256:fd3aff408b4145a8b4b00cacdc32a25c047c4c4f416de4b7b260abd375ae89db", size = 1577976, upload-time = "2026-10-23T22:13:40.348Z" },
+    { url = "https://files.pythonhosted.org/packages/66/72/2dba40827ab175fdaaa5bd4a946c50da268c0a1bcbbdb27267e56f4bd956/transformer_lens-3.9.0-py3-none-any.whl", hash = "sha256:94739f9c54f53239c61f01e1953b8ed89cd3338c385a974ab38d1b45187f151e", size = 1558509, upload-time = "2026-09-12T03:29:28.619Z" },
 ]
 
 [[package]]
