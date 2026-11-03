@@ -4,6 +4,7 @@ ipython
 jupyter
 langchain
 langchain-core
+langchain-openai
 langgraph
 pydantic
 python-dotenv

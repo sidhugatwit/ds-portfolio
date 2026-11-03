@@ -23,7 +23,7 @@ def check_leakage(features: str) -> str:
     return json.dumps({"flagged_leakage": flagged, "safe_features": safe})
 
 def build_agent():
-    llm = ChatOpenAI(model="gpt-4o-mini", temperature=0)
+    llm = ChatOpenAI(model=os.getenv("LLM_MODEL", "gpt-4o-mini"), temperature=0)
     return create_react_agent(llm, tools=[profile_data, check_leakage])
 
 if __name__ == "__main__":
