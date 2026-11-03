@@ -1,0 +1,81 @@
+# Re-runs every notebook that needs no paid API, top to bottom, from the locked
+# dependencies in each project's uv.lock. The README badge reflects this workflow.
+name: Notebooks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "17 9 * * 1"   # every Monday, catches breakage from data sources changing
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  notebooks:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - project-01-credit-risk
+          - project-02-fraud-detection
+          - project-04-ils-glide-path
+          - project-05-flight-delay
+          - project-06-great-circle-routing
+          - project-08-recommender
+          - project-10-agentic-sql
+          - project-20-blackjack-to-five
+          - project-21-grocery-bagger
+          - project-23-diabetes-risk-predictor
+          - project-24-parkinsons-tremor-detector
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install locked dependencies
+        working-directory: ${{ matrix.project }}
+        run: uv sync --frozen
+      - name: Run every notebook top to bottom
+        working-directory: ${{ matrix.project }}/notebooks
+        run: |
+          for nb in *.ipynb; do
+            echo "::group::$nb"
+            uv run --frozen jupyter nbconvert --to notebook --execute "$nb" \
+              --output-dir "$RUNNER_TEMP/executed" --ExecutePreprocessor.timeout=1200
+            echo "::endgroup::"
+          done
+
+  llm-eval-rescore:
+    name: project-09-llm-eval-benchmark
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Recompute v1 scores and require an exact match
+        working-directory: project-09-llm-eval-benchmark
+        run: |
+          uv sync --frozen
+          uv run --frozen python src/rescore.py --skip-bert | tee rescore.txt
+          ! grep -q DIFFERS rescore.txt
+
+  pilot-vault:
+    name: project-29-health-pilot-vault
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install and boot the API
+        working-directory: project-29-health-pilot-vault
+        run: |
+          npm ci
+          PORT=3917 node src/server.js &
+          for i in $(seq 1 20); do curl -fs localhost:3917/api/status && exit 0; sleep 1; done
+          echo "server did not answer"; exit 1

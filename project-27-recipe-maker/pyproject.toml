@@ -1,0 +1,18 @@
+[project]
+name = "project-27-recipe-maker"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "ipython",
+    "jupyter",
+    "numpy",
+    "openai",
+    "pandas",
+    "pillow",
+    "plotly",
+    "python-dotenv",
+    "requests",
+]
+
+[tool.uv]
+package = false

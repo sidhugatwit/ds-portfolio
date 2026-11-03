@@ -1,0 +1,15 @@
+[project]
+name = "project-04-ils-glide-path"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "jupyter",
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "plotly",
+    "scipy",
+]
+
+[tool.uv]
+package = false

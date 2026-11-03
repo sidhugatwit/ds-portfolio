@@ -1,0 +1,16 @@
+[project]
+name = "project-02-fraud-detection"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "imbalanced-learn",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "plotly",
+    "river",
+    "scikit-learn",
+]
+
+[tool.uv]
+package = false

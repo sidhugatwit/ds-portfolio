@@ -1,0 +1,16 @@
+[project]
+name = "project-07-rag-financial-analyst"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "faiss-cpu",
+    "jupyter",
+    "numpy",
+    "openai",
+    "pandas",
+    "pypdf",
+    "sentence-transformers",
+]
+
+[tool.uv]
+package = false

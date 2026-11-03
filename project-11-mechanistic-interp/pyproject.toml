@@ -1,0 +1,16 @@
+[project]
+name = "project-11-mechanistic-interp"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "einops",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "plotly",
+    "torch",
+    "transformer-lens",
+]
+
+[tool.uv]
+package = false
