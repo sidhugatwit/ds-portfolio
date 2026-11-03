@@ -6,4 +6,6 @@ langchain-core
 langchain-openai
 langchain-text-splitters
 llama-index
+llama-index-embeddings-ollama
+llama-index-llms-ollama
 python-dotenv
