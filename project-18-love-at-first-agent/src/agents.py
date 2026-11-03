@@ -1,6 +1,6 @@
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import os
-load_dotenv(r"C:\\Users\\Gurveer\\ds-portfolio\\.env")
+load_dotenv(find_dotenv(usecwd=True))
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 import json

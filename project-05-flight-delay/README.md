@@ -6,6 +6,8 @@ built with DoWhy. Isolates the true causal effect of weather, NAS
 congestion, carrier issues, and late aircraft on delay probability — 
 going beyond correlation to answer *why* flights are delayed.
 
+> **Data:** 8,000 simulated flights generated in the notebook (seeded, so results reproduce exactly). Because the true causes are known, the analysis can check whether causal inference recovers them. A version on real BTS on-time data is planned.
+
 ## Methods
 - **Causal DAG** — Directed Acyclic Graph encoding domain knowledge
 - **Backdoor Criterion** — Identifies valid adjustment sets for causal estimation
