@@ -1,7 +1,8 @@
+from pathlib import Path
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 import os
-load_dotenv(r'C:\Users\Gurveer\ds-portfolio\.env')
+load_dotenv(find_dotenv(usecwd=True))
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
 
 import streamlit as st
@@ -33,7 +34,7 @@ questions = [
      "rubric": ["tokenization", "positional encoding", "multi-head attention", "feed-forward", "layer norm"]},
 ]
 
-DB_PATH = r'C:\Users\Gurveer\ds-portfolio\project-22-interview-prep-agent\data\sessions.db'
+DB_PATH = str(Path(__file__).resolve().parent.parent / 'data' / 'sessions.db')
 os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
 def init_db():
