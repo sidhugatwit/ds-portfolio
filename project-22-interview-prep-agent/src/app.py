@@ -12,6 +12,37 @@ import datetime
 import pandas as pd
 from openai import OpenAI
 
+# --- LLM helpers: work with OpenAI and with local reasoning models (LM Studio) ---
+import re as _re
+
+def llm_budget(n):
+    """Token cap plus headroom for models that reason before answering.
+    Set LLM_REASONING_TOKENS in .env (e.g. 6000 for Qwen3.6 in LM Studio; 0 for OpenAI)."""
+    return n + int(os.getenv("LLM_REASONING_TOKENS", "0"))
+
+def llm_text(response):
+    """The model's answer text, without any <think> block; a clear error if it is empty."""
+    choice = response.choices[0]
+    text = _re.sub(r"<think>.*?</think>", "", choice.message.content or "", flags=_re.S).strip()
+    if not text:
+        raise RuntimeError(
+            f"The model returned no answer (finish_reason={choice.finish_reason}). "
+            "Reasoning models spend tokens thinking first: raise LLM_REASONING_TOKENS in .env."
+        )
+    return text
+
+def parse_json(text):
+    """Parse JSON from a model reply, tolerating ```json fences and text around the object."""
+    text = text.replace("```json", "").replace("```", "").strip()
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        match = _re.search(r"\{.*\}|\[.*\]", text, _re.S)
+        if match:
+            return json.loads(match.group(0))
+        raise
+
+
 client = OpenAI()
 
 # ── Question bank (abbreviated for app) ──────────────────────
@@ -67,8 +98,8 @@ Return ONLY valid JSON:
         messages=[{"role": "user", "content": prompt}],
         temperature=0.1
     )
-    raw = resp.choices[0].message.content.strip().replace("```json","").replace("```","")
-    return json.loads(raw)
+    raw = llm_text(resp)
+    return parse_json(raw)
 
 def save_result(domain, question, score, max_score, pct, feedback, missing):
     conn = sqlite3.connect(DB_PATH)
