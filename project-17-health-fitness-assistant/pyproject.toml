@@ -1,0 +1,21 @@
+[project]
+name = "project-17-health-fitness-assistant"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "gradio",
+    "ibm-watsonx-ai",
+    "ipython",
+    "jupyter",
+    "langchain-openai",
+    "numpy",
+    "pandas",
+    "pillow",
+    "python-dotenv",
+    "requests",
+    "torch",
+    "transformers",
+]
+
+[tool.uv]
+package = false

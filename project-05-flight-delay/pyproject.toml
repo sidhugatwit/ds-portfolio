@@ -1,0 +1,15 @@
+[project]
+name = "project-05-flight-delay"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "dowhy",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "plotly",
+    "scikit-learn",
+]
+
+[tool.uv]
+package = false

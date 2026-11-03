@@ -1,0 +1,20 @@
+[project]
+name = "project-28-pilotgpt-v3"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "folium",
+    "jupyter",
+    "langchain-core",
+    "langchain-openai",
+    "langgraph",
+    "numpy",
+    "openai",
+    "pandas",
+    "plotly",
+    "python-dotenv",
+    "requests",
+]
+
+[tool.uv]
+package = false

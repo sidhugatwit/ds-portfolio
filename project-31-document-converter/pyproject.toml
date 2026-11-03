@@ -1,0 +1,18 @@
+[project]
+name = "project-31-document-converter"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "PyPDF2",
+    "jupyter",
+    "markdown",
+    "openai",
+    "openpyxl",
+    "pandas",
+    "python-docx",
+    "python-dotenv",
+    "python-pptx",
+]
+
+[tool.uv]
+package = false

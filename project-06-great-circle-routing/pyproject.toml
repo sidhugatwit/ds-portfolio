@@ -1,0 +1,13 @@
+[project]
+name = "project-06-great-circle-routing"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "jupyter",
+    "numpy",
+    "pandas",
+    "plotly",
+]
+
+[tool.uv]
+package = false

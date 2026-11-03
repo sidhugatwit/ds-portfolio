@@ -1,0 +1,41 @@
+# Notebooks that download large models or live market data. Kept off the README
+# badge because outside services (Hugging Face, Yahoo Finance) can rate-limit CI.
+name: Weekly heavy notebooks
+
+on:
+  schedule:
+    - cron: "43 10 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  heavy:
+    name: ${{ matrix.project }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        project:
+          - project-03-portfolio-optimizer
+          - project-14-gbm-sandisk-asml
+          - project-11-mechanistic-interp
+          - project-12-rlhf-pipeline
+          - project-25-anxiety-sentiment-tracker
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: Install locked dependencies
+        working-directory: ${{ matrix.project }}
+        run: uv sync --frozen
+      - name: Run every notebook top to bottom
+        working-directory: ${{ matrix.project }}/notebooks
+        run: |
+          for nb in *.ipynb; do
+            echo "::group::$nb"
+            uv run --frozen jupyter nbconvert --to notebook --execute "$nb" \
+              --output-dir "$RUNNER_TEMP/executed" --ExecutePreprocessor.timeout=3600
+            echo "::endgroup::"
+          done

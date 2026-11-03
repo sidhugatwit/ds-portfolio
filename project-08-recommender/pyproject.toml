@@ -1,0 +1,16 @@
+[project]
+name = "project-08-recommender"
+version = "1.0.0"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "implicit",
+    "jupyter",
+    "numpy",
+    "pandas",
+    "plotly",
+    "scikit-learn",
+    "scipy",
+]
+
+[tool.uv]
+package = false

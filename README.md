@@ -1,9 +1,27 @@
 # Gurveer Sidhu — AI & Data Systems Engineer
 
+[![Notebooks](https://github.com/sidhugatwit/ds-portfolio/actions/workflows/notebooks.yml/badge.svg)](https://github.com/sidhugatwit/ds-portfolio/actions/workflows/notebooks.yml)
+
 
 Building practical AI systems, agentic workflows, and applied ML products across **aviation, healthcare, and intelligent automation**.
 
 This repository is a showcase of projects focused on real system design: LLM applications, retrieval pipelines, evaluation workflows, structured reasoning, and end-to-end AI product development.
+
+## Run any project
+
+Every Python project pins its exact dependencies in a `uv.lock` file, so it installs the same way on any machine.
+
+1. Install [uv](https://docs.astral.sh/uv/) once.
+2. From a project folder, open its notebooks:
+
+   ```bash
+   cd project-05-flight-delay
+   uv run jupyter lab
+   ```
+
+   The first run installs Python 3.11 and the locked packages into a local `.venv`; later runs start immediately.
+
+Projects that call a hosted LLM read API keys from a `.env` file at the repository root (never committed). Every notebook that needs no paid API is re-run automatically on each push by the **Notebooks** workflow; the badge above shows its latest result.
 
 ## Featured Systems
 

@@ -27,3 +27,6 @@ dist/
 
 # Personal job-application board (keeps real company names out of the repo)
 project-32-resume-assistant/data/
+
+# Python virtual environments created by uv
+.venv/
