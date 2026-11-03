@@ -22,5 +22,8 @@
     "jsonwebtoken": "^9.0.3",
     "multer": "^2.5.0",
     "sqlite3": "^6.0.1"
+  },
+  "allowScripts": {
+    "sqlite3@6.0.1": true
   }
 }
