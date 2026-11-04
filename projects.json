@@ -372,7 +372,7 @@
     "title": "BlackJack to Five — Probability & Optimal Strategy",
     "domain": "Algorithms / Probability",
     "status": "complete",
-    "description": "Built a probability and strategy optimization simulator for a custom BlackJack-style game using Monte Carlo methods and dynamic programming. Simulated over 10,000 gameplay iterations to analyze bust probability, expected value outcomes, and optimal decision-making strategies.",
+    "description": "Found the optimal hit/stand policy for a custom BlackJack-style game with exact dynamic programming (Bellman equation), then validated it on 100,000 simulated hands with common random numbers and 95% confidence intervals. The optimal policy wins 42.5% of rounds, +1.8 points over the casino-style 'hit below 17' rule, because the player never sees the dealer's cards. Extends a Java group project from COMP 2000.",
     "skills": [
       "Python",
       "NumPy",
