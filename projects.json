@@ -313,7 +313,7 @@
     "title": "AI Health & Fitness Assistant",
     "domain": "AI / Healthcare",
     "status": "complete",
-    "description": "Built a multimodal AI health and fitness assistant integrating IBM Watsonx vision models, GPT-based planning systems, and nutrition analysis workflows. Implemented gym equipment recognition, AI-generated workout planning, and food analysis pipelines within a Gradio-powered user interface.",
+    "description": "Two vision-to-action pipelines. On IBM watsonx.ai, Llama 4 Maverick reads gym-equipment photos and Llama 3.3 70B writes a weekly plan that is checked against the detected equipment and exported as an HTML report. Locally, CLIP detects foods and an LM Studio model writes a recipe, behind a Gradio UI.",
     "skills": [
       "Python",
       "IBM Watsonx",
