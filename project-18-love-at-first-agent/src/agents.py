@@ -1,32 +1,48 @@
-from dotenv import load_dotenv, find_dotenv
-import os
-load_dotenv(find_dotenv(usecwd=True))
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+"""Leakage rules and a minimal agent for the speed-dating data.
 
+Usage: uv run python src/agents.py "Check these features for leakage: attr_o, int_corr, dec"
+"""
 import json
-from langchain_core.tools import tool
-from langchain_openai import ChatOpenAI
-from langgraph.prebuilt import create_react_agent
+import os
+import re
+import sys
 
-@tool
-def profile_data(info: str) -> str:
-    """Profile the speed dating dataset."""
-    return json.dumps({"total_rows": 8378, "match_rate": "16.5%",
-                       "recommendation": "Use ROC AUC due to class imbalance"})
+from dotenv import find_dotenv, load_dotenv
 
-@tool
-def check_leakage(features: str) -> str:
-    """Check features for data leakage."""
-    leakage = ["decision", "decision_o", "match", "dec", "dec_o"]
-    flagged = [f.strip() for f in features.split(",") if f.strip() in leakage]
-    safe = [f.strip() for f in features.split(",") if f.strip() not in leakage]
-    return json.dumps({"flagged_leakage": flagged, "safe_features": safe})
+load_dotenv(find_dotenv(usecwd=True))
+os.environ.setdefault("OPENAI_API_KEY", "lm-studio")  # local servers accept any key
+
+OUTCOME = re.compile(r"^(match|dec|dec_o)$")
+AFTER_DATE = re.compile(
+    r"^(attr|sinc|intel|fun|amb|shar|like|prob|met)(_o)?$"
+    r"|^match_es$|_s$"
+    r"|_2$|_3$|^(you_call|them_cal|date_3|numdat_3|num_in_3|satis_2|length|numdat_2)$"
+)
+
+
+def is_leakage(col: str) -> bool:
+    """True for outcome columns and anything recorded during or after the date."""
+    return bool(OUTCOME.search(col) or AFTER_DATE.search(col))
+
 
 def build_agent():
-    llm = ChatOpenAI(model=os.getenv("LLM_MODEL", "gpt-4o-mini"), temperature=0)
-    return create_react_agent(llm, tools=[profile_data, check_leakage])
+    from langchain_core.tools import tool
+    from langchain_openai import ChatOpenAI
+    from langgraph.prebuilt import create_react_agent
+
+    @tool
+    def check_leakage(features: str) -> str:
+        """Check a comma-separated list of column names for leakage."""
+        names = [f.strip() for f in features.split(",") if f.strip()]
+        flagged = [f for f in names if is_leakage(f)]
+        return json.dumps({"flagged_leakage": flagged, "safe_features": [f for f in names if f not in flagged]})
+
+    budget = 1000 + int(os.getenv("LLM_REASONING_TOKENS", "0"))
+    llm = ChatOpenAI(model=os.getenv("LLM_MODEL", "gpt-4o-mini"), temperature=0, max_tokens=budget)
+    return create_react_agent(llm, tools=[check_leakage])
+
 
 if __name__ == "__main__":
-    agent = build_agent()
-    result = agent.invoke({"messages": [{"role": "user", "content": "Profile the dataset."}]})
-    print(result["messages"][-1].content)
+    question = " ".join(sys.argv[1:]) or "Check these features for leakage: attr_o, like, int_corr, age_o, dec"
+    result = build_agent().invoke({"messages": [{"role": "user", "content": question}]})
+    print(re.sub(r"<think>.*?</think>", "", result["messages"][-1].content, flags=re.S).strip())
