@@ -10,7 +10,7 @@ import os
 import requests
 
 AWC = "https://aviationweather.gov/api/data"
-HEADERS = {"User-Agent": "PilotGPT-portfolio/3.1 (educational project)"}
+HEADERS = {"User-Agent": "DirectTo-portfolio/1.0 (educational project)"}
 CEILING_COVERS = {"BKN", "OVC", "OVX", "VV"}
 
 
@@ -35,7 +35,7 @@ def _altimeter_inhg(value) -> float | None:
 
 
 def parse_metar(obs: dict) -> dict:
-    """Turn one AWC METAR JSON record into the fields PilotGPT uses."""
+    """Turn one AWC METAR JSON record into the fields DirectTo uses."""
     clouds = obs.get("clouds") or []
     ceilings = [c.get("base") for c in clouds if c.get("cover") in CEILING_COVERS and c.get("base") is not None]
     if obs.get("vertVis") is not None:

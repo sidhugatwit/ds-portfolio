@@ -1,4 +1,4 @@
-# Project 28 — PilotGPT v3: VFR & IFR Flight Assistant
+# Project 28 — DirectTo: VFR & IFR Flight Assistant
 
 > **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
 
@@ -6,7 +6,7 @@
 
 A LangGraph ReAct agent that answers preflight questions the way a flight instructor would check them:
 every number comes from a tool, and every tool is tested against hand-worked examples.
-Built by an FAA private pilot (300+ hours). Third version of PilotGPT (v2 is project 26).
+Built by an FAA private pilot (300+ hours). Named after the Direct-To button pilots use to fly straight to a waypoint. Formerly PilotGPT v3; the earlier version is project 26.
 
 ## Tools
 

@@ -1,4 +1,4 @@
-"""Hand-worked checks for PilotGPT's flight math. Run: uv run pytest -q"""
+"""Hand-worked checks for DirectTo's flight math. Run: uv run pytest -q"""
 import sys
 from datetime import date
 from pathlib import Path

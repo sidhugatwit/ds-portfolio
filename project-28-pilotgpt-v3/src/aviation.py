@@ -1,4 +1,4 @@
-"""Flight-planning math and rules for PilotGPT v3.
+"""Flight-planning math and rules for DirectTo.
 
 Educational only. Not for navigation or flight planning.
 
