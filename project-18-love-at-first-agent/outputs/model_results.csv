@@ -1,6 +1,6 @@
 model,roc_auc,std
-Naive: top 10 incl. date ratings,0.8518,
-Honest: top 10 pre-date,0.6446,
-Honest: all pre-date,0.6828,
-"Honest: all pre-date, CV by couple",0.6798,0.0252
-"Honest: all pre-date, CV by event",0.5855,0.0293
+Naive: top 10 incl. date ratings,0.8514,
+Honest: top 10 pre-date,0.6495,
+Honest: all pre-date,0.6677,
+"Honest: all pre-date, CV by couple",0.6809,0.0233
+"Honest: all pre-date, CV by event",0.5886,0.0321
