@@ -1,0 +1,34 @@
+{
+  "model": "qwen/qwen3.6-35b-a3b",
+  "runs": [
+    {
+      "question": "Profile the speed dating dataset and tell me if ROC AUC is the right metric.",
+      "tools_called": [
+        "profile_data"
+      ],
+      "answer": "Based on the profile of the speed-dating dataset:\n\n* **Dataset Size:** 8,378 rows and 195 columns\n* **Match Rate:** 16.5% (only about 1 in 6 dates results in a match)\n* **Pre-date Features:** 67 features available before the date occurs\n\n**Is ROC AUC the right metric?**\nYes, **ROC AUC is the recommended metric** for this dataset. Because the data is highly imbalanced (only 16.5% of dates result in a match), standard accuracy would be misleading. ROC AUC is better suited to evaluate model performance on imbalanced classification tasks like this one."
+    },
+    {
+      "question": "Check these features for leakage: attr_o, fun_o, dec, dec_o, like_o, shar_o, int_corr, age_o",
+      "tools_called": [
+        "check_leakage"
+      ],
+      "answer": "Based on the check, the following features are flagged as **leaky** because they contain information recorded during or after the date, which wouldn't be available beforehand:\n* `attr_o`\n* `fun_o`\n* `dec`\n* `dec_o`\n* `like_o`\n* `shar_o`\n\nThe following features are **safe** to use for pre-date prediction:\n* `int_corr`\n* `age_o`\n\nIf you plan to train a model, you should exclude the flagged features to avoid data leakage and ensure realistic performance estimates."
+    },
+    {
+      "question": "Train a model on attr_o, fun_o, like_o, int_corr, age, age_o. Then train the same list with allow_leakage set to true, and explain the difference.",
+      "tools_called": [
+        "train_model",
+        "train_model"
+      ],
+      "answer": "When training the model with `allow_leakage=false`, the features `attr_o`, `fun_o`, and `like_o` were automatically dropped because they contain **data leakage**. These features represent post-date ratings (attraction, fun, and liking) given by the observer, meaning they were recorded *after* the date occurred. Using them to predict whether two people will match is essentially cheating, as it uses future information about the outcome.\n\nAs a result, the model without leakage could only use the pre-date features (`int_corr`, `age`, `age_o`), leading to a much lower ROC AUC of **0.5425**.\n\nWhen `allow_leakage=true`, all features were kept, and the model achieved a significantly higher ROC AUC of **0.7606**. This inflated performance is artificial and misleading because the model is leveraging post-date information to predict the match outcome. In a real-world scenario where you only have pre-date information, the model's predictive power would drop to the lower, more realistic score."
+    },
+    {
+      "question": "Estimate the match probability for a 28-year-old and a 26-year-old of the same race with interest correlation 0.4.",
+      "tools_called": [
+        "predict_match"
+      ],
+      "answer": "The estimated match probability for a 28-year-old and a 26-year-old of the same race with an interest correlation of 0.4 is **25.3%**.\n\nFor context, the base rate for matches in this dataset is 16.5%. Please note that this prediction is based on a pre-date model with a held-out ROC AUC of 0.67, indicating it captures a weak signal and should not be treated as a definitive forecast."
+    }
+  ]
+}
