@@ -16,6 +16,9 @@ plan is checked against the equipment → printable HTML report
 - Planning: Llama 3.3 70B Instruct on watsonx.ai, returning a structured table parsed into a DataFrame
 - **Equipment check:** every exercise is compared with the detected equipment, and any that need
   equipment you don't have (a common LLM mistake) are flagged
+- **Plan checks:** right number of training days, at least 4 exercises per day, lower body and core covered
+- **Human check:** vision models misread machines (Maverick once called a multi-press a "seated row
+  machine"), so detected equipment can be corrected before planning; the original reading is kept
 - Each run is saved to `outputs/trainer_run.json` with the models and region that produced it
 
 An earlier version silently substituted a hard-coded equipment description whenever the vision call
@@ -42,7 +45,8 @@ watsonx models are set with `WATSONX_TEXT_MODEL` and `WATSONX_VISION_MODEL`; IBM
 
 1. In the repo's `.env`: `WATSONX_APIKEY`, `WATSONX_PROJECT_ID`, `WATSONX_URL` (see `.env.example`).
    A watsonx.ai Runtime Lite plan is enough.
-2. Put one or more equipment photos in `data/gym/`.
+2. Put one or more equipment photos in `data/gym/`. The folder is git-ignored, so product photos you
+   don't own stay out of the repo.
 3. `uv run jupyter lab` in this folder.
 
 ## Stack
