@@ -64,3 +64,9 @@ Python · LangGraph · LangChain · GPT-4o-mini · NumPy · Pandas · Plotly
 - `notebooks/pilotgpt_v2.ipynb` — full IFR suite
 - `outputs/flight_plans.csv` — sample IFR flight plans
 - `outputs/holding_pattern_entries.csv` — holding entry calculations
+
+## Known issues (fixed in v3.1, project 28)
+
+This version's holding-entry sectors swap teardrop and parallel, and its magnetic heading subtracts Boston's
+West variation instead of adding it. Both are corrected and tested in
+[PilotGPT v3](../project-28-pilotgpt-v3/). The saved outputs here are kept as a record of v2.

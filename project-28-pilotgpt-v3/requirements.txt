@@ -7,6 +7,8 @@ langchain-openai
 langgraph
 numpy
 openai
+pygeomag
+pytest
 pandas
 plotly
 python-dotenv
