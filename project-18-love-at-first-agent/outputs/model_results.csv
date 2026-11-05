@@ -1,3 +1,6 @@
-metric,value
-ROC AUC (with leakage),0.8618
-ROC AUC (clean),0.8553
+model,roc_auc,std
+Naive: top 10 incl. date ratings,0.8518,
+Honest: top 10 pre-date,0.6446,
+Honest: all pre-date,0.6828,
+"Honest: all pre-date, CV by couple",0.6798,0.0252
+"Honest: all pre-date, CV by event",0.5855,0.0293

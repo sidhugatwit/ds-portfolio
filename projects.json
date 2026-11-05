@@ -333,13 +333,13 @@
     "title": "Love at First Agent — LangGraph + XGBoost",
     "domain": "AI / Agentic Machine Learning",
     "status": "complete",
-    "description": "Designed an autonomous machine learning agent using LangGraph and XGBoost to analyze speed dating datasets and predict match probability outcomes. Implemented automated profiling, leakage prevention, recursive feature elimination (RFE), and model evaluation workflows achieving ROC-AUC performance of 0.8553.",
+    "description": "LangGraph ReAct agent with tools to profile the Columbia speed-dating data, check features for leakage, train XGBoost and score new couples. Found that the date ratings leak the outcome: they lift ROC AUC to 0.85, while an honest pre-date model scores 0.68 (0.59 on unseen events).",
     "skills": [
       "Python",
       "LangGraph",
       "XGBoost",
       "Scikit-learn",
-      "GPT-4o-mini",
+      "Data Leakage Detection",
       "Feature Engineering",
       "Machine Learning"
     ],
