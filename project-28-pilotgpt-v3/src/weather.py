@@ -56,6 +56,7 @@ def parse_metar(obs: dict) -> dict:
         "altimeter_inhg": _altimeter_inhg(obs.get("altim")),
         "field_elevation_ft": round(elev_m * 3.28084) if elev_m is not None else None,
         "weather": obs.get("wxString"),
+        "heights": "Cloud bases and the ceiling are in feet above ground level (AGL), as METARs report them.",
     }
 
 

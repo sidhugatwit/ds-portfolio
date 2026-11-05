@@ -137,8 +137,12 @@ def holding_entry(inbound_course: float, heading: float, right_turns: bool = Tru
         teardrop = (outbound - 30) % 360 if right_turns else (outbound + 30) % 360
         steps = (f"Cross the fix and fly heading {teardrop:03.0f}° (30° into the holding side, {holding_side} of the course) for 1 minute. "
                  f"Then turn {turn} to intercept the inbound course {inbound:03.0f}°.")
+    lo, hi = {"Direct": (250, 70), "Parallel": (70, 180), "Teardrop": (180, 250)}[entry]
+    first, last = ((inbound + lo) % 360, (inbound + hi) % 360) if right_turns else ((inbound - hi) % 360, (inbound - lo) % 360)
+    why = (f"Heading {heading % 360:03.0f}° is in the {entry.lower()} sector, which covers arrival headings "
+           f"{first:03.0f}° clockwise to {last:03.0f}° for this hold (AIM 5-3-8).")
     near_boundary = min(abs(rel - b) for b in (70, 180, 250)) <= 5
-    return {"entry": entry, "steps": steps, "turns": turn,
+    return {"entry": entry, "steps": steps, "why": why, "turns": turn,
             "holding_side": f"{holding_side} of the inbound course", "non_holding_side": f"{non_holding_side} of the inbound course",
             "note": "Within 5° of a sector boundary: either entry is acceptable." if near_boundary else ""}
 
@@ -197,7 +201,7 @@ def vfr_check(visibility_sm: float, ceiling_agl_ft: float | None, cruise_agl_ft:
     """
     c = airspace_class.upper()
     mins = vfr_minimums(c, field_elevation_ft + cruise_agl_ft, cruise_agl_ft)
-    problems, ok = [], []
+    problems, ok, options = [], [], []
     if mins is None:
         problems.append("Class A: VFR flight is not allowed; IFR clearance required.")
     else:
@@ -217,6 +221,7 @@ def vfr_check(visibility_sm: float, ceiling_agl_ft: float | None, cruise_agl_ft:
                     problems.append(
                         f"Class {c} needs {mins.below_ft} ft below clouds: with a {ceiling_agl_ft:,.0f} ft ceiling, "
                         f"cruise no higher than {highest:,.0f} ft AGL (planned {cruise_agl_ft:,.0f}).")
+                    options.append(f"Cruise at or below {highest:,.0f} ft AGL, or wait for a higher ceiling.")
                 else:
                     ok.append(f"Cruise {cruise_agl_ft:,.0f} ft AGL keeps {mins.below_ft} ft below the {ceiling_agl_ft:,.0f} ft ceiling.")
         if surface_area and c in ("B", "C", "D", "E"):
@@ -224,6 +229,9 @@ def vfr_check(visibility_sm: float, ceiling_agl_ft: float | None, cruise_agl_ft:
                 problems.append("Ceiling below 1,000 ft in a surface area: VFR needs a Special VFR clearance (91.155(c)).")
             if visibility_sm < 3:
                 problems.append("Ground visibility below 3 SM in a surface area: no VFR takeoff or landing without Special VFR (91.155(d)).")
+    if ceiling_agl_ft is not None and cruise_agl_ft >= ceiling_agl_ft:
+        options.append("Flying above the ceiling is not a VFR option: a broken or overcast layer can't be climbed "
+                       "through in VFR, and you would need a legal way back down.")
     category = flight_category(visibility_sm, ceiling_agl_ft)
     legal = not problems
     if not legal:
@@ -233,5 +241,5 @@ def vfr_check(visibility_sm: float, ceiling_agl_ft: float | None, cruise_agl_ft:
     else:
         verdict = f"LEGAL but {category}: minimums met with little margin; consider a higher personal minimum"
     return {"verdict": verdict, "legal": legal, "flight_category": category,
-            "problems": problems, "checks_passed": ok,
+            "problems": problems, "checks_passed": ok, "options": options,
             "assumptions": "Daytime, basic VFR minimums only; check airspace altitude limits, NOTAMs and TFRs separately."}

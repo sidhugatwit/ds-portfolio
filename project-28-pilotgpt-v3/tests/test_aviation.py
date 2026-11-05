@@ -84,6 +84,17 @@ def test_vfr_above_the_ceiling_is_no_go():
     assert "no higher than 2,000 ft" in r["problems"][0]
 
 
+def test_above_ceiling_is_not_offered_as_an_option():
+    r = av.vfr_check(4, 2500, 3000, "C")
+    assert r["options"][0].startswith("Cruise at or below 2,000 ft AGL")
+    assert "not a VFR option" in r["options"][1]
+
+
+def test_holding_explains_its_sector():
+    assert "160° clockwise to 270°" in av.holding_entry(90, 200)["why"]
+    assert "110° clockwise to 180°" in av.holding_entry(360, 160, right_turns=False)["why"]
+
+
 def test_vfr_legal_but_marginal():
     r = av.vfr_check(4, 2500, 2000, "C")
     assert r["legal"] and r["flight_category"] == "MVFR"

@@ -39,7 +39,7 @@ An audit of v3's aviation logic found errors a checkride examiner would catch. T
 ## Run it
 
 1. Set an OpenAI-compatible endpoint in the repo's `.env` (see `.env.example`; LM Studio with a local model works).
-2. `uv run pytest -q` runs the 29 aviation tests (no network or LLM needed).
+2. `uv run pytest -q` runs the 31 aviation tests (no network or LLM needed).
 3. `uv run jupyter lab` and run `notebooks/pilotgpt_v3.ipynb`. The agent's answers are saved to
    `outputs/agent_run.json` with the name of the model that produced them.
 
