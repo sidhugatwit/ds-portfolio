@@ -61,7 +61,21 @@ def test_holding_entries_left_turns_mirror_right():
 
 
 def test_parallel_entry_turns_toward_holding_side():
-    assert "turn left toward the holding side" in av.holding_entry(90, 200)["steps"]
+    h = av.holding_entry(90, 200)
+    assert "turn left toward the holding (south) side" in h["steps"]
+    assert "non-holding (north) side" in h["steps"]
+
+
+@pytest.mark.parametrize("inbound, right, holding, non_holding", [
+    (90, True, "south", "north"),
+    (90, False, "north", "south"),
+    (360, True, "east", "west"),
+    (180, True, "west", "east"),
+])
+def test_holding_side_in_compass_terms(inbound, right, holding, non_holding):
+    h = av.holding_entry(inbound, inbound, right_turns=right)
+    assert h["holding_side"].startswith(holding)
+    assert h["non_holding_side"].startswith(non_holding)
 
 
 def test_vfr_above_the_ceiling_is_no_go():

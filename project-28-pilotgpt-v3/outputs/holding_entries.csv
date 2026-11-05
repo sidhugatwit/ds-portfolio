@@ -1,7 +1,7 @@
-inbound_course,heading,entry,steps,turns,note
-360,360,Direct,"Cross the fix and turn right to the outbound heading 180°, then fly the pattern.",right,
-360,100,Parallel,Cross the fix and turn to the outbound heading 180° on the non-holding side for 1 minute. Then turn left toward the holding side through more than 180° and intercept the inbound course 000° or return to the fix.,right,
-360,200,Teardrop,Cross the fix and fly heading 150° (30° into the holding side) for 1 minute. Then turn right to intercept the inbound course 000°.,right,
-90,200,Parallel,Cross the fix and turn to the outbound heading 270° on the non-holding side for 1 minute. Then turn left toward the holding side through more than 180° and intercept the inbound course 090° or return to the fix.,right,
-180,45,Teardrop,Cross the fix and fly heading 330° (30° into the holding side) for 1 minute. Then turn right to intercept the inbound course 180°.,right,
-180,300,Parallel,Cross the fix and turn to the outbound heading 000° on the non-holding side for 1 minute. Then turn left toward the holding side through more than 180° and intercept the inbound course 180° or return to the fix.,right,
+inbound_course,heading,entry,steps,turns,holding_side,non_holding_side,note
+360,360,Direct,"Cross the fix and turn right to the outbound heading 180°, then fly the pattern.",right,east of the inbound course,west of the inbound course,
+360,100,Parallel,Cross the fix and turn to the outbound heading 180° on the non-holding (west) side for 1 minute. Then turn left toward the holding (east) side through more than 180° and intercept the inbound course 000° or return to the fix.,right,east of the inbound course,west of the inbound course,
+360,200,Teardrop,"Cross the fix and fly heading 150° (30° into the holding side, east of the course) for 1 minute. Then turn right to intercept the inbound course 000°.",right,east of the inbound course,west of the inbound course,
+90,200,Parallel,Cross the fix and turn to the outbound heading 270° on the non-holding (north) side for 1 minute. Then turn left toward the holding (south) side through more than 180° and intercept the inbound course 090° or return to the fix.,right,south of the inbound course,north of the inbound course,
+180,45,Teardrop,"Cross the fix and fly heading 330° (30° into the holding side, west of the course) for 1 minute. Then turn right to intercept the inbound course 180°.",right,west of the inbound course,east of the inbound course,
+180,300,Parallel,Cross the fix and turn to the outbound heading 000° on the non-holding (east) side for 1 minute. Then turn left toward the holding (west) side through more than 180° and intercept the inbound course 180° or return to the fix.,right,west of the inbound course,east of the inbound course,

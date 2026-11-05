@@ -105,6 +105,12 @@ def density_altitude(field_elevation_ft: float, oat_c: float, altimeter_inhg: fl
 
 # --- Holding entries (AIM 5-3-8) -----------------------------------------------------
 
+_COMPASS = ["north", "northeast", "east", "southeast", "south", "southwest", "west", "northwest"]
+
+
+def compass_word(bearing: float) -> str:
+    return _COMPASS[round((bearing % 360) / 45) % 8]
+
 def holding_entry(inbound_course: float, heading: float, right_turns: bool = True) -> dict:
     """Recommended holding entry from the aircraft's heading on arrival at the fix.
 
@@ -116,21 +122,24 @@ def holding_entry(inbound_course: float, heading: float, right_turns: bool = Tru
     outbound = (inbound + 180) % 360
     rel = (heading - inbound) % 360 if right_turns else (inbound - heading) % 360
     turn, opposite = ("right", "left") if right_turns else ("left", "right")
+    holding_side = compass_word(inbound + (90 if right_turns else -90))
+    non_holding_side = compass_word(inbound - (90 if right_turns else -90))
     if rel <= 70 or rel >= 250:
         entry = "Direct"
         steps = f"Cross the fix and turn {turn} to the outbound heading {outbound:03.0f}°, then fly the pattern."
     elif rel <= 180:
         entry = "Parallel"
-        steps = (f"Cross the fix and turn to the outbound heading {outbound:03.0f}° on the non-holding side for 1 minute. "
-                 f"Then turn {opposite} toward the holding side through more than 180° and intercept the inbound course "
+        steps = (f"Cross the fix and turn to the outbound heading {outbound:03.0f}° on the non-holding ({non_holding_side}) side for 1 minute. "
+                 f"Then turn {opposite} toward the holding ({holding_side}) side through more than 180° and intercept the inbound course "
                  f"{inbound:03.0f}° or return to the fix.")
     else:
         entry = "Teardrop"
         teardrop = (outbound - 30) % 360 if right_turns else (outbound + 30) % 360
-        steps = (f"Cross the fix and fly heading {teardrop:03.0f}° (30° into the holding side) for 1 minute. "
+        steps = (f"Cross the fix and fly heading {teardrop:03.0f}° (30° into the holding side, {holding_side} of the course) for 1 minute. "
                  f"Then turn {turn} to intercept the inbound course {inbound:03.0f}°.")
     near_boundary = min(abs(rel - b) for b in (70, 180, 250)) <= 5
     return {"entry": entry, "steps": steps, "turns": turn,
+            "holding_side": f"{holding_side} of the inbound course", "non_holding_side": f"{non_holding_side} of the inbound course",
             "note": "Within 5° of a sector boundary: either entry is acceptable." if near_boundary else ""}
 
 
