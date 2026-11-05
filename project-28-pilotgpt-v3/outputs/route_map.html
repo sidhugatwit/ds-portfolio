@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_999179bc81385276b4ef8f4e82241d71 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_999179bc81385276b4ef8f4e82241d71" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_999179bc81385276b4ef8f4e82241d71 = L.map(
+                "map_999179bc81385276b4ef8f4e82241d71",
+                {
+                    center: [42.0, -72.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 7,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_507adffe6cb6db7a14860a54fb730db4 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_507adffe6cb6db7a14860a54fb730db4.addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var marker_855daab553729286d7ad69bd8d1a4719 = L.marker(
+                [42.3656, -71.0096],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_f86f6aad5a3e85a317635d78820d57ac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_855daab553729286d7ad69bd8d1a4719.bindTooltip(
+                `<div>
+                     KBOS: Boston Logan (Class B, 19 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_855daab553729286d7ad69bd8d1a4719.setIcon(icon_f86f6aad5a3e85a317635d78820d57ac);
+            
+    
+            var marker_ed00f183dac3599ec35d6b2c36c8ac2d = L.marker(
+                [40.6413, -73.7781],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_da8c915cb3bd4df8e1f8aab2cf32a0b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ed00f183dac3599ec35d6b2c36c8ac2d.bindTooltip(
+                `<div>
+                     KJFK: New York JFK (Class B, 13 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ed00f183dac3599ec35d6b2c36c8ac2d.setIcon(icon_da8c915cb3bd4df8e1f8aab2cf32a0b9);
+            
+    
+            var marker_d0d5f802ec2231489a221367ef83fe4c = L.marker(
+                [40.7772, -73.8726],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_5103cb576abaa8f962d01304a33643d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_d0d5f802ec2231489a221367ef83fe4c.bindTooltip(
+                `<div>
+                     KLGA: New York LaGuardia (Class B, 21 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d0d5f802ec2231489a221367ef83fe4c.setIcon(icon_5103cb576abaa8f962d01304a33643d6);
+            
+    
+            var marker_a1a35f0c5f0deea7104b0fde24ca27a4 = L.marker(
+                [42.2673, -71.8757],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_3ada34a7fc03f3f2d9da6c2017dd0c7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_a1a35f0c5f0deea7104b0fde24ca27a4.bindTooltip(
+                `<div>
+                     KORH: Worcester Regional (Class D, 1009 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a1a35f0c5f0deea7104b0fde24ca27a4.setIcon(icon_3ada34a7fc03f3f2d9da6c2017dd0c7f);
+            
+    
+            var marker_de1267bcae010a5ef18206ef1710bd9e = L.marker(
+                [41.9389, -72.6832],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_6a39ec3171552f2e28a16f8b66bfc50f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_de1267bcae010a5ef18206ef1710bd9e.bindTooltip(
+                `<div>
+                     KBDL: Hartford Bradley (Class C, 173 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_de1267bcae010a5ef18206ef1710bd9e.setIcon(icon_6a39ec3171552f2e28a16f8b66bfc50f);
+            
+    
+            var marker_bbc0998f55348499e1085b936b99cba6 = L.marker(
+                [42.9326, -71.4357],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_001ad7d763a9f513767b21d87c402b32 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_bbc0998f55348499e1085b936b99cba6.bindTooltip(
+                `<div>
+                     KMHT: Manchester-Boston (Class C, 266 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbc0998f55348499e1085b936b99cba6.setIcon(icon_001ad7d763a9f513767b21d87c402b32);
+            
+    
+            var marker_14593e57fb59d2cb955e5f914040ad51 = L.marker(
+                [41.724, -71.4282],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_1da84adc37718532f588537a160d1e64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "purple",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_14593e57fb59d2cb955e5f914040ad51.bindTooltip(
+                `<div>
+                     KPVD: Providence T.F. Green (Class C, 55 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14593e57fb59d2cb955e5f914040ad51.setIcon(icon_1da84adc37718532f588537a160d1e64);
+            
+    
+            var marker_ff0c6067b7553064e421cb1d6ef74b06 = L.marker(
+                [42.47, -71.289],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_fc5f481fe5cfef1cf6e6371d38f43f89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_ff0c6067b7553064e421cb1d6ef74b06.bindTooltip(
+                `<div>
+                     KBED: Bedford Hanscom Field (Class D, 133 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ff0c6067b7553064e421cb1d6ef74b06.setIcon(icon_fc5f481fe5cfef1cf6e6371d38f43f89);
+            
+    
+            var marker_015e03c4a5d56e9c2948ad9f0f9f9d6d = L.marker(
+                [41.9742, -87.9073],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_2683bc85f991104e2ea2b9c8f6eebf8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_015e03c4a5d56e9c2948ad9f0f9f9d6d.bindTooltip(
+                `<div>
+                     KORD: Chicago O'Hare (Class B, 672 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_015e03c4a5d56e9c2948ad9f0f9f9d6d.setIcon(icon_2683bc85f991104e2ea2b9c8f6eebf8d);
+            
+    
+            var marker_22bc34bac6b49b8594ad1a9bca27f945 = L.marker(
+                [33.6407, -84.4277],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_196c81d2ca6efc6638e60a2e3308299c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_22bc34bac6b49b8594ad1a9bca27f945.bindTooltip(
+                `<div>
+                     KATL: Atlanta Hartsfield-Jackson (Class B, 1026 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_22bc34bac6b49b8594ad1a9bca27f945.setIcon(icon_196c81d2ca6efc6638e60a2e3308299c);
+            
+    
+            var marker_f980593036a70bf85a5beb90028feee6 = L.marker(
+                [47.4502, -122.3088],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_631fe5ee62aa1431ec360787c863ed4e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_f980593036a70bf85a5beb90028feee6.bindTooltip(
+                `<div>
+                     KSEA: Seattle-Tacoma (Class B, 433 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f980593036a70bf85a5beb90028feee6.setIcon(icon_631fe5ee62aa1431ec360787c863ed4e);
+            
+    
+            var marker_05a2f6d0ae361f67b1a49260b9e58870 = L.marker(
+                [47.53, -122.3019],
+                {
+}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            var icon_c892c65e6e87daeebdee02dbfc786d20 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "cadetblue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_05a2f6d0ae361f67b1a49260b9e58870.bindTooltip(
+                `<div>
+                     KBFI: Seattle Boeing Field (Class D, 21 ft)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05a2f6d0ae361f67b1a49260b9e58870.setIcon(icon_c892c65e6e87daeebdee02dbfc786d20);
+            
+    
+            var poly_line_c511133f8afca6dc9f33a727a23cbc59 = L.polyline(
+                [[42.3656, -71.0096], [40.6413, -73.7781]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1.0, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_999179bc81385276b4ef8f4e82241d71);
+        
+    
+            poly_line_c511133f8afca6dc9f33a727a23cbc59.bindTooltip(
+                `<div>
+                     KBOS to KJFK: 162 NM, TC 231°
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+</script>
+</html>

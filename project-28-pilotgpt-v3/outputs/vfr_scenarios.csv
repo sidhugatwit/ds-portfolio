@@ -1,4 +1,6 @@
-visibility_sm,ceiling_ft,class,verdict
-5,3000,B,GO
-2,800,C,MARGINAL
-1,400,D,NO-GO
+scenario,category,verdict,why
+"Good day, Class B",VFR,GO: VFR minimums met,All minimums met.
+"4 SM, 2,500 ft ceiling, cruising 3,000 ft, Class C",MVFR,NO-GO: below VFR minimums for this plan,"Class C needs 500 ft below clouds: with a 2,500 ft ceiling, cruise no higher than 2,000 ft AGL (planned 3,000)."
+"Same weather, cruising 2,000 ft",MVFR,LEGAL but MVFR: minimums met with little margin; consider a higher personal minimum,All minimums met.
+2 SM in Class D,IFR,NO-GO: below VFR minimums for this plan,Visibility 2 SM is below the 3 SM minimum for Class D. Ground visibility below 3 SM in a surface area: no VFR takeoff or landing without Special VFR (91.155(d)).
+"1.5 SM, Class G at 1,000 ft AGL",IFR,LEGAL but IFR: minimums met with little margin; consider a higher personal minimum,All minimums met.

@@ -4,56 +4,55 @@
 
 ## Overview
 
-Expanded PilotGPT with full VFR capabilities alongside the IFR suite from v2.
-Built by an FAA private pilot (300+ hours) — all aviation mathematics derived from FAA standards.
-LangGraph ReAct agent with 7 tools providing comprehensive flight assistance for both VFR and IFR operations.
+A LangGraph ReAct agent that answers preflight questions the way a flight instructor would check them:
+every number comes from a tool, and every tool is tested against hand-worked examples.
+Built by an FAA private pilot (300+ hours). Third version of PilotGPT (v2 is project 26).
 
-## New in v3 vs v2
+## Tools
 
-- VFR airspace classification (Class A/B/C/D/E/G)
-- VFR weather go/no-go checker with legal minimums
-- Interactive FAA VFR sectional chart (Folium + FAA tile server)
-- Live weather and NOTAM lookup via SerpAPI
-- Airport database expanded with airspace class
+| Tool | What it does | Source of truth |
+|------|-------------|-----------------|
+| `airport_info` | Elevation, airspace class, entry rules, magnetic variation | FAA airport data, NOAA World Magnetic Model 2025 |
+| `plan_leg` | Distance, true course, wind correction, magnetic heading, ground speed, time en route | Great-circle math, E6B wind triangle |
+| `check_vfr` | Day VFR go/no-go for an airspace class and cruise altitude | 14 CFR 91.155 |
+| `holding_entry` | Direct, teardrop or parallel entry and how to fly it | AIM 5-3-8 |
+| `density_altitude` | Pressure and density altitude | FAA rule of thumb (118.8 ft per °C from ISA) |
+| `live_metar` / `live_taf` | Current observation and forecast, decoded, with flight category | aviationweather.gov (NOAA), free and keyless |
+| `web_search` (optional) | Background only, never weather or NOTAMs | SerpAPI, needs `SERPAPI_KEY` |
 
-## 7 Agent Tools
+## What changed in v3.1
 
-| Tool | Description |
-|------|-------------|
-| `get_airspace_info` | VFR requirements per airspace class |
-| `check_vfr_conditions` | Go/no-go based on visibility and ceiling |
-| `calculate_holding_entry` | Direct/teardrop/parallel IFR entry |
-| `calculate_wind_correction` | E6B wind triangle solution |
-| `calculate_density_altitude_tool` | Performance planning |
-| `get_live_weather` | Live METAR via SerpAPI |
-| `get_airport_details` | Airport info with airspace class |
+An audit of v3's aviation logic found errors a checkride examiner would catch. They are fixed and covered by tests:
 
-## VFR Airspace Rules Implemented
+- **Holding entries**: teardrop and parallel sectors were swapped and one boundary was off, so the demo question
+  (inbound 090°, heading 200°) got "teardrop" instead of the correct parallel entry. The parallel entry also turned
+  the wrong way back to the inbound course.
+- **Magnetic heading**: a fixed 14° was subtracted. Boston's variation is about 14° West, which is added
+  ("West is best"), so headings were about 28° off. Variation now comes from WMM2025 for each airport.
+- **VFR check**: it ignored airspace class and cruise altitude, and called 1–3 SM in controlled airspace "marginal".
+  It now applies the 91.155 table, the 500 ft-below-clouds rule, and the surface-area ceiling and visibility limits
+  that require Special VFR.
+- **Live weather**: v3 used Google search snippets. It now reads real METARs and TAFs from the Aviation Weather Center.
+- **Density altitude**: ISA temperature is now taken at pressure altitude, not field elevation.
+- **Map**: the third-party sectional tile URL had expired; the route map now uses OpenStreetMap.
 
-| Class | Clearance | Visibility | Cloud Clearance |
-|-------|-----------|------------|-----------------|
-| B | ATC clearance | 3 SM | Clear of clouds |
-| C | Radio contact | 3 SM | 500/1000/2000 |
-| D | Radio contact | 3 SM | 500/1000/2000 |
-| E | None | 3 SM | 500/1000/2000 |
-| G | None | 1 SM | Clear of clouds |
+## Run it
 
-## IFR Features (from v2)
-
-- E6B wind correction, TAS, ground speed
-- Holding pattern entry (direct/teardrop/parallel)
-- Density altitude from OAT and altimeter
-- Full IFR flight plan generation
+1. Set an OpenAI-compatible endpoint in the repo's `.env` (see `.env.example`; LM Studio with a local model works).
+2. `uv run pytest -q` runs the 31 aviation tests (no network or LLM needed).
+3. `uv run jupyter lab` and run `notebooks/pilotgpt_v3.ipynb`. The agent's answers are saved to
+   `outputs/agent_run.json` with the name of the model that produced them.
 
 ## Stack
 
-Python · LangGraph · LangChain · GPT-4o-mini · Folium ·
-SerpAPI · NumPy · Pandas
+Python · LangGraph · LangChain · any OpenAI-compatible LLM · aviationweather.gov API · pygeomag (WMM2025) ·
+Folium · pandas · pytest
 
 ## Files
 
-- `notebooks/pilotgpt_v3.ipynb` — full VFR & IFR suite
-- `outputs/vfr_sectional_map.html` — interactive FAA sectional chart
-- `outputs/airport_database.csv` — airport info with airspace class
-- `outputs/airspace_classification.csv` — VFR rules per airport
-- `outputs/vfr_scenarios.csv` — weather go/no-go scenarios
+- `src/aviation.py`: wind triangle, magnetic variation, density altitude, holding entries, VFR minimums
+- `src/weather.py`: METAR/TAF from aviationweather.gov, optional SerpAPI search
+- `src/airports.py`: demo airport table and airspace rules
+- `tests/`: hand-worked checks for every calculation
+- `notebooks/pilotgpt_v3.ipynb`: worked examples and the agent
+- `outputs/`: holding entries, VFR scenarios, route map, agent run

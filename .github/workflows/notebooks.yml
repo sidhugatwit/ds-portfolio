@@ -63,6 +63,19 @@ jobs:
           uv run --frozen python src/rescore.py --skip-bert | tee rescore.txt
           ! grep -q DIFFERS rescore.txt
 
+  pilotgpt-math:
+    name: project-28-pilotgpt-v3 (aviation tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+      - name: Hand-worked checks for the flight math and METAR decoding
+        working-directory: project-28-pilotgpt-v3
+        run: |
+          uv sync --frozen
+          uv run --frozen pytest -q tests
+
   pilot-vault:
     name: project-29-health-pilot-vault
     runs-on: ubuntu-latest
