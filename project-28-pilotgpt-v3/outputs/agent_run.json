@@ -1,0 +1,49 @@
+{
+  "model": "qwen/qwen3.6-35b-a3b",
+  "date": "2026-11-05",
+  "runs": [
+    {
+      "question": "I'm planning a VFR flight into KBDL. What airspace is it and what do I need before entering?",
+      "tools_called": [
+        "airport_info"
+      ],
+      "answer": "Based on the official airport data for KBDL (Hartford Bradley):\n\n**Airspace Class:** Class C\n\n**Requirements to enter:**\n* **Radio:** Two-way radio contact established before entry\n* **Equipment:** Transponder with Mode C / ADS-B Out\n* **Altitude/Geography:** Surface to about 4,000 ft AGL (5 NM core, 10 NM shelf)\n\nNot for navigation: verify with official FAA sources and a weather briefing."
+    },
+    {
+      "question": "Visibility 4 SM, ceiling 2,500 ft AGL, and I'd cruise at 3,000 ft AGL near KBDL. Can I go VFR?",
+      "tools_called": [
+        "airport_info",
+        "check_vfr"
+      ],
+      "answer": "Based on the VFR minimums check for Class C airspace near KBDL:\n\n**Verdict:** NO-GO: below VFR minimums for this plan.\n\n**Key Numbers & Rules:**\n* **Cloud Clearance:** Class C airspace requires remaining 500 feet below the clouds. With a 2,500 ft ceiling, you cannot cruise higher than 2,000 ft AGL. Your planned cruise altitude of 3,000 ft AGL violates this rule.\n* **Visibility:** 4 SM meets the 3 SM minimum for Class C airspace.\n\n**Options:**\n* Cruise at or below 2,000 ft AGL, or wait for a higher ceiling.\n* Flying above the ceiling is not a VFR option: a broken or overcast layer can't be climbed through in VFR, and you would need a legal way back down.\n\nNot for navigation: verify with official FAA sources and a weather briefing."
+    },
+    {
+      "question": "Plan KBOS to KJFK: TAS 110 kt, winds from 250 at 20 kt. Give me magnetic heading, ground speed and time en route.",
+      "tools_called": [
+        "plan_leg"
+      ],
+      "answer": "Here are the flight planning results for KBOS to KJFK:\n\n*   **Distance:** 161.9 NM\n*   **True Course:** 231°\n*   **Magnetic Heading:** 248° (derived from True Course 231° and 14°W magnetic variation)\n*   **Ground Speed:** 91 kt\n*   **Time En Route:** 107 minutes (1 hour 47 minutes)\n\n**Wind Analysis:**\n*   **Headwind Component:** 19 kt\n*   **Crosswind Component:** 6 kt\n*   **Wind Correction Angle:** 3°\n\nNot for navigation: verify with official FAA sources and a weather briefing."
+    },
+    {
+      "question": "What's the density altitude at KORH with OAT 32°C and altimeter 29.80?",
+      "tools_called": [
+        "density_altitude"
+      ],
+      "answer": "At KORH (Worcester Regional) with an OAT of 32°C and an altimeter setting of 29.80 inHg, the density altitude is **3,414 feet**.\n\nNot for navigation: verify with official FAA sources and a weather briefing."
+    },
+    {
+      "question": "Holding: inbound course 090, standard right turns, I'm heading 200 at the fix. Which entry and how do I fly it?",
+      "tools_called": [
+        "holding_entry"
+      ],
+      "answer": "Based on the holding entry calculation:\n\n**Recommended Entry: Parallel Entry**\n\n**How to fly it:**\n1.  **Cross the fix** and turn to the outbound heading of **270°** (the non-holding/north side).\n2.  Fly this outbound heading for **1 minute**.\n3.  **Turn left** toward the holding (south) side through more than 180° to intercept the inbound course of **090°**.\n4.  Once established on the inbound course, proceed to the fix to begin the next holding pattern leg.\n\n**Why this entry?**\nYour heading of 200° falls within the **parallel sector** (arrival headings 160° clockwise to 270°) for a hold with an inbound course of 090° and standard right turns (AIM 5-3-8).\n\nNot for navigation: verify with official FAA sources and a weather briefing."
+    },
+    {
+      "question": "Is Boston Logan VFR right now? Use the live METAR.",
+      "tools_called": [
+        "live_metar"
+      ],
+      "answer": "Based on the live METAR for Boston Logan (KBOS):\n\n**Current Conditions:**\n*   **Visibility:** 10 statute miles\n*   **Ceiling:** 14,000 feet AGL (from the overcast layer at 14,000)\n*   **Flight Category:** VFR\n\n**VFR Check:**\nAccording to 14 CFR 91.155 (Basic VFR Weather Minimums), for Class B airspace (which KBOS is), the minimums are:\n*   **Visibility:** 3 statute miles\n*   **Ceiling:** Clear of clouds\n\nSince the current visibility is 10 SM (well above the 3 SM minimum) and the ceiling is 14,000 feet (providing ample space to remain clear of clouds), the conditions are **VFR**.\n\n*Note: While the flight category is VFR, there is light rain (-RA) and gusty winds (17 kt gusting to 27 kt). Always check for NOTAMs and TFRs before flight.*\n\nNot for navigation: verify with official FAA sources and a weather briefing."
+    }
+  ]
+}
