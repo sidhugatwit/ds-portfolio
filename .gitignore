@@ -30,3 +30,6 @@ project-32-resume-assistant/data/
 
 # Python virtual environments created by uv
 .venv/
+
+# Project 17 equipment photos (may be product images we do not own)
+project-17-health-fitness-assistant/data/gym/

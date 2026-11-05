@@ -1,0 +1,36 @@
+{
+  "date": "2026-11-05",
+  "region": "https://us-south.ml.cloud.ibm.com",
+  "text_model": "meta-llama/llama-3-3-70b-instruct",
+  "vision_model": "meta-llama/llama-4-maverick-17b-128e-instruct-fp8",
+  "equipment": [
+    {
+      "filename": "gym equip.png",
+      "description": "adjustable bench, barbell, dumbbells",
+      "category": "strength_training",
+      "workout_type": "upper_body"
+    },
+    {
+      "filename": "gym equip2.png",
+      "description": "multi-press machine (chest press and shoulder press)",
+      "category": "strength_training",
+      "workout_type": "upper_body",
+      "vision_said": "seated row machine"
+    },
+    {
+      "filename": "gym equip3.png",
+      "description": "rowing machine",
+      "category": "cardio",
+      "workout_type": "full_body"
+    }
+  ],
+  "exercises": 16,
+  "checks": {
+    "training_days": "4 planned, 4 requested",
+    "thin_days": {},
+    "trains_lower_body": true,
+    "trains_core": true,
+    "exercises_using_undetected_equipment": [],
+    "exercises_a_machine_cannot_do": []
+  }
+}
