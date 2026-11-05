@@ -25,7 +25,7 @@ Projects that call a hosted LLM read API keys from a `.env` file at the reposito
 
 ## Featured Systems
 
-### PilotGPT v3
+### DirectTo (formerly PilotGPT)
 An aviation-focused AI assistant built around domain-specific workflows, practical reasoning, and product-oriented system design.
 
 **Why it matters:** distinct domain positioning, memorable AI + aviation narrative, and strong systems-thinking signal.  

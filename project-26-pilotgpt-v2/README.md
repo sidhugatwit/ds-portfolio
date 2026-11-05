@@ -69,4 +69,4 @@ Python · LangGraph · LangChain · GPT-4o-mini · NumPy · Pandas · Plotly
 
 This version's holding-entry sectors swap teardrop and parallel, and its magnetic heading subtracts Boston's
 West variation instead of adding it. Both are corrected and tested in
-[PilotGPT v3](../project-28-pilotgpt-v3/). The saved outputs here are kept as a record of v2.
+[DirectTo](../project-28-pilotgpt-v3/) (project 28, formerly PilotGPT v3). The saved outputs here are kept as a record of v2.

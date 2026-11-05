@@ -533,7 +533,7 @@
   },
   {
     "id": "28",
-    "title": "PilotGPT v3 — VFR & IFR Flight Assistant",
+    "title": "DirectTo — VFR & IFR Flight Assistant",
     "domain": "Aviation / AI Agents",
     "status": "complete",
     "description": "LangGraph ReAct agent for VFR and IFR preflight questions: wind triangle with WMM2025 magnetic variation, 14 CFR 91.155 VFR go/no-go, AIM holding entries, density altitude, and live METAR/TAF from aviationweather.gov. Every calculation is covered by hand-worked pytest checks; an audit fixed holding-entry and magnetic-heading errors from the first version.",
