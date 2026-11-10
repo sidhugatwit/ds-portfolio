@@ -3,12 +3,17 @@ name = "project-07-rag-financial-analyst"
 version = "1.0.0"
 requires-python = ">=3.11,<3.12"
 dependencies = [
+    "beautifulsoup4",
     "faiss-cpu",
     "jupyter",
+    "lxml",
     "numpy",
     "openai",
     "pandas",
-    "pypdf",
+    "pytest",
+    "python-dotenv",
+    "rank-bm25",
+    "requests",
     "sentence-transformers",
 ]
 

@@ -120,7 +120,7 @@
     "title": "RAG Financial Document Analyst",
     "domain": "AI / Retrieval-Augmented Generation",
     "status": "complete",
-    "description": "Built a retrieval-augmented generation (RAG) system for financial earnings analysis using FAISS vector search and semantic embeddings. Implemented source-aware retrieval pipelines capable of answering finance-related queries with contextual citations from earnings reports and market data.",
+    "description": "RAG over the latest 10-K filings of NVIDIA, Microsoft, JPMorgan, Amazon and Tesla from SEC EDGAR: dense, BM25 and hybrid retrieval measured on 20 labelled questions, XBRL figures for numeric questions, and LLM answers checked so every citation and number traces to a source.",
     "skills": [
       "Python",
       "FAISS",

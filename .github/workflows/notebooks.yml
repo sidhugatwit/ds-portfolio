@@ -27,6 +27,7 @@ jobs:
           - project-04-ils-glide-path
           - project-05-flight-delay
           - project-06-great-circle-routing
+          - project-07-rag-financial-analyst
           - project-08-recommender
           - project-10-agentic-sql
           - project-20-blackjack-to-five
