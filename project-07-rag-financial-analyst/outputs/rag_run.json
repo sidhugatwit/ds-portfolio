@@ -1,0 +1,105 @@
+{
+  "model": "qwen/qwen3.6-35b-a3b",
+  "date": "2026-11-10",
+  "runs": [
+    {
+      "question": "Which of these companies had the highest revenue in its latest fiscal year?",
+      "answer": "Based on the provided sources, Amazon had the highest revenue in its latest fiscal year, reporting $716.9 billion for the fiscal year ended 2025-12-31 [F].",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "F"
+      ],
+      "citations": [
+        "F"
+      ],
+      "unknown_citations": [],
+      "numbers_not_in_sources": [],
+      "abstained": false,
+      "grounded": true,
+      "verdict": "grounded"
+    },
+    {
+      "question": "What risks does NVIDIA describe from export controls?",
+      "answer": "Based on the provided risk factors, NVIDIA outlines the following risks associated with export controls:\n\n**Competitive & Market Position Risks**\n- Export controls may disproportionately disadvantage NVIDIA against competitors selling chips outside the control scope [S1].\n- Customers outside impacted regions may \"design-out\" U.S. semiconductors to reduce compliance burdens and ensure global market access [S1].\n- Overseas governments may request that customers purchase from competitors rather than NVIDIA or other U.S. firms [S1].\n- Competitors offering alternatives less likely to be restricted may benefit from shifting demand [S4].\n- Increased investment may flow to foreign competitors that are less likely to be restricted by U.S. controls [S6].\n- NVIDIA's effective foreclosure from China's data center market has allowed competitors to build larger developer and customer ecosystems to challenge NVIDIA worldwide [S7].\n\n**Supply Chain & Distribution Disruptions**\n- Controls may disrupt supply and distribution chains, particularly for products warehoused and distributed from Hong Kong [S3].\n- Disruptions could negatively impact the ability to serve demand for non-data center products and markets outside China [S4].\n- Controls could restrict the ability to export products to any or all customers in specific markets [S5].\n- Further restrictions could negatively impact the ability to receive consistent supply from overseas partners, especially in Taiwan and South Korea [S8].\n- Controls may restrict downstream users' ability to use, resell, repair, or transfer products [S2].\n\n**Financial & Investment Impacts**\n- Export controls could negatively and materially impact business, revenue, operating results, and financial condition [S5], [S7].\n- They may negatively impact sales to markets outside China, including the U.S. and Europe [S3].\n- Demand for products and services may be negatively impacted in China, Europe, Latin America, and Southeast Asia [S6].\n- The risk of new controls taking effect before new products reach the market could lead to excess inventory and purchase obligations, as recently experienced with the H20 [S6].\n- Controls may increase the cost and/or limit the ability to provide NVIDIA AI cloud services and impact CSPs/customers' ability to provide services even outside China [S2].\n- Restrictions on data center GPU sales may negatively impact demand for associated networking products [S3].\n\n**Regulatory & Compliance Challenges**\n- Repeated changes in export control rules impose significant compliance burdens on NVIDIA and its customers [S4].\n- Controls applicable to China are complex, targeting parameters like total processing performance, performance density, interconnect bandwidth, and memory bandwidth [S7].\n- NVIDIA is currently unable to create and deliver a competitive product for China's data center market that receives approval from both the USG and Chinese government [S7].\n- As of the end of fiscal year 2026, NVIDIA was effectively foreclosed from competing in China's data center computing/compute market [S7].\n- If controls change to allow market return, the Chinese government could modify implementation plans to effectively prevent NVIDIA from designing compliant products, restricting customer use of data center products [S8].\n- The USG may impose additional unilateral or multilateral controls, including on networking products, to limit downstream parties from creating large clusters for frontier model training [S3], [S5].",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "citations": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8"
+      ],
+      "unknown_citations": [],
+      "numbers_not_in_sources": [],
+      "abstained": false,
+      "grounded": true,
+      "verdict": "grounded"
+    },
+    {
+      "question": "How did AWS segment sales change at Amazon?",
+      "answer": "AWS sales increased 20% in 2025 compared to the prior year [S6]. This growth primarily reflected increased customer usage, which was partially offset by pricing changes driven mainly by long-term customer contracts [S6].",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "F"
+      ],
+      "citations": [
+        "S6"
+      ],
+      "unknown_citations": [],
+      "numbers_not_in_sources": [],
+      "abstained": false,
+      "grounded": true,
+      "verdict": "grounded"
+    },
+    {
+      "question": "How many vehicles did Tesla deliver, and what does Tesla say drove automotive revenue?",
+      "answer": "The provided sources do not state the exact number of vehicles Tesla delivered, only noting an \"approximately 8% decrease in cash deliveries\" compared to the prior year [S2].\n\nRegarding what drove automotive revenue, Tesla explains that automotive sales revenue includes income from \"cash and financing deliveries of new vehicles, including internet connectivity, access to our FSD (Supervised) features and their ongoing maintenance, free Supercharging programs and over-the-air software updates\" [S3]. Additionally, Tesla states that changes in automotive sales revenue were driven by \"a decrease of approximately 8% in cash deliveries and a lower average selling price per unit driven by sales mix and higher customer incentives such as attractive financing options\" [S2]. Tesla also notes that revenue from automotive regulatory credits is directly related to \"new vehicle production, sales and pricing negotiated with our customers\" [S3].",
+      "sources": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5",
+        "S6",
+        "S7",
+        "S8",
+        "F"
+      ],
+      "citations": [
+        "S2",
+        "S3"
+      ],
+      "unknown_citations": [],
+      "numbers_not_in_sources": [],
+      "abstained": true,
+      "grounded": false,
+      "verdict": "partial"
+    }
+  ]
+}

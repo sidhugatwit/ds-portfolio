@@ -1,0 +1,6 @@
+company,cik,revenue,revenue_concept,revenue_period_end,net_income,net_income_concept,net_income_period_end,fiscal_year_end
+NVIDIA,1045810,215938000000,Revenues,2026-01-25,120067000000,NetIncomeLoss,2026-01-25,2026-01-25
+Microsoft,789019,331839000000,RevenueFromContractWithCustomerExcludingAssessedTax,2026-06-30,133749000000,NetIncomeLoss,2026-06-30,2026-06-30
+JPMorgan,19617,182447000000,Revenues,2025-12-31,57048000000,NetIncomeLoss,2025-12-31,2025-12-31
+Amazon,1018724,716924000000,RevenueFromContractWithCustomerExcludingAssessedTax,2025-12-31,77670000000,NetIncomeLoss,2025-12-31,2025-12-31
+Tesla,1318605,94827000000,Revenues,2025-12-31,3794000000,NetIncomeLoss,2025-12-31,2025-12-31
