@@ -1,66 +1,51 @@
+"""Weather data from Open-Meteo (free, no API key): geocoding, current conditions and a 24-hour forecast."""
 import requests
+
+GEO_URL = "https://geocoding-api.open-meteo.com/v1/search"
+FORECAST_URL = "https://api.open-meteo.com/v1/forecast"
+TIMEOUT = 15  # seconds
 
 
 class WeatherService:
-    """
-    Service to fetch weather data
-    """
+    def __init__(self, session=None):
+        self.http = session or requests.Session()
 
-    def __init__(self, api_key=None):
-        self.api_key = api_key
+    def geocode(self, city):
+        """Best match for a city name: name, country, latitude, longitude. None if not found."""
+        r = self.http.get(GEO_URL, params={"name": city, "count": 1, "language": "en", "format": "json"}, timeout=TIMEOUT)
+        r.raise_for_status()
+        results = r.json().get("results")
+        if not results:
+            return None
+        top = results[0]
+        return {"name": top["name"], "country": top.get("country", ""),
+                "latitude": top["latitude"], "longitude": top["longitude"]}
 
     def get_weather_data(self, city):
-        """
-        Fetch weather data for a specific city using Open-Meteo APIs.
-        """
-
-        # Step 1: Convert city → latitude & longitude
-        geo_url = "https://geocoding-api.open-meteo.com/v1/search"
-        geo_params = {"name": city, "count": 1, "language": "en", "format": "json"}
-
-        geo_response = requests.get(geo_url, params=geo_params)
-        if not geo_response.ok:
-            print("Error fetching geocoding data.")
+        """Current temperature plus the next 24 hourly temperatures, in the city's local time.
+        Returns None if the city isn't found."""
+        place = self.geocode(city)
+        if place is None:
             return None
-
-        geo_data = geo_response.json()
-        results = geo_data.get("results")
-
-        if not results:
-            print(f"Error: no geocoding results found for '{city}'.")
-            return None
-
-        lat = results[0]["latitude"]
-        lng = results[0]["longitude"]
-
-        # Step 2: Fetch weather data
-        weather_url = "https://api.open-meteo.com/v1/forecast"
-        weather_params = {
-            "latitude": lat,
-            "longitude": lng,
-            "hourly": "temperature_2m",
-            "forecast_days": 1,
-        }
-
-        weather_response = requests.get(weather_url, params=weather_params)
-        if not weather_response.ok:
-            print("Error fetching weather data from Open-Meteo.")
-            return None
-
-        weather_data = weather_response.json()
-
-        hourly = weather_data.get("hourly", {})
-        temperatures = hourly.get("temperature_2m")
-        times = hourly.get("time")
-
-        if not temperatures or not times:
-            print("Error: unexpected weather API response format.")
-            return None
-
-        print("Weather data fetched successfully!")
-
+        r = self.http.get(FORECAST_URL, timeout=TIMEOUT, params={
+            "latitude": place["latitude"], "longitude": place["longitude"],
+            "current": "temperature_2m", "hourly": "temperature_2m",
+            "forecast_days": 2, "timezone": "auto",
+        })
+        r.raise_for_status()
+        data = r.json()
+        current = data.get("current", {})
+        hourly = data.get("hourly", {})
+        times, temps = hourly.get("time") or [], hourly.get("temperature_2m") or []
+        if current.get("temperature_2m") is None or not times:
+            raise ValueError("Unexpected Open-Meteo response format")
+        # Hourly data starts at local midnight today: start from the current hour.
+        start = next((i for i, t in enumerate(times) if t >= current.get("time", "")[:13]), 0)
         return {
-            "current_temperature": temperatures[0],
-            "times": times[:24],
-            "temperatures": temperatures[:24],
+            "place": f"{place['name']}, {place['country']}".strip(", "),
+            "timezone": data.get("timezone_abbreviation") or data.get("timezone", "local"),
+            "observed_at": current.get("time"),
+            "current_temperature": current["temperature_2m"],
+            "times": times[start:start + 24],
+            "temperatures": temps[start:start + 24],
         }

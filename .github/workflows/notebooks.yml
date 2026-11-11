@@ -77,6 +77,19 @@ jobs:
           uv sync --frozen
           uv run --frozen pytest -q tests
 
+  weather-tests:
+    name: project-19-weather-app (offline tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+      - name: Weather service, cache and chart, with simulated API responses
+        working-directory: project-19-weather-app
+        run: |
+          uv sync --frozen
+          uv run --frozen pytest -q tests
+
   pilot-vault:
     name: project-29-health-pilot-vault
     runs-on: ubuntu-latest

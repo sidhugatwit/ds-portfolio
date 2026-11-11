@@ -1,21 +1,22 @@
+"""24-hour temperature chart."""
 import matplotlib.pyplot as plt
 
 
-def plot_temperature(city, times, temperatures):
-    """
-    Plot 24-hour temperature forecast for a city.
-    """
+def plot_temperature(place, times, temperatures, timezone="local", save_to=None):
+    """Plot the forecast. Shows a window, or writes a PNG when save_to is given. Returns the figure."""
     if not times or not temperatures:
-        print("No forecast data available to plot.")
-        return
-
-    short_times = [t[11:16] for t in times]
-
-    plt.figure(figsize=(10, 5))
-    plt.plot(short_times, temperatures, marker="o")
-    plt.title(f"24-Hour Temperature Forecast for {city}")
-    plt.xlabel("Time")
-    plt.ylabel("Temperature (°C)")
-    plt.xticks(rotation=45)
-    plt.tight_layout()
-    plt.show()
+        raise ValueError("No forecast data to plot")
+    labels = [t[11:16] for t in times]  # "2026-11-10T14:00" -> "14:00"
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.plot(labels, temperatures, marker="o")
+    ax.set_title(f"Next 24 hours: {place}")
+    ax.set_xlabel(f"Time ({timezone})")
+    ax.set_ylabel("Temperature (°C)")
+    ax.tick_params(axis="x", rotation=45)
+    fig.tight_layout()
+    if save_to:
+        fig.savefig(save_to, dpi=120)
+        plt.close(fig)
+    else:
+        plt.show()
+    return fig
