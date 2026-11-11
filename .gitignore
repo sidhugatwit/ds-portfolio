@@ -33,3 +33,6 @@ project-32-resume-assistant/data/
 
 # Project 17 equipment photos (may be product images we do not own)
 project-17-health-fitness-assistant/data/gym/
+
+# Project 19 weather cache
+project-19-weather-app/data/*.db

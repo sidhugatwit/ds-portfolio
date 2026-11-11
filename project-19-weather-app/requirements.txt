@@ -2,3 +2,4 @@
 # Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
 matplotlib
 requests
+pytest

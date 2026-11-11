@@ -1,44 +1,44 @@
+"""Command line: python main.py Boston [--save forecast.png] [--reset]"""
 import argparse
+import sys
+
+import requests
 
 from database import WeatherDatabase
-from service import WeatherService
 from plotter import plot_temperature
+from service import WeatherService
 
-# Global constants
 DB_FILE = "data/weather_database.db"
-API_KEY = None
 
 
-def main():
-    """
-    Main function to run the program.
-    """
-    parser = argparse.ArgumentParser()
-    parser.add_argument("city", help="City to get the weather data for")
-    parser.add_argument("--reset", action="store_true", help="Reset the database")
-    args = parser.parse_args()
+def main(argv=None):
+    parser = argparse.ArgumentParser(description="Current temperature and a 24-hour forecast (Open-Meteo)")
+    parser.add_argument("city", help="City name, e.g. Boston")
+    parser.add_argument("--reset", action="store_true", help="Clear the cache first")
+    parser.add_argument("--save", metavar="PNG", help="Save the chart to a file instead of opening a window")
+    args = parser.parse_args(argv)
 
     db = WeatherDatabase(DB_FILE)
-    service = WeatherService(API_KEY)
-
     if args.reset:
         db.reset_database()
+    try:
+        data = db.get_weather_data(WeatherService(), args.city)
+    except requests.RequestException as e:
+        print(f"Couldn't reach Open-Meteo: {e}")
+        return 1
+    finally:
+        db.close()
 
-    city_weather_data = db.get_weather_data(service, args.city)
-
-    if city_weather_data is None:
-        print(f"Could not retrieve weather data for {args.city}.")
-    else:
-        print(
-            f"Current temperature in {args.city}: "
-            f"{city_weather_data['current_temperature']}°C"
-        )
-
-        if city_weather_data["times"] and city_weather_data["temperatures"]:
-            plot_temperature(
-                args.city, city_weather_data["times"], city_weather_data["temperatures"]
-            )
+    if data is None:
+        print(f"No city found for '{args.city}'.")
+        return 1
+    source = "cached, under an hour old" if data["cached"] else "fresh"
+    print(f"{data['place']}: {data['current_temperature']}°C at {data['observed_at']} {data['timezone']} ({source})")
+    plot_temperature(data["place"], data["times"], data["temperatures"], data["timezone"], save_to=args.save)
+    if args.save:
+        print(f"Chart saved to {args.save}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
