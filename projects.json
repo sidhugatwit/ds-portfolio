@@ -231,10 +231,10 @@
   },
   {
     "id": "13",
-    "title": "Multi-Agent Conversations with GPT-4o-mini",
+    "title": "Multi-Agent Conversations",
     "domain": "AI / Multi-Agent Systems",
     "status": "complete",
-    "description": "Developed a multi-agent conversational framework using GPT-4o-mini with role-based coordination, shared memory, and dynamic conversation routing. Simulated collaborative agent interactions with fallback handling and context-aware response management.",
+    "description": "Role-played conversations between LLM agents (a parking dispute; a three-person motorcycle decision) with per-agent conversation views, turn checks for agents speaking for each other, and a moderator that reports the agreed terms as structured data. Runs on any OpenAI-compatible model.",
     "skills": [
       "Python",
       "OpenAI API",
