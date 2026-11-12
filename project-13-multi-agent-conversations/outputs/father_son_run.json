@@ -1,0 +1,65 @@
+{
+  "model": "qwen/qwen3.6-35b-a3b",
+  "date": "2026-11-12",
+  "scene": "A father and his adult son talk in the kitchen about how the son parks in the shared driveway.",
+  "transcript": [
+    {
+      "speaker": "FATHER",
+      "text": "The way you park, I can't fit my car in the driveway. This keeps happening.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely understand how frustrating this has been, and I’m really sorry for the inconvenience. Could you let me know exactly where you’d prefer your car to be parked, or if there’s a specific time I should adjust my routine? I’d be happy to start backing in, using the street, or even painting a clear line on the driveway so we can both fit comfortably. Just let me know what works best for you, and I’ll make sure to stick to it.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "I appreciate you being willing to adjust, but we need a clear rule that works every time, not just when it’s convenient. From now on, you’ll always park on the right side of the driveway, leaving the left half completely clear for my car and our guests. Please mark that boundary with chalk today so we’re both on the same page.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely understand and will make sure to park on the right side from now on to keep the left half clear for you and any guests. To make sure I’m marking it correctly, would you prefer the line to be drawn closer to the garage or right down the middle? I’ll grab some chalk after dinner and get it done today, and I’ll also leave a quick note on the fridge so we both remember the new routine.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "Draw the line exactly down the center so we each have a clear, permanent boundary. From now on, that’s the rule: you park strictly on the right half every single day, without exception. Please mark it tonight and commit to it going forward.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely understand how frustrating this has been, and I’ll absolutely commit to parking strictly on the right half every day, marking that exact center line tonight. To make sure the boundary stays clear long-term, would you prefer I use a permanent paint line or just touch up the chalk each week? I’ll also make sure to text you in advance whenever we have guests so we can coordinate parking without any last-minute stress. I really appreciate you working through this with me, and I’ll get it done right away.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "Permanent paint will work best so the boundary doesn’t fade or wash away. From now on, your car stays strictly on the right half every single day, and any guests will park on the street. I appreciate you taking this seriously, so please get that line down tonight and stick to it moving forward.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely understand and will absolutely commit to parking strictly on the right half every day, with guests parking on the street as you’ve outlined. I’ll pick up the appropriate permanent driveway paint tonight and carefully mark that exact center line to ensure it’s straight and clearly visible. To make sure it holds up well over time, would you prefer a specific type of paint or color that’s less likely to stain or fade the concrete? I’ll send you a photo once it’s done so we both have a clear reference going forward.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "Use a standard white or yellow driveway marking paint—whatever’s readily available is fine. I appreciate you taking this seriously, but I need to know this boundary will be respected consistently without needing follow-ups. From now on, your car stays strictly on the right half every single day, and I expect you to honor it without exception.",
+      "speaks_for_others": []
+    }
+  ],
+  "summary": {
+    "agreed": true,
+    "terms": [
+      "Son will park strictly on the right half of the driveway every day without exception",
+      "The left half will remain clear for the father and guests",
+      "Guests will park on the street",
+      "A boundary line will be marked exactly down the center of the driveway",
+      "The line will be painted using standard white or yellow permanent driveway marking paint",
+      "The son will complete the painting tonight and send a photo upon completion"
+    ],
+    "open_issues": []
+  },
+  "turns_speaking_for_others": 0
+}

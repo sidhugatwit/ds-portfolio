@@ -1,0 +1,91 @@
+{
+  "model": "qwen/qwen3.6-35b-a3b",
+  "date": "2026-11-12",
+  "scene": "A family discusses whether the son, 19, may buy a small motorcycle. Keep it respectful, specific and concise.",
+  "transcript": [
+    {
+      "speaker": "SON",
+      "text": "I'd like to buy a small motorcycle. I've looked into safety courses and budgeted for gear, and I think I can handle it responsibly.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "MOTHER",
+      "text": "I appreciate how thoughtfully you've researched safety courses and budgeted for gear, but I remain concerned about the inherent injury risk while you're still building your riding experience. We'd also need to carefully review long-term insurance costs and liability coverage before moving forward, and I'd prefer we wait until you've completed a certified advanced rider course. In the meantime, could we look into getting you a reliable bicycle or a low-speed electric scooter to help you develop road confidence first?",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "I appreciate your caution, Mom, and we can address your concerns by requiring a certified beginner course and a detailed insurance review before any purchase. I fully support him moving forward with the motorcycle, provided he secures his license, commits to a full set of certified gear, and adheres to the clear budget he’s already outlined. We can treat this as a phased commitment where he demonstrates consistent safety and financial responsibility over the first six months. If he meets those milestones, we’ll gladly revisit the advanced course and long-term coverage together.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely understand your safety and cost concerns, and I’m happy to commit to the certified beginner course, full gear, and the six-month safety and budget milestone before we revisit coverage. I appreciate the suggestion to start with a bicycle or scooter for confidence, but I’d prefer to begin with the certified beginner course to build road confidence safely and efficiently. I’ve already mapped out a strict budget that keeps insurance and maintenance affordable, and I feel a small motorcycle will better serve my need for reliable, independent transportation as I transition to work and college. I’m ready to sign the safety agreement and start enrollment this week if you’re comfortable with these terms.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "MOTHER",
+      "text": "I’m glad you’re willing to commit to a structured safety plan and stick to your budget, but I still need more time to feel comfortable with the injury risks and the complexity of long-term insurance before we approve a purchase. Let’s hold off on the motorcycle for now and use the next few months to complete your beginner course while testing a reliable bicycle or electric scooter for your daily commute. Once you’ve logged consistent, accident-free miles and we’ve reviewed a formal insurance quote together, we can revisit this conversation with a much clearer picture of your readiness.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "I hear your concerns, Mom, and I think we can bridge them by letting him start the safety course and use a bike or scooter for his commute while we keep the motorcycle purchase on the table once he earns his licence. I fully support the purchase as long as he commits to the certified safety course, wears full certified gear, sticks to his clear budget, and maintains an accident-free record for six months. This phased approach honors your need for gradual confidence-building while giving him a responsible, transparent path to the independence he’s working toward. Let’s put these milestones in a simple written agreement so everyone moves forward with clarity and peace of mind.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I appreciate both of you working through this with me, and I’m fully on board with the phased approach and putting our agreement in writing. I’ll start the certified beginner course immediately, stick to my strict budget, and use a bicycle or scooter for my commute while I log those safe miles. Once I earn my license and maintain the six-month accident-free record, I’d like us to review the insurance quotes together and move forward with the motorcycle purchase, as it will give me the reliable independence I need for work and college. Thank you for supporting my growth while keeping safety and responsibility at the forefront.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "MOTHER",
+      "text": "I’m glad you’re willing to follow this structured plan, but I still need to see consistent riding experience before we consider a motorcycle, as the injury risks and unpredictable insurance costs for a new rider remain my primary concerns. Let’s keep your focus on completing the beginner course and relying on your bicycle or scooter for your commute for now. Once you’ve logged those safe miles and we’ve reviewed a formal, long-term insurance quote together, we can reassess whether this is the right step for your independence.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "I completely understand your need to evaluate the risks and costs, Mom, and I agree we should keep the focus on his training and current commute for now. I’ll fully support this purchase the moment he earns his licence, completes the safety course, commits to full certified gear, and sticks to our clear budget. Let’s set a firm review date once he finishes the course and brings those insurance quotes, so we can make a final decision based on his demonstrated responsibility while keeping his path to independence structured and transparent.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely understand your concerns about safety and costs, and I’m fully committed to following this structured plan. I’ll enroll in the beginner safety training immediately, rely on my bicycle for daily commutes, and stick to the strict budget we’ve outlined. Once I complete the course and gather those formal insurance quotes, I’ll gladly meet with you both on the review date to discuss next steps. Thank you for supporting my path to independence while keeping safety and responsibility at the forefront.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "MOTHER",
+      "text": "I’m relieved we’ve established a clear, structured path that prioritizes your safety and financial responsibility while giving you time to build real-world experience. Until you’ve completed your training and we’ve thoroughly reviewed those insurance quotes, I will continue to hold off on approving the motorcycle due to my ongoing concerns about injury risk and the high premiums for new riders. Please focus fully on your coursework and continue using your bicycle or scooter for your daily commute during this period. Once you’ve met those milestones, we can reassess your readiness together.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "FATHER",
+      "text": "I appreciate your careful approach, Mom, and I agree we should keep the purchase on hold until he completes his training and we’ve reviewed those insurance quotes. I fully support him earning his licence and moving forward with the motorcycle, provided he commits to a certified safety course, wears full protective gear, and sticks to the clear budget we’ve established. Let’s set a firm review date once he finishes the course and brings those quotes, so we can make a final decision based on his demonstrated responsibility and your peace of mind. This structured path honors your caution while giving him a transparent route to the independence he’s working toward.",
+      "speaks_for_others": []
+    },
+    {
+      "speaker": "SON",
+      "text": "I completely accept this plan and will focus entirely on completing my safety course and using my bicycle for my daily commute. I’ll stick to our agreed budget and bring those insurance quotes to our review date so we can make a clear, informed decision together. Thank you for supporting my path to independence while keeping safety and responsibility at the forefront, and I’m ready to start the training immediately.",
+      "speaks_for_others": []
+    }
+  ],
+  "summary": {
+    "agreed": true,
+    "terms": [
+      "Son will immediately enroll in a certified beginner safety course",
+      "Son will use a bicycle or electric scooter for daily commuting during the training period",
+      "Son will adhere to the strict budget he outlined",
+      "Son will earn his motorcycle license and maintain an accident-free record for six months",
+      "Son will gather formal long-term insurance quotes",
+      "The family will meet on a firm review date to reassess the purchase",
+      "The milestones will be documented in a written agreement"
+    ],
+    "open_issues": [
+      "Final approval of the motorcycle purchase is pending the review date",
+      "Specific long-term insurance costs for a new rider remain to be evaluated",
+      "Mother's concerns about injury risk require more riding experience to alleviate",
+      "The exact date for the final review meeting has not been set"
+    ]
+  },
+  "turns_speaking_for_others": 0
+}

@@ -90,6 +90,19 @@ jobs:
           uv sync --frozen
           uv run --frozen pytest -q tests
 
+  conversation-tests:
+    name: project-13-multi-agent-conversations (offline tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+      - name: Agent perspective, turn checks and summary parsing, with a scripted model
+        working-directory: project-13-multi-agent-conversations
+        run: |
+          uv sync --frozen
+          uv run --frozen pytest -q tests
+
   pilot-vault:
     name: project-29-health-pilot-vault
     runs-on: ubuntu-latest
