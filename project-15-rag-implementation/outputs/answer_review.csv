@@ -1,0 +1,21 @@
+question,small_chunks_verdict,larger_chunks_verdict,small_chunks_correct,larger_chunks_correct,note
+What is density altitude?,answered,answered,yes,yes,
+What is pressure altitude?,answered,answered,yes,yes,
+How does humidity affect aircraft performance?,answered,answered,yes,yes,
+What is the difference between Vx and Vy?,answered,answered,yes,yes,
+What is an airplane's service ceiling?,abstained,answered,no,yes,300-character chunk ended just before the definition (climb rate under 100 fpm)
+How does runway slope affect takeoff distance?,answered,answered,yes,yes,"larger-chunk answer says ""upsloping"", which the keyword ""upslope"" doesn't match: a false negative of the automatic check"
+What types of hydroplaning are there?,abstained,abstained,correct abstention,correct abstention,this edition of chapter 11 only describes dynamic hydroplaning; the question asks for more than the source holds
+How does a headwind affect takeoff and landing distance?,answered,answered,yes,yes,
+What is the standard temperature lapse rate?,answered,answered,yes,yes,
+What is a temperature inversion?,answered,answered,yes,yes,
+What causes wind to blow from high to low pressure?,abstained,answered,no,yes,"small chunk was cut mid-sentence; larger chunk answered ""air always seeks out lower pressure"" without the keyword ""pressure gradient"""
+What is the Coriolis force?,answered,answered,yes,yes,
+What is the dewpoint?,answered,answered,yes,yes,
+What are the stages of a thunderstorm?,answered,answered,yes,yes,
+What is the difference between stable and unstable air?,answered,answered,yes,yes,
+Where does Class A airspace begin?,answered,answered,yes,yes,
+What do you need before entering Class B airspace?,answered,answered,yes,yes,
+"What is the speed limit below 10,000 feet MSL?",answered,abstained,yes,no,"larger chunks retrieved ""250 knots"" from the military training routes paragraph, not the speed limit rule: a false positive of the keyword hit, and the model rightly declined to use it"
+What is a temporary flight restriction?,answered,answered,yes,yes,
+What communication is required to enter Class C airspace?,answered,answered,yes,yes,

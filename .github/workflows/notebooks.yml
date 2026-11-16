@@ -103,6 +103,19 @@ jobs:
           uv sync --frozen
           uv run --frozen pytest -q tests
 
+  chunking-tests:
+    name: project-15-rag-implementation (offline tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+      - name: Chunkers, the sweep and answer checks, with a toy embedding and a scripted model
+        working-directory: project-15-rag-implementation
+        run: |
+          uv sync --frozen
+          uv run --frozen pytest -q tests
+
   pilot-vault:
     name: project-29-health-pilot-vault
     runs-on: ubuntu-latest
