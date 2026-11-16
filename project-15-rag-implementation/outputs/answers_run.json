@@ -1,0 +1,919 @@
+{
+  "date": "2026-11-16",
+  "model": "qwen/qwen3.6-35b-a3b",
+  "setting": {
+    "strategy": "fixed",
+    "size": 300,
+    "overlap": 0,
+    "k": 5
+  },
+  "results": [
+    {
+      "scope": "in",
+      "question": "What is density altitude?",
+      "answer": "Density altitude is the vertical distance above sea level in the standard atmosphere at which a given density is to be found [P1]. It is also defined as the altitude in the standard atmosphere corresponding to a particular value of air density [P3]. Additionally, it is computed using pressure altitude and temperature [P1], or more specifically, as pressure altitude corrected for nonstandard temperature [P3].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "3"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "density altitude identify the same level. Density altitude, then, is the vertical distance above sea level in the standard atmosphere at which a given density is to be found. Density altitude is computed using pressure altitude and temperature. Since aircraft performance data at any level is based",
+        "means a high density altitude; an increase in air density means a lower density altitude. Density altitude is used in calculating aircraft performance. Under standard atmospheric condition, air at each level in the atmosphere has a specific density; under standard conditions, pressure altitude and",
+        "aerodynamic performance in the nonstandard atmosphere is density altitude—the altitude in the standard atmosphere corresponding to a particular value of air density. Density altitude is pressure altitude corrected for nonstandard temperature. As the density of the air increases (lower density",
+        "pressure altitude and ambient temperature is to define density altitude and its effect on landing performance. An increase in density altitude increases the landing speed but does not alter the net retarding force. Thus, the aircraft at altitude lands at the same IAS as at sea level but, because of",
+        "affected by changes in altitude, temperature, and humidity. High density altitude refers to thin air while low density altitude refers to dense air. The conditions that result in a high density altitude are high elevations, low atmospheric pressures, high temperatures, high humidity, or some"
+      ],
+      "chapter": 11,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is pressure altitude?",
+      "answer": "Pressure altitude is the height above the standard datum plane (SDP) [P1]. It is important as a basis for determining aircraft performance and for assigning flight levels to aircraft operating above 18,000 feet [P2].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "nonstandard atmosphere, certain related terms must be defined. Pressure Altitude Pressure altitude is the height above the standard datum plane (SDP). The aircraft altimeter is essentially a sensitive barometer calibrated to indicate altitude in the standard atmosphere. If the altimeter is set for",
+        "SDP may be below, at, or above sea level. Pressure altitude is important as a basis for determining aircraft performance, as well as for assigning flight levels to aircraft operating at above 18,000 feet. The pressure altitude can be determined by any of the three following methods: 1. By setting",
+        "feet altitude. Atmospheric Pressure Though there are various kinds of pressure, pilots are mainly concerned with atmospheric pressure. It is one of the basic factors in weather changes, helps to lift the aircraft, and actuates some of the most important flight instruments in the aircraft. These",
+        "pressure altitude and ambient temperature is to define density altitude and its effect on landing performance. An increase in density altitude increases the landing speed but does not alter the net retarding force. Thus, the aircraft at altitude lands at the same IAS as at sea level but, because of",
+        "decrease in air pressure as altitude increases. The opposite is true of descending air; as atmospheric pressure increases, the temperature of descending air increases as it is compressed. Adiabatic heating and adiabatic cooling are terms used to describe this temperature change. The adiabatic"
+      ],
+      "chapter": 11,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "How does humidity affect aircraft performance?",
+      "answer": "Humidity is an important factor in aircraft performance because water vapor is lighter than air, making moist air lighter than dry air [P1]. While humidity alone is usually not considered essential for calculating density altitude and aircraft performance, it does contribute to the overall effect on density [P2][P5]. Consequently, pilots should expect a decrease in overall performance in high humidity conditions [P2]. There is no rule-of-thumb or chart to compute the effects of humidity on density altitude, so it must be taken into consideration [P2].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2",
+        "5"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "in the atmosphere may be negligible under certain conditions, but in other conditions humidity may become an important factor in the performance of an aircraft. Water vapor is lighter than air; consequently, moist air is lighter than dry air. Therefore, as the water content of the air increases,",
+        "influence on aircraft performance because of their effect upon density. There is no rule-of-thumb or chart used to compute the effects of humidity on density altitude, but it must be taken into consideration. Expect a decrease in overall performance in high humidity conditions. Performance",
+        "Introduction This chapter discusses the factors that affect aircraft performance, which include the aircraft weight, atmospheric conditions, runway environment, and the fundamental physical laws governing the forces acting on an aircraft. Importance of Performance Data The performance or operational",
+        "usually has the dominant effect. Hence, pilots can expect the density to decrease with altitude. Effects of Humidity (Moisture) on Density The preceding paragraphs are based on the presupposition of perfectly dry air. In reality, it is never completely dry. The small amount of water vapor suspended",
+        "while saturated air that cannot hold any more water vapor has a relative humidity of 100 percent. Humidity alone is usually not considered an essential factor in calculating density altitude and aircraft performance; however, it does contribute. The higher the temperature, the greater amount of"
+      ],
+      "chapter": 11,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is the difference between Vx and Vy?",
+      "answer": "Based on the provided passages, the difference between Vx and Vy is:\n- Vx is the best angle of climb speed, defined as the speed at which the aircraft obtains the highest altitude in a given horizontal distance [P1], [P4]. This best angle of climb speed normally increases slightly with altitude [P1].\n- Vy is the best rate of climb speed, defined as the speed at which the aircraft obtains the maximum increase in altitude per unit of time [P1], [P3]. This best rate of climb speed normally decreases slightly with altitude [P1].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "3",
+        "4"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "increase in altitude per unit of time. This best ROC speed normally decreases slightly with altitude. VX—the speed at which the aircraft obtains the highest altitude in a given horizontal distance. This best AOC speed normally increases slightly with altitude. VLE—the maximum speed at which the",
+        "than one axis at the same time. VN0—the maximum speed for normal operation or the maximum structural cruising speed. This is the speed at which exceeding the limit load factor may cause permanent deformation of the aircraft structure. VNE—the speed that should never be exceeded. If flight is",
+        "minimum steady flight speed at which the aircraft is controllable in the landing configuration. VS1—the calibrated power-off stalling speed or the minimum steady flight speed at which the aircraft is controllable in a specified configuration. VY—the speed at which the aircraft obtains the maximum",
+        "ceiling Best angle of climb (Vx) Best rate of climb (Vy) 24,000 22,000 20,000 18,000 16,000 14,000 12,000 10,000 8,000 6,000 4,000 2,000 Sea level 70 80 90 100 110 120 Figure 11-10. Absolute and service ceiling. Fuel flow/power required (HP) Speed Reference line At altitude A B Maximum range at",
+        "instruments often include the altimeter, the airspeed indicator (ASI), the vertical speed indicator (VSI), and the manifold pressure gauge. Though air is very light, it has mass and is affected by the attraction of gravity. Therefore, like any other substance, it has weight; because it has weight,"
+      ],
+      "chapter": 11,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is an airplane's service ceiling?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "increased, these various speeds finally converge at the absolute ceiling of the aircraft. At the absolute ceiling, there is no excess of power and only one speed allows steady, level flight. Consequently, the absolute ceiling of an aircraft produces zero ROC. The service ceiling is the altitude at",
+        "expressed in pounds per square foot and is obtained by dividing the total weight of an airplane in pounds by the wing area (including ailerons) in square feet. It is the airplane’s wing loading that determines the landing Indicated airspeed (knots) Standard altitude (feet) Service ceiling Absolute",
+        "landing airport, using a discrete ground-to-air frequency or the tower frequency when the tower is closed. LAA services include local airport advisories, automated weather reporting with voice broadcasting, and a continuous Automated Surface Observing System (ASOS)/Automated Weather Observing",
+        "development, castle-like • Lenticularus—lens-shaped, formed over mountains in strong winds • Nimbus—rain-bearing clouds • Fracto—ragged or broken • Alto—middle level clouds existing at 5,000 to 20,000 feet Ceiling For aviation purposes, a ceiling is the lowest layer of clouds reported as being",
+        "unmanned free balloon below 2,000 feet above the surface within the lateral boundaries of Class B, Class C, Class D, or Class E airspace designated for an airport. (See 14 CFR part 101.) Unmanned Aircraft Systems Regulations regarding unmanned aircraft systems (UAS) are currently being developed"
+      ],
+      "chapter": 11,
+      "answer_has_keyword": false
+    },
+    {
+      "scope": "in",
+      "question": "How does runway slope affect takeoff distance?",
+      "answer": "Runway slope affects takeoff distance based on the direction of the gradient. A downsloping runway aids in acceleration on takeoff, resulting in shorter takeoff distances [P2]. Conversely, an upsloping runway impedes acceleration and results in a longer ground run during takeoff [P4]. These effects correspond to the runway's gradient, where a positive gradient indicates the runway height increases and a negative gradient indicates the runway height decreases [P4].",
+      "abstained": false,
+      "citations": [
+        "2",
+        "4"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "depends greatly on the runway surface. Figure 11-15. Takeoff distance chart. The gradient or slope of the runway is the amount of change in runway height over the length of the runway. The gradient is expressed as a percentage, such as a 3 percent gradient. This means that for every 100 feet of",
+        "upsloping runway typically reduces the landing roll. A downsloping runway aids in acceleration on takeoff resulting in shorter takeoff distances. The opposite is true when landing, as landing on a downsloping runway increases landing distances. Runway slope information is contained in the Chart",
+        "required at half the speed. • The takeoff or landing roll distance is a function of both acceleration/deceleration and speed. Runway Surface and Gradient Runway conditions affect takeoff and landing performance. Typically, performance chart information assumes paved, level, smooth, and dry runway",
+        "runway length, the runway height changes by 3 feet. A positive gradient indicates the runway height increases, and a negative gradient indicates the runway decreases in height. An upsloping runway impedes acceleration and results in a longer ground run during takeoff. However, landing on an",
+        "runway and the tires, they can also act as obstructions and reduce the landing distance. [Figure 11-16] Braking effectiveness is another consideration when dealing with various runway types. The condition of the surface affects the braking ability of the aircraft. The amount of power that is"
+      ],
+      "chapter": 11,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What types of hydroplaning are there?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "hydroplaning because a layer of water separates the tires from the runway surface. This is also true of braking effectiveness when runways are covered in ice. When the runway is wet, the pilot may be confronted with dynamic hydroplaning. Dynamic hydroplaning is a condition in which the aircraft",
+        "hydroplaning speed. On wet runways, directional control can be maximized by landing into the wind. Abrupt control inputs should be avoided. When the runway is wet, anticipate braking problems well before landing and be prepared for hydroplaning. Opt for a suitable runway most aligned with the wind.",
+        "tires ride on a thin sheet of water rather than on the runway’s surface. Because hydroplaning wheels are not touching the runway, braking and directional control are almost nil. To help minimize dynamic hydroplaning, some runways are grooved to help drain off water; most runways are not. Figure",
+        "hydroplaning. The 260 feet that a pilot might feel is left over has long since evaporated as the aircraft hydroplaned the first 300–500 feet when the brakes locked. This is an example of a true story, but one which only changes from year to year because of new participants and aircraft with",
+        "a factor in dynamic hydroplaning. Using the simple formula in Figure 11-18, a pilot can calculate the minimum speed, in knots, at which hydroplaning begins. In plain language, the minimum hydroplaning speed is determined by multiplying the square root of the main gear tire pressure in psi by nine."
+      ],
+      "chapter": 11,
+      "answer_has_keyword": false
+    },
+    {
+      "scope": "in",
+      "question": "How does a headwind affect takeoff and landing distance?",
+      "answer": "A headwind allows the aircraft to reach lift-off speed at a lower groundspeed [P1]. Specifically, a headwind that is 10 percent of the takeoff airspeed reduces the takeoff distance approximately 19 percent [P2]. For landing, the principal effect of wind on landing distance is the change in the groundspeed at which the aircraft touches down [P3]. Additionally, the effect of wind on deceleration during landing is identical to the effect on acceleration during takeoff [P3].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2",
+        "3"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "be provided when predicting takeoff distance. The effect of a headwind is to allow the aircraft to reach the lift-off speed at a lower groundspeed, while the effect of a tailwind is to require the aircraft to achieve a greater groundspeed to attain the lift-off speed. A headwind that is 10 percent",
+        "of the takeoff airspeed reduces the takeoff distance approximately 19 percent. However, a tailwind that is 10 percent of the takeoff airspeed increases the takeoff distance approximately 21 percent. In the case where the headwind speed is 50 percent of the takeoff speed, the takeoff distance would",
+        "particular airspeed independent of the wind, the principal effect of wind on landing distance is the change in the groundspeed at which the aircraft touches down. The effect of wind on deceleration during the landing is identical to the effect on acceleration during the takeoff. The effect of",
+        "1,320 1,445 1,585 1,740 1,920 2,125 2,360 2,635 2,960 0 °C Figure 12-9. Takeoff distances increase with increased altitude. Altitude and Flight Altitude affects every aspect of flight from aircraft performance to human performance. At higher altitudes, with a decreased atmospheric pressure, takeoff",
+        "percent. In most critical takeoff conditions, such an increase in takeoff distance would be prohibitive, and the pilot must adhere to the recommended takeoff speeds. The effect of pressure altitude and ambient temperature is to define the density altitude and its effect on takeoff performance."
+      ],
+      "chapter": 11,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is the standard temperature lapse rate?",
+      "answer": "The standard temperature lapse rate is one in which the temperature decreases at a rate of approximately 3.5 °F or 2 °C per thousand feet up to 36,000 feet [P1].",
+      "abstained": false,
+      "citations": [
+        "1"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "Celsius (°C) and a surface pressure of 29.92 inches of mercury (\"Hg) or 1013.2 millibars (mb). [Figure 11-1] A standard temperature lapse rate is one in which the temperature decreases at the rate of approximately 3.5 °F or 2 °C per thousand feet up to 36,000 feet. Above this point, the temperature",
+        "surrounding air. The dry adiabatic lapse rate (unsaturated air) is 3 °C (5.4 °F) per 1,000 feet. The moist adiabatic lapse rate varies from 1.1 °C to 2.8 °C (2 °F to 5 °F) per 1,000 feet. The combination of moisture and temperature determine the stability of the air and the resulting weather. Cool,",
+        "is considered constant up to 80,000 feet. A standard pressure lapse rate is one in which pressure decreases at a rate of approximately 1 \"Hg per 1,000 feet of altitude gain to 10,000 feet. [Figure 11-2] The International Civil Aviation Organization (ICAO) has established this as a worldwide",
+        "decreases. When air descends, the opposite is true. The rate at which temperature decreases with an increase in altitude is referred to as its lapse rate. As air ascends through the atmosphere, the average rate of temperature change is 2 °C (3.5 °F) per 1,000 feet. Since water vapor is lighter than",
+        "standard, and it is often referred to as International Standard Atmosphere (ISA) or ICAO Standard Atmosphere. Any temperature or pressure that differs from the standard lapse rates is considered nonstandard temperature and pressure. Adjustments for nonstandard temperatures and pressures are"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is a temperature inversion?",
+      "answer": "A temperature inversion is an atmospheric anomaly that changes the typical pattern of decreasing temperature with altitude, occurring when the temperature of the air rises with altitude [P4]. These inversion layers are commonly shallow layers of smooth, stable air close to the ground where the temperature increases with altitude to a certain point, which is the top of the inversion [P1]. The air at the top of the layer acts as a lid, keeping weather and pollutants trapped [P1]. Additionally, inversions can occur when warm air spreads over a layer of cooler air, or when cooler air is forced under a layer of warmer air [P2].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2",
+        "4"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "inversion exists. Inversion layers are commonly shallow layers of smooth, stable air close to the ground. The temperature of the air increases with altitude to a certain point, which is the top of the inversion. The air at the top of the layer acts as a lid, keeping weather and pollutants trapped",
+        "lowering temperature of the ground. The air within a few hundred feet of the surface becomes cooler than the air above it. Frontal inversions occur when warm air spreads over a layer of cooler air, or cooler air is forced under a layer of warmer air. Moisture and Temperature The atmosphere, by",
+        "below. If the relative humidity of the air is high, it can contribute to the formation of clouds, fog, haze, or smoke resulting in diminished visibility in the inversion layer. Surface-based temperature inversions occur on clear, cool nights when the air close to the ground is cooled by the",
+        "instability of the surrounding air. Inversion As air rises and expands in the atmosphere, the temperature decreases. There is an atmospheric anomaly that can occur; however, that changes this typical pattern of atmospheric behavior. When the temperature of the air rises with altitude, a temperature",
+        "standard, and it is often referred to as International Standard Atmosphere (ISA) or ICAO Standard Atmosphere. Any temperature or pressure that differs from the standard lapse rates is considered nonstandard temperature and pressure. Adjustments for nonstandard temperatures and pressures are"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What causes wind to blow from high to low pressure?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "approach and can take days to pass through a region. Wind Shifts Wind around a high-pressure system rotates clockwise, while low-pressure winds rotate counter-clockwise. When two high pressure systems are adjacent, the winds are almost in direct opposition to each other at the point of contact.",
+        "rises and is replaced by Figure 12-11. Favorable winds near a high pressure system. Figure 12-12. Convective turbulence avoidance. cooler, denser air flowing in from over the water. This causes an onshore wind called a sea breeze. Conversely, at night land cools faster than water, as does the",
+        "weather is typically associated with high-pressure systems for this reason. Conversely, air flows into a lowpressure area to replace rising air. This air usually brings increasing cloudiness and precipitation. Thus, bad weather is commonly associated with areas of low pressure. A good understanding",
+        "an area of high pressure. This is known as anticyclonic circulation. The opposite is true of low-pressure areas; the air flows toward a low and is deflected to create a counterclockwise or cyclonic circulation. [Figure 12-10] High-pressure systems are generally areas of dry, descending air. Good",
+        "takeoff, landing, and cruise flight operations. Most importantly, currents and winds or atmospheric circulation cause weather changes. Wind Patterns In the Northern Hemisphere, the flow of air from areas of high to low pressure is deflected to the right and produces a clockwise circulation around"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": false
+    },
+    {
+      "scope": "in",
+      "question": "What is the Coriolis force?",
+      "answer": "Based on the provided passages, the Coriolis force is a force that deflects moving air to the right in the Northern Hemisphere, causing it to follow a curved path instead of a straight line [P1]. The amount of deflection varies by latitude, being greatest at the poles and diminishing to zero at the equator [P1]. The force's magnitude also depends on the speed of the moving object, where greater speed results in greater deviation [P3]. While not perceptible to humans walking due to slow movement and short distances relative to Earth's size and rotation rate, it significantly affects motion over large distances, such as air masses [P2]. Ultimately, it is caused by the Earth's rotation and alters general atmospheric circulation patterns [P3].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2",
+        "3"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "body of water. The Coriolis force deflects air to the right in the Northern Hemisphere, causing it to follow a curved path instead of a straight line. The amount of deflection differs depending on the latitude. It is greatest at the poles and diminishes to zero at the equator. The magnitude of",
+        "Coriolis force. This force is not perceptible to humans as they walk around because humans move slowly and travel relatively short distances compared to the size and rotation rate of the Earth. However, the Coriolis force significantly affects motion over large distances, such as an air mass or",
+        "Coriolis force also differs with the speed of the moving body—the greater the speed, the greater the deviation. In the Northern Hemisphere, the rotation of the Earth deflects moving air to the right and changes the general circulation pattern of the air. The Coriolis force causes the general flow",
+        "also affect aircraft performance, especially with regard to takeoff, rate of climb, and landings. Coriolis Force In general atmospheric circulation theory, areas of low pressure exist over the equatorial regions and areas of high pressure exist over the polar regions due to a difference in",
+        "equator to the North Pole, it is no longer moving northward, but eastward. This air cools and sinks in a belt-like area at about 30° latitude, creating an area of high pressure as it sinks toward the surface. Then, it flows southward along the surface back toward the equator. Coriolis force bends"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is the dewpoint?",
+      "answer": "The dew point is the temperature, given in degrees, at which the air can hold no more moisture [P1]. When the air temperature is reduced to the dew point, the air becomes completely saturated and moisture begins to condense out of it [P1].",
+      "abstained": false,
+      "citations": [
+        "1"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "dew point and temperature defines the concept of relative humidity. The dew point, given in degrees, is the temperature at which the air can hold no more moisture. When the temperature of the air is reduced to the dew point, the air is completely saturated and moisture begins to condense out of the",
+        "temperature of the ground and objects on the surface can cause temperatures of the surrounding air to drop below the dew point. When this occurs, the moisture in the air condenses and deposits itself on the ground, buildings, and other objects like cars and aircraft. This moisture is known as dew",
+        "clouds often form at the altitude where temperature and dew point reach the same value. When lifted, unsaturated air cools at a rate of 5.4 °F per 1,000 feet and the dew point temperature decreases at a rate of 1 °F per 1,000 feet. This results in a convergence of temperature and dew point at a",
+        "temperature dew point spread by the convergence rate of 4.4 °F, and multiply by 1,000 to determine the approximate height of the cloud base. Methods by Which Air Reaches the Saturation Point If air reaches the saturation point while temperature and dew point are close together, it is highly likely",
+        "air in the form of fog, dew, frost, clouds, rain, or snow. A cubic meter of air with 17g of water vapor at 20 °C is at saturation or 100% relative humidity. Any further cooling will cause condensation (fog, clouds, dew) to form. Thus, 20 °C is the dew point for this situation. If the same cubic"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What are the stages of a thunderstorm?",
+      "answer": "According to the provided passages, a thunderstorm progresses through three distinct stages: the cumulus stage [P1], the mature stage [P3], and the dissipating stage [P4].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "3",
+        "4"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "front, nimbostratus and altostratus clouds are visible, precipitation decreases, and visibility improves. Thunderstorms A thunderstorm makes its way through three distinct stages before dissipating. It begins with the cumulus stage, in which lifting action of the air begins. If sufficient moisture",
+        "hazards associated with thunderstorms. Figure 2 in the AC shows a cross section of a mature stage thunderstorm with a gust front area where very serious turbulence may be encountered. Icing Updrafts in a thunderstorm support abundant liquid water with relatively large droplet sizes. When carried",
+        "and instability are present, the clouds continue to increase in vertical height. Continuous, strong updrafts prohibit moisture from falling. Within approximately 15 minutes, the thunderstorm reaches the mature stage, which is the most violent time period of the thunderstorm’s life cycle. At this",
+        "thunderstorms can subject aircraft to rain, hail, damaging lightning, and violent turbulence. A good rule of thumb is to circumnavigate thunderstorms identified as severe or giving an extreme radar echo by at Cumulus Stage (3–5 mile height) Mature Stage (5–10 mile height) Dissipating Stage (5–7",
+        "in numerous combinations. While not every thunderstorm contains all hazards, it is not possible to visually determine which hazards a thunderstorm contains. Squall Line A squall line is a narrow band of active thunderstorms. Often it develops on or ahead of a cold front in moist, unstable air, but"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is the difference between stable and unstable air?",
+      "answer": "Based on the provided passages, the difference between stable and unstable air is defined by their vertical movement and resulting weather conditions:\n\n- **Unstable air** allows small vertical air movements to grow larger, resulting in turbulent airflow and convective activity [P1]. This instability leads to significant turbulence, extensive vertical clouds, and severe weather [P1]. Specifically, unstable air causes cumulus clouds, showers, and turbulence to form [P2]. It exhibits the greatest instability when the air is moist and warm [P3].\n- **Stable air** resists vertical movement [P3]. Because it does not form convective currents, it typically produces good and generally clear weather [P3]. When it does form clouds, it produces low stratus clouds and fog [P4]. Additionally, stable air traps smoke, dust, and other particles near the surface, causing poor surface visibility [P2], [P4].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2",
+        "3",
+        "4"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "dampen out and disappear. In an unstable atmosphere, small vertical air movements tend to become larger, resulting in turbulent airflow and convective activity. Instability can lead to significant turbulence, extensive vertical clouds, and severe weather. Rising air expands and cools due to the",
+        "unstable air causes cumulus clouds, showers, and turbulence to form. Conversely, an air mass passing over a colder surface does not form convective currents but instead creates a stable air mass with poor surface visibility. The poor surface visibility is due to the fact that smoke, dust, and other",
+        "dry air is very stable and resists vertical movement, which leads to good and generally clear weather. The greatest instability occurs when the air is moist and warm, as it is in the tropical regions in the summer. Typically, thunderstorms appear on a daily basis in these regions due to the",
+        "particles cannot rise out of the air mass and are instead trapped near the surface. A stable air mass can produce low stratus clouds and fog. Fronts As an air mass moves across bodies of water and land, it eventually comes in contact with another air mass with different characteristics. The",
+        "combination of atmospheric pressure differences, Coriolis force, friction, and temperature differences of the air near the earth cause two kinds of atmospheric motion: convective currents (upward and downward motion) and wind (horizontal motion). Currents and winds are important as they affect"
+      ],
+      "chapter": 12,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "Where does Class A airspace begin?",
+      "answer": "Class A airspace generally begins at 18,000 feet mean sea level (MSL) [P1].",
+      "abstained": false,
+      "citations": [
+        "1"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "Controlled airspace consists of: • Class A • Class B • Class C • Class D • Class E Class A Airspace Class A airspace is generally the airspace from 18,000 feet mean sea level (MSL) up to and including flight level (FL) 600, including the airspace overlying the waters within 12 nautical miles (NM)",
+        "of the coast of the 48 contiguous states and Alaska. Unless otherwise authorized, all operation in Class A airspace is conducted under instrument flight rules (IFR). Class B Airspace Class B airspace is generally airspace from the surface to 10,000 feet MSL surrounding the nation’s busiest airports",
+        "entering the airspace and thereafter must maintain those communications while within the airspace. Class D Airspace Class D airspace is generally airspace from the surface to 2,500 feet above the airport elevation (charted in MSL) surrounding those airports that have an operational control tower.",
+        "It is helpful to refer to this figure as the specific classes are discussed in greater detail. Class A Pilots operating an aircraft in Class A airspace must conduct that operation under IFR and only under an ATC clearance received prior to entering the airspace. Unless otherwise authorized by ATC,",
+        "as Class A, B, C, or D airspace. A large amount of the airspace over the United States is designated as Class E airspace. Figure 15-2. An example of a prohibited area, P-40 around Camp David. This provides sufficient airspace for the safe control and separation of aircraft during IFR operations."
+      ],
+      "chapter": 15,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What do you need before entering Class B airspace?",
+      "answer": "Based on the provided passages, before operating in Class B airspace you need:\n- An ATC clearance from the ATC facility having jurisdiction for that area [P1].\n- ADS-B Out equipment installed that meets the performance requirements of 14 CFR part 91 [P2].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "section 91.227. Class B All pilots operating an aircraft within a Class B airspace area must receive an ATC clearance from the ATC facility having jurisdiction for that area. The pilot in command (PIC) may not take off or land an aircraft at an airport within a Class B airspace unless he or she has",
+        "ATC on appropriate frequencies for that Class B airspace area. Additionally, beginning January 1, 2020, aircraft operating in the Class B airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91,",
+        "advised, by the route filed in the flight plan. Additionally, beginning January 1, 2020, aircraft operating in the Class E airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91, section 91.227. Class",
+        "It is helpful to refer to this figure as the specific classes are discussed in greater detail. Class A Pilots operating an aircraft in Class A airspace must conduct that operation under IFR and only under an ATC clearance received prior to entering the airspace. Unless otherwise authorized by ATC,",
+        "applicable specifications found in 14 CFR part 91, section 91.215. Additionally, beginning January 1, 2020, aircraft operating in the Class A airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91,"
+      ],
+      "chapter": 15,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is the speed limit below 10,000 feet MSL?",
+      "answer": "Based on the provided passages, the speed limit is 250 knots [P2].",
+      "abstained": false,
+      "citations": [
+        "2"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "18,000 feet MSL (the lower limit of Class A airspace). All airspace above FL 600 is Class E airspace. Uncontrolled Airspace Class G Airspace Uncontrolled airspace or Class G airspace is the portion of the airspace that has not been designated as Class A, B, C, D, or E. It is therefore designated",
+        "MSL for operations at speeds in excess of 250 knots. Some route segments may be defined at higher altitudes for purposes of route continuity. Routes are identified as IFR (IR), and VFR (VR), followed by a number. [Figure 15-7] MTRs with no segment above 1,500 feet AGL are identified by four number",
+        "above the surface (regardless of MSL altitude). More than 1,200 feet above the surface but less than 10,000 feet MSL. More than 1,200 feet above the surface and at or above 10,000 feet MSL. At or above 10,000 feet MSL Less than 10,000 feet MSL Class A Class B Class C Class D Class E Class G Figure",
+        "areas, the Class E airspace base is 1,200 feet AGL. In many other areas, the Class E airspace base is either the surface or 700 feet AGL. Some Class E airspace begins at an MSL altitude depicted on the charts, instead of an AGL altitude. Class E airspace typically extends up to, but not including,",
+        "runway 27. After becoming aligned with the runway and at 50 feet AGL, the pilot is already 1,000 feet down the 3,500 feet runway. The airspeed is still high by about ten percent (should be at 70 knots and is at about 80 knots). The wind of ten knots is blowing from behind. First, the airspeed being"
+      ],
+      "chapter": 15,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What is a temporary flight restriction?",
+      "answer": "A temporary flight restriction (TFR) is designated by a flight data center (FDC) Notice to Airmen (NOTAM) [P3]. The NOTAM begins with the phrase “FLIGHT RESTRICTIONS” followed by the location of the temporary restriction, effective time period, area defined in statute miles, and altitudes affected [P3]. It also contains the FAA coordination facility and telephone number, the reason for the restriction, and any other information deemed appropriate [P4]. Pilots should check the NOTAMs as part of flight planning [P4]. Some purposes for establishing a TFR include protecting persons and property in the air or on the surface from an existing or imminent hazard, and providing a safe environment [P4].",
+      "abstained": false,
+      "citations": [
+        "3",
+        "4"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "contain airspace within which the flight of aircraft, while not wholly prohibited, is subject to restrictions. Activities within these areas must be confined because of their nature, or limitations may be imposed upon aircraft operations that are not a part of those activities, or both. Restricted",
+        "locations where there is a requirement for increased security and safety of ground facilities. Flight in NSAs may be temporarily prohibited by regulation under the provisions of Title 14 of the Code of Federal Regulations (14 CFR) part 99, and prohibitions are disseminated via NOTAM. Pilots are",
+        "issued to designate a TFR. The NOTAM begins with the phrase “FLIGHT RESTRICTIONS” followed by the location of the temporary restriction, effective time period, area defined in statute miles, and altitudes affected. The NOTAM also contains the FAA coordination facility and telephone number, the",
+        "reason for the restriction, and any other information deemed appropriate. The pilot should check the NOTAMs as part of flight planning. Some of the purposes for establishing a TFR are: • Protect persons and property in the air or on the surface from an existing or imminent hazard. • Provide a safe",
+        "conducted in accordance with IFR regardless of weather conditions. VFR sectional charts depict military training activities, such as IR, VR, MOA, restricted area, warning area, and alert area information. Temporary Flight Restrictions (TFR) A flight data center (FDC) Notice to Airmen (NOTAM) is"
+      ],
+      "chapter": 15,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "in",
+      "question": "What communication is required to enter Class C airspace?",
+      "answer": "To enter Class C airspace, each aircraft must establish two-way radio communications with the ATC facility providing air traffic services prior to entering the airspace [P2]. The pilot must maintain those communications while in the airspace [P2]. If departing from an airport with an operating control tower, the pilot must establish and maintain two-way radio communications with the control tower [P5]. If departing from a satellite airport without an operating control tower, the pilot must establish two-way radio communications with the ATC facility having jurisdiction over the Class C airspace area as soon as practicable after departing [P1], [P5].",
+      "abstained": false,
+      "citations": [
+        "1",
+        "2",
+        "5"
+      ],
+      "unknown_citations": [],
+      "verdict": "answered",
+      "passages": [
+        "maintain two-way radio communications with the ATC facility having jurisdiction over the Class C airspace area as soon as practicable after departing. Unless otherwise authorized by the ATC having jurisdiction over the Class C airspace area, all aircraft within Class C airspace must be equipped",
+        "authorized, each aircraft must establish two-way radio communications with the ATC facility providing air traffic services prior to entering the airspace and thereafter maintain those communications while in the airspace. Class E Airspace Class E airspace is the controlled airspace not classified",
+        "procedures once an aircraft enters the airspace. ATC clearance is required for all aircraft to operate in the area, and all aircraft that are so cleared receive separation services within the airspace. Class C Airspace Class C airspace is generally airspace from the surface to 4,000 feet above the",
+        "each aircraft operating in Class A airspace must be equipped with a two-way radio capable of communicating with ATC on a frequency assigned by ATC. Unless otherwise authorized by ATC, all aircraft within Class A airspace must be equipped with the appropriate transponder equipment meeting all",
+        "with an operating control tower must establish and maintain two-way radio communications with the control tower, and thereafter as instructed by ATC while operating in the Class C airspace area. If departing from a satellite airport without an operating control tower, the pilot must establish and"
+      ],
+      "chapter": 15,
+      "answer_has_keyword": true
+    },
+    {
+      "scope": "out",
+      "question": "What is the time complexity of inserting into a binary heap?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "dust is often the only visible clue. A typical microburst has a horizontal diameter of 1–2 miles and a nominal depth of 1,000 feet. The lifespan of a microburst is about 5–15 minutes during which time it can produce downdrafts of up to 6,000 feet per minute (fpm) and headwind losses of 30–90 knots,",
+        "surrounding air. The dry adiabatic lapse rate (unsaturated air) is 3 °C (5.4 °F) per 1,000 feet. The moist adiabatic lapse rate varies from 1.1 °C to 2.8 °C (2 °F to 5 °F) per 1,000 feet. The combination of moisture and temperature determine the stability of the air and the resulting weather. Cool,",
+        "the numbers read zero at sea level, it is known that the time to climb from sea level to 8,000 feet is 10 minutes. It is also known that 21 pounds of fuel is used and 20 NM is covered during the climb. However, the temperature is 22 °C, which is 7° above the standard temperature of 15 °C. The notes",
+        "required is at a minimum (approximately L/DMAX). In a propeller airplane, maximum excess thrust normally occurs at an airspeed below L/DMAX and frequently just above stall speed. Rate of Climb (ROC) ROC is a comparison of altitude gained relative to the time needed to reach that altitude. ROC is",
+        "be wise to remain in Indianapolis until the warm front passes, which may take up to two days. Cold Front A cold front occurs when a mass of cold, dense, and stable air advances and replaces a body of warmer air. Cold fronts move more rapidly than warm fronts, progressing at a rate of 25 to 30 mph."
+      ]
+    },
+    {
+      "scope": "out",
+      "question": "Who won the 2024 World Series?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "50 ft OBS 1,460 1,605 1,770 1,960 2,185 2,445 2,755 3,140 3,615 1,195 1,310 1,440 1,585 1,750 1,945 2,170 2,440 2,760 970 1,060 1,160 1,270 1,400 1,545 1,710 1,900 2,125 860 940 1,035 1,140 1,260 1,390 1,540 1,710 1,905 700 765 840 925 1,020 1,125 1,240 1,375 1,525 565 615 675 740 815 900 990 1,095",
+        "1,045 1,150 1,270 1,405 1,555 1,730 1,925 695 765 840 920 1,015 1,120 1,235 1,370 1,520 Total feet to clear 50 ft OBS 1,945 2,155 2,395 2,685 3,030 3,455 3,990 - - - - - - 1,575 1,735 1,915 2,130 2,375 2,665 3,020 3,450 4,005 1,265 1,385 1,525 1,685 1,865 2,070 2,315 2,605 2,950 Lift off 51 49 46",
+        "2,450 2,450 2,450 20.7 20.4 20.1 19.8 19.5 19.2 18.8 17.4 16.1 6.6 6.6 6.6 6.6 6.6 6.6 6.4 5.8 5.3 11.5 11.5 11.5 11.5 11.5 11.5 11.3 10.5 9.7 147 149 152 155 157 160 162 159 156 169 171 175 178 181 184 186 183 180 °F °C PSI GPH kts MPHRPM \"HG IOAT TASEngine speed Man. press Fuel flow per engine °F",
+        "1,215 Total feet to clear 50 ft OBS 1,570 1,725 1,910 2,120 2,365 2,660 3,015 3,450 4,015 1,280 1,405 1,545 1,705 1,890 2,105 2,355 2,655 3,015 1,035 1,135 1,240 1,365 1,500 1,660 1,845 2,055 2,305 995 1,090 1,200 1,325 1,465 1,620 1,800 2,000 - - - 805 885 975 1,070 1,180 1,305 1,445 1,605 1,785",
+        "front. They vary in speed, composition, weather phenomenon, and prediction. Cold fronts, which move at 20 to 35 mph, travel faster than warm fronts, which move at only 10 to 25 mph. Cold fronts also possess a St. Louis Indianapolis 200 miles Columbus 400 miles Pittsburgh 600 miles METAR KSTL 1950Z"
+      ]
+    },
+    {
+      "scope": "out",
+      "question": "What is the time complexity of radix sort?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "dust is often the only visible clue. A typical microburst has a horizontal diameter of 1–2 miles and a nominal depth of 1,000 feet. The lifespan of a microburst is about 5–15 minutes during which time it can produce downdrafts of up to 6,000 feet per minute (fpm) and headwind losses of 30–90 knots,",
+        "9.4 11.5 11.5 11.5 11.5 11.5 11.4 10.6 9.8 9.1 63 55 48 41 36 28 21 14 7 17 13 9 5 2 –2 –6 –10 –14 21.2 21.0 20.7 20.4 20.2 19.9 18.8 17.4 16.1 150 153 156 158 161 163 163 160 156 173 176 180 182 185 188 188 184 180 99 91 84 79 72 64 57 50 43 37 33 29 26 22 18 14 10 6 21.8 21.5 21.3 21.0 20.8 20.3",
+        "5.7 6.1 4.2 4.7 5.1 5.5 5.9 6.3 4.5 4.9 5.3 5.7 6.1 5.0 5.2 5.5 5.9 6.3 Range miles 525 570 600 620 630 625 565 600 625 635 635 630 600 625 645 645 640 640 650 655 650 635 Endr. hours 4.9 5.6 6.2 6.7 7.2 7.7 5.3 5.9 6.4 6.9 7.4 7.9 5.7 6.2 6.7 7.2 7.7 6.3 6.5 7.0 7.5 8.0 Range miles 660 720 760 780",
+        "a factor in dynamic hydroplaning. Using the simple formula in Figure 11-18, a pilot can calculate the minimum speed, in knots, at which hydroplaning begins. In plain language, the minimum hydroplaning speed is determined by multiplying the square root of the main gear tire pressure in psi by nine.",
+        "increase in altitude per unit of time. This best ROC speed normally decreases slightly with altitude. VX—the speed at which the aircraft obtains the highest altitude in a given horizontal distance. This best AOC speed normally increases slightly with altitude. VLE—the maximum speed at which the"
+      ]
+    },
+    {
+      "scope": "out",
+      "question": "How do I make a sourdough starter?",
+      "answer": "Not in the handbook passages.",
+      "abstained": true,
+      "citations": [],
+      "unknown_citations": [],
+      "verdict": "abstained",
+      "passages": [
+        "the first dark reference line. Follow the lines in the same diagonal fashion until the correct landing weight is reached. At 2,400 pounds, continue in a straight line across to the second dark reference line. Once again, draw a line in a diagonal manner to the correct wind component and then",
+        "Begin by finding the correct OAT on the bottom left side of the graph. Move up that line until it intersects the pressure altitude of 6,000 feet. Draw a line straight across to the 65 percent, best power line. This is the solid line, that represents best economy. Draw a line straight down from this",
+        "OAT..................................................36 °F above standard Refer to Figure 11-28 for this sample problem. First, locate the pressure altitude of 6,000 feet on the far left side of the table. Follow that line across to the far right side of the table under the 20 °C (or 36 °F) column.",
+        "2,400 pounds, begin reading from left to right across the table. The takeoff speed is in the second column and, in the third column under pressure altitude, find the pressure altitude of 3,000 feet. Carefully follow that line to the right until it is under the correct temperature column of 30 °C.",
+        "third reference line and from here, draw a line in two directions. First, draw a line straight across to figure the ground roll distance. Next, follow the diagonal lines again until they reach the corresponding obstacle height. In this case, it is a 50 foot obstacle. Therefore, draw the diagonal"
+      ]
+    }
+  ],
+  "comparison": {
+    "setting": {
+      "strategy": "fixed",
+      "size": 600,
+      "overlap": 90,
+      "k": 5
+    },
+    "results": [
+      {
+        "scope": "in",
+        "question": "What is density altitude?",
+        "answer": "Density altitude is the vertical distance above sea level in the standard atmosphere at which a given air density is found [P1]. It is determined by first finding the pressure altitude and then correcting that altitude for nonstandard temperature variations [P2]. Essentially, density altitude is pressure altitude corrected for nonstandard temperature [P3]. Because air density varies directly with pressure and inversely with temperature, density altitude indicates the actual air density conditions that have a pronounced effect on aircraft and engine performance [P2].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "pressure altitude and density altitude identify the same level. Density altitude, then, is the vertical distance above sea level in the standard atmosphere at which a given density is to be found. Density altitude is computed using pressure altitude and temperature. Since aircraft performance data at any level is based upon air density under standard day conditions, such performance data apply to air density levels that may not be identical to altimeter indications. Under conditions higher or lower than standard, these levels cannot be determined directly from the altimeter. Density altitude",
+          "standard, these levels cannot be determined directly from the altimeter. Density altitude is determined by first finding pressure altitude and then correcting this altitude for nonstandard temperature variations. Since density varies directly with pressure, and inversely with temperature, a given pressure altitude may exist for a wide range of temperature by allowing the density to vary. However, a known density occurs for any one temperature and pressure altitude. The density of the air, of course, has a pronounced effect on aircraft and engine performance. Regardless of the actual altitude",
+          "value of air density. Density altitude is pressure altitude corrected for nonstandard temperature. As the density of the air increases (lower density altitude), aircraft performance increases. Conversely, Outside air temperature (OAT) Density altitude (feet) 15,000 14,000 13,000 12,000 11,000 10,000 9,000 8,000 7,000 6,000 5,000 4,000 3,000 2,000 1,000 Sea level 14,000 13,000 12,000 11,000 10,000 9,000 Pressure altitude (feet) 8,000 7,000 6,000 5,000 4,000 3,000 2,000 1,000 -1,000 Sea level -2,000 -20° -10° 0° 10° 20° 30° 40° 0° 10° 20° 30° 40° 50° 60° 70° 80° 90° 100° Standard temperature C F",
+          "The effect of pressure altitude and ambient temperature is to define the density altitude and its effect on takeoff performance. While subsequent corrections are appropriate for the effect of temperature on certain items of powerplant performance, density altitude defines specific effects on takeoff performance. An increase in density altitude can produce a twofold effect on takeoff performance: 1. Greater takeoff speed 2. Decreased thrust and reduced net accelerating force If an aircraft of given weight and configuration is operated at greater heights above standard sea level, the aircraft",
+          "a higher altitude and is referred to as density altitude. As pressure decreases, density altitude increases and has a pronounced effect on aircraft performance. Differences in air density caused by changes in temperature result in a change in pressure. This, in turn, creates motion in the atmosphere, both vertically and horizontally, in the form of currents and wind. The atmosphere is almost constantly in motion as it strives to reach equilibrium. These never-ending air movements set up chain reactions that cause a continuing variety in the weather. Standard Atmosphere Denver 29.92 \"Hg 24.92"
+        ],
+        "chapter": 11,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is pressure altitude?",
+        "answer": "Based on the provided passages, pressure altitude is the height above the standard datum plane (SDP) [P3]. It is also defined as the altitude in the standard atmosphere corresponding to the sensed pressure [P2]. When an altimeter is set to 29.92 \"Hg, the indicated altitude becomes the pressure altitude [P3]. Additionally, it is important as a basis for determining aircraft performance and for assigning flight levels to aircraft operating above 18,000 feet [P2].",
+        "abstained": false,
+        "citations": [
+          "2",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "pressure altitude and density altitude identify the same level. Density altitude, then, is the vertical distance above sea level in the standard atmosphere at which a given density is to be found. Density altitude is computed using pressure altitude and temperature. Since aircraft performance data at any level is based upon air density under standard day conditions, such performance data apply to air density levels that may not be identical to altimeter indications. Under conditions higher or lower than standard, these levels cannot be determined directly from the altimeter. Density altitude",
+          "the altitude indicated is the pressure altitude—the altitude in the standard atmosphere corresponding to the sensed pressure. The SDP is a theoretical level at which the pressure of the atmosphere is 29.92 \"Hg and the weight of air is 14.7 psi. As atmospheric pressure changes, the SDP may be below, at, or above sea level. Pressure altitude is important as a basis for determining aircraft performance, as well as for assigning flight levels to aircraft operating at above 18,000 feet. The pressure altitude can be determined by any of the three following methods: 1. By setting the barometric scale",
+          "corrections must apply to the instrumentation, as well as the aircraft performance, if the actual operating conditions do not fit the standard atmosphere. In order to account properly for the nonstandard atmosphere, certain related terms must be defined. Pressure Altitude Pressure altitude is the height above the standard datum plane (SDP). The aircraft altimeter is essentially a sensitive barometer calibrated to indicate altitude in the standard atmosphere. If the altimeter is set for 29.92 \"Hg SDP, the altitude indicated is the pressure altitude—the altitude in the standard atmosphere",
+          "of rising pressure at a single weather station generally indicates the approach of fair weather. Conversely, decreasing or rapidly falling pressure usually indicates approaching bad weather and, possibly, severe storms. Altitude and Atmospheric Pressure As altitude increases, atmospheric pressure decreases. On average, with every 1,000 feet of increase in altitude, the atmospheric pressure decreases 1 \"Hg. As pressure decreases, the air becomes less dense or thinner. This is the equivalent of being at a higher altitude and is referred to as density altitude. As pressure decreases, density",
+          "altitude of about 10,000 feet, but for some people impairment can occur at an altitude as low as 5,000 feet. The physiological reactions to hypoxia or oxygen deprivation are insidious and affect people in different ways. These symptoms range from mild disorientation to total incapacitation, depending on body tolerance and altitude. Supplemental oxygen or cabin pressurization systems help pilots fly at higher altitudes and overcome the effects of oxygen deprivation. Wind and Currents Air flows from areas of high pressure into areas of low pressure because air always seeks out lower pressure."
+        ],
+        "chapter": 11,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "How does humidity affect aircraft performance?",
+        "answer": "Humidity affects aircraft performance primarily through its effect on air density. Water vapor is lighter than air, which makes moist air less dense than dry air [P1]. Because humidity, along with pressure and temperature, greatly influences aircraft performance through its effect on density, pilots should expect a decrease in overall performance in high humidity conditions [P2].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "is increased usually has the dominant effect. Hence, pilots can expect the density to decrease with altitude. Effects of Humidity (Moisture) on Density The preceding paragraphs are based on the presupposition of perfectly dry air. In reality, it is never completely dry. The small amount of water vapor suspended in the atmosphere may be negligible under certain conditions, but in other conditions humidity may become an important factor in the performance of an aircraft. Water vapor is lighter than air; consequently, moist air is lighter than dry air. Therefore, as the water content of the air",
+          "two separate air masses, the first warm and moist (both qualities making air lighter) and the second cold and dry (both qualities making it heavier), the first must be less dense than the second. Pressure, temperature, and humidity have a great influence on aircraft performance because of their effect upon density. There is no rule-of-thumb or chart used to compute the effects of humidity on density altitude, but it must be taken into consideration. Expect a decrease in overall performance in high humidity conditions. Performance Performance is a term used to describe the ability of an",
+          "humidity conditions. Performance Performance is a term used to describe the ability of an aircraft to accomplish certain things that make it useful for certain purposes. For example, the ability of an aircraft to land and take off in a very short distance is an important factor to the pilot who operates in and out of short, unimproved airfields. The ability to carry heavy loads, fly at high altitudes at fast speeds, and/or travel long distances is essential for the performance of airline and executive type aircraft. The primary factors most affected by performance are the takeoff and landing",
+          "Introduction This chapter discusses the factors that affect aircraft performance, which include the aircraft weight, atmospheric conditions, runway environment, and the fundamental physical laws governing the forces acting on an aircraft. Importance of Performance Data The performance or operational information section of the Aircraft Flight Manual/Pilot’s Operating Handbook (AFM/ POH) contains the operating data for the aircraft; that is, the data pertaining to takeoff, climb, range, endurance, descent, and landing. The use of this data in flying operations is mandatory for safe and efficient",
+          "and external environmental factors can significantly affect aircraft performance. It is essential that a pilot become intimately familiar with the mission planning programs, performance characteristics, and capabilities of the aircraft being flown, as well as all of the onboard computerized systems in today’s complex aircraft. The primary source of this information is the AFM/POH."
+        ],
+        "chapter": 11,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is the difference between Vx and Vy?",
+        "answer": "Vx and Vy are both optimal climb speeds but serve different purposes and have different performance characteristics:\n- Vx is the speed for the best angle of climb (AOC), which provides the highest altitude gain over a given horizontal distance [P1], [P4].\n- Vy is the speed for the best rate of climb (ROC), which provides the maximum increase in altitude per unit of time [P1], [P4].\nThe key difference is that Vx maximizes altitude gain over horizontal distance (making it useful for clearing obstacles), while Vy maximizes altitude gain over time [P4]. Additionally, Vx normally increases slightly with altitude, whereas Vy normally decreases slightly with altitude [P1].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "4"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "VY—the speed at which the aircraft obtains the maximum increase in altitude per unit of time. This best ROC speed normally decreases slightly with altitude. VX—the speed at which the aircraft obtains the highest altitude in a given horizontal distance. This best AOC speed normally increases slightly with altitude. VLE—the maximum speed at which the aircraft can be safely flown with the landing gear extended. This is a problem involving stability and controllability. VLO—the maximum speed at which the landing gear can be safely extended or retracted. This is a problem involving the air loads",
+          "the landing Indicated airspeed (knots) Standard altitude (feet) Service ceiling Absolute ceiling Best angle of climb (Vx) Best rate of climb (Vy) 24,000 22,000 20,000 18,000 16,000 14,000 12,000 10,000 8,000 6,000 4,000 2,000 Sea level 70 80 90 100 110 120 Figure 11-10. Absolute and service ceiling. Fuel flow/power required (HP) Speed Reference line At altitude A B Maximum range at L/DMAX Maximum endurance at minimum power required Applicable for a particular Weight Altitude Configuration Figure 11-11. Airspeed for maximum endurance. A common element for each of these operating problems is the",
+          "structural damage. Operating at or below Figure 11-20. Conditions notes chart. , , , maneuvering speed does not provide structural protection against multiple full control inputs in one axis or full control inputs in more than one axis at the same time. VN0—the maximum speed for normal operation or the maximum structural cruising speed. This is the speed at which exceeding the limit load factor may cause permanent deformation of the aircraft structure. VNE—the speed that should never be exceeded. If flight is attempted above this speed, structural damage or structural failure may result.",
+          "obstacles to avoid hitting them. Second, climbing to higher altitudes can provide better weather, fuel economy, and other benefits. Maximum Angle of Climb (AOC), obtained at VX, may provide climb performance to ensure an aircraft will clear obstacles. Maximum Rate of Climb (ROC), obtained at V Y, provides climb performance to achieve the greatest altitude gain over time. Maximum ROC may not be sufficient to avoid obstacles in some situations, while maximum AOC may be sufficient to avoid the same obstacles. [Figure 11-7] Angle of Climb (AOC) AOC is a comparison of altitude gained relative to",
+          "gear can be safely extended or retracted. This is a problem involving the air loads imposed on the operating mechanism during extension or retraction of the gear. VFE—the highest speed permissible with the wing flaps in a prescribed extended position. This is because of the air loads imposed on the structure of the flaps. VA—the calibrated design maneuvering airspeed. This is the maximum speed at which the limit load can be imposed (either by gusts or full deflection of the control surfaces) without causing structural damage. Operating at or below Figure 11-20. Conditions notes chart. , , ,"
+        ],
+        "chapter": 11,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is an airplane's service ceiling?",
+        "answer": "An airplane's service ceiling is the altitude at which the aircraft is unable to climb at a rate greater than 100 feet per minute (fpm) [P1].",
+        "abstained": false,
+        "citations": [
+          "1"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "aircraft. At the absolute ceiling, there is no excess of power and only one speed allows steady, level flight. Consequently, the absolute ceiling of an aircraft produces zero ROC. The service ceiling is the altitude at which the aircraft is unable to climb at a rate greater than 100 feet per minute (fpm). Usually, these specific performance reference points are provided for the aircraft at a specific design configuration. [Figure 11-10] The terms “power loading,” “wing loading,” “blade loading,” and “disk loading” are commonly used in reference to performance. Power loading is expressed in",
+          "reported as being broken or overcast, or the vertical visibility into an obscuration like fog or haze. Clouds are reported as broken when five-eighths to seven-eighths of the sky is covered with clouds. Overcast means the entire sky is covered with clouds. Current ceiling information is reported by the aviation routine weather report (METAR) and automated weather stations of various types. Visibility Closely related to cloud cover and reported ceilings is visibility information. Visibility refers to the greatest horizontal distance at which prominent objects can be viewed with the naked eye.",
+          "and is designed to contain all published instrument procedures once an aircraft enters the airspace. ATC clearance is required for all aircraft to operate in the area, and all aircraft that are so cleared receive separation services within the airspace. Class C Airspace Class C airspace is generally airspace from the surface to 4,000 feet above the airport elevation (charted in MSL) surrounding those airports that have an operational control tower, are serviced by a radar approach control, and have a certain number of IFR operations or passenger enplanements. Although the configuration of each",
+          "the airspace. Class D Airspace Class D airspace is generally airspace from the surface to 2,500 feet above the airport elevation (charted in MSL) surrounding those airports that have an operational control tower. The configuration of each Class D airspace area is individually tailored and, when instrument procedures are published, the airspace is normally designed to contain the procedures. Arrival extensions for instrument approach procedures (IAPs) may be Class D or Class E airspace. Unless otherwise authorized, each aircraft must establish two-way radio communications with the ATC facility",
+          "The following is a list of cloud classifications: • Cumulus—heaped or piled clouds • Stratus—formed in layers • Cirrus—ringlets, fibrous clouds, also high level clouds above 20,000 feet • Castellanus—common base with separate vertical development, castle-like • Lenticularus—lens-shaped, formed over mountains in strong winds • Nimbus—rain-bearing clouds • Fracto—ragged or broken • Alto—middle level clouds existing at 5,000 to 20,000 feet Ceiling For aviation purposes, a ceiling is the lowest layer of clouds reported as being broken or overcast, or the vertical visibility into an obscuration"
+        ],
+        "chapter": 11,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "How does runway slope affect takeoff distance?",
+        "answer": "Runway slope affects takeoff distance based on its direction:\n- An upsloping runway impedes acceleration and results in a longer ground run during takeoff [P5].\n- A downsloping runway aids in acceleration, resulting in shorter takeoff distances [P5].\n\nRunway slope is expressed as a percentage [P3], and its effect must be considered alongside other factors when predicting takeoff distance from aircraft performance data [P4].",
+        "abstained": false,
+        "citations": [
+          "3",
+          "4",
+          "5"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "shorter takeoff distances. The opposite is true when landing, as landing on a downsloping runway increases landing distances. Runway slope information is contained in the Chart Supplement U.S. (formerly Airport/ Facility Directory). [Figure 11-17] Water on the Runway and Dynamic Hydroplaning Water on the runways reduces the friction between the tires and the ground and can reduce braking effectiveness. The ability to brake can be completely lost when the tires are hydroplaning because a layer of water separates the tires from the runway surface. This is also true of braking effectiveness when",
+          "an airplane requires four times as much distance to stop as required at half the speed. • The takeoff or landing roll distance is a function of both acceleration/deceleration and speed. Runway Surface and Gradient Runway conditions affect takeoff and landing performance. Typically, performance chart information assumes paved, level, smooth, and dry runway surfaces. Since no two runways are alike, the runway surface differs from one runway to another, as does the runway gradient or slope. [Figure 11-15] Runway surfaces vary widely from one airport to another. The runway surface encountered may",
+          "power that is applied to the brakes without skidding the tires is referred to as braking effectiveness. Ensure that runways are adequate in length for takeoff acceleration and landing deceleration when less than ideal surface conditions are being reported. Figure 11-16. An aircraft’s performance during takeoff depends greatly on the runway surface. Figure 11-15. Takeoff distance chart. The gradient or slope of the runway is the amount of change in runway height over the length of the runway. The gradient is expressed as a percentage, such as a 3 percent gradient. This means that for every 100",
+          "and strive for a polished, professional takeoff procedure. In the prediction of takeoff distance from the AFM/POH data, the following primary considerations must be given: • Pressure altitude and temperature—to define the effect of density altitude on distance • Gross weight—a large effect on distance • Wind—a large effect due to the wind or wind component along the runway • Runway slope and condition—the effect of an incline and retarding effect of factors such as snow or ice Landing Performance In many cases, the landing distance of an aircraft defines the runway requirements for flight",
+          "is expressed as a percentage, such as a 3 percent gradient. This means that for every 100 feet of runway length, the runway height changes by 3 feet. A positive gradient indicates the runway height increases, and a negative gradient indicates the runway decreases in height. An upsloping runway impedes acceleration and results in a longer ground run during takeoff. However, landing on an upsloping runway typically reduces the landing roll. A downsloping runway aids in acceleration on takeoff resulting in shorter takeoff distances. The opposite is true when landing, as landing on a downsloping"
+        ],
+        "chapter": 11,
+        "answer_has_keyword": false
+      },
+      {
+        "scope": "in",
+        "question": "What types of hydroplaning are there?",
+        "answer": "Not in the handbook passages.",
+        "abstained": true,
+        "citations": [],
+        "unknown_citations": [],
+        "verdict": "abstained",
+        "passages": [
+          "the tires from the runway surface. This is also true of braking effectiveness when runways are covered in ice. When the runway is wet, the pilot may be confronted with dynamic hydroplaning. Dynamic hydroplaning is a condition in which the aircraft tires ride on a thin sheet of water rather than on the runway’s surface. Because hydroplaning wheels are not touching the runway, braking and directional control are almost nil. To help minimize dynamic hydroplaning, some runways are grooved to help drain off water; most runways are not. Figure 11-18. Tire pressure. 9 x Tire pressure (in psi) 9 x 6 =",
+          "minimum hydroplaning speed is determined by multiplying the square root of the main gear tire pressure in psi by nine. For example, if the main gear tire pressure is at 36 psi, the aircraft would begin hydroplaning at 54 knots. Landing at higher than recommended touchdown speeds exposes the aircraft to a greater potential for hydroplaning. And once hydroplaning starts, it can continue well below the minimum initial hydroplaning speed. On wet runways, directional control can be maximized by landing into the wind. Abrupt control inputs should be avoided. When the runway is wet, anticipate",
+          "shorter takeoff distances. The opposite is true when landing, as landing on a downsloping runway increases landing distances. Runway slope information is contained in the Chart Supplement U.S. (formerly Airport/ Facility Directory). [Figure 11-17] Water on the Runway and Dynamic Hydroplaning Water on the runways reduces the friction between the tires and the ground and can reduce braking effectiveness. The ability to brake can be completely lost when the tires are hydroplaning because a layer of water separates the tires from the runway surface. This is also true of braking effectiveness when",
+          "water droplets. Typical middle-level clouds include altostratus and altocumulus. These types of clouds may be encountered on cross-country flights at higher altitudes. Altostratus clouds can produce turbulence and may contain moderate icing. Altocumulus clouds, which usually form when altostratus clouds are breaking apart, also may contain light turbulence and icing. High clouds form above 20,000 feet AGL and usually form only in stable air. They are made up of ice crystals and pose no real threat of turbulence or aircraft icing. Typical high level clouds are cirrus, cirrostratus, and",
+          "most runways are not. Figure 11-18. Tire pressure. 9 x Tire pressure (in psi) 9 x 6 = 54 knots 36 = 6 Minimum dynamic hydroplaning speed (rounded off) = Figure 11-17. Chart Supplement U.S. (formerly Airport/Facility Directory) information. Airport name Runway slope and direction of slope Runway surface Runway Tire pressure is a factor in dynamic hydroplaning. Using the simple formula in Figure 11-18, a pilot can calculate the minimum speed, in knots, at which hydroplaning begins. In plain language, the minimum hydroplaning speed is determined by multiplying the square root of the main gear"
+        ],
+        "chapter": 11,
+        "answer_has_keyword": false
+      },
+      {
+        "scope": "in",
+        "question": "How does a headwind affect takeoff and landing distance?",
+        "answer": "A headwind reduces both takeoff and landing distances. For takeoff, a headwind allows the aircraft to reach lift-off speed at a lower groundspeed [P1]. Specifically, a headwind equal to 10 percent of the takeoff airspeed reduces the takeoff distance by approximately 19 percent [P1], and a headwind equal to 50 percent of the takeoff speed reduces the takeoff distance by approximately 75 percent [P3]. The effect of wind on landing distance is identical to its effect on takeoff distance [P3]. This occurs because the principal effect of wind on landing distance is the change in the groundspeed at which the aircraft touches down [P2].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "of wind on takeoff distance is large, and proper consideration must also be provided when predicting takeoff distance. The effect of a headwind is to allow the aircraft to reach the lift-off speed at a lower groundspeed, while the effect of a tailwind is to require the aircraft to achieve a greater groundspeed to attain the lift-off speed. A headwind that is 10 percent of the takeoff airspeed reduces the takeoff distance approximately 19 percent. However, a tailwind that is 10 percent of the takeoff airspeed increases the takeoff distance approximately 21 percent. In the case where the",
+          "independent of the wind, the principal effect of wind on landing distance is the change in the groundspeed at which the aircraft touches down. The effect of wind on deceleration during the landing is identical to the effect on acceleration during the takeoff. The effect of pressure altitude and ambient temperature is to define density altitude and its effect on landing performance. An increase in density altitude increases the landing speed but does not alter the net retarding force. Thus, the aircraft at altitude lands at the same IAS as at sea level but, because of the reduced density, the",
+          "airspeed increases the takeoff distance approximately 21 percent. In the case where the headwind speed is 50 percent of the takeoff speed, the takeoff distance would be approximately 25 percent of the zero wind takeoff distance (75 percent reduction). The effect of wind on landing distance is identical to its effect on takeoff distance. Figure 11-19 illustrates the general effect of wind by the percent change in takeoff or landing distance as a function of the ratio of wind velocity to takeoff or landing speed. The effect of proper takeoff speed is especially important when runway lengths and",
+          "of deceleration. The minimum landing distance varies in direct proportion to the gross weight. For example, a ten percent increase in gross weight at landing would cause a: • Five percent increase in landing velocity • Ten percent increase in landing distance A contingency of this is the relationship between weight and braking friction force. The effect of wind on landing distance is large and deserves proper consideration when predicting landing distance. Since the aircraft lands at a particular airspeed independent of the wind, the principal effect of wind on landing distance is the change",
+          "at a maximum. Lift and drag are produced as soon as the aircraft has speed, and the values of lift and drag depend on the AOA and dynamic pressure. Figure 11-19. Effect of wind on takeoff and landing. Percent increase in takeoff or landing distance Percent decrease in takeoff or landing distance Ratio of wind velocity to takeoff or landing speed Headwind Tailwind Reference line 80 70 60 50 40 30 20 10 30% 20% 10% 10% 20% 30% 10 20 30 40 50 60 Ratio of wind velocity to takeoff or landing speed As discussed in Chapter 6, engine pressure ratio (EPR) is the ratio between exhaust pressure (jet"
+        ],
+        "chapter": 11,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is the standard temperature lapse rate?",
+        "answer": "The standard temperature lapse rate is one in which the temperature decreases at a rate of approximately 3.5 °F or 2 °C per thousand feet up to 36,000 feet [P1]. Above 36,000 feet, the temperature is considered constant up to 80,000 feet [P1].",
+        "abstained": false,
+        "citations": [
+          "1"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "has a surface temperature of 59 degrees Fahrenheit (°F) or 15 degrees Celsius (°C) and a surface pressure of 29.92 inches of mercury (\"Hg) or 1013.2 millibars (mb). [Figure 11-1] A standard temperature lapse rate is one in which the temperature decreases at the rate of approximately 3.5 °F or 2 °C per thousand feet up to 36,000 feet. Above this point, the temperature is considered constant up to 80,000 feet. A standard pressure lapse rate is one in which pressure decreases at a rate of approximately 1 \"Hg per 1,000 feet of altitude gain to 10,000 feet. [Figure 11-2] The International Civil",
+          "result, when a parcel of air rises, pressure decreases, volume increases, and temperature decreases. When air descends, the opposite is true. The rate at which temperature decreases with an increase in altitude is referred to as its lapse rate. As air ascends through the atmosphere, the average rate of temperature change is 2 °C (3.5 °F) per 1,000 feet. Since water vapor is lighter than air, moisture decreases air density, causing it to rise. Conversely, as moisture decreases, air becomes denser and tends to sink. Since moist air cools at a slower rate, it is generally less stable than dry air",
+          "to sink. Since moist air cools at a slower rate, it is generally less stable than dry air since the moist air must rise higher before its temperature cools to that of the surrounding air. The dry adiabatic lapse rate (unsaturated air) is 3 °C (5.4 °F) per 1,000 feet. The moist adiabatic lapse rate varies from 1.1 °C to 2.8 °C (2 °F to 5 °F) per 1,000 feet. The combination of moisture and temperature determine the stability of the air and the resulting weather. Cool, dry air is very stable and resists vertical movement, which leads to good and generally clear weather. The greatest instability",
+          "\"Hg per 1,000 feet of altitude gain to 10,000 feet. [Figure 11-2] The International Civil Aviation Organization (ICAO) has established this as a worldwide standard, and it is often referred to as International Standard Atmosphere (ISA) or ICAO Standard Atmosphere. Any temperature or pressure that differs from the standard lapse rates is considered nonstandard temperature and pressure. Adjustments for nonstandard temperatures and pressures are provided on the manufacturer’s performance charts. Altitude (ft) Pressure (\"Hg) Temperature (°C) (°F) 0 1,000 2,000 3,000 4,000 5,000 6,000 7,000 8,000",
+          "an aneroid barometer. It is important to note that due to the linkage mechanism of an aneroid barometer, it is not as accurate as a mercurial barometer. To provide a common reference, the International Standard Atmosphere (ISA) has been established. These standard conditions are the basis for certain flight instruments and most aircraft performance data. Standard sea level pressure is defined as 29.92 \"Hg and a standard temperature of 59 °F (15 °C). Atmospheric pressure is also reported in millibars (mb), with 1 \"Hg equal to approximately 34 mb. Standard sea level pressure is 1,013.2 mb."
+        ],
+        "chapter": 12,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is a temperature inversion?",
+        "answer": "A temperature inversion is an atmospheric anomaly that occurs when the temperature of the air rises with altitude, which contrasts with the typical pattern where temperature decreases as air rises and expands [P3]. Inversion layers are commonly shallow layers of smooth, stable air close to the ground [P1]. The air at the top of the layer acts as a lid, keeping weather and pollutants trapped below [P1]. If the relative humidity is high, it can contribute to the formation of clouds, fog, haze, or smoke, resulting in diminished visibility within the inversion layer [P1]. Specific types include surface-based inversions, which occur on clear, cool nights when the ground cools the air close to it, making the air within a few hundred feet of the surface cooler than the air above it [P2]. Frontal inversions occur when warm air spreads over a layer of cooler air, or when cooler air is forced under a layer of warmer air [P2].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "the air rises with altitude, a temperature inversion exists. Inversion layers are commonly shallow layers of smooth, stable air close to the ground. The temperature of the air increases with altitude to a certain point, which is the top of the inversion. The air at the top of the layer acts as a lid, keeping weather and pollutants trapped below. If the relative humidity of the air is high, it can contribute to the formation of clouds, fog, haze, or smoke resulting in diminished visibility in the inversion layer. Surface-based temperature inversions occur on clear, cool nights when the air",
+          "layer. Surface-based temperature inversions occur on clear, cool nights when the air close to the ground is cooled by the lowering temperature of the ground. The air within a few hundred feet of the surface becomes cooler than the air above it. Frontal inversions occur when warm air spreads over a layer of cooler air, or cooler air is forced under a layer of warmer air. Moisture and Temperature The atmosphere, by nature, contains moisture in the form of water vapor. The amount of moisture present in the atmosphere is dependent upon the temperature of the air. Every 20 °F increase in",
+          "movement, which leads to good and generally clear weather. The greatest instability occurs when the air is moist and warm, as it is in the tropical regions in the summer. Typically, thunderstorms appear on a daily basis in these regions due to the instability of the surrounding air. Inversion As air rises and expands in the atmosphere, the temperature decreases. There is an atmospheric anomaly that can occur; however, that changes this typical pattern of atmospheric behavior. When the temperature of the air rises with altitude, a temperature inversion exists. Inversion layers are commonly",
+          "Pressure (\"Hg) Temperature (°C) (°F) 0 1,000 2,000 3,000 4,000 5,000 6,000 7,000 8,000 9,000 10,000 11,000 12,000 13,000 14,000 15,000 16,000 17,000 18,000 19,000 20,000 29.92 28.86 27.82 26.82 25.84 24.89 23.98 23.09 22.22 21.38 20.57 19.79 19.02 18.29 17.57 16.88 16.21 15.56 14.94 14.33 13.74 15.0 13.0 11.0 9.1 7.1 5.1 3.1 1.1 −0.9 −2.8 −4.8 −6.8 −8.8 −10.8 −12.7 −14.7 −16.7 −18.7 −20.7 −22.6 −24.6 59.0 55.4 51.9 48.3 44.7 41.2 37.6 34.0 30.5 26.9 23.3 19.8 16.2 12.6 9.1 5.5 1.9 −1.6 −5.2 −8.8 −12.3 Figure 11-2. Properties of standard atmosphere. Altimeter setting Altitude correction 28.0",
+          "\"Hg per 1,000 feet of altitude gain to 10,000 feet. [Figure 11-2] The International Civil Aviation Organization (ICAO) has established this as a worldwide standard, and it is often referred to as International Standard Atmosphere (ISA) or ICAO Standard Atmosphere. Any temperature or pressure that differs from the standard lapse rates is considered nonstandard temperature and pressure. Adjustments for nonstandard temperatures and pressures are provided on the manufacturer’s performance charts. Altitude (ft) Pressure (\"Hg) Temperature (°C) (°F) 0 1,000 2,000 3,000 4,000 5,000 6,000 7,000 8,000"
+        ],
+        "chapter": 12,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What causes wind to blow from high to low pressure?",
+        "answer": "Wind is caused by the combination of atmospheric pressure differences, the Coriolis force, friction, and temperature differences of the air near the earth [P2]. This horizontal motion occurs because air always seeks out lower pressure [P2], and it flows into a low-pressure area to replace rising air [P5].",
+        "abstained": false,
+        "citations": [
+          "2",
+          "5"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "changes. Wind Patterns In the Northern Hemisphere, the flow of air from areas of high to low pressure is deflected to the right and produces a clockwise circulation around an area of high pressure. This is known as anticyclonic circulation. The opposite is true of low-pressure areas; the air flows toward a low and is deflected to create a counterclockwise or cyclonic circulation. [Figure 12-10] High-pressure systems are generally areas of dry, descending air. Good weather is typically associated with high-pressure systems for this reason. Conversely, air flows into a lowpressure area to",
+          "of high pressure into areas of low pressure because air always seeks out lower pressure. The combination of atmospheric pressure differences, Coriolis force, friction, and temperature differences of the air near the earth cause two kinds of atmospheric motion: convective currents (upward and downward motion) and wind (horizontal motion). Currents and winds are important as they affect takeoff, landing, and cruise flight operations. Most importantly, currents and winds or atmospheric circulation cause weather changes. Wind Patterns In the Northern Hemisphere, the flow of air from areas of high",
+          "system rotates clockwise, while low-pressure winds rotate counter-clockwise. When two high pressure systems are adjacent, the winds are almost in direct opposition to each other at the point of contact. Fronts are the boundaries between two areas of high pressure, and therefore, wind shifts are continually occurring within a front. Shifting wind direction is most pronounced in conjunction with cold fronts. Stationary Front When the forces of two air masses are relatively equal, the boundary or front that separates them remains stationary and influences the local weather for days. This front is",
+          "of local circulation called convective currents. Convective currents cause the bumpy, turbulent air sometimes experienced when flying at lower altitudes during warmer weather. On a low-altitude flight over varying surfaces, updrafts are likely to occur over pavement or barren places, and downdrafts often occur over water or expansive areas of vegetation like a group of trees. Typically, these turbulent conditions can be avoided by flying at higher altitudes, even above cumulus cloud layers. [Figure 12-12] Convective currents are particularly noticeable in areas with a land mass directly",
+          "high-pressure systems for this reason. Conversely, air flows into a lowpressure area to replace rising air. This air usually brings increasing cloudiness and precipitation. Thus, bad weather is commonly associated with areas of low pressure. A good understanding of high- and low-pressure wind patterns can be of great help when planning a flight because a pilot can take advantage of beneficial tailwinds. [Figure 12-11] When planning a flight from west to east, favorable winds would be encountered along the northern side of a high-pressure system or the southern side of a low-pressure system. On"
+        ],
+        "chapter": 12,
+        "answer_has_keyword": false
+      },
+      {
+        "scope": "in",
+        "question": "What is the Coriolis force?",
+        "answer": "The Coriolis force is the force created by the rotation of the Earth [P1]. It deflects moving air to the right in the Northern Hemisphere, causing it to follow a curved path instead of a straight line [P1]. The amount of deflection varies by latitude, being greatest at the poles and diminishing to zero at the equator [P2]. Its magnitude also depends on the speed of the moving body, with greater speeds resulting in greater deviation [P2]. Additionally, this force causes the general atmospheric flow to break up into three distinct cells in each hemisphere [P2].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "The force created by the rotation of the Earth is known as the Coriolis force. This force is not perceptible to humans as they walk around because humans move slowly and travel relatively short distances compared to the size and rotation rate of the Earth. However, the Coriolis force significantly affects motion over large distances, such as an air mass or body of water. The Coriolis force deflects air to the right in the Northern Hemisphere, causing it to follow a curved path instead of a straight line. The amount of deflection differs depending on the latitude. It is greatest at the poles",
+          "The amount of deflection differs depending on the latitude. It is greatest at the poles and diminishes to zero at the equator. The magnitude of Coriolis force also differs with the speed of the moving body—the greater the speed, the greater the deviation. In the Northern Hemisphere, the rotation of the Earth deflects moving air to the right and changes the general circulation pattern of the air. The Coriolis force causes the general flow to break up into three distinct cells in each hemisphere. [Figure 12-5] In the Northern Hemisphere, the warm air at the equator rises upward from the surface,",
+          "resulting low pressure allows the highpressure air at the poles to flow along the planet’s surface toward the equator. While this pattern of air circulation is 14.7 lb 1 1 Square Inch 1 Square Inch 7.4 lb 18,000 feet18,000 feet 1 1 Square Inch 1 Square Inch Sea level Figure 12-4. Atmosphere weights. Figure 12-5. Three-cell circulation pattern due to the rotation of the Earth. correct in theory, the circulation of air is modified by several forces, the most important of which is the rotation of the Earth. The force created by the rotation of the Earth is known as the Coriolis force. This force",
+          "important to distinguish between these terms. Thrust is a force or pressure exerted on an object. Thrust is measured in pounds (lb) or newtons (N). Power, however, is a measurement of the rate of performing work or transferring energy (KE and PE). Power is typically measured in horsepower (hp) or kilowatts (kw). We can think of power as the motion (KE and PE) a force (thrust) creates when exerted on an object over a period of time. Positive climb performance occurs when an aircraft gains PE by increasing altitude. Two basic factors, or a combination of the two factors, contribute to positive",
+          "approximately 7.3 pounds (50 percent) less than at sea level. [Figure 12-4] The actual pressure at a given place and time differs with altitude, temperature, and density of the air. These conditions also affect aircraft performance, especially with regard to takeoff, rate of climb, and landings. Coriolis Force In general atmospheric circulation theory, areas of low pressure exist over the equatorial regions and areas of high pressure exist over the polar regions due to a difference in temperature. The resulting low pressure allows the highpressure air at the poles to flow along the planet’s"
+        ],
+        "chapter": 12,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is the dewpoint?",
+        "answer": "The dew point is the temperature at which the air can hold no more moisture [P3]. When the temperature of the air is reduced to the dew point, the air becomes completely saturated and moisture begins to condense out of the air in the form of fog, dew, frost, clouds, rain, or snow [P3].",
+        "abstained": false,
+        "citations": [
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "point to determine the height of the cloud base. Given: Temperature (T) = 85 °F Dew point (DP) = 71 °F Convergence Rate (CR) = 4.4° T – DP = Temperature Dew Point Spread (TDS) TDS ÷ CR = X X × 1,000 feet = height of cloud base AGL Example: 85 °F – 71 °F = 14 °F 14 °F ÷ 4.4 °F = 3.18 3.18 × 1,000 = 3,180 feet AGL The height of the cloud base is 3,180 feet AGL. Explanation: With an outside air temperature (OAT) of 85 °F at the surface and dew point at the surface of 71 °F, the spread is 14°. Divide the temperature dew point spread by the convergence rate of 4.4 °F, and multiply by 1,000 to",
+          "reach its saturation point, saturated air brings clouds, rain, and other critical weather situations. Figure 12-21. Radiation fog. Dew and Frost On cool, clear, calm nights, the temperature of the ground and objects on the surface can cause temperatures of the surrounding air to drop below the dew point. When this occurs, the moisture in the air condenses and deposits itself on the ground, buildings, and other objects like cars and aircraft. This moisture is known as dew and sometimes can be seen on grass and other objects in the morning. If the temperature is below freezing, the moisture is",
+          "concept of relative humidity. The dew point, given in degrees, is the temperature at which the air can hold no more moisture. When the temperature of the air is reduced to the dew point, the air is completely saturated and moisture begins to condense out of the air in the form of fog, dew, frost, clouds, rain, or snow. A cubic meter of air with 17g of water vapor at 20 °C is at saturation or 100% relative humidity. Any further cooling will cause condensation (fog, clouds, dew) to form. Thus, 20 °C is the dew point for this situation. If the same cubic meter of air warms to 30 °C, the 17 g of",
+          "meter of air at 30 °C Figure 12-20. Relationship between relative humidity, temperature, and dewpoint. As moist, unstable air rises, clouds often form at the altitude where temperature and dew point reach the same value. When lifted, unsaturated air cools at a rate of 5.4 °F per 1,000 feet and the dew point temperature decreases at a rate of 1 °F per 1,000 feet. This results in a convergence of temperature and dew point at a rate of 4.4 °F. Apply the convergence rate to the reported temperature and dew point to determine the height of the cloud base. Given: Temperature (T) = 85 °F Dew point",
+          "Fog Fog is a cloud that is on the surface. It typically occurs when the temperature of air near the ground is cooled to the air’s dew point. At this point, water vapor in the air condenses and becomes visible in the form of fog. Fog is classified according to the manner in which it forms and is dependent upon the current temperature and the amount of water vapor in the air. On clear nights, with relatively little to no wind present, radiation fog may develop. [Figure 12-21] Usually, it forms in low-lying areas like mountain valleys. This type of fog occurs when the ground cools rapidly due to"
+        ],
+        "chapter": 12,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What are the stages of a thunderstorm?",
+        "answer": "A thunderstorm progresses through three distinct stages: the cumulus stage [P1], the mature stage [P2], and the dissipating stage [P3].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "precipitation falls, visibility is poor, winds are variable, and the barometric pressure levels off. After the passage of the front, nimbostratus and altostratus clouds are visible, precipitation decreases, and visibility improves. Thunderstorms A thunderstorm makes its way through three distinct stages before dissipating. It begins with the cumulus stage, in which lifting action of the air begins. If sufficient moisture and instability are present, the clouds continue to increase in vertical height. Continuous, strong updrafts prohibit moisture from falling. Within approximately 15 minutes,",
+          "strong updrafts prohibit moisture from falling. Within approximately 15 minutes, the thunderstorm reaches the mature stage, which is the most violent time period of the thunderstorm’s life cycle. At this point, drops of moisture, whether rain or ice, are too heavy for the cloud to support and begin falling in the form of rain or hail. This creates a downward motion of the air. Warm, rising air; cool, precipitation-induced descending air; and violent turbulence all exist within and near the cloud. Below the cloud, the down-rushing air increases surface winds and decreases the temperature. Once",
+          "heights of 50,000 to 60,000 feet depending on latitude. Flying under thunderstorms can subject aircraft to rain, hail, damaging lightning, and violent turbulence. A good rule of thumb is to circumnavigate thunderstorms identified as severe or giving an extreme radar echo by at Cumulus Stage (3–5 mile height) Mature Stage (5–10 mile height) Dissipating Stage (5–7 mile height) 32 °F 0 °C Equilibrium level 40,000 ft. 30,000 ft. 20,000 ft. 10,000 ft. 5,000 ft. Figure 12-28. Life cycle of a thunderstorm. least 20 nautical miles (NM) since hail may fall for miles outside of the clouds. If flying",
+          "surface heating. Steady-state thunderstorms are associated with weather systems. Fronts, converging winds, and troughs aloft force upward motion spawning these storms that often form into squall lines. In the mature stage, updrafts become stronger and last much longer than in air mass storms, hence the name steady state. [Figure 12-29] Knowledge of thunderstorms and the hazards associated with them is critical to the safety of flight. Hazards All thunderstorms have conditions that are a hazard to aviation. These hazards occur in numerous combinations. While not every thunderstorm contains all",
+          "These hazards occur in numerous combinations. While not every thunderstorm contains all hazards, it is not possible to visually determine which hazards a thunderstorm contains. Squall Line A squall line is a narrow band of active thunderstorms. Often it develops on or ahead of a cold front in moist, unstable air, but it may develop in unstable air far removed from any front. The line may be too long to detour easily and too wide and severe to penetrate. It often contains steady-state thunderstorms and presents the single most intense weather hazard to aircraft. It usually forms rapidly,"
+        ],
+        "chapter": 12,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is the difference between stable and unstable air?",
+        "answer": "The difference between stable and unstable air depends on the atmosphere's ability to resist vertical motion [P1]. \n\n- **Stable air** makes vertical movement difficult, and small vertical disturbances dampen out and disappear [P1]. It does not form convective currents [P3]. Because smoke, dust, and other particles cannot rise, they are trapped near the surface, resulting in poor surface visibility [P3]. Stable air can also produce low stratus clouds and fog [P3].\n- **Unstable air** allows small vertical air movements to become larger [P1]. This results in turbulent airflow and convective activity [P1], and can lead to significant turbulence, extensive vertical clouds, and severe weather [P1]. Unstable air creates good surface visibility [P3], and moist unstable air specifically causes cumulus clouds, showers, and turbulence to form [P3].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "above the surface. Atmospheric Stability The stability of the atmosphere depends on its ability to resist vertical motion. A stable atmosphere makes vertical movement difficult, and small vertical disturbances dampen out and disappear. In an unstable atmosphere, small vertical air movements tend to become larger, resulting in turbulent airflow and convective activity. Instability can lead to significant turbulence, extensive vertical clouds, and severe weather. Rising air expands and cools due to the decrease in air pressure as altitude increases. The opposite is true of descending air; as",
+          "of high pressure into areas of low pressure because air always seeks out lower pressure. The combination of atmospheric pressure differences, Coriolis force, friction, and temperature differences of the air near the earth cause two kinds of atmospheric motion: convective currents (upward and downward motion) and wind (horizontal motion). Currents and winds are important as they affect takeoff, landing, and cruise flight operations. Most importantly, currents and winds or atmospheric circulation cause weather changes. Wind Patterns In the Northern Hemisphere, the flow of air from areas of high",
+          "a warmer surface is warmed from below, and convective currents form, causing the air to rise. This creates an unstable air mass with good surface visibility. Moist, unstable air causes cumulus clouds, showers, and turbulence to form. Conversely, an air mass passing over a colder surface does not form convective currents but instead creates a stable air mass with poor surface visibility. The poor surface visibility is due to the fact that smoke, dust, and other particles cannot rise out of the air mass and are instead trapped near the surface. A stable air mass can produce low stratus clouds",
+          "and are instead trapped near the surface. A stable air mass can produce low stratus clouds and fog. Fronts As an air mass moves across bodies of water and land, it eventually comes in contact with another air mass with different characteristics. The boundary layer between two types of air masses is known as a front. An approaching front of any type always means changes to the weather are imminent. There are four types of fronts that are named according to the temperature of the advancing air relative to the temperature of the air it is replacing: [Figure 12-24] • Warm • Cold • Stationary •",
+          "a higher altitude and is referred to as density altitude. As pressure decreases, density altitude increases and has a pronounced effect on aircraft performance. Differences in air density caused by changes in temperature result in a change in pressure. This, in turn, creates motion in the atmosphere, both vertically and horizontally, in the form of currents and wind. The atmosphere is almost constantly in motion as it strives to reach equilibrium. These never-ending air movements set up chain reactions that cause a continuing variety in the weather. Standard Atmosphere Denver 29.92 \"Hg 24.92"
+        ],
+        "chapter": 12,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "Where does Class A airspace begin?",
+        "answer": "Class A airspace generally begins at 18,000 feet mean sea level (MSL) [P3].",
+        "abstained": false,
+        "citations": [
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "the airspace. Class D Airspace Class D airspace is generally airspace from the surface to 2,500 feet above the airport elevation (charted in MSL) surrounding those airports that have an operational control tower. The configuration of each Class D airspace area is individually tailored and, when instrument procedures are published, the airspace is normally designed to contain the procedures. Arrival extensions for instrument approach procedures (IAPs) may be Class D or Class E airspace. Unless otherwise authorized, each aircraft must establish two-way radio communications with the ATC facility",
+          "and Alaska. Unless otherwise authorized, all operation in Class A airspace is conducted under instrument flight rules (IFR). Class B Airspace Class B airspace is generally airspace from the surface to 10,000 feet MSL surrounding the nation’s busiest airports in terms of airport operations or passenger enplanements. The configuration of each Class B airspace area is individually tailored, consists of a surface area and two or more layers (some Class B airspace areas resemble upside-down wedding cakes), and is designed to contain all published instrument procedures once an aircraft enters the",
+          "the different classifications of airspace and defined dimensions within which air traffic control (ATC) service is provided in accordance with the airspace classification. Controlled airspace consists of: • Class A • Class B • Class C • Class D • Class E Class A Airspace Class A airspace is generally the airspace from 18,000 feet mean sea level (MSL) up to and including flight level (FL) 600, including the airspace overlying the waters within 12 nautical miles (NM) of the coast of the 48 contiguous states and Alaska. Unless otherwise authorized, all operation in Class A airspace is conducted",
+          "Class B airspace area. Additionally, beginning January 1, 2020, aircraft operating in the Class B airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91, section 91.227. Class C For the purpose of this section, the primary airport is the airport for which the Class C airspace area is designated. A satellite airport is any other airport within the Class C airspace area. No pilot may take off or land an aircraft at a satellite airport within a Class C airspace area except in compliance with FAA",
+          "and is designed to contain all published instrument procedures once an aircraft enters the airspace. ATC clearance is required for all aircraft to operate in the area, and all aircraft that are so cleared receive separation services within the airspace. Class C Airspace Class C airspace is generally airspace from the surface to 4,000 feet above the airport elevation (charted in MSL) surrounding those airports that have an operational control tower, are serviced by a radar approach control, and have a certain number of IFR operations or passenger enplanements. Although the configuration of each"
+        ],
+        "chapter": 15,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What do you need before entering Class B airspace?",
+        "answer": "Based on the provided passages, to operate within Class B airspace you must receive an ATC clearance from the facility having jurisdiction for that area [P1]. Additionally, your aircraft must be equipped with ADS-B Out equipment that meets the performance requirements of 14 CFR part 91, section 91.227 [P3].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "3"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "Class B All pilots operating an aircraft within a Class B airspace area must receive an ATC clearance from the ATC facility having jurisdiction for that area. The pilot in command (PIC) may not take off or land an aircraft at an airport within a Class B airspace unless he or she has met one of the following requirements: 1. A private pilot certificate If the aircraft radio fails in flight under VFR, the PIC may operate that aircraft and land if weather conditions are at or above basic VFR weather minimums, visual contact with the tower is maintained, and a clearance to land is received. Class",
+          "classes of airspace. Figure 15-9 lists the operational and equipment requirements for these various classes of airspace. It is helpful to refer to this figure as the specific classes are discussed in greater detail. Class A Pilots operating an aircraft in Class A airspace must conduct that operation under IFR and only under an ATC clearance received prior to entering the airspace. Unless otherwise authorized by ATC, each aircraft operating in Class A airspace must be equipped with a two-way radio capable of communicating with ATC on a frequency assigned by ATC. Unless otherwise authorized by",
+          "Class B airspace area. Additionally, beginning January 1, 2020, aircraft operating in the Class B airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91, section 91.227. Class C For the purpose of this section, the primary airport is the airport for which the Class C airspace area is designated. A satellite airport is any other airport within the Class C airspace area. No pilot may take off or land an aircraft at a satellite airport within a Class C airspace area except in compliance with FAA",
+          "or, if a route had not been advised, by the route filed in the flight plan. Additionally, beginning January 1, 2020, aircraft operating in the Class E airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91, section 91.227. Class G When approaching to land at an airport without an operating control tower in Class G airspace: 1. Each pilot of an airplane must make all turns of that airplane to the left unless the airport displays approved light signals or visual markings indicating that turns",
+          "of communicating with ATC on a frequency assigned by ATC. Unless otherwise authorized by ATC, all aircraft within Class A airspace must be equipped with the appropriate transponder equipment meeting all applicable specifications found in 14 CFR part 91, section 91.215. Additionally, beginning January 1, 2020, aircraft operating in the Class A airspace described in 14 CFR part 91, section 91.225, must have ADS-B Out equipment installed, which meets the performance requirements of 14 CFR part 91, section 91.227. Class B All pilots operating an aircraft within a Class B airspace area must receive"
+        ],
+        "chapter": 15,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What is the speed limit below 10,000 feet MSL?",
+        "answer": "Not in the handbook passages.",
+        "abstained": true,
+        "citations": [],
+        "unknown_citations": [],
+        "verdict": "abstained",
+        "passages": [
+          "MSL for operations at speeds in excess of 250 knots. Some route segments may be defined at higher altitudes for purposes of route continuity. Routes are identified as IFR (IR), and VFR (VR), followed by a number. [Figure 15-7] MTRs with no segment above 1,500 feet AGL are identified by four number characters (e.g., IR1206, VR1207). MTRs that include one or more segments above 1,500 feet AGL are identified by three number characters (e.g., IR206, VR207). IFR low altitude en route charts depict all IR routes and all VR routes that accommodate operations above 1,500 feet AGL. IR routes are",
+          "altitude). More than 1,200 feet above the surface but less than 10,000 feet MSL. More than 1,200 feet above the surface and at or above 10,000 feet MSL. At or above 10,000 feet MSL Less than 10,000 feet MSL Class A Class B Class C Class D Class E Class G Figure 15-8. Visual flight rule weather minimums. no person may operate an aircraft beneath the ceiling under VFR within the lateral boundaries of controlled airspace designated to the surface for an airport when the ceiling is less than 1,000 feet. Additional information can be found in 14 CFR part 91, section 91.155(c). Operating Rules and",
+          "feet below 2,000 feet horizontal Day, except as provided in section 91.155(b) 1 statute mile Clear of clouds Night, except as provided in section 91.155(b) 3 statute miles 1,000 feet above 500 feet below 2,000 feet horizontal Day 1 statute mile 1,000 feet above 500 feet below 2,000 feet horizontal Night 3 statute miles 1,000 feet above 500 feet below 2,000 feet horizontal 5 statute miles 1,000 feet above 1,000 feet below 1 statute mile horizontal 1,200 feet or less above the surface (regardless of MSL altitude). More than 1,200 feet above the surface but less than 10,000 feet MSL. More than",
+          "Some Class E airspace begins at an MSL altitude depicted on the charts, instead of an AGL altitude. Class E airspace typically extends up to, but not including, 18,000 feet MSL (the lower limit of Class A airspace). All airspace above FL 600 is Class E airspace. Uncontrolled Airspace Class G Airspace Uncontrolled airspace or Class G airspace is the portion of the airspace that has not been designated as Class A, B, C, D, or E. It is therefore designated uncontrolled airspace. Class G airspace extends from the surface to the base of the overlying Class E airspace. Although ATC has no authority",
+          "when the tower is closed. LAA services include local airport advisories, automated weather reporting with voice broadcasting, and a continuous Automated Surface Observing System (ASOS)/Automated Weather Observing Station (AWOS) data display, other continuous direct reading instruments, or manual observations available to the specialist. Military Training Routes (MTRs) MTRs are routes used by military aircraft to maintain proficiency in tactical flying. These routes are usually established below 10,000 feet MSL for operations at speeds in excess of 250 knots. Some route segments may be defined"
+        ],
+        "chapter": 15,
+        "answer_has_keyword": false
+      },
+      {
+        "scope": "in",
+        "question": "What is a temporary flight restriction?",
+        "answer": "A temporary flight restriction (TFR) is designated by a flight data center (FDC) Notice to Airmen (NOTAM) [P1]. The NOTAM begins with the phrase “FLIGHT RESTRICTIONS” and specifies the location, effective time period, area in statute miles, and affected altitudes [P1]. It also includes the FAA coordination facility and telephone number, the reason for the restriction, and any other relevant information [P2]. TFRs are established to protect persons and property from existing or imminent hazards, provide a safe environment for disaster relief aircraft, and prevent unsafe congestion of sightseeing aircraft [P2]. Additionally, a TFR is classified as one of the \"Other airspace areas\" [P5].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "2",
+          "5"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "routes and all VR routes that accommodate operations above 1,500 feet AGL. IR routes are conducted in accordance with IFR regardless of weather conditions. VFR sectional charts depict military training activities, such as IR, VR, MOA, restricted area, warning area, and alert area information. Temporary Flight Restrictions (TFR) A flight data center (FDC) Notice to Airmen (NOTAM) is issued to designate a TFR. The NOTAM begins with the phrase “FLIGHT RESTRICTIONS” followed by the location of the temporary restriction, effective time period, area defined in statute miles, and altitudes affected.",
+          "restriction, effective time period, area defined in statute miles, and altitudes affected. The NOTAM also contains the FAA coordination facility and telephone number, the reason for the restriction, and any other information deemed appropriate. The pilot should check the NOTAMs as part of flight planning. Some of the purposes for establishing a TFR are: • Protect persons and property in the air or on the surface from an existing or imminent hazard. • Provide a safe environment for the operation of disaster relief aircraft. • Prevent an unsafe congestion of sightseeing aircraft above an",
+          "D.C., where the White House and the Congressional buildings are located. [Figure 15-2] Restricted Areas Restricted areas are areas where operations are hazardous to nonparticipating aircraft and contain airspace within which the flight of aircraft, while not wholly prohibited, is subject to restrictions. Activities within these areas must be confined because of their nature, or limitations may be imposed upon aircraft operations that are not a part of those activities, or both. Restricted areas denote the existence of unusual, often invisible, hazards to aircraft (e.g., artillery firing,",
+          "(MOAs) • Alert areas • Controlled firing areas (CFAs) Prohibited Areas Prohibited areas contain airspace of defined dimensions within which the flight of aircraft is prohibited. Such areas are established for security or other reasons associated with the national welfare. These areas are published in the Federal Register and are depicted on aeronautical charts. The area is charted as a “P” followed by a number (e.g., P-40). Examples of prohibited areas include Camp David and the National Mall in Washington, D.C., where the White House and the Congressional buildings are located. [Figure 15-2]",
+          "cause a nonparticipating aircraft to change its flight path. Other Airspace Areas “Other airspace areas” is a general term referring to the majority of the remaining airspace. It includes: • Local airport advisory (LAA) • Military training route (MTR) • Temporary flight restriction (TFR) • Parachute jump aircraft operations • Published VFR routes • Terminal radar service area (TRSA) • National security area (NSA) • Air Defense Identification Zones (ADIZ) land and water based and need for Defense VFR (DVFR) flight plan to operate VFR in this airspace • Intercept Procedures and use of 121.5 for"
+        ],
+        "chapter": 15,
+        "answer_has_keyword": true
+      },
+      {
+        "scope": "in",
+        "question": "What communication is required to enter Class C airspace?",
+        "answer": "To enter Class C airspace, each aircraft must establish two-way radio communications with the ATC facility providing air traffic services prior to entering and maintain those communications while in the airspace [P5]. If departing from a satellite airport without an operating control tower, the pilot must establish and maintain two-way radio communications with the ATC facility having jurisdiction over the Class C airspace area as soon as practicable after departing [P1]. Additionally, two-way radio communications must be established and maintained with the ATC facility providing air traffic services [P3].",
+        "abstained": false,
+        "citations": [
+          "1",
+          "3",
+          "5"
+        ],
+        "unknown_citations": [],
+        "verdict": "answered",
+        "passages": [
+          "with the control tower, and thereafter as instructed by ATC while operating in the Class C airspace area. If departing from a satellite airport without an operating control tower, the pilot must establish and maintain two-way radio communications with the ATC facility having jurisdiction over the Class C airspace area as soon as practicable after departing. Unless otherwise authorized by the ATC having jurisdiction over the Class C airspace area, all aircraft within Class C airspace must be equipped with the appropriate transponder equipment meeting all applicable specifications found in 14",
+          "classes of airspace. Figure 15-9 lists the operational and equipment requirements for these various classes of airspace. It is helpful to refer to this figure as the specific classes are discussed in greater detail. Class A Pilots operating an aircraft in Class A airspace must conduct that operation under IFR and only under an ATC clearance received prior to entering the airspace. Unless otherwise authorized by ATC, each aircraft operating in Class A airspace must be equipped with a two-way radio capable of communicating with ATC on a frequency assigned by ATC. Unless otherwise authorized by",
+          "at a satellite airport within a Class C airspace area except in compliance with FAA arrival and departure traffic patterns. Two-way radio communications must be established and maintained with the ATC facility providing air traffic services Pilots also comply with very strict FAA general operating and flight rules as outlined in the CFR, including the FAA’s important “see and avoid” mandate. These regulations provide the historical foundation of the FAA regulations governing the aviation system and the individual classes of airspace. Figure 15-9 lists the operational and equipment requirements",
+          "and is designed to contain all published instrument procedures once an aircraft enters the airspace. ATC clearance is required for all aircraft to operate in the area, and all aircraft that are so cleared receive separation services within the airspace. Class C Airspace Class C airspace is generally airspace from the surface to 4,000 feet above the airport elevation (charted in MSL) surrounding those airports that have an operational control tower, are serviced by a radar approach control, and have a certain number of IFR operations or passenger enplanements. Although the configuration of each",
+          "each aircraft must establish two-way radio communications with the ATC facility providing air traffic services prior to entering the airspace and thereafter maintain those communications while in the airspace. Class E Airspace Class E airspace is the controlled airspace not classified as Class A, B, C, or D airspace. A large amount of the airspace over the United States is designated as Class E airspace. Figure 15-2. An example of a prohibited area, P-40 around Camp David. This provides sufficient airspace for the safe control and separation of aircraft during IFR operations. Chapter 3 of the"
+        ],
+        "chapter": 15,
+        "answer_has_keyword": true
+      }
+    ]
+  }
+}

@@ -270,18 +270,18 @@
   },
   {
     "id": "15",
-    "title": "RAG with Chunking + Local Ollama LLM",
+    "title": "Chunking Experiment: RAG on the FAA Pilot's Handbook",
     "domain": "AI / Retrieval-Augmented Generation",
     "status": "complete",
-    "description": "Built a local-first retrieval-augmented generation (RAG) pipeline using LangChain, ChromaDB, and Ollama-based LLM inference. Implemented recursive chunking, semantic embeddings, and vector retrieval workflows to support contextual document question answering in both cloud and offline environments.",
+    "description": "Measured how chunk size, overlap and sentence-aware splitting change RAG on three chapters of the FAA Pilot's Handbook: 24 settings scored on 20 labelled questions, then 40 local-LLM answers checked by hand. The retrieval winner (300-character chunks) lost two answers to chunk boundaries; 600-character chunks answered 18/20 correctly, and all off-topic questions were declined.",
     "skills": [
       "Python",
-      "LangChain",
-      "ChromaDB",
-      "Ollama",
+      "Sentence-Transformers",
+      "Pandas",
       "PyPDF",
       "RAG",
-      "Vector Databases"
+      "Local LLM",
+      "Evaluation"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-15-rag-implementation",
     "notebook": "",

@@ -1,17 +1,18 @@
 [project]
 name = "project-15-rag-implementation"
-version = "1.0.0"
+version = "2.0.0"
 requires-python = ">=3.11,<3.12"
 dependencies = [
     "jupyter",
-    "langchain-community",
-    "langchain-core",
-    "langchain-openai",
-    "langchain-text-splitters",
-    "llama-index",
-    "llama-index-embeddings-ollama",
-    "llama-index-llms-ollama",
+    "matplotlib",
+    "numpy",
+    "openai",
+    "pandas",
+    "pypdf",
+    "pytest",
     "python-dotenv",
+    "requests",
+    "sentence-transformers",
 ]
 
 [tool.uv]

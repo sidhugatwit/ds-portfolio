@@ -1,11 +1,11 @@
-# Install: pip install -r requirements.txt
-# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
+# Install: pip install -r requirements.txt (or use uv: uv sync)
 jupyter
-langchain-community
-langchain-core
-langchain-openai
-langchain-text-splitters
-llama-index
-llama-index-embeddings-ollama
-llama-index-llms-ollama
+matplotlib
+numpy
+openai
+pandas
+pypdf
+pytest
 python-dotenv
+requests
+sentence-transformers
