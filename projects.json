@@ -290,18 +290,18 @@
   },
   {
     "id": "16",
-    "title": "LangGraph Email Triage Agent",
+    "title": "Email Triage Agent with Long-Term Memory (LangGraph)",
     "domain": "AI / Agentic Systems",
     "status": "complete",
-    "description": "Developed a stateful LangGraph-based email triage assistant with ReAct-style reasoning, memory persistence, and tool calling capabilities. Built routing workflows for email classification, meeting scheduling, and automated response generation using structured agent orchestration.",
+    "description": "LangGraph email triage agent (ignore / notify / respond) that learns a user's preferences from corrections stored in a LangGraph memory store with semantic search and persisted across sessions. On 22 held-out labelled emails with a local Qwen model, memory raised preference-covered emails from 6/11 to 11/11 with no loss on the rest; a tool-calling agent checks the calendar and drafts replies.",
     "skills": [
       "Python",
       "LangGraph",
       "LangChain",
-      "GPT-4o-mini",
-      "Pydantic",
+      "Sentence-Transformers",
+      "Local LLM",
       "AI Agents",
-      "ReAct Framework"
+      "Evaluation"
     ],
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-16-langgraph-memory",
     "notebook": "",

@@ -1,17 +1,17 @@
 [project]
 name = "project-16-langgraph-memory"
-version = "1.0.0"
+version = "2.0.0"
 requires-python = ">=3.11,<3.12"
 dependencies = [
-    "ipython",
     "jupyter",
-    "langchain",
     "langchain-core",
     "langchain-openai",
     "langgraph",
-    "pydantic",
+    "numpy",
+    "pandas",
+    "pytest",
     "python-dotenv",
-    "typing-extensions",
+    "sentence-transformers",
 ]
 
 [tool.uv]

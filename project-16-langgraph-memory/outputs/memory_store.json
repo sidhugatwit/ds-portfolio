@@ -1,0 +1,130 @@
+{
+  "T1": {
+    "text": "From: GitHub <notifications@github.com>\nSubject: [sidhugatwit/ds-portfolio] Run failed: notebooks - main (3f2a91c)\n\nRun failed for main (3f2a91c)\n\nJob project-07-rag-financial-analyst failed after 4m 12s.\nView workflow run: https://github.com/sidhugatwit/ds-portfolio/actions\n\nYou are receiving this because you are subscribed to this repository.",
+    "email": {
+      "id": "T1",
+      "split": "teach",
+      "group": "preference",
+      "label": "notify",
+      "author": "GitHub <notifications@github.com>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "[sidhugatwit/ds-portfolio] Run failed: notebooks - main (3f2a91c)",
+      "body": "Run failed for main (3f2a91c)\n\nJob project-07-rag-financial-analyst failed after 4m 12s.\nView workflow run: https://github.com/sidhugatwit/ds-portfolio/actions\n\nYou are receiving this because you are subscribed to this repository.",
+      "reason": "CI failures on my repos: tell me, but there's nobody to reply to."
+    },
+    "label": "notify",
+    "reason": "CI failures on my repos: tell me, but there's nobody to reply to."
+  },
+  "T2": {
+    "text": "From: Dana Ruiz <careers@northwind-ai.example>\nSubject: Machine Learning Intern openings, Summer 2027\n\nHi there,\n\nNorthwind AI is opening applications for Machine Learning Intern roles for Summer 2027. Interns work on retrieval, evaluation and model serving. If you're interested, reply with your resume and availability.\n\nBest,\nDana Ruiz, University Recruiting",
+    "email": {
+      "id": "T2",
+      "split": "teach",
+      "group": "preference",
+      "label": "respond",
+      "author": "Dana Ruiz <careers@northwind-ai.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "Machine Learning Intern openings, Summer 2027",
+      "body": "Hi there,\n\nNorthwind AI is opening applications for Machine Learning Intern roles for Summer 2027. Interns work on retrieval, evaluation and model serving. If you're interested, reply with your resume and availability.\n\nBest,\nDana Ruiz, University Recruiting",
+      "reason": "Recruiters for AI, ML or data roles: always respond, even to a template."
+    },
+    "label": "respond",
+    "reason": "Recruiters for AI, ML or data roles: always respond, even to a template."
+  },
+  "T3": {
+    "text": "From: Mark Ellis <mark.ellis@harborline-insurance.example>\nSubject: Quick call this week?\n\nHi Gurveer,\n\nI came across your profile and think you'd be a great fit for our Outside Sales Representative role. Base plus uncapped commission. Do you have 15 minutes this week for a quick call?\n\nMark",
+    "email": {
+      "id": "T3",
+      "split": "teach",
+      "group": "preference",
+      "label": "ignore",
+      "author": "Mark Ellis <mark.ellis@harborline-insurance.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "Quick call this week?",
+      "body": "Hi Gurveer,\n\nI came across your profile and think you'd be a great fit for our Outside Sales Representative role. Base plus uncapped commission. Do you have 15 minutes this week for a quick call?\n\nMark",
+      "reason": "Recruiters for sales or roles unrelated to data and AI: ignore, even when they ask a question."
+    },
+    "label": "ignore",
+    "reason": "Recruiters for sales or roles unrelated to data and AI: ignore, even when they ask a question."
+  },
+  "T4": {
+    "text": "From: Student Activities <studentactivities@wit.example>\nSubject: Spring Involvement Fair this Thursday!\n\nHello students,\n\nJoin us Thursday 11am-2pm in the Beatty Hall lobby for the Spring Involvement Fair. Meet 60+ clubs and organizations, free snacks, and giveaways!\n\nStudent Activities",
+    "email": {
+      "id": "T4",
+      "split": "teach",
+      "group": "preference",
+      "label": "ignore",
+      "author": "Student Activities <studentactivities@wit.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "Spring Involvement Fair this Thursday!",
+      "body": "Hello students,\n\nJoin us Thursday 11am-2pm in the Beatty Hall lobby for the Spring Involvement Fair. Meet 60+ clubs and organizations, free snacks, and giveaways!\n\nStudent Activities",
+      "reason": "Campus-wide event and club announcements: ignore."
+    },
+    "label": "ignore",
+    "reason": "Campus-wide event and club announcements: ignore."
+  },
+  "T5": {
+    "text": "From: FAASTeam <noreply@faasafety.example>\nSubject: Seminar: Night Operations Safety (WINGS credit)\n\nThe FAA Safety Team invites you to an online seminar, Night Operations Safety, on December 3 at 7:00 PM ET. Topics: night illusions, lighting, and emergency planning. This seminar qualifies for WINGS credit.",
+    "email": {
+      "id": "T5",
+      "split": "teach",
+      "group": "preference",
+      "label": "notify",
+      "author": "FAASTeam <noreply@faasafety.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "Seminar: Night Operations Safety (WINGS credit)",
+      "body": "The FAA Safety Team invites you to an online seminar, Night Operations Safety, on December 3 at 7:00 PM ET. Topics: night illusions, lighting, and emergency planning. This seminar qualifies for WINGS credit.",
+      "reason": "FAA Safety Team notices: tell me; they count toward WINGS and keep me current."
+    },
+    "label": "notify",
+    "reason": "FAA Safety Team notices: tell me; they count toward WINGS and keep me current."
+  },
+  "T6": {
+    "text": "From: Lovable <billing@lovable.example>\nSubject: Your receipt from Lovable #2041-7730\n\nReceipt #2041-7730\n\nPro plan (monthly) ........ $25.00\nPaid by card\n\nThanks for building with Lovable.",
+    "email": {
+      "id": "T6",
+      "split": "teach",
+      "group": "preference",
+      "label": "ignore",
+      "author": "Lovable <billing@lovable.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "Your receipt from Lovable #2041-7730",
+      "body": "Receipt #2041-7730\n\nPro plan (monthly) ........ $25.00\nPaid by card\n\nThanks for building with Lovable.",
+      "reason": "Receipts and renewals: ignore, I check billing myself."
+    },
+    "label": "ignore",
+    "reason": "Receipts and renewals: ignore, I check billing myself."
+  },
+  "T7": {
+    "text": "From: Account Security <security@acc0unt-verify.example>\nSubject: URGENT: Your account will be suspended\n\nWe detected unusual activity. Verify your password within 24 hours at http://acc0unt-verify.example/login or your account will be suspended.",
+    "email": {
+      "id": "T7",
+      "split": "teach",
+      "group": "general",
+      "label": "ignore",
+      "author": "Account Security <security@acc0unt-verify.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "URGENT: Your account will be suspended",
+      "body": "We detected unusual activity. Verify your password within 24 hours at http://acc0unt-verify.example/login or your account will be suspended.",
+      "reason": "Phishing."
+    },
+    "label": "ignore",
+    "reason": "Phishing."
+  },
+  "T8": {
+    "text": "From: Priya Natarajan <priya.n@wit.example>\nSubject: Could you share your clustering notebook?\n\nHey Gurveer,\n\nFor the DS project due Friday, could you share the clustering notebook you mentioned in class? I'm stuck on choosing k.\n\nThanks!\nPriya",
+    "email": {
+      "id": "T8",
+      "split": "teach",
+      "group": "general",
+      "label": "respond",
+      "author": "Priya Natarajan <priya.n@wit.example>",
+      "to": "Gurveer Sidhu <gurveer@example.com>",
+      "subject": "Could you share your clustering notebook?",
+      "body": "Hey Gurveer,\n\nFor the DS project due Friday, could you share the clustering notebook you mentioned in class? I'm stuck on choosing k.\n\nThanks!\nPriya",
+      "reason": "A direct request from a classmate."
+    },
+    "label": "respond",
+    "reason": "A direct request from a classmate."
+  }
+}

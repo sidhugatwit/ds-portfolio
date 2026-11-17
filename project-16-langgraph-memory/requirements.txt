@@ -1,11 +1,10 @@
-# Install: pip install -r requirements.txt
-# Generated from this project's imports; pin exact versions with `pip freeze` after a clean run.
-ipython
+# Install: pip install -r requirements.txt (or use uv: uv sync)
 jupyter
-langchain
 langchain-core
 langchain-openai
 langgraph
-pydantic
+numpy
+pandas
+pytest
 python-dotenv
-typing-extensions
+sentence-transformers
