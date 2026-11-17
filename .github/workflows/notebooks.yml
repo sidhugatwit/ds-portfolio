@@ -116,6 +116,19 @@ jobs:
           uv sync --frozen
           uv run --frozen pytest -q tests
 
+  triage-memory-tests:
+    name: project-16-langgraph-memory (offline tests)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: astral-sh/setup-uv@v7
+      - name: Triage parsing, memory search and reload, graph routing, with a toy embedding and a scripted model
+        working-directory: project-16-langgraph-memory
+        run: |
+          uv sync --frozen
+          uv run --frozen pytest -q tests
+
   pilot-vault:
     name: project-29-health-pilot-vault
     runs-on: ubuntu-latest

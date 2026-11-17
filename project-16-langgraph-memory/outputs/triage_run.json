@@ -1,0 +1,616 @@
+{
+  "date": "2026-11-17",
+  "model": "qwen/qwen3.6-35b-a3b",
+  "k": 3,
+  "baseline": [
+    {
+      "id": "X1",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "ignore",
+      "reasoning": "This is an automated system alert from GitHub regarding a failed workflow run on a personal repository. It falls under the automated notifications category and requires no action or reply.",
+      "memories_used": [],
+      "correct": false
+    },
+    {
+      "id": "X2",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "ignore",
+      "reasoning": "This email is an automated system notification from GitHub reporting a failed CI/CD build for a repository. It falls under the 'automated notifications' category and requires no personal reply.",
+      "memories_used": [],
+      "correct": false
+    },
+    {
+      "id": "X3",
+      "group": "preference",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email explicitly requests Gurveer to reply with his resume to be considered for a Fall 2027 co-op, which directly aligns with his stated goal and requires a direct response.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X4",
+      "group": "preference",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email is a direct recruitment outreach requesting a portfolio link for a 2027 internship shortlist, which requires a personal reply to express interest.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X5",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "respond",
+      "reasoning": "The email contains a direct request from a recruiter asking if Gurveer is interested in a position and proposing a phone call. It requires a personal reply to address the inquiry and schedule or decline the meeting.",
+      "memories_used": [],
+      "correct": false
+    },
+    {
+      "id": "X6",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This email is a mass campus newsletter promoting Homecoming Week events to all students, which falls under the ignore category for promotions and mass communications. It does not contain critical personal information or require a reply.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X7",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "The email is a general club event invitation and promotion open to all majors, not a direct message or critical personal update. It falls under promotional mass communication that does not require attention or action.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X8",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "ignore",
+      "reasoning": "This is a mass promotional announcement for a webinar sent from a noreply address, which aligns with the ignore category for automated notifications and marketing. It does not contain direct questions or critical personal updates requiring attention.",
+      "memories_used": [],
+      "correct": false
+    },
+    {
+      "id": "X9",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This email contains a relevant safety notice for a private pilot regarding winter flying conditions, which is important information that requires no reply.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X10",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "notify",
+      "reasoning": "This is a personal order shipping update that provides important tracking information but requires no action or reply.",
+      "memories_used": [],
+      "correct": false
+    },
+    {
+      "id": "X11",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is an automated billing notification confirming a subscription renewal with no action required. It falls under routine automated notifications that do not need attention or a reply.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X12",
+      "group": "general",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This email exhibits classic spam characteristics, including an unsolicited prize claim and a request for a shipping fee, indicating it is a scam or promotional junk.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X13",
+      "group": "general",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This email is a promotional discount offer from CodeAcademy Pro, which falls squarely under marketing and promotions. It contains no personal requests or important updates that require Gurveer's attention or action.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X14",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email contains a direct request from a professor asking Gurveer to submit a capstone outline by a specific deadline, which requires an action or reply.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X15",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email contains a direct request for Gurveer to review a pull request before tomorrow's standup, which requires a personal reply or action.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X16",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email is a direct request from a flight instructor to reschedule a lesson and explicitly asks for Gurveer's confirmation. It requires a personal reply to confirm or decline the new time.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X17",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email is a direct request from Gurveer's co-op advisor to schedule a meeting and explicitly asks for his availability, which requires a personal reply.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X18",
+      "group": "general",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is an official academic notification about the upcoming registration window and account status, explicitly stating no reply is needed. It contains important information Gurveer should be aware of but requires no action.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X19",
+      "group": "general",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "The email confirms a scheduled instrument checkride and explicitly states no action is needed, making it important informational content relevant to Gurveer's private pilot activities.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X20",
+      "group": "general",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a mass industry newsletter with a generic unsubscribe link and no personal address or request directed at Gurveer.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X21",
+      "group": "general",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is a class room change announcement addressed to the entire class rather than Gurveer personally. It contains important logistical information that Gurveer needs to know but requires no reply.",
+      "memories_used": [],
+      "correct": true
+    },
+    {
+      "id": "X22",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email contains a direct request for Gurveer to reply with available times for a technical interview. This requires a personal response to schedule the meeting, fitting the respond category.",
+      "memories_used": [],
+      "correct": true
+    }
+  ],
+  "with_memory": [
+    {
+      "id": "X1",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is an automated CI/CD failure notification for Gurveer's portfolio repository, which aligns with the past preference to classify similar repo alerts as notify since they provide important status updates but require no reply.",
+      "memories_used": [
+        "T1",
+        "T8",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X2",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is an automated GitHub build failure notification for one of Gurveer's repositories, matching the past example. It conveys important status updates but requires no reply.",
+      "memories_used": [
+        "T1",
+        "T8",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X3",
+      "group": "preference",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "This email is from a talent team recruiting for a Data Science Co-op role, which directly aligns with Gurveer's field and 2027 co-op search. Following the established preference for AI/ML/data recruiters, it should be responded to.",
+      "memories_used": [
+        "T2",
+        "T8",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X4",
+      "group": "preference",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "This is a direct outreach from an AI engineering recruiter for a 2027 internship, aligning with Gurveer's goal of finding a co-op and building an AI/ML portfolio. Following the past correction, recruiters for AI/ML roles should always be responded to.",
+      "memories_used": [
+        "T2",
+        "T8",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X5",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a recruiter reaching out for a retail management role, which is completely unrelated to Gurveer's data science and AI/ML focus. Following the past correction rule for unrelated recruiters, this should be ignored.",
+      "memories_used": [
+        "T3",
+        "T8",
+        "T4"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X6",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a mass campus-wide event announcement from Student Activities, directly mirroring the past Involvement Fair email. Following the established preference, general campus event promotions and schedules should be ignored.",
+      "memories_used": [
+        "T4",
+        "T8",
+        "T5"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X7",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a general campus club announcement for an open house event, matching the pattern of the past Spring Involvement Fair email which was correctly classified as ignore.",
+      "memories_used": [
+        "T4",
+        "T8",
+        "T5"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X8",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is another FAASTeam email offering WINGS credit, which Gurveer previously established should be notified as it helps maintain his private pilot currency. It requires no reply and aligns with the notify category.",
+      "memories_used": [
+        "T5",
+        "T3",
+        "T2"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X9",
+      "group": "preference",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "Following Gurveer's past correction for FAASTeam emails, this safety notice should be classified as notify because it provides important pilot information that counts toward WINGS credits and requires no reply.",
+      "memories_used": [
+        "T5",
+        "T3",
+        "T2"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X10",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is an automated shipping notification, which falls under the automated notifications category Gurveer prefers to ignore. It requires no action or reply.",
+      "memories_used": [
+        "T6",
+        "T3",
+        "T7"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X11",
+      "group": "preference",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a subscription renewal notification, which aligns with your past preference to ignore billing receipts and renewals since you check them yourself.",
+      "memories_used": [
+        "T6",
+        "T3",
+        "T8"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X12",
+      "group": "general",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a classic advance-fee scam disguised as a prize notification, which aligns with the preference to ignore unsolicited promotions and suspicious messages.",
+      "memories_used": [
+        "T6",
+        "T3",
+        "T7"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X13",
+      "group": "general",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a promotional discount email for courses, which falls under marketing and promotions. It does not require a reply or contain important personal information.",
+      "memories_used": [
+        "T3",
+        "T7",
+        "T6"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X14",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email contains a direct request from a professor for a capstone project outline by a specific deadline, which requires Gurveer to take action and reply.",
+      "memories_used": [
+        "T8",
+        "T3",
+        "T4"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X15",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "This is a direct request from a peer asking Gurveer to review a pull request before a specific deadline, which requires a personal reply. It aligns with the past preference to respond to direct requests from classmates.",
+      "memories_used": [
+        "T8",
+        "T3",
+        "T4"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X16",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "This is a direct scheduling request from Gurveer's flight instructor that explicitly asks for a reply to confirm a time change.",
+      "memories_used": [
+        "T3",
+        "T5",
+        "T8"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X17",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "The email is from Gurveer's co-op advisor and explicitly requests a meeting to discuss his 2027 co-op plans, requiring a direct reply to schedule. This aligns with the 'respond' category for personal meeting requests and direct questions.",
+      "memories_used": [
+        "T3",
+        "T8",
+        "T4"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X18",
+      "group": "general",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is an official academic notification about class registration dates and account status, explicitly stating no reply is needed. It fits the notify category as important information requiring no action.",
+      "memories_used": [
+        "T7",
+        "T2",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X19",
+      "group": "general",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is a direct confirmation of an upcoming instrument checkride that is important for Gurveer's pilot training but explicitly requires no action. It fits the notify category as it conveys essential scheduling information without prompting a reply.",
+      "memories_used": [
+        "T5",
+        "T7",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X20",
+      "group": "general",
+      "label": "ignore",
+      "predicted": "ignore",
+      "reasoning": "This is a mass-distributed industry newsletter with an unsubscribe link, which matches the ignore category for promotional and automated content.",
+      "memories_used": [
+        "T8",
+        "T4",
+        "T2"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X21",
+      "group": "general",
+      "label": "notify",
+      "predicted": "notify",
+      "reasoning": "This is a class-wide announcement about a lab room change that requires no reply from Gurveer. It fits the notify category as important information he should know but does not need to respond to.",
+      "memories_used": [
+        "T8",
+        "T1",
+        "T3"
+      ],
+      "correct": true
+    },
+    {
+      "id": "X22",
+      "group": "general",
+      "label": "respond",
+      "predicted": "respond",
+      "reasoning": "This email contains a direct scheduling request for a technical interview for a Data Engineering Co-op, which aligns with Gurveer's career goals and matches the 'respond' criteria for personal meeting requests.",
+      "memories_used": [
+        "T3",
+        "T8",
+        "T2"
+      ],
+      "correct": true
+    }
+  ],
+  "replies": {
+    "X16": {
+      "classification": "respond",
+      "tool_calls": [
+        {
+          "tool": "check_calendar_availability",
+          "day": "Saturday",
+          "result": []
+        },
+        {
+          "tool": "write_email",
+          "to": "sam.ortiz@bluehill-aviation.example",
+          "subject": "Re: Move Saturday's lesson to 10?",
+          "content": "Hi Sam,\n\nThanks for the update. Unfortunately, I don't have any availability on Saturday, so I won't be able to move the lesson to 10:00.\n\nLet me know if you'd like to reschedule for a different day.\n\nBest,\nGurveer"
+        }
+      ],
+      "final": ""
+    },
+    "X17": {
+      "classification": "respond",
+      "tool_calls": [
+        {
+          "tool": "check_calendar_availability",
+          "day": "monday",
+          "result": [
+            "10:00 AM",
+            "2:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "tuesday",
+          "result": [
+            "9:00 AM",
+            "1:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "wednesday",
+          "result": [
+            "11:00 AM",
+            "3:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "thursday",
+          "result": [
+            "10:00 AM",
+            "4:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "friday",
+          "result": [
+            "9:30 AM",
+            "1:30 PM"
+          ]
+        },
+        {
+          "tool": "write_email",
+          "to": "radams@wit.example",
+          "subject": "Re: Co-op planning meeting",
+          "content": "Hi Rachel,\n\nThanks for reaching out. I'd be happy to meet next week to discuss my co-op plans.\n\nHere are some times that work for me:\n- Monday: 10:00 AM or 2:00 PM\n- Tuesday: 9:00 AM or 1:00 PM\n- Wednesday: 11:00 AM or 3:00 PM\n- Thursday: 10:00 AM or 4:00 PM\n- Friday: 9:30 AM or 1:30 PM\n\nPlease let me know which time works best for you.\n\nBest,\nGurveer"
+        }
+      ],
+      "final": "I've drafted a reply to Rachel proposing several time slots for next week based on your availability. The draft is saved for your review."
+    },
+    "X22": {
+      "classification": "respond",
+      "tool_calls": [
+        {
+          "tool": "check_calendar_availability",
+          "day": "monday",
+          "result": [
+            "10:00 AM",
+            "2:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "tuesday",
+          "result": [
+            "9:00 AM",
+            "1:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "wednesday",
+          "result": [
+            "11:00 AM",
+            "3:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "thursday",
+          "result": [
+            "10:00 AM",
+            "4:00 PM"
+          ]
+        },
+        {
+          "tool": "check_calendar_availability",
+          "day": "friday",
+          "result": [
+            "9:30 AM",
+            "1:30 PM"
+          ]
+        },
+        {
+          "tool": "write_email",
+          "to": "hiring@orbit-analytics.example",
+          "subject": "Re: Schedule your technical interview",
+          "content": "Hi Hiring Team,\n\nThank you for the opportunity. I would like to schedule the technical interview for next week.\n\nHere are two times that work for me:\n1. Monday at 10:00 AM\n2. Wednesday at 11:00 AM\n\nPlease let me know if either of these works for you.\n\nBest regards,\nGurveer"
+        }
+      ],
+      "final": "I've drafted a reply proposing Monday at 10:00 AM and Wednesday at 11:00 AM for the 45-minute technical interview. Please review and send the email."
+    }
+  }
+}
