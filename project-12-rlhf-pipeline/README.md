@@ -1,4 +1,28 @@
-# Project 12 — RLHF Pipeline from Scratch
+# RLHF
+
+I trained a small reward model on preferences and simulated the effect of a KL penalty on policy rewards.
+
+## Architecture
+
+Preference pairs → DistilBERT reward model → chosen/rejected scores → KL-penalized reward simulation.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/rlhf_pipeline.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Preference pairs** · 12. [Saved evidence](./outputs/preference_dataset.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Report held-out preference ranking with data split details and keep the PPO simulation clearly labeled.
+
+## Implementation notes
 
 ## Overview
 

@@ -1,4 +1,28 @@
-# Project 16 — Email Triage Agent with Long-Term Memory (LangGraph)
+# Email Triage
+
+I built an email triage agent that recalls previous corrections and evaluated it with and without that memory.
+
+## Architecture
+
+Incoming email → retrieve user corrections → LangGraph triage → compare labels with and without memory.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/triage_memory.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Held-out triage, with vs without memory** · 22/22 vs 17/22. [Saved evidence](./outputs/triage_run.json).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment.
+
+## Next steps
+
+Test more inboxes and document what happens when preferences conflict.
+
+## Implementation notes
 
 An assistant sorts email into **ignore / notify / respond**. General rules get it most of the way, but every person
 has preferences no rulebook states: *CI failures on my repos: tell me. Recruiters for sales roles: ignore. FAA Safety

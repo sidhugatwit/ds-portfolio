@@ -1,102 +1,50 @@
-# Gurveer Sidhu — AI & Data Systems Engineer
+# Gurveer Sidhu
 
-[![Notebooks](https://github.com/sidhugatwit/ds-portfolio/actions/workflows/notebooks.yml/badge.svg)](https://github.com/sidhugatwit/ds-portfolio/actions/workflows/notebooks.yml)
+I build AI and data systems that show their work. I’m looking for 2027 co-ops in data science, AI/ML engineering and forward-deployed engineering.
 
+## Projects
 
-Building practical AI systems, agentic workflows, and applied ML products across **aviation, healthcare, and intelligent automation**.
+1. [Prediction Market Calibration Lab](./project-38-prediction-market-calibration) · Data scientist · Queued
+2. [Clinical Trial Matcher on FHIR](./project-35-clinical-trial-matcher-fhir) · AI engineer · Queued
+3. [DirectTo](./project-28-pilotgpt-v3) · FDE · Code available
+4. [Credit Risk](./project-01-credit-risk) · Data scientist · Code available
+5. [RAG Financial](./project-07-rag-financial-analyst) · AI engineer · Code available
+6. [Flight Delay Causal ML](./project-05-flight-delay) · Data scientist · Code available
+7. [ILS Glide Path](./project-04-ils-glide-path) · Data scientist · Code available
+8. [LLM Eval](./project-09-llm-eval-benchmark) · AI engineer · Code available
+9. [RAG Red Team Lab](./project-39-rag-red-team-lab) · AI engineer · Queued
+10. [Fraud Detection](./project-02-fraud-detection) · Data scientist · Code available
+11. [Portfolio Optimizer](./project-03-portfolio-optimizer) · Data scientist · Code available
+12. [Recommender](./project-08-recommender) · Data scientist · Code available
+13. [Agentic SQL](./project-10-agentic-sql) · FDE · Code available
+14. [Mechanistic Interpretability](./project-11-mechanistic-interp) · AI engineer · Code available
+15. [RLHF](./project-12-rlhf-pipeline) · AI engineer · Code available
+16. [Email Triage](./project-16-langgraph-memory) · AI engineer · Code available
+17. [Love at First Agent](./project-18-love-at-first-agent) · Data scientist · Code available
+18. [Parkinson’s Voice](./project-24-parkinsons-tremor-detector) · Data scientist · Code available
+19. [Pilot Credentials Vault](./project-29-health-pilot-vault) · FDE · Code available
+20. [Football VAR](./project-37-football-var) · AI engineer · Queued
+21. [SPC in R and SparkR](./project-33-spc-r-sparkr) · Data scientist · Queued
+22. [Autonomous Aviation](./project-36-autonomous-aviation) · FDE · Queued
+23. [AI Health and Fitness](./project-17-health-fitness-assistant) · FDE · Code available
+24. [Career Tools](./project-30-resume-optimizer) · FDE · Code available
+25. [BlackJack DP](./project-20-blackjack-to-five) · Data scientist · Code available
 
-This repository is a showcase of projects focused on real system design: LLM applications, retrieval pipelines, evaluation workflows, structured reasoning, and end-to-end AI product development.
+## Skills
 
-## Run any project
+- **Languages** · Python, SQL, JavaScript, TypeScript
+- **ML and statistics** · scikit-learn, XGBoost, SHAP, DoWhy, SciPy
+- **Retrieval and agents** · LangGraph, FAISS, BM25, ChromaDB, LLM evaluation
+- **Deep learning** · PyTorch, Transformers, TransformerLens
+- **Data and applications** · pandas, DuckDB, Plotly, SQLite, Express, React, Three.js
+- **Testing and reproducibility** · pytest, uv, GitHub Actions, Vitest
 
-Every Python project pins its exact dependencies in a `uv.lock` file, so it installs the same way on any machine.
+## Run a project
 
-1. Install [uv](https://docs.astral.sh/uv/) once.
-2. From a project folder, open its notebooks:
+Use each project's README for pinned dependencies, data requirements and entry points. Keep service keys in a local ignored environment file. See the [notebook workflow](https://github.com/sidhugatwit/ds-portfolio/actions/workflows/notebooks.yml) for automated checks.
 
-   ```bash
-   cd project-05-flight-delay
-   uv run jupyter lab
-   ```
+## More
 
-   The first run installs Python 3.11 and the locked packages into a local `.venv`; later runs start immediately.
-
-Projects that call a hosted LLM read API keys from a `.env` file at the repository root (never committed). Every notebook that needs no paid API is re-run automatically on each push by the **Notebooks** workflow; the badge above shows its latest result.
-
-## Featured Systems
-
-### DirectTo (formerly PilotGPT)
-An aviation-focused AI assistant built around domain-specific workflows, practical reasoning, and product-oriented system design.
-
-**Why it matters:** distinct domain positioning, memorable AI + aviation narrative, and strong systems-thinking signal.  
-[View Project](./project-28-pilotgpt-v3)
-
-### Health Pilot Vault
-Healthcare AI system centered on intelligent information workflows, structured reasoning, and user-facing utility.
-
-**Why it matters:** reinforces healthcare AI specialization and shows practical design beyond generic LLM demos.  
-[View Project](./project-29-health-pilot-vault)
-
-### RLHF Pipeline
-Reinforcement learning from human feedback simulation using a DistilBERT reward model and PPO with KL regularization.
-
-**Why it matters:** demonstrates modern alignment-aware ML thinking, reward modeling, and a deeper technical range than standard ML portfolio work.  
-[View Project](./project-12-rlhf-pipeline)
-
-### LangGraph Memory Agent
-Memory-aware agent workflow for structured reasoning, orchestration, and multi-step decision flow.
-
-**Why it matters:** highlights current AI systems engineering skills in orchestration, memory, and agent architecture.  
-[View Project](./project-16-langgraph-memory)
-
-### Resume Optimizer
-Applied AI product for resume improvement, optimization workflows, and user-centered automation.
-
-**Why it matters:** practical, easy to understand, and directly relevant to real-world AI product building.  
-[View Project](./project-30-resume-optimizer)
-
-## Focus Areas
-
-- Agentic AI systems and workflow orchestration
-- Retrieval-augmented generation (RAG) and LLM applications
-- Evaluation pipelines, benchmarking, and practical model analysis
-- Healthcare AI and aviation AI
-- Full-stack product thinking for deployable AI tools
-
-## Technical Stack
-
-Programming Languages: Python, SQL, Java, R, C++
-• Databases: PostgreSQL, SQL Server, DuckDB, MongoDB, CAMS ERP, Jenzabar, Planisware
-• Data & BI: Power BI, Tableau, Excel (Advanced), Visio
-• Platforms: AWS, Azure, SharePoint, Salesforce
-• Tools: Git/GitHub, PowerShell, DevOps, Agile/Scrum, Python-dotenv
-• Certifications: Google Data Analytics, Google IT, ISC2 Cybersecurity, AWS Cloud Foundations
-• Languages: English, Hindi, Urdu, Punjabi, French
-
-## Additional Work
-
-Beyond the flagship projects, this repository includes work in:
-
-- Agentic SQL systems
-- LLM evaluation benchmarks
-- Recommender systems
-- Causal ML
-- Financial modeling and simulation
-- Optimization and routing systems
-- Data apps and applied automation
-
-Representative projects include Agentic SQL Analyst, LLM Evaluation Benchmark, RAG Financial Analyst, Credit Risk Engine, Flight Delay Causal ML, Great Circle Routing, and ILS Glide Path Simulation.
-
-## What This Portfolio Shows
-
-This portfolio is designed to signal one thing clearly: the ability to build useful AI systems end to end.
-
-That includes problem framing, workflow design, retrieval, reasoning, evaluation, and product usability — not just isolated notebook experiments.
-
-## Connect
-
-- **Portfolio:** [sidhugurveer5.lovable.app](https://sidhugurveer5.lovable.app/)
-- **LinkedIn:** [linkedin.com/in/sidhu-gurveer](https://linkedin.com/in/sidhu-gurveer/)
-- **Email:** [sidhugurveer5@gmail.com](mailto:sidhugurveer5@gmail.com)
-
-Open to roles in AI Engineering, ML Engineering, Full-Stack AI, Healthcare AI, and Aviation AI.
+- [Archived projects](./archive)
+- [Project README template](./docs/project-readme-template.md)
+- [Portfolio](https://sidhugurveer5.lovable.app/)

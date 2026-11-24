@@ -26,13 +26,13 @@ jobs:
           - project-02-fraud-detection
           - project-04-ils-glide-path
           - project-05-flight-delay
-          - project-06-great-circle-routing
+          - archive/project-06-great-circle-routing
           - project-07-rag-financial-analyst
           - project-08-recommender
           - project-10-agentic-sql
           - project-20-blackjack-to-five
-          - project-21-grocery-bagger
-          - project-23-diabetes-risk-predictor
+          - archive/project-21-grocery-bagger
+          - archive/project-23-diabetes-risk-predictor
           - project-24-parkinsons-tremor-detector
     steps:
       - uses: actions/checkout@v7
@@ -85,7 +85,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v7
       - name: Weather service, cache and chart, with simulated API responses
-        working-directory: project-19-weather-app
+        working-directory: archive/project-19-weather-app
         run: |
           uv sync --frozen
           uv run --frozen pytest -q tests
@@ -98,7 +98,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v7
       - name: Agent perspective, turn checks and summary parsing, with a scripted model
-        working-directory: project-13-multi-agent-conversations
+        working-directory: archive/project-13-multi-agent-conversations
         run: |
           uv sync --frozen
           uv run --frozen pytest -q tests
@@ -111,7 +111,7 @@ jobs:
       - uses: actions/checkout@v7
       - uses: astral-sh/setup-uv@v7
       - name: Chunkers, the sweep and answer checks, with a toy embedding and a scripted model
-        working-directory: project-15-rag-implementation
+        working-directory: archive/project-15-rag-implementation
         run: |
           uv sync --frozen
           uv run --frozen pytest -q tests

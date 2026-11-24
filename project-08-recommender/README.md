@@ -1,4 +1,28 @@
-# Project 08 — Recommendation Engine with Implicit Feedback
+# Recommender
+
+I used implicit feedback to rank recommendations and measured the quality of the resulting lists.
+
+## Architecture
+
+Interaction matrix → implicit-feedback ALS → ranked items → held-out ranking and exposure analysis.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/recommender.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**NDCG@10** · 0.4862. [Saved evidence](./outputs/eval_metrics.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Add a popularity baseline on the same split and record a ranking walkthrough.
+
+## Implementation notes
 
 ## Overview
 Netflix/Amazon-style recommendation engine built on Alternating Least 

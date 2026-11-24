@@ -1,10 +1,87 @@
 [
   {
-    "id": "01",
-    "title": "Credit Risk Engine with XGBoost & SHAP",
-    "domain": "Finance / Machine Learning",
+    "id": "38",
+    "rank": 1,
+    "title": "Prediction Market Calibration Lab",
+    "domain": "Forecasting",
+    "status": "queued",
+    "description": "I want to find out when market prices make reliable probabilities, starting with a 2026 World Cup case study.",
+    "skills": [],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Brier score",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-38-prediction-market-calibration",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Plan to ingest public market data, freeze forecasts before resolution, compare Brier and reliability by horizon, validate data and gate evaluation in CI, then deploy to Cloud Run."
+  },
+  {
+    "id": "35",
+    "rank": 2,
+    "title": "Clinical Trial Matcher on FHIR",
+    "domain": "Healthcare",
+    "status": "queued",
+    "description": "I want to connect synthetic patient records to trial criteria and show the evidence behind each match.",
+    "skills": [],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Recall@k",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-35-clinical-trial-matcher-fhir",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Plan to combine Synthea FHIR, ClinicalTrials.gov, hybrid Chroma retrieval and criterion-level LLM matching. Keep TREC benchmark cohorts separate and report retrieval and reviewer agreement.",
+    "scope": "Educational prototype. Use synthetic or public research data."
+  },
+  {
+    "id": "28",
+    "rank": 3,
+    "title": "DirectTo",
+    "domain": "Aviation",
     "status": "complete",
-    "description": "Built an end-to-end credit default prediction system using real-world lending data with XGBoost classification and SHAP explainability. Engineered financial risk features, developed three-tier borrower risk scoring, and implemented interpretable model outputs to support transparent lending decisions and credit risk analysis.",
+    "description": "I built an assistant that puts flight calculations in deterministic tools and shows where its weather and rule checks come from.",
+    "skills": [
+      "Python",
+      "LangGraph",
+      "AI Agents",
+      "pytest",
+      "REST APIs",
+      "Folium",
+      "Aviation Systems"
+    ],
+    "role": "FDE",
+    "headlineMetric": {
+      "label": "Saved VFR scenarios",
+      "value": "5",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-28-pilotgpt-v3/outputs/vfr_scenarios.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-28-pilotgpt-v3",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Record a walkthrough. Preserve earlier routing, retrieval and planning experiments with links to their original code.",
+    "scope": "Educational simulation and research."
+  },
+  {
+    "id": "01",
+    "rank": 4,
+    "title": "Credit Risk",
+    "domain": "Finance",
+    "status": "complete",
+    "description": "I benchmarked default models and used SHAP to inspect which borrower features drove predictions.",
     "skills": [
       "Python",
       "XGBoost",
@@ -14,17 +91,165 @@
       "Pandas",
       "Machine Learning"
     ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "XGBoost holdout ROC-AUC",
+      "value": "0.794",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-01-credit-risk/outputs/model_comparison.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-01-credit-risk",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": "https://raw.githubusercontent.com/sidhugatwit/ds-portfolio/main/project-01-credit-risk/outputs/shap_summary.png",
+    "thumbnailAlt": "SHAP feature summary for the credit risk model",
+    "nextStep": "Add drift monitoring and an automatic retraining workflow with a baseline comparison and promotion gate."
+  },
+  {
+    "id": "07",
+    "rank": 5,
+    "title": "RAG Financial",
+    "domain": "Finance",
+    "status": "complete",
+    "description": "I compared retrieval methods for annual filings and built checks that trace cited numbers back to source passages.",
+    "skills": [
+      "Python",
+      "FAISS",
+      "Sentence-Transformers",
+      "Pandas",
+      "RAG",
+      "Vector Databases"
+    ],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Hybrid + filter hit@5",
+      "value": "0.95",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-07-rag-financial-analyst/outputs/retrieval_eval.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-07-rag-financial-analyst",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": "/project-evidence/07.png",
+    "thumbnailAlt": "Retrieval hit@5 comparison from the saved evaluation",
+    "nextStep": "Record an end-to-end walkthrough and extend the labeled question set."
+  },
+  {
+    "id": "05",
+    "rank": 6,
+    "title": "Flight Delay Causal ML",
+    "domain": "Aviation",
+    "status": "complete",
+    "description": "I modeled how congestion, weather and carrier operations affect delay estimates in a seeded flight simulation.",
+    "skills": [
+      "Python",
+      "DoWhy",
+      "LightGBM",
+      "Plotly",
+      "Causal Inference",
+      "Machine Learning"
+    ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Modeled congestion effect, simulated data",
+      "value": "0.0968",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-05-flight-delay/outputs/causal_effects.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-05-flight-delay",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Validate on an independent flight dataset and document causal assumptions and uncertainty before generalizing."
+  },
+  {
+    "id": "04",
+    "rank": 7,
+    "title": "ILS Glide Path",
+    "domain": "Aviation",
+    "status": "complete",
+    "description": "I simulated glide slope and localizer deviation so pilots and students can see how the geometry changes along an approach.",
+    "skills": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Plotly 3D",
+      "Aviation Analytics"
+    ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Simulated approach points",
+      "value": "500",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-04-ils-glide-path/outputs/approach_data.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-04-ils-glide-path",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Record a visual walkthrough and compare the geometry against hand-worked cases.",
+    "scope": "Educational simulation and research."
+  },
+  {
+    "id": "09",
+    "rank": 8,
+    "title": "LLM Eval",
+    "domain": "Evaluation",
+    "status": "complete",
+    "description": "I built a repeatable benchmark for comparing local and hosted models on aviation and finance questions.",
+    "skills": [
+      "Python",
+      "OpenAI API",
+      "LM Studio",
+      "ROUGE",
+      "BERTScore",
+      "LLM Evaluation"
+    ],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Mean ROUGE-L, 20 questions per model",
+      "value": "0.421 vs 0.306",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-09-llm-eval-benchmark/outputs/leaderboard.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-09-llm-eval-benchmark",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": "/project-evidence/09.png",
+    "thumbnailAlt": "Mean ROUGE-L comparison from the saved evaluation",
+    "nextStep": "Instrument per-request cost and latency, then build a dashboard that explains which calls and models drive the differences."
+  },
+  {
+    "id": "39",
+    "rank": 9,
+    "title": "RAG Red Team Lab",
+    "domain": "Evaluation",
+    "status": "queued",
+    "description": "I want to measure how reliably the financial assistant enforces its grounding and data-handling rules.",
+    "skills": [],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Guardrail regression coverage",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-39-rag-red-team-lab",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Plan a defensive evaluation with benign synthetic fixtures, human-reviewed policy labels, false-positive tracking and a before/after scorecard."
   },
   {
     "id": "02",
-    "title": "Real-Time Fraud Detection Pipeline",
-    "domain": "Finance / Machine Learning",
+    "rank": 10,
+    "title": "Fraud Detection",
+    "domain": "Finance",
     "status": "complete",
-    "description": "Developed a real-time fraud detection pipeline using Random Forest, Isolation Forest, and SMOTE resampling techniques to detect anomalous financial transactions. Simulated streaming transaction data with configurable alert thresholds and evaluated model performance on highly imbalanced datasets.",
+    "description": "I compared anomaly detection and supervised baselines, then examined how alert thresholds change the queue.",
     "skills": [
       "Python",
       "Scikit-learn",
@@ -34,17 +259,27 @@
       "Fraud Detection",
       "Machine Learning"
     ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Average precision, synthetic holdout",
+      "value": "1.00",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-02-fraud-detection/outputs/model_comparison.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-02-fraud-detection",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Check for generator artifacts and benchmark on a harder held-out dataset before making any performance claim about real transactions."
   },
   {
     "id": "03",
-    "title": "Portfolio Optimizer with Monte Carlo & Black-Scholes",
-    "domain": "Quantitative Finance",
+    "rank": 11,
+    "title": "Portfolio Optimizer",
+    "domain": "Finance",
     "status": "complete",
-    "description": "Designed a quantitative portfolio optimization system using Markowitz Modern Portfolio Theory, Monte Carlo simulations, and Black-Scholes options pricing. Simulated over 10,000 portfolio scenarios across multiple assets to identify efficient frontier allocations, evaluate portfolio volatility, and analyze derivatives pricing and Greeks.",
+    "description": "I used simulation and constrained optimization to explore the return and volatility tradeoffs in a portfolio.",
     "skills": [
       "Python",
       "NumPy",
@@ -54,92 +289,27 @@
       "Monte Carlo Simulation",
       "Black-Scholes"
     ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Max Sharpe, in-sample",
+      "value": "1.3912",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-03-portfolio-optimizer/outputs/summary.json"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-03-portfolio-optimizer",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "04",
-    "title": "ILS Glide Path & ICAO Geometry",
-    "domain": "Aviation / Simulation",
-    "status": "complete",
-    "description": "Built an Instrument Landing System (ILS) approach simulator based on ICAO Annex 10 standards. Modeled glide slope geometry, CDI deviation behavior, and CAT I decision height assessments to simulate precision approach procedures and runway alignment calculations.",
-    "skills": [
-      "Python",
-      "NumPy",
-      "SciPy",
-      "Plotly 3D",
-      "Aviation Analytics"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-04-ils-glide-path",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "05",
-    "title": "Flight Delay Prediction with Causal ML",
-    "domain": "Aviation / Machine Learning",
-    "status": "complete",
-    "description": "Developed a causal machine learning framework to identify the true impact of weather, NAS congestion, and carrier operations on flight delay probability. Used DoWhy causal DAGs and LightGBM models to separate correlation from causation in aviation operations data.",
-    "skills": [
-      "Python",
-      "DoWhy",
-      "LightGBM",
-      "Plotly",
-      "Causal Inference",
-      "Machine Learning"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-05-flight-delay",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "06",
-    "title": "Great Circle Routing & Fuel Optimization",
-    "domain": "Aviation / Optimization",
-    "status": "complete",
-    "description": "Created an aviation route optimization engine using Haversine and Vincenty geodesic calculations to model global flight paths. Integrated wind-corrected fuel burn estimates and ETOPS compliance analysis for long-haul international routing scenarios.",
-    "skills": [
-      "Python",
-      "NumPy",
-      "Plotly",
-      "Folium",
-      "Optimization",
-      "Geospatial Analysis"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-06-great-circle-routing",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "07",
-    "title": "RAG Financial Document Analyst",
-    "domain": "AI / Retrieval-Augmented Generation",
-    "status": "complete",
-    "description": "RAG over the latest 10-K filings of NVIDIA, Microsoft, JPMorgan, Amazon and Tesla from SEC EDGAR: dense, BM25 and hybrid retrieval measured on 20 labelled questions, XBRL figures for numeric questions, and LLM answers checked so every citation and number traces to a source.",
-    "skills": [
-      "Python",
-      "FAISS",
-      "Sentence-Transformers",
-      "Pandas",
-      "RAG",
-      "Vector Databases"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-07-rag-financial-analyst",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Add held-out evaluation and transaction-cost assumptions. Preserve the earlier GBM notebook as a companion experiment."
   },
   {
     "id": "08",
-    "title": "Recommendation Engine with Implicit Feedback",
-    "domain": "AI / Recommendation Systems",
+    "rank": 12,
+    "title": "Recommender",
+    "domain": "Recommendation",
     "status": "complete",
-    "description": "Developed a recommendation engine using Alternating Least Squares (ALS) matrix factorization and implicit feedback modeling. Evaluated ranking performance using NDCG@10 metrics and analyzed popularity bias in collaborative filtering systems.",
+    "description": "I used implicit feedback to rank recommendations and measured the quality of the resulting lists.",
     "skills": [
       "Python",
       "Implicit",
@@ -148,36 +318,27 @@
       "Recommendation Systems",
       "Machine Learning"
     ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "NDCG@10",
+      "value": "0.4862",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-08-recommender/outputs/eval_metrics.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-08-recommender",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "09",
-    "title": "LLM Evaluation & Hallucination Benchmark",
-    "domain": "AI Safety",
-    "status": "complete",
-    "description": "Designed an LLM benchmarking framework to evaluate hallucination behavior across finance and aviation question-answer datasets. Compared model outputs using ROUGE and BERTScore metrics on expert-verified evaluation prompts.",
-    "skills": [
-      "Python",
-      "OpenAI API",
-      "LM Studio",
-      "ROUGE",
-      "BERTScore",
-      "LLM Evaluation"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-09-llm-eval-benchmark",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Add a popularity baseline on the same split and record a ranking walkthrough."
   },
   {
     "id": "10",
-    "title": "Agentic SQL Analyst with Natural Language Interface",
-    "domain": "AI / Data Analytics",
+    "rank": 13,
+    "title": "Agentic SQL",
+    "domain": "Data systems",
     "status": "complete",
-    "description": "Built an AI-powered SQL analytics agent capable of translating natural language questions into validated SQL queries over a DuckDB database containing 15,000+ records. Implemented query verification, analytics workflows, and interactive visualizations for operational datasets.",
+    "description": "I built a natural-language SQL workflow and saved example results for questions across aviation and finance.",
     "skills": [
       "Python",
       "DuckDB",
@@ -186,17 +347,27 @@
       "SQL",
       "AI Agents"
     ],
+    "role": "FDE",
+    "headlineMetric": {
+      "label": "Saved query result sets",
+      "value": "5",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-10-agentic-sql/outputs"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-10-agentic-sql",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Add a labeled execution-accuracy benchmark and record a walkthrough."
   },
   {
     "id": "11",
-    "title": "Mechanistic Interpretability of GPT-2 Medium",
-    "domain": "AI Safety / Interpretability",
+    "rank": 14,
+    "title": "Mechanistic Interpretability",
+    "domain": "Evaluation",
     "status": "complete",
-    "description": "Conducted mechanistic interpretability research on GPT-2 Medium using activation patching and circuit analysis techniques. Investigated the Indirect Object Identification (IOI) circuit to analyze token prediction behavior across transformer layers and measured activation recovery patterns during inference.",
+    "description": "I used activation patching to inspect how a language model recovers a target prediction when I restore individual activations.",
     "skills": [
       "Python",
       "TransformerLens",
@@ -205,17 +376,27 @@
       "Mechanistic Interpretability",
       "Transformer Models"
     ],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Clean vs corrupted logit difference",
+      "value": "3.380 vs −3.738",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-11-mechanistic-interp/outputs/logit_diff_baseline.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-11-mechanistic-interp",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Expand to multiple prompt pairs before generalizing the result across layers."
   },
   {
     "id": "12",
-    "title": "RLHF Pipeline from Scratch",
-    "domain": "AI Safety / Reinforcement Learning",
+    "rank": 15,
+    "title": "RLHF",
+    "domain": "Evaluation",
     "status": "complete",
-    "description": "Built a Reinforcement Learning from Human Feedback (RLHF) pipeline from scratch using DistilBERT reward modeling and PPO optimization. Trained reward functions on human preference pairs and implemented KL-penalized policy optimization workflows for alignment-focused fine-tuning experiments.",
+    "description": "I trained a small reward model on preferences and simulated the effect of a KL penalty on policy rewards.",
     "skills": [
       "Python",
       "PyTorch",
@@ -224,76 +405,27 @@
       "PPO",
       "RLHF"
     ],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Preference pairs",
+      "value": "12",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-12-rlhf-pipeline/outputs/preference_dataset.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-12-rlhf-pipeline",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "13",
-    "title": "Multi-Agent Conversations",
-    "domain": "AI / Multi-Agent Systems",
-    "status": "complete",
-    "description": "Role-played conversations between LLM agents (a parking dispute; a three-person motorcycle decision) with per-agent conversation views, turn checks for agents speaking for each other, and a moderator that reports the agreed terms as structured data. Runs on any OpenAI-compatible model.",
-    "skills": [
-      "Python",
-      "OpenAI API",
-      "GPT-4o-mini",
-      "python-dotenv",
-      "AI Agents",
-      "LLMs"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-13-multi-agent-conversations",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "14",
-    "title": "GBM Simulation — SanDisk vs ASML",
-    "domain": "Quantitative Finance",
-    "status": "complete",
-    "description": "Implemented Geometric Brownian Motion (GBM) simulations for equity price forecasting and derivatives pricing using Monte Carlo methods. Applied Itô's Lemma, Black-Scholes modeling, and Greeks analysis to evaluate volatility and option sensitivity across semiconductor market assets.",
-    "skills": [
-      "Python",
-      "NumPy",
-      "SciPy",
-      "Matplotlib",
-      "yfinance",
-      "Monte Carlo Simulation",
-      "Black-Scholes"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-14-gbm-sandisk-asml",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "15",
-    "title": "Chunking Experiment: RAG on the FAA Pilot's Handbook",
-    "domain": "AI / Retrieval-Augmented Generation",
-    "status": "complete",
-    "description": "Measured how chunk size, overlap and sentence-aware splitting change RAG on three chapters of the FAA Pilot's Handbook: 24 settings scored on 20 labelled questions, then 40 local-LLM answers checked by hand. The retrieval winner (300-character chunks) lost two answers to chunk boundaries; 600-character chunks answered 18/20 correctly, and all off-topic questions were declined.",
-    "skills": [
-      "Python",
-      "Sentence-Transformers",
-      "Pandas",
-      "PyPDF",
-      "RAG",
-      "Local LLM",
-      "Evaluation"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-15-rag-implementation",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Report held-out preference ranking with data split details and keep the PPO simulation clearly labeled."
   },
   {
     "id": "16",
-    "title": "Email Triage Agent with Long-Term Memory (LangGraph)",
-    "domain": "AI / Agentic Systems",
+    "rank": 16,
+    "title": "Email Triage",
+    "domain": "Automation",
     "status": "complete",
-    "description": "LangGraph email triage agent (ignore / notify / respond) that learns a user's preferences from corrections stored in a LangGraph memory store with semantic search and persisted across sessions. On 22 held-out labelled emails with a local Qwen model, memory raised preference-covered emails from 6/11 to 11/11 with no loss on the rest; a tool-calling agent checks the calendar and drafts replies.",
+    "description": "I built an email triage agent that recalls previous corrections and evaluated it with and without that memory.",
     "skills": [
       "Python",
       "LangGraph",
@@ -303,37 +435,27 @@
       "AI Agents",
       "Evaluation"
     ],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Held-out triage, with vs without memory",
+      "value": "22/22 vs 17/22",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-16-langgraph-memory/outputs/triage_run.json"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-16-langgraph-memory",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "17",
-    "title": "AI Health & Fitness Assistant",
-    "domain": "AI / Healthcare",
-    "status": "complete",
-    "description": "Two vision-to-action pipelines. On IBM watsonx.ai, Llama 4 Maverick reads gym-equipment photos and Llama 3.3 70B writes a weekly plan that is checked against the detected equipment and exported as an HTML report. Locally, CLIP detects foods and an LM Studio model writes a recipe, behind a Gradio UI.",
-    "skills": [
-      "Python",
-      "IBM Watsonx",
-      "Gradio",
-      "Pandas",
-      "OpenAI API",
-      "Computer Vision",
-      "Healthcare AI"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-17-health-fitness-assistant",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": "/project-evidence/16.png",
+    "thumbnailAlt": "Correct triage labels comparison from the saved evaluation",
+    "nextStep": "Test more inboxes and document what happens when preferences conflict."
   },
   {
     "id": "18",
-    "title": "Love at First Agent — LangGraph + XGBoost",
-    "domain": "AI / Agentic Machine Learning",
+    "rank": 17,
+    "title": "Love at First Agent",
+    "domain": "Evaluation",
     "status": "complete",
-    "description": "LangGraph ReAct agent with tools to profile the Columbia speed-dating data, check features for leakage, train XGBoost and score new couples. Found that the date ratings leak the outcome: they lift ROC AUC to 0.85, while an honest pre-date model scores 0.68 (0.59 on unseen events).",
+    "description": "I used a speed-dating dataset to test what happens when a prediction model sees ratings that only exist after the date.",
     "skills": [
       "Python",
       "LangGraph",
@@ -343,118 +465,27 @@
       "Feature Engineering",
       "Machine Learning"
     ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Pre-date ROC-AUC, grouped by event",
+      "value": "0.589",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-18-love-at-first-agent/outputs/model_results.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-18-love-at-first-agent",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "19",
-    "title": "Weather Data API App",
-    "domain": "Data Engineering / APIs",
-    "status": "complete",
-    "description": "Developed a weather analytics application integrating live weather APIs for real-time forecasting, historical trend analysis, and interactive environmental data visualization. Built dynamic dashboards for monitoring temperature, precipitation, and atmospheric conditions.",
-    "skills": [
-      "Python",
-      "API Integration",
-      "Plotly",
-      "Pandas",
-      "Data Visualization",
-      "REST APIs"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-19-weather-app",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "20",
-    "title": "BlackJack to Five — Probability & Optimal Strategy",
-    "domain": "Algorithms / Probability",
-    "status": "complete",
-    "description": "Found the optimal hit/stand policy for a custom BlackJack-style game with exact dynamic programming (Bellman equation), then validated it on 100,000 simulated hands with common random numbers and 95% confidence intervals. The optimal policy wins 42.5% of rounds, +1.8 points over the casino-style 'hit below 17' rule, because the player never sees the dealer's cards. Extends a Java group project from COMP 2000.",
-    "skills": [
-      "Python",
-      "NumPy",
-      "Pandas",
-      "Plotly",
-      "Java",
-      "Monte Carlo Simulation",
-      "Dynamic Programming"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-20-blackjack-to-five",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "21",
-    "title": "Grocery Bagger — Bin Packing Optimization",
-    "domain": "Algorithms / Optimization",
-    "status": "complete",
-    "description": "Developed a bin packing optimization system comparing First Fit, First Fit Decreasing, and Fragile-First algorithms for grocery bag allocation efficiency. Built a Python-based analytics layer on top of a Java implementation to evaluate packing performance, space utilization, and fragile item handling strategies.",
-    "skills": [
-      "Python",
-      "Java",
-      "NumPy",
-      "Pandas",
-      "Plotly",
-      "Algorithms",
-      "Optimization"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-21-grocery-bagger",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "22",
-    "title": "DS & AI Interview Prep Agent",
-    "domain": "AI / Career Technology",
-    "status": "complete",
-    "description": "Built an AI-powered interview preparation platform that analyzes resumes against job descriptions, identifies technical skill gaps, and evaluates interview responses in real time. Integrated GPT-4o-mini scoring workflows across 49 interview questions spanning data science, machine learning, SQL, and behavioral domains.",
-    "skills": [
-      "Python",
-      "OpenAI API",
-      "Gradio",
-      "Streamlit",
-      "SQLite",
-      "Pandas",
-      "LLMs",
-      "AI Agents"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-22-interview-prep-agent",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "23",
-    "title": "Type 2 Diabetes Risk Predictor",
-    "domain": "Healthcare / Machine Learning",
-    "status": "complete",
-    "description": "Developed a Type 2 diabetes risk prediction model using XGBoost and clinical feature engineering techniques. Built preprocessing pipelines for zero-value imputation, risk stratification, and lifestyle intervention recommendations, achieving ROC-AUC performance of 0.8220 on healthcare datasets.",
-    "skills": [
-      "Python",
-      "XGBoost",
-      "Scikit-learn",
-      "Plotly",
-      "Pandas",
-      "Matplotlib",
-      "Healthcare Analytics",
-      "Machine Learning"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-23-diabetes-risk-predictor",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": "/project-evidence/18.png",
+    "thumbnailAlt": "Pre-date ROC-AUC comparison from the saved evaluation",
+    "nextStep": "Add uncertainty and benchmark on independent events before generalizing."
   },
   {
     "id": "24",
-    "title": "Parkinson's Tremor Detector — Voice Analysis",
-    "domain": "Healthcare / AI",
+    "rank": 18,
+    "title": "Parkinson’s Voice",
+    "domain": "Healthcare",
     "status": "complete",
-    "description": "Built a Parkinson’s disease detection system using voice biomarker analysis and machine learning classification models. Processed MDVP jitter, shimmer, HNR, RPDE, and DFA speech features with XGBoost and SVM models, achieving ROC-AUC performance of 0.9828 and 96.6% clinical sensitivity.",
+    "description": "I compared recording-level and speaker-grouped validation to see how much repeated speakers inflated performance.",
     "skills": [
       "Python",
       "XGBoost",
@@ -465,98 +496,28 @@
       "Signal Processing",
       "Machine Learning"
     ],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Random forest mean speaker-grouped ROC-AUC",
+      "value": "0.805",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-24-parkinsons-tremor-detector/outputs/grouped_cv_results.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-24-parkinsons-tremor-detector",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "25",
-    "title": "Anxiety & Isolation Sentiment Tracker",
-    "domain": "Healthcare / NLP",
-    "status": "complete",
-    "description": "Developed a longitudinal mental health sentiment tracking system using zero-shot NLP classification with BART-large-MNLI. Built pipelines to classify anxiety, isolation, depression, and neutral emotional states while simulating 30-day behavioral tracking and weekly psychological trend analysis.",
-    "skills": [
-      "Python",
-      "HuggingFace",
-      "BART",
-      "Plotly",
-      "Pandas",
-      "Natural Language Processing",
-      "Healthcare AI"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-25-anxiety-sentiment-tracker",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "26",
-    "title": "PilotGPT v2 — IFR Full Suite",
-    "domain": "Aviation / AI Agents",
-    "status": "complete",
-    "description": "Built an AI-powered IFR flight planning assistant designed around FAA flight operations standards. Developed a LangGraph ReAct agent with aviation-specific tools covering holding pattern entries, E6B wind correction calculations, density altitude estimation, and automated IFR flight plan generation.",
-    "skills": [
-      "Python",
-      "LangGraph",
-      "GPT-4o-mini",
-      "NumPy",
-      "Pandas",
-      "AI Agents",
-      "Aviation Analytics"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-26-pilotgpt-v2",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "27",
-    "title": "Recipe Maker with Gemma 4 Vision + DALL-E 3",
-    "domain": "AI / Multimodal Systems",
-    "status": "complete",
-    "description": "Developed a multimodal AI recipe generation pipeline combining computer vision, LLM reasoning, and image generation workflows. Integrated Gemma 4 vision models for ingredient detection, GPT-4o-mini for recipe and nutrition generation, and DALL-E 3 for restaurant-quality food image synthesis.",
-    "skills": [
-      "Python",
-      "Gemma 4",
-      "Ollama",
-      "OpenAI API",
-      "DALL-E 3",
-      "Pillow",
-      "Computer Vision",
-      "Multimodal AI"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-27-recipe-maker",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "28",
-    "title": "DirectTo — VFR & IFR Flight Assistant",
-    "domain": "Aviation / AI Agents",
-    "status": "complete",
-    "description": "LangGraph ReAct agent for VFR and IFR preflight questions: wind triangle with WMM2025 magnetic variation, 14 CFR 91.155 VFR go/no-go, AIM holding entries, density altitude, and live METAR/TAF from aviationweather.gov. Every calculation is covered by hand-worked pytest checks; an audit fixed holding-entry and magnetic-heading errors from the first version.",
-    "skills": [
-      "Python",
-      "LangGraph",
-      "AI Agents",
-      "pytest",
-      "REST APIs",
-      "Folium",
-      "Aviation Systems"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-28-pilotgpt-v3",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": "/project-evidence/24.png",
+    "thumbnailAlt": "Random forest ROC-AUC comparison from the saved evaluation",
+    "nextStep": "Validate on independent participants. Keep the diabetes model as a separate companion study.",
+    "scope": "Educational prototype. Use synthetic or public research data."
   },
   {
     "id": "29",
+    "rank": 19,
     "title": "Pilot Credentials Vault",
-    "domain": "Full-Stack / Aviation Healthcare",
+    "domain": "Aviation",
     "status": "complete",
-    "description": "Developed a full-stack aviation health management platform for pilots to securely manage FAA credentials, digital logbooks, and medical records. Built secure authentication using JWT and bcryptjs with SQLite-backed storage and a responsive dashboard interface. Integrated a local Ollama LLM with LangGraph agents to summarize medical records, analyze health risks, and perform FAA medical compliance checks.",
+    "description": "I built a local app for pilot credentials, logbook entries and health records, with a database and a browser interface.",
     "skills": [
       "Python",
       "Node.js",
@@ -572,17 +533,126 @@
       "Full-Stack Development",
       "Healthcare AI"
     ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-29-pilot-credentials-vault",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "role": "FDE",
+    "headlineMetric": {
+      "label": "API startup check",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-29-health-pilot-vault",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Record a demo with synthetic data and verify authentication, uploads and secret configuration before considering a deployment.",
+    "scope": "Educational prototype. Use synthetic or public research data."
+  },
+  {
+    "id": "37",
+    "rank": 20,
+    "title": "Football VAR",
+    "domain": "Sports",
+    "status": "queued",
+    "description": "I want to test how consistently a vision pipeline can surface footage for a human referee to review.",
+    "skills": [],
+    "role": "AI engineer",
+    "headlineMetric": {
+      "label": "Event-level precision and recall",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-37-football-var",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Define one review event, label clips and measure false positives before expanding scope."
+  },
+  {
+    "id": "33",
+    "rank": 21,
+    "title": "SPC in R and SparkR",
+    "domain": "Data systems",
+    "status": "queued",
+    "description": "I want to compare how R and SparkR flag process changes when they use the same control limits.",
+    "skills": [],
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Rule agreement",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-33-spc-r-sparkr",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Implement a reproducible seeded dataset and compare control limits and violation flags across runtimes."
+  },
+  {
+    "id": "36",
+    "rank": 22,
+    "title": "Autonomous Aviation",
+    "domain": "Aviation",
+    "status": "queued",
+    "description": "I want to evaluate one simulated aviation task and make the system hand off when it runs outside its assumptions.",
+    "skills": [],
+    "role": "FDE",
+    "headlineMetric": {
+      "label": "Scenario completion rate",
+      "value": null,
+      "evidence": null
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-36-autonomous-aviation",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Implement one simulator-only task and report completion and handoff behavior over a fixed scenario set.",
+    "scope": "Educational simulation and research."
+  },
+  {
+    "id": "17",
+    "rank": 23,
+    "title": "AI Health and Fitness",
+    "domain": "Healthcare",
+    "status": "complete",
+    "description": "I built a workflow that turns fitness constraints into a structured plan. I’m keeping the recipe experiment alongside it.",
+    "skills": [
+      "Python",
+      "IBM Watsonx",
+      "Gradio",
+      "Pandas",
+      "OpenAI API",
+      "Computer Vision",
+      "Healthcare AI"
+    ],
+    "role": "FDE",
+    "headlineMetric": {
+      "label": "Saved workout entries",
+      "value": "16",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-17-health-fitness-assistant/outputs/workout_plan.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-17-health-fitness-assistant",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Add a benchmark for constraint adherence and evaluate recipe integration separately.",
+    "scope": "Educational prototype. Use synthetic or public research data."
   },
   {
     "id": "30",
-    "title": "AI Resume & Cover Letter Optimizer",
-    "domain": "AI / Career Technology",
+    "rank": 24,
+    "title": "Career Tools",
+    "domain": "Automation",
     "status": "complete",
-    "description": "Built an AI-powered resume and cover letter optimization platform designed to improve ATS compatibility and streamline job application workflows. Developed NLP-based keyword analysis using NLTK to evaluate resume alignment against job descriptions and integrated GPT-4o-mini to rewrite resume bullet points and generate tailored cover letters. Implemented automated ATS scoring, keyword matching, and DOCX export functionality, improving resume match scores from 22% to 90% during testing.",
+    "description": "I built a resume workflow that surfaces keyword gaps and prepares drafts. I’m keeping my interview-prep and resume-assistant prototypes alongside it.",
     "skills": [
       "Python",
       "OpenAI API",
@@ -593,50 +663,48 @@
       "Natural Language Processing",
       "ATS Optimization"
     ],
+    "role": "FDE",
+    "headlineMetric": {
+      "label": "Saved keyword checks",
+      "value": "50",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-30-resume-optimizer/outputs/ats_analysis.csv"
+    },
     "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-30-resume-optimizer",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Add a shared example and check that generated drafts preserve supplied facts before combining the tools."
   },
   {
-    "id": "31",
-    "title": "Universal Document Converter & Summarizer",
-    "domain": "AI / Document Intelligence",
+    "id": "20",
+    "rank": 25,
+    "title": "BlackJack DP",
+    "domain": "Simulation",
     "status": "complete",
-    "description": "Built an AI document-processing tool that reads PDF, DOCX, PPTX, XLSX, CSV, TXT and Markdown files, produces summaries in four styles (executive, bullet, detailed, technical), answers questions about a document's content, and exports results to multiple formats. Uses GPT-4o-mini for summarization and Q&A, with format auto-detection by file extension.",
+    "description": "I used dynamic programming and simulation to compare strategies in a first-to-five blackjack variant.",
     "skills": [
       "Python",
-      "OpenAI API",
-      "GPT-4o-mini",
-      "python-docx",
-      "python-pptx",
-      "openpyxl",
-      "PyPDF2",
-      "Pandas"
-    ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-31-document-converter",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
-  },
-  {
-    "id": "32",
-    "title": "Resume Assistant — Streamlit Console + n8n Pipeline",
-    "domain": "AI / Career Technology",
-    "status": "in development",
-    "description": "Building a resume-tailoring workspace: a CLI client sends a resume PDF and a pasted job posting to an n8n webhook pipeline, and a Streamlit console streams multi-agent feedback, charts ATS-alignment scores returned by the backend, and tracks applications locally. The FastAPI backend is in progress.",
-    "skills": [
-      "Python",
-      "Streamlit",
-      "n8n",
+      "NumPy",
+      "Pandas",
       "Plotly",
-      "httpx",
-      "ChromaDB",
-      "pypdf"
+      "Java",
+      "Monte Carlo Simulation",
+      "Dynamic Programming"
     ],
-    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-32-resume-assistant",
-    "notebook": "",
-    "demo": "",
-    "thumbnail": ""
+    "role": "Data scientist",
+    "headlineMetric": {
+      "label": "Conservative strategy simulated win rate",
+      "value": "40.78%",
+      "evidence": "https://github.com/sidhugatwit/ds-portfolio/blob/main/project-20-blackjack-to-five/outputs/strategy_comparison.csv"
+    },
+    "github": "https://github.com/sidhugatwit/ds-portfolio/tree/main/project-20-blackjack-to-five",
+    "notebook": null,
+    "demo": null,
+    "deployment": null,
+    "thumbnail": null,
+    "thumbnailAlt": null,
+    "nextStep": "Document the game rules alongside the result and record a strategy walkthrough."
   }
 ]

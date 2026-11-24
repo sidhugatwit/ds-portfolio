@@ -1,4 +1,36 @@
-# Project 28 — DirectTo: VFR & IFR Flight Assistant
+# DirectTo
+
+I built an assistant that puts flight calculations in deterministic tools and shows where its weather and rule checks come from.
+
+## Architecture
+
+Pilot question → LangGraph routing → deterministic flight and weather tools → response with the selected checks.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/pilotgpt_v3.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Saved VFR scenarios** · 5. [Saved evidence](./outputs/vfr_scenarios.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo. A saved [route map](./outputs/route_map.html) is available as evidence.
+
+## Next steps
+
+Record a walkthrough. Preserve earlier routing, retrieval and planning experiments with links to their original code.
+
+## Companion projects
+
+- [project-06-great-circle-routing](../archive/project-06-great-circle-routing)
+- [project-15-rag-implementation](../archive/project-15-rag-implementation)
+- [project-26-pilotgpt-v2](../archive/project-26-pilotgpt-v2)
+
+The companion experiments remain independently reproducible.
+
+## Implementation notes
 
 > **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
 

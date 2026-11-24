@@ -1,4 +1,34 @@
-# Project 17 — AI Health & Fitness Assistant
+# AI Health and Fitness
+
+I built a workflow that turns fitness constraints into a structured plan. I’m keeping the recipe experiment alongside it.
+
+## Architecture
+
+Fitness constraints → structured generation → plan validation and formatting → CSV and HTML exports.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/MultiAgent.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Saved workout entries** · 16. [Saved evidence](./outputs/workout_plan.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo. A saved [HTML plan](./outputs/workout_plan.html) is available as evidence.
+
+## Next steps
+
+Add a benchmark for constraint adherence and evaluate recipe integration separately.
+
+## Companion projects
+
+- [project-27-recipe-maker](../archive/project-27-recipe-maker)
+
+The companion experiments remain independently reproducible.
+
+## Implementation notes
 
 > **Not medical advice or a medical device.** This is an educational data-science project. Its outputs are not a diagnosis and are not validated for clinical use.
 

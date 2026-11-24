@@ -1,4 +1,35 @@
-# Project 30 — AI Resume & Cover Letter Optimizer
+# Career Tools
+
+I built a resume workflow that surfaces keyword gaps and prepares drafts. I’m keeping my interview-prep and resume-assistant prototypes alongside it.
+
+## Architecture
+
+Resume and job description → keyword comparison → rewritten draft and cover-letter exports.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/resume_optimizer.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Saved keyword checks** · 50. [Saved evidence](./outputs/ats_analysis.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Add a shared example and check that generated drafts preserve supplied facts before combining the tools.
+
+## Companion projects
+
+- [project-22-interview-prep-agent](../archive/project-22-interview-prep-agent)
+- [project-32-resume-assistant](../archive/project-32-resume-assistant)
+
+The companion experiments remain independently reproducible.
+
+## Implementation notes
 
 ## Overview
 

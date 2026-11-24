@@ -1,4 +1,28 @@
-# Project 01 — Credit Risk Engine
+# Credit Risk
+
+I benchmarked default models and used SHAP to inspect which borrower features drove predictions.
+
+## Architecture
+
+Lending data → split and train-fold preprocessing → baseline and tree models → ROC-AUC comparison and SHAP explanations.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/credit_risk.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**XGBoost holdout ROC-AUC** · 0.794. [Saved evidence](./outputs/model_comparison.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment.
+
+## Next steps
+
+Add drift monitoring and an automatic retraining workflow with a baseline comparison and promotion gate.
+
+## Implementation notes
 
 ## Overview
 End-to-end credit default prediction system trained on 1,000 real loan 

@@ -1,4 +1,30 @@
-# Project 18 — Love at First Agent
+# Love at First Agent
+
+I used a speed-dating dataset to test what happens when a prediction model sees ratings that only exist after the date.
+
+## Architecture
+
+Speed-dating records → pre-date feature selection → grouped validation → leakage comparison.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/love_at_first_agent.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Pre-date ROC-AUC, grouped by event** · 0.589. [Saved evidence](./outputs/model_results.csv).
+
+The grouped-by-event estimate uses only pre-date features.
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment.
+
+## Next steps
+
+Add uncertainty and benchmark on independent events before generalizing.
+
+## Implementation notes
 
 ## Overview
 

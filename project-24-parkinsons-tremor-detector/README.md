@@ -1,4 +1,36 @@
-# Project 24 — Parkinson's Tremor Detector (Voice Analysis)
+# Parkinson’s Voice
+
+I compared recording-level and speaker-grouped validation to see how much repeated speakers inflated performance.
+
+## Architecture
+
+Voice features → group recordings by speaker → classifier cross-validation → compare with recording-level splits.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/parkinsons_tremor_detector.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Random forest mean speaker-grouped ROC-AUC** · 0.805. [Saved evidence](./outputs/grouped_cv_results.csv).
+
+The headline uses groups by speaker, the relevant split for evaluating unseen people. The project is educational.
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment.
+
+## Next steps
+
+Validate on independent participants. Keep the diabetes model as a separate companion study.
+
+## Companion projects
+
+- [project-23-diabetes-risk-predictor](../archive/project-23-diabetes-risk-predictor)
+
+The companion experiments remain independently reproducible.
+
+## Implementation notes
 
 > **Not medical advice or a medical device.** This is an educational data-science project. Its outputs are not a diagnosis and are not validated for clinical use.
 
