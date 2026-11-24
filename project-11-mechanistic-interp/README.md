@@ -1,4 +1,28 @@
-# Project 11 — Mechanistic Interpretability of GPT-2 Medium
+# Mechanistic Interpretability
+
+I used activation patching to inspect how a language model recovers a target prediction when I restore individual activations.
+
+## Architecture
+
+Clean and corrupted prompts → activation capture → patch individual activations → compare target logit differences.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/mechanistic_interp.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Clean vs corrupted logit difference** · 3.380 vs −3.738. [Saved evidence](./outputs/logit_diff_baseline.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Expand to multiple prompt pairs before generalizing the result across layers.
+
+## Implementation notes
 
 ## Overview
 

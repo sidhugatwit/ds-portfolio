@@ -1,4 +1,28 @@
-# Project 20 — BlackJack to Five: Probability Analysis & Optimal Strategy
+# BlackJack DP
+
+I used dynamic programming and simulation to compare strategies in a first-to-five blackjack variant.
+
+## Architecture
+
+Game states and rules → dynamic-programming policy → seeded simulation → strategy win-rate comparison.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/blackjack_analysis.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Conservative strategy simulated win rate** · 40.78%. [Saved evidence](./outputs/strategy_comparison.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Document the game rules alongside the result and record a strategy walkthrough.
+
+## Implementation notes
 
 ## Overview
 

@@ -1,4 +1,30 @@
-# Project 09 — LLM Evaluation & Hallucination Benchmark
+# LLM Eval
+
+I built a repeatable benchmark for comparing local and hosted models on aviation and finance questions.
+
+## Architecture
+
+Curated questions → saved model responses → lexical and semantic scoring → comparison by model.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen python src/rescore.py --skip-bert` to rescore saved responses offline.
+
+## Results
+
+**Mean ROUGE-L, 20 questions per model** · 0.421 vs 0.306. [Saved evidence](./outputs/leaderboard.csv).
+
+The saved leaderboard compares GPT-4o-mini and Mistral-7B in that order. Text overlap is one measure of answer quality.
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment.
+
+## Next steps
+
+Instrument per-request cost and latency, then build a dashboard that explains which calls and models drive the differences.
+
+## Implementation notes
 
 ## Overview
 A domain-specific evaluation benchmark testing real LLMs on 20 

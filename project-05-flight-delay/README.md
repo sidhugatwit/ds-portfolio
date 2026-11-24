@@ -1,4 +1,30 @@
-# Project 05 — Flight Delay Prediction with Causal ML
+# Flight Delay Causal ML
+
+I modeled how congestion, weather and carrier operations affect delay estimates in a seeded flight simulation.
+
+## Architecture
+
+Seeded flight simulator → causal graph and adjustment sets → effect estimation and refutation → saved effects.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/flight_delay_causal.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Modeled congestion effect, simulated data** · 0.0968. [Saved evidence](./outputs/causal_effects.csv).
+
+This is an estimate under the notebook’s assumptions. It is not a real-world causal validation.
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Validate on an independent flight dataset and document causal assumptions and uncertainty before generalizing.
+
+## Implementation notes
 
 ## Overview
 Predicts and explains flight delays using a structural causal model 

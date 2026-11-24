@@ -1,4 +1,28 @@
-# Project 29 — Health & Pilot Credentials Vault
+# Pilot Credentials Vault
+
+I built a local app for pilot credentials, logbook entries and health records, with a database and a browser interface.
+
+## Architecture
+
+Browser interface → Express routes and JWT checks → SQLite records and local uploads.
+
+## Run locally
+
+Use Node.js 22. Copy the sample configuration to a local ignored environment file and generate your own signing secret. Run `npm ci` and `npm start` in this folder.
+
+## Results
+
+TODO · Record api startup check with a reproducible artifact.
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Record a demo with synthetic data and verify authentication, uploads and secret configuration before considering a deployment.
+
+## Implementation notes
 
 > **Not for official record keeping.** This is an educational project. Your official logbook, FAA certificates and medical records remain the legal source of truth.
 
@@ -6,7 +30,7 @@
 
 A full-stack web application for pilots to securely store FAA credentials,
 maintain a digital logbook, and track health records. Built with Node.js,
-Express, SQLite, and JWT authentication — fully offline and private.
+Express, SQLite, and JWT authentication — intended for local use with sample data.
 
 ## Features
 

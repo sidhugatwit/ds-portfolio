@@ -1,4 +1,28 @@
-# Project 04 — ILS Glide Path & Localizer Deviation Model
+# ILS Glide Path
+
+I simulated glide slope and localizer deviation so pilots and students can see how the geometry changes along an approach.
+
+## Architecture
+
+Approach geometry → generated aircraft positions → glide slope and localizer errors → trace and visualization.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/ils_glide_path.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Simulated approach points** · 500. [Saved evidence](./outputs/approach_data.csv).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Record a visual walkthrough and compare the geometry against hand-worked cases.
+
+## Implementation notes
 
 > **Not for navigation or flight planning.** This is an educational project. Always use official FAA sources, current charts, and a certificated briefing for real flights.
 

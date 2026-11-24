@@ -1,4 +1,30 @@
-# Project 07 — RAG Financial Document Analyst
+# RAG Financial
+
+I compared retrieval methods for annual filings and built checks that trace cited numbers back to source passages.
+
+## Architecture
+
+Public filings and structured facts → dense, keyword and hybrid retrieval → cited answer → citation and numeric checks.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/rag_financial_analyst.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Hybrid + filter hit@5** · 0.95. [Saved evidence](./outputs/retrieval_eval.csv).
+
+The hybrid and company-filter configuration was evaluated on 20 labeled questions.
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment.
+
+## Next steps
+
+Record an end-to-end walkthrough and extend the labeled question set.
+
+## Implementation notes
 
 ## Overview
 

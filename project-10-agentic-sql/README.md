@@ -1,4 +1,28 @@
-# Project 10 — Agentic SQL Analyst with Natural Language Interface
+# Agentic SQL
+
+I built a natural-language SQL workflow and saved example results for questions across aviation and finance.
+
+## Architecture
+
+Analyst question → pattern-based SQL translation → DuckDB execution → result tables and plots.
+
+## Run locally
+
+From this folder, run `uv sync --frozen` and `uv run --frozen jupyter lab`. Open [the notebook](./notebooks/agentic_sql_analyst.ipynb). Review the existing run notes below for any data or service requirements.
+
+## Results
+
+**Saved query result sets** · 5. [Saved evidence](./outputs).
+
+## Demo and deployment
+
+TODO · Record a demo and verify any deployment. Capture a thumbnail from a real output or demo.
+
+## Next steps
+
+Add a labeled execution-accuracy benchmark and record a walkthrough.
+
+## Implementation notes
 
 ## Overview
 An AI agent that translates plain English questions into verified SQL 
